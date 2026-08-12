@@ -1,0 +1,40 @@
+{
+  "title": "[PROJECT 04 NAME]",
+  "slug": "project-04",
+  "published": true,
+  "order": 4,
+  "accent": 4,
+  "type": "[Type]",
+  "year": "[Year]",
+  "location": "[City, State]",
+  "program": "[What the building is]",
+  "status": "[Built / Academic / Competition]",
+  "role": "[Your role on the project]",
+  "cover": "",
+  "body": [
+    "[PARAGRAPH 1 — The problem. Site, brief, and constraints.]",
+    "[PARAGRAPH 2 — Your response. The key design move, and the structure or materials behind it.]"
+  ],
+  "gallery": [
+    {
+      "src": "",
+      "wide": true,
+      "caption": "[Wide image — site plan, section, or exterior]"
+    },
+    {
+      "src": "",
+      "wide": false,
+      "caption": "[Detail or interior]"
+    },
+    {
+      "src": "",
+      "wide": false,
+      "caption": "[Diagram or model photo]"
+    },
+    {
+      "src": "",
+      "wide": true,
+      "caption": "[Wide image — floor plan or elevation]"
+    }
+  ]
+}

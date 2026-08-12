@@ -1,27 +1,24 @@
-# Architecture Portfolio
+# Architecture Portfolio — Evan Thalheimer
 
-Personal portfolio site. Plain HTML / CSS / JS — no build step, no dependencies.
+Live at **https://nave1294.github.io/portfolio/**
 
-Live at: _(add your GitHub Pages URL here once published)_
+A generated static site. Content lives in `content/`; `build.mjs` turns it into
+`dist/`. Pushing to `main` builds and deploys automatically.
 
-## Working on it locally
-
-Open `index.html` directly in a browser, or serve the folder so relative paths
-behave exactly as they will in production:
+## Build and preview locally
 
 ```bash
-python -m http.server 8765
+node build.mjs
 ```
 
-Then visit http://localhost:8765.
+```bash
+python -m http.server 8765 --directory dist
+```
 
-## Adding content
+## Editing content
 
-See [CONVENTIONS.md](CONVENTIONS.md) for the file structure, the per-project
-color system, image sizing guidance, and step-by-step instructions for adding
-a new project.
+Everything is in `content/settings.json` and `content/projects/*.json`.
+See [CONVENTIONS.md](CONVENTIONS.md) for what each field does, how the landing
+page toggle works, and how to add or hide a project.
 
-## Deploying
-
-Pushing to `main` publishes automatically via GitHub Pages. Give it 30–60
-seconds after a push for the change to appear.
+No HTML editing — `dist/` is generated output and is not committed.

@@ -1,3 +1,6 @@
+# Build output — generated from content/ by build.mjs, never edited by hand.
+dist/
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db
