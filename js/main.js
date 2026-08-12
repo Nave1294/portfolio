@@ -1,14 +1,17 @@
-// Reverse the page swipe when the visitor is going back, so the motion
-// follows the direction of travel. No-ops where view transitions are
-// unsupported. The transition renders in the arriving document, so tagging
-// it here is enough to restyle both the outgoing and incoming halves.
-window.addEventListener("pagereveal", (event) => {
-  if (!event.viewTransition || !event.viewTransition.types) return;
-  const activation = window.navigation && window.navigation.activation;
-  if (activation && activation.navigationType === "traverse") {
-    event.viewTransition.types.add("back");
-  }
-});
+// The arriving page is marked by an inline script in <head> (before first
+// paint). Once it has slid in, drop the class: a lingering transform on the
+// wrapper would become a containing block and break the sticky header.
+(() => {
+  const root = document.documentElement;
+  if (!root.classList.contains("swipe-entering")) return;
+
+  const clear = () => root.classList.remove("swipe-entering");
+  const wrapper = document.querySelector(".swipe-root");
+
+  if (wrapper) wrapper.addEventListener("animationend", clear, { once: true });
+  // Safety net if the animation never runs (reduced motion, older browser).
+  setTimeout(clear, 900);
+})();
 
 // Mobile nav toggle
 document.addEventListener("DOMContentLoaded", () => {

@@ -52,17 +52,26 @@ black on white.
 ### The swipe
 
 Clicking Enter swipes the landing page off to the left while the work grid
-arrives from the right; the browser back button reverses the direction. This
-uses the browser's View Transitions API, configured in `css/transition.css`.
+arrives from the right. Configured in `css/transition.css`, which is linked
+only from those two pages.
 
-That stylesheet is linked **only** from the landing page and the work grid. A
-cross-document view transition requires both documents to opt in, which is what
-keeps the swipe off the About, Contact and project pages — those navigate
-normally.
+It works in two halves, since they are separate documents:
 
-Browsers without view transition support navigate instantly with no animation.
-Nothing breaks; there is simply no swipe. The same applies when the visitor has
-"reduce motion" enabled.
+1. The Enter click is intercepted. `swipe-leaving` animates the landing page
+   out to the left, a flag is left in `sessionStorage`, and navigation happens
+   when the animation ends (or after 450ms, whichever comes first).
+2. The work page reads that flag in an inline `<head>` script — **before the
+   first paint**, otherwise the page would appear in place and then jump right
+   — and adds `swipe-entering`, which animates it in from the right.
+
+`js/main.js` removes the class once the animation finishes. That matters: a
+transform left on the wrapper would make it a containing block and break the
+sticky header.
+
+This is deliberately plain CSS animation rather than the View Transitions API,
+which only supports cross-document transitions in some browsers. Visitors with
+"reduce motion" enabled get a plain navigation, as does anyone whose animation
+never fires — the timeout still navigates.
 
 When `enabled` is `true`, the landing page is `index.html` and the work grid
 moves to `work.html`. When `false`, the work grid becomes `index.html`. The

@@ -1,45 +1,49 @@
 /* Page swipe between the landing page and the work grid.
-   Linked ONLY from those two pages — a cross-document view transition
-   requires both documents to opt in, so every other page navigates
-   normally without picking this up.
+   Linked only from those two pages.
 
-   Browsers without view transitions ignore all of this and navigate
-   instantly, which is a clean fallback rather than a broken one. */
+   Driven by JavaScript classes rather than the View Transitions API, which
+   only supports cross-document transitions in some browsers. This runs
+   everywhere. */
 
-@view-transition {
-  navigation: auto;
+.swipe-root {
+  /* Both halves of the swipe move this wrapper. */
+  will-change: transform;
 }
 
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 520ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-fill-mode: both;
-  /* Without this the two snapshots blend while they overlap and the
-     moving pages look washed out mid-swipe. */
-  mix-blend-mode: normal;
+/* While the outgoing page slides away, and while the incoming page slides in,
+   the off-screen wrapper must not create a horizontal scrollbar. */
+html.swipe-entering,
+html.swipe-entering body,
+body.swipe-leaving {
+  overflow-x: hidden;
 }
 
-/* Forward: the current page leaves to the left, the next arrives from the right. */
-::view-transition-old(root) { animation-name: swipe-out-left; }
-::view-transition-new(root) { animation-name: swipe-in-right; }
-
-/* Browser back reverses it, so the motion matches the direction of travel. */
-html:active-view-transition-type(back)::view-transition-old(root) {
-  animation-name: swipe-out-right;
-}
-html:active-view-transition-type(back)::view-transition-new(root) {
-  animation-name: swipe-in-left;
+/* Outgoing: the landing page leaves to the left. */
+body.swipe-leaving .swipe-root {
+  animation: swipe-out-left 300ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-@keyframes swipe-out-left  { to   { transform: translateX(-100%); } }
-@keyframes swipe-in-right  { from { transform: translateX(100%); } }
-@keyframes swipe-out-right { to   { transform: translateX(100%); } }
-@keyframes swipe-in-left   { from { transform: translateX(-100%); } }
+/* Incoming: the work grid arrives from the right. The class is set by an
+   inline script in <head> so this is in place before the first paint —
+   otherwise the page would flash in position and then jump right. */
+html.swipe-entering .swipe-root {
+  animation: swipe-in-right 460ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
 
+@keyframes swipe-out-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+@keyframes swipe-in-right {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+/* Respect a stated preference for less motion: navigate plainly instead. */
 @media (prefers-reduced-motion: reduce) {
-  ::view-transition-old(root),
-  ::view-transition-new(root) {
+  body.swipe-leaving .swipe-root,
+  html.swipe-entering .swipe-root {
     animation: none;
   }
 }

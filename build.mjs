@@ -48,10 +48,13 @@ const WORK_URL = landingOn ? "work.html" : "index.html";
 const site = settings.site || {};
 const contact = settings.contact || {};
 
-// `swipe` opts the page into the landing <-> work view transition. Both
-// documents must link transition.css for the swipe to happen, which is what
-// keeps it off every other page.
-function head(title, { depth = 0, description = "", swipe = false } = {}) {
+// `swipe` links the swipe stylesheet; `swipeIn` additionally marks the page as
+// the arrival side. The inline script must run before the first paint,
+// otherwise the page renders in place and then jumps right to animate in.
+function head(
+  title,
+  { depth = 0, description = "", swipe = false, swipeIn = false } = {}
+) {
   const up = depth ? "../".repeat(depth) : "";
   return `<!DOCTYPE html>
 <html lang="en">
@@ -63,6 +66,10 @@ function head(title, { depth = 0, description = "", swipe = false } = {}) {
   }
 <link rel="stylesheet" href="${up}css/style.css">${
     swipe ? `\n<link rel="stylesheet" href="${up}css/transition.css">` : ""
+  }${
+    swipeIn
+      ? `\n<script>try{if(sessionStorage.getItem("swipe-in")==="1"){sessionStorage.removeItem("swipe-in");document.documentElement.classList.add("swipe-entering")}}catch(e){}</script>`
+      : ""
   }
 </head>
 <body>`;
@@ -89,7 +96,7 @@ function header(current, depth = 0) {
 </header>`;
 }
 
-function footer(depth = 0, { full = true } = {}) {
+function footer(depth = 0, { full = true, wrapped = false } = {}) {
   const up = depth ? "../".repeat(depth) : "";
   const year = new Date().getFullYear();
   const links = [];
@@ -122,7 +129,7 @@ function footer(depth = 0, { full = true } = {}) {
     </div>
   </div>
 </footer>
-
+${wrapped ? "</div>\n" : ""}
 <script src="${up}js/main.js"></script>
 </body>
 </html>
@@ -157,24 +164,54 @@ function landingPage() {
     swipe: true,
   })}
 
-<main class="landing" style="--highlight-color: ${cssColor(l.highlightColor)}">
-  <div class="landing-inner">
-    <h1 class="landing-welcome fade-in">${heading}</h1>
-    <p class="landing-subtitle fade-in fade-delay-1">${esc(l.subtitle || "")}</p>
-    <a href="${WORK_URL}" class="landing-enter btn" id="landing-enter">${esc(
+<div class="swipe-root">
+  <main class="landing" style="--highlight-color: ${cssColor(l.highlightColor)}">
+    <div class="landing-inner">
+      <h1 class="landing-welcome fade-in">${heading}</h1>
+      <p class="landing-subtitle fade-in fade-delay-1">${esc(l.subtitle || "")}</p>
+      <a href="${WORK_URL}" class="landing-enter btn" id="landing-enter">${esc(
     l.buttonLabel || "Enter"
   )}</a>
-  </div>
-</main>
+    </div>
+  </main>
+</div>
 
 <script>
+(function () {
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   // Reveal the enter button after the copy has settled.
   document.addEventListener("DOMContentLoaded", function () {
     var btn = document.getElementById("landing-enter");
     if (!btn) return;
-    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    setTimeout(function () { btn.classList.add("is-visible"); }, reduce ? 0 : ${delay * 1000});
+    setTimeout(function () { btn.classList.add("is-visible"); }, reduce ? 0 : ${
+      delay * 1000
+    });
+
+    if (reduce) return; // plain navigation
+
+    btn.addEventListener("click", function (event) {
+      // Let modified clicks (new tab, etc.) behave normally.
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
+      event.preventDefault();
+
+      var target = btn.getAttribute("href");
+      try { sessionStorage.setItem("swipe-in", "1"); } catch (e) {}
+      document.body.classList.add("swipe-leaving");
+
+      var navigated = false;
+      var go = function () {
+        if (navigated) return;
+        navigated = true;
+        window.location.href = target;
+      };
+      var root = document.querySelector(".swipe-root");
+      if (root) root.addEventListener("animationend", go, { once: true });
+      // Safety net if the animation never fires.
+      setTimeout(go, 450);
+    });
   });
+})();
 </script>
 </body>
 </html>
@@ -206,7 +243,9 @@ function workPage() {
     description: site.description,
     // Only meaningful when a landing page exists to swipe from.
     swipe: landingOn,
+    swipeIn: landingOn,
   })}
+${landingOn ? '<div class="swipe-root">' : ""}
 ${header("work")}
 
 <main>
@@ -247,7 +286,7 @@ ${cards || '        <p class="lede">No published projects yet.</p>'}
   </section>
 
 </main>
-${footer(0)}`;
+${footer(0, { wrapped: landingOn })}`;
 }
 
 function aboutPage() {
