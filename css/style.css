@@ -462,22 +462,37 @@ section { padding-block: var(--space-xl); }
 .landing {
   min-height: 100vh;
   min-height: 100svh;
+  /* Left column ends on the left-third line; the text block starts there
+     and is centred vertically. */
   display: grid;
-  place-items: center;
-  text-align: center;
+  /* Measured from the viewport edge, not the padded box, so the text starts
+     exactly on the screen's left-third line. */
+  grid-template-columns: calc(33.333vw - var(--gutter)) 1fr;
+  align-items: center;
   padding: var(--gutter);
   background: #ffffff;
   color: #000000;
 }
 
-.landing-inner { max-width: 40ch; }
+.landing-inner {
+  grid-column: 2;
+  max-width: min(100%, 34rem);
+  text-align: left;
+}
 
 .landing-welcome {
-  color: var(--welcome-color, #000000);
-  font-size: clamp(3rem, 11vw, 7rem);
-  line-height: 1;
+  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  line-height: 1.02;
   letter-spacing: -0.02em;
-  font-weight: 500;
+  /* "Welcome" stays black and lighter than the custom text. */
+  color: #000000;
+  font-weight: 400;
+}
+
+/* The only coloured element on the page, and the heavier of the two. */
+.landing-highlight {
+  color: var(--highlight-color, #000000);
+  font-weight: 700;
 }
 
 .landing-subtitle {
@@ -567,4 +582,15 @@ section { padding-block: var(--space-xl); }
   .split .img-frame { order: -1; }
 
   .footer-grid { flex-direction: column; }
+
+  /* A third of a narrow screen leaves too little room for the text,
+     so the landing block returns to a single full-width column. */
+  .landing {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-inner {
+    grid-column: 1;
+    max-width: 100%;
+  }
 }

@@ -6,9 +6,10 @@
   },
   "landing": {
     "enabled": true,
-    "welcomeText": "Welcome CCD",
+    "welcomeText": "Welcome",
+    "highlightText": "CCD",
+    "highlightColor": "#00a799",
     "subtitle": "enter to see your curated portfolio",
-    "welcomeColor": "#00a799",
     "buttonLabel": "Enter",
     "buttonDelaySeconds": 2
   },

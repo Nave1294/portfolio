@@ -35,11 +35,19 @@ Controlled entirely by `landing` in `content/settings.json`:
 | Field | What it does |
 | --- | --- |
 | `enabled` | `true` shows the landing page; `false` sends visitors straight to the work grid |
-| `welcomeText` | The large word (default "Welcome") |
-| `subtitle` | The line beneath it |
-| `welcomeColor` | Hex color for the large word **only** — everything else stays black on white |
+| `welcomeText` | The greeting. **Always black**, lighter weight |
+| `highlightText` | Your text, following the greeting. Colored and bold. Blank shows the greeting alone |
+| `highlightColor` | Hex color for `highlightText` **only** |
+| `subtitle` | The line beneath |
 | `buttonLabel` | Text on the button |
 | `buttonDelaySeconds` | How long before the button fades in |
+
+The text block is left-aligned, starts on the screen's left-third line, and is
+centered vertically; the button sits on the same left edge. Below 860px the
+block returns to full width so the heading has room.
+
+Only `highlightText` carries color — the greeting, subtitle and button stay
+black on white.
 
 When `enabled` is `true`, the landing page is `index.html` and the work grid
 moves to `work.html`. When `false`, the work grid becomes `index.html`. The

@@ -143,15 +143,25 @@ content:
             type: boolean
             default: true
             description: Turn off to send visitors straight to your work. All navigation links adjust automatically.
-          - { name: welcomeText, label: Welcome text, type: string, description: The large word visitors see first. }
-          - { name: subtitle, label: Subtitle, type: string, description: The line beneath it. }
-          - name: welcomeColor
-            label: Welcome text colour
+          - name: welcomeText
+            label: Greeting
+            type: string
+            description: "The opening word. Always shown in black."
+          - name: highlightText
+            label: Your text
+            type: string
+            description: "Follows the greeting, in your chosen colour and bolder. Leave blank to show the greeting on its own."
+          - name: highlightColor
+            label: Colour of your text
             type: string
             pattern:
               regex: "^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$"
               message: Must be a hex colour such as #c8452b.
-            description: Colours the large welcome word only — the rest of the page stays black on white. Anything other than a hex value falls back to black.
+            description: "Colours your text only — the greeting and everything else stay black on white. Anything other than a hex value falls back to black."
+          - name: subtitle
+            label: Subtitle
+            type: string
+            description: "The line beneath."
           - { name: buttonLabel, label: Button text, type: string }
           - name: buttonDelaySeconds
             label: Button delay (seconds)

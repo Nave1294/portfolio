@@ -141,11 +141,17 @@ function frame(src, alt, extraClass = "", depth = 0) {
 function landingPage() {
   const l = settings.landing || {};
   const delay = Number(l.buttonDelaySeconds) || 3;
+  // "Welcome" is always black; only highlightText takes the chosen colour.
+  const highlight = String(l.highlightText || "").trim();
+  const heading =
+    esc(l.welcomeText || "Welcome") +
+    (highlight ? ` <span class="landing-highlight">${esc(highlight)}</span>` : "");
+
   return `${head(site.name || "Portfolio", { description: site.description })}
 
-<main class="landing" style="--welcome-color: ${cssColor(l.welcomeColor)}">
+<main class="landing" style="--highlight-color: ${cssColor(l.highlightColor)}">
   <div class="landing-inner">
-    <h1 class="landing-welcome fade-in">${esc(l.welcomeText || "Welcome")}</h1>
+    <h1 class="landing-welcome fade-in">${heading}</h1>
     <p class="landing-subtitle fade-in fade-delay-1">${esc(l.subtitle || "")}</p>
     <a href="${WORK_URL}" class="landing-enter btn" id="landing-enter">${esc(
     l.buttonLabel || "Enter"
