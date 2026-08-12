@@ -18,16 +18,24 @@ body.swipe-leaving {
   overflow-x: hidden;
 }
 
+/* If you change the outgoing duration, raise the navigation safety timeout in
+   the landing page script to match. */
+:root {
+  --swipe-out: 420ms;
+  --swipe-in: 680ms;
+  --swipe-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Outgoing: the landing page leaves to the left. */
 body.swipe-leaving .swipe-root {
-  animation: swipe-out-left 300ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: swipe-out-left var(--swipe-out) var(--swipe-ease) both;
 }
 
 /* Incoming: the work grid arrives from the right. The class is set by an
    inline script in <head> so this is in place before the first paint —
    otherwise the page would flash in position and then jump right. */
 html.swipe-entering .swipe-root {
-  animation: swipe-in-right 460ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: swipe-in-right var(--swipe-in) var(--swipe-ease) both;
 }
 
 @keyframes swipe-out-left {

@@ -73,6 +73,28 @@ which only supports cross-document transitions in some browsers. Visitors with
 "reduce motion" enabled get a plain navigation, as does anyone whose animation
 never fires — the timeout still navigates.
 
+Durations live in `css/transition.css` as `--swipe-out` and `--swipe-in`. If
+you lengthen `--swipe-out`, raise the navigation safety timeout in the landing
+page script in `build.mjs` to stay ahead of it.
+
+### Items rising into view
+
+Elements marked `.reveal` on the work page fade and rise as they reach the
+viewport, staggered so a row of cards cascades rather than landing together.
+Driven by an IntersectionObserver in `js/main.js`.
+
+Two safeguards, because these elements start at `opacity: 0` and something
+must always bring them back:
+
+- The hiding rule is scoped to `html.js`, a class set by an inline script. With
+  JavaScript unavailable the rule never applies and content is simply visible.
+- A watchdog reveals anything still hidden four seconds after load, and
+  `.is-in` sets `opacity: 1` directly as well as animating it. If the observer
+  never fires, or animations are unavailable, the content still appears.
+
+A missed animation is cosmetic; invisible content is a broken page. Keep both
+safeguards if you change this.
+
 When `enabled` is `true`, the landing page is `index.html` and the work grid
 moves to `work.html`. When `false`, the work grid becomes `index.html`. The
 build rewrites every navigation link to match, so you never have to think

@@ -66,7 +66,8 @@ function head(
   }
 <link rel="stylesheet" href="${up}css/style.css">${
     swipe ? `\n<link rel="stylesheet" href="${up}css/transition.css">` : ""
-  }${
+  }
+<script>document.documentElement.classList.add("js")</script>${
     swipeIn
       ? `\n<script>try{if(sessionStorage.getItem("swipe-in")==="1"){sessionStorage.removeItem("swipe-in");document.documentElement.classList.add("swipe-entering")}}catch(e){}</script>`
       : ""
@@ -207,8 +208,8 @@ function landingPage() {
       };
       var root = document.querySelector(".swipe-root");
       if (root) root.addEventListener("animationend", go, { once: true });
-      // Safety net if the animation never fires.
-      setTimeout(go, 450);
+      // Safety net if the animation never fires. Must exceed --swipe-out.
+      setTimeout(go, 700);
     });
   });
 })();
@@ -224,7 +225,9 @@ function workPage() {
     .map((p) => {
       const href = `projects/${attr(p.slug)}.html`;
       const meta = [p.type, p.year].filter(Boolean).join(" — ");
-      return `        <a class="project-card accent-${Number(p.accent) || 1}" href="${href}">
+      return `        <a class="project-card reveal accent-${
+        Number(p.accent) || 1
+      }" href="${href}">
           ${frame(p.cover, p.cover ? p.title : `[Cover image — ${p.title}]`)}
           <div class="card-caption">
             <h3>${esc(p.title)}</h3>
@@ -236,7 +239,10 @@ function workPage() {
 
   const metaRow = (h.meta || [])
     .filter((m) => m && m.label)
-    .map((m) => `<div><strong>${esc(m.label)}</strong>${esc(m.value)}</div>`)
+    .map(
+      (m) =>
+        `<div class="reveal"><strong>${esc(m.label)}</strong>${esc(m.value)}</div>`
+    )
     .join("\n        ");
 
   return `${head(`${site.name} — ${site.role} Portfolio`, {
@@ -252,16 +258,16 @@ ${header("work")}
 
   <section class="hero">
     <div class="container">
-      ${h.eyebrow ? `<span class="eyebrow">${esc(h.eyebrow)}</span>` : ""}
-      <h1>${esc(h.headline)}</h1>
-      ${h.intro ? `<p class="lede">${esc(h.intro)}</p>` : ""}
+      ${h.eyebrow ? `<span class="eyebrow reveal">${esc(h.eyebrow)}</span>` : ""}
+      <h1 class="reveal">${esc(h.headline)}</h1>
+      ${h.intro ? `<p class="lede reveal">${esc(h.intro)}</p>` : ""}
       ${metaRow ? `\n      <div class="hero-meta">\n        ${metaRow}\n      </div>` : ""}
     </div>
   </section>
 
   <section class="work" id="work">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <h2>Selected Work</h2>
       </div>
 
@@ -275,13 +281,13 @@ ${cards || '        <p class="lede">No published projects yet.</p>'}
 
   <section class="about-teaser">
     <div class="container split">
-      <div>
+      <div class="reveal">
         <span class="eyebrow">About</span>
         <h2>${esc(h.aboutHeadline)}</h2>
         <p class="lede" style="margin-top: 1rem;">${esc(h.aboutSummary)}</p>
         <a href="about.html" class="btn" style="margin-top: 2rem;">More about me →</a>
       </div>
-      ${frame(h.portrait, "[Portrait or studio photo]")}
+      ${frame(h.portrait, "[Portrait or studio photo]", "reveal")}
     </div>
   </section>
 
