@@ -1,0 +1,5 @@
+# Temporary: site is a work-in-progress preview with placeholder content.
+# DELETE THIS FILE (or change to "Allow: /") once real content is in and
+# you want employers and search engines to find the site.
+User-agent: *
+Disallow: /
