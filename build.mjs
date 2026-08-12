@@ -236,21 +236,22 @@ function projectSummary(p) {
 }
 
 function renderTimeline() {
+  // A reel of covers: the active one centred and full size, its neighbours
+  // shrunk and faded either side.
   const previews = projects
     .map(
-      (p, i) => `      <a class="tl-preview${i === 0 ? " is-active" : ""}"
-        href="projects/${attr(p.slug)}.html" data-index="${i}"
-        aria-hidden="${i === 0 ? "false" : "true"}" tabindex="-1">
-        <span class="tl-preview-img">${
-          p.cover
-            ? `<img src="${attr(p.cover)}" alt="${attr(p.title)}" loading="lazy">`
-            : `<span class="placeholder-label">${esc(p.title)}</span>`
-        }</span>
-        <span class="tl-preview-text">
-          <span class="tl-preview-title">${esc(p.title)}</span>
-          <span class="tl-preview-desc">${esc(projectSummary(p))}</span>
-        </span>
-      </a>`
+      (p, i) => `        <a class="tl-preview${i === 0 ? " is-active" : ""}"
+          href="projects/${attr(p.slug)}.html" data-index="${i}" tabindex="-1">
+          <span class="tl-preview-img">${
+            p.cover
+              ? `<img src="${attr(p.cover)}" alt="${attr(p.title)}" loading="lazy">`
+              : `<span class="placeholder-label">${esc(p.title)}</span>`
+          }</span>
+          <span class="tl-preview-text">
+            <span class="tl-preview-title">${esc(p.title)}</span>
+            <span class="tl-preview-desc">${esc(projectSummary(p))}</span>
+          </span>
+        </a>`
     )
     .join("\n");
 
@@ -274,7 +275,9 @@ function renderTimeline() {
     </div>
 
     <div class="tl-stage">
+      <div class="tl-reel">
 ${previews}
+      </div>
     </div>
 
     <div class="tl-scroller" tabindex="0" role="list" aria-label="Projects">

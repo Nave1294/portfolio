@@ -328,11 +328,26 @@ section { padding-block: var(--space-xl); }
 
 .tl-stage {
   /* Fixed height so swapping previews never shifts the timeline below. */
-  --stage-height: clamp(240px, 42vh, 460px);
+  --stage-height: clamp(260px, 44vh, 480px);
+  --preview-width: min(56vw, 680px);
   position: relative;
   height: var(--stage-height);
   margin-bottom: var(--space-md);
-  padding-inline: var(--gutter);
+  overflow: hidden;
+}
+
+/* The reel is shifted by script so the active project sits centred, with
+   its neighbours visible either side. */
+.tl-reel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  transition: transform 0.6s var(--ease);
+  will-change: transform;
 }
 
 /* Hover preview: cover image with the project's name and a short line. */
@@ -341,21 +356,29 @@ section { padding-block: var(--space-xl); }
      against a known remainder — a percentage max-height does not resolve
      against an auto-sized grid row and the image overflows the stage. */
   --caption-height: 4.5rem;
-  position: absolute;
-  inset: 0;
+  flex: 0 0 var(--preview-width);
   display: grid;
   grid-template-rows: 1fr var(--caption-height);
   justify-items: center;
   gap: var(--space-sm);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.45s var(--ease);
+  /* Neighbours sit smaller and quieter than the project in the middle. */
+  opacity: 0.28;
+  transform: scale(0.82);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
 }
 
 .tl-preview.is-active {
   opacity: 1;
-  pointer-events: auto;
+  transform: scale(1);
 }
+
+/* Only the centred project's caption is legible. */
+.tl-preview .tl-preview-text {
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+}
+
+.tl-preview.is-active .tl-preview-text { opacity: 1; }
 
 .tl-preview-img {
   display: grid;

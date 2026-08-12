@@ -97,19 +97,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const previews = Array.from(document.querySelectorAll(".tl-preview"));
   if (!items.length) return;
 
+  const reel = document.querySelector(".tl-reel");
+  const stage = document.querySelector(".tl-stage");
   let active = 0;
 
-  const setActive = (index) => {
-    if (index === active || index < 0 || index >= items.length) return;
+  // Centre the active preview by measuring it, rather than with percentage
+  // maths that would resolve against the reel's own width.
+  const centreReel = () => {
+    if (!reel || !stage || !previews[active]) return;
+    const el = previews[active];
+    const offset = stage.clientWidth / 2 - (el.offsetLeft + el.offsetWidth / 2);
+    reel.style.transform = "translateX(" + offset + "px)";
+  };
+
+  const setActive = (index, { scrollAxis = false } = {}) => {
+    if (index < 0 || index >= items.length) return;
+    if (index === active) {
+      centreReel();
+      return;
+    }
     active = index;
     items.forEach((el, i) => el.classList.toggle("is-active", i === index));
     previews.forEach((el, i) => {
       const on = i === index;
       el.classList.toggle("is-active", on);
-      el.setAttribute("aria-hidden", String(!on));
       el.tabIndex = on ? 0 : -1;
     });
+    centreReel();
+    if (scrollAxis) {
+      items[index].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+    }
   };
+
+  window.addEventListener("resize", centreReel);
+  // Covers arrive late and change the reel's measurements.
+  window.addEventListener("load", centreReel);
+  previews.forEach((p) => {
+    const img = p.querySelector("img");
+    if (img && !img.complete) img.addEventListener("load", centreReel, { once: true });
+  });
+  // Catches layout changes a window resize would miss — a late webfont, or
+  // the pane itself being resized — which would otherwise leave the reel
+  // measured against a stale width and visibly off centre.
+  if (window.ResizeObserver && stage) {
+    new ResizeObserver(centreReel).observe(stage);
+  }
 
   items.forEach((el, i) => {
     // Pointer and keyboard both drive the preview. The last one stays up
@@ -169,26 +201,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
   play();
 
-  // A vertical wheel is the natural gesture for a horizontal strip.
-  scroller.addEventListener(
-    "wheel",
-    (event) => {
-      if (scroller.scrollWidth <= scroller.clientWidth) return;
-      if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
-      event.preventDefault();
-      scroller.scrollLeft += event.deltaY;
-    },
-    { passive: false }
-  );
+  // Wheel anywhere over the timeline — including the image — steps through
+  // the projects. Deltas are accumulated so one trackpad flick does not
+  // skip several at once. `section` is declared with the idle cycling above.
+  let wheelAcc = 0;
+  let wheelLock = false;
+
+  if (section) {
+    section.addEventListener(
+      "wheel",
+      (event) => {
+        if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+        event.preventDefault();
+        pause();
+        if (wheelLock) return;
+        wheelAcc += event.deltaY;
+        if (Math.abs(wheelAcc) < 40) return;
+        const step = wheelAcc > 0 ? 1 : -1;
+        wheelAcc = 0;
+        wheelLock = true;
+        setTimeout(() => (wheelLock = false), 320);
+        setActive(Math.min(items.length - 1, Math.max(0, active + step)), {
+          scrollAxis: true,
+        });
+      },
+      { passive: false }
+    );
+  }
 
   scroller.addEventListener("keydown", (event) => {
     const step =
       event.key === "ArrowRight" ? 1 : event.key === "ArrowLeft" ? -1 : 0;
     if (!step) return;
     event.preventDefault();
-    const next = Math.min(items.length - 1, Math.max(0, active + step));
-    setActive(next);
-    items[next].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+    pause();
+    setActive(Math.min(items.length - 1, Math.max(0, active + step)), {
+      scrollAxis: true,
+    });
   });
 });
 

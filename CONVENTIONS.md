@@ -143,9 +143,19 @@ The timeline is an axis spanning the full width of the screen: project names
 above the line, years below. It only scrolls sideways when the names cannot
 fit.
 
-Hovering or focusing a project reveals a preview above the axis — cover image,
-title in the project's accent colour, and a short description. Both the title
-and the preview link through to the project.
+Above the axis sits a reel of covers. The active project is centred at full
+size; its neighbours sit either side, scaled down and faded, so you can see
+what is coming. Hovering or focusing a name brings that project to the middle.
+Both the name and the cover link through to the project.
+
+Scrolling works across the whole timeline, the image area included — a wheel
+notch steps one project rather than scrolling the page.
+
+The reel is positioned by measuring the active cover in pixels, not with
+percentage maths, which would resolve against the reel's own width instead of
+the stage. It re-centres on window resize, on image load, and through a
+`ResizeObserver` on the stage, since a late webfont or a pane resize can change
+the measurements without a window resize event.
 
 - `order` controls the sequence, left to right. Set these to match your
   chronology — the timeline does not sort by date.
