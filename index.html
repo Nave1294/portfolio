@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Name — Architecture Portfolio</title>
+<meta name="description" content="Selected architecture work by Full Name.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER — identical markup is repeated on every page.
+     Edit the name in .logo everywhere if you change it.
+     ============================================================ -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">FULL NAME <span>/ Architecture</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">Menu</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Architecture &amp; Design</span>
+      <h1>Selected work across residential, cultural, and speculative projects.</h1>
+      <p class="lede">[One or two sentences on your design approach or focus — e.g. material, scale, or a recurring idea across your projects.]</p>
+
+      <div class="hero-meta">
+        <div><strong>Based in</strong>City, State</div>
+        <div><strong>Currently</strong>Role / School, Year</div>
+        <div><strong>Available</strong>Open to opportunities</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-head">
+        <h2>Selected Work</h2>
+        <a href="#" class="text-link">View all projects</a>
+      </div>
+
+      <div class="work-grid">
+
+        <!-- PROJECT CARD — copy this <a> block for each new project.
+             1st, 4th, 7th... cards render wide (see CSS nth-child(3n+1)).
+             The .accent-N class sets this project's signature color. -->
+        <a class="project-card accent-1" href="projects/project-01.html">
+          <figure class="img-frame">
+            <!-- Replace with: <img src="assets/images/project-01/cover.jpg" alt="Project 01 cover"> -->
+            <span class="placeholder-label">Cover Image<br>Project 01</span>
+          </figure>
+          <div class="card-caption">
+            <h3>Project Title 01</h3>
+            <span class="card-meta"><i class="swatch"></i>Residential — 2025</span>
+          </div>
+        </a>
+
+        <a class="project-card accent-2" href="projects/project-02.html">
+          <figure class="img-frame">
+            <span class="placeholder-label">Cover Image<br>Project 02</span>
+          </figure>
+          <div class="card-caption">
+            <h3>Project Title 02</h3>
+            <span class="card-meta"><i class="swatch"></i>Cultural — 2024</span>
+          </div>
+        </a>
+
+        <a class="project-card accent-3" href="projects/project-03.html">
+          <figure class="img-frame">
+            <span class="placeholder-label">Cover Image<br>Project 03</span>
+          </figure>
+          <div class="card-caption">
+            <h3>Project Title 03</h3>
+            <span class="card-meta"><i class="swatch"></i>Speculative — 2024</span>
+          </div>
+        </a>
+
+        <a class="project-card accent-4" href="projects/project-04.html">
+          <figure class="img-frame">
+            <span class="placeholder-label">Cover Image<br>Project 04</span>
+          </figure>
+          <div class="card-caption">
+            <h3>Project Title 04</h3>
+            <span class="card-meta"><i class="swatch"></i>Institutional — 2023</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT TEASER -->
+  <section class="about-teaser">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">About</span>
+        <h2>A short introduction goes here.</h2>
+        <p class="lede" style="margin-top: 1rem;">[2–3 sentence bio summary — background, current focus, what drives your design work. Full bio lives on the About page.]</p>
+        <a href="about.html" class="btn" style="margin-top: 2rem;">More about me →</a>
+      </div>
+      <div class="img-frame">
+        <span class="placeholder-label">Portrait or<br>studio photo</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER — identical markup is repeated on every page.
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <h2>Let's talk about your next project.</h2>
+      <div class="footer-links">
+        <a href="mailto:you@example.com" class="text-link">you@example.com</a>
+        <a href="contact.html" class="text-link">Contact page →</a>
+        <a href="#" class="text-link">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Full Name</span>
+      <span>Site built with plain HTML / CSS / JS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
