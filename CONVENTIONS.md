@@ -49,6 +49,21 @@ block returns to full width so the heading has room.
 Only `highlightText` carries color — the greeting, subtitle and button stay
 black on white.
 
+### The swipe
+
+Clicking Enter swipes the landing page off to the left while the work grid
+arrives from the right; the browser back button reverses the direction. This
+uses the browser's View Transitions API, configured in `css/transition.css`.
+
+That stylesheet is linked **only** from the landing page and the work grid. A
+cross-document view transition requires both documents to opt in, which is what
+keeps the swipe off the About, Contact and project pages — those navigate
+normally.
+
+Browsers without view transition support navigate instantly with no animation.
+Nothing breaks; there is simply no swipe. The same applies when the visitor has
+"reduce motion" enabled.
+
 When `enabled` is `true`, the landing page is `index.html` and the work grid
 moves to `work.html`. When `false`, the work grid becomes `index.html`. The
 build rewrites every navigation link to match, so you never have to think

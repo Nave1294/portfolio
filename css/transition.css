@@ -1,0 +1,45 @@
+/* Page swipe between the landing page and the work grid.
+   Linked ONLY from those two pages — a cross-document view transition
+   requires both documents to opt in, so every other page navigates
+   normally without picking this up.
+
+   Browsers without view transitions ignore all of this and navigate
+   instantly, which is a clean fallback rather than a broken one. */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 520ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: both;
+  /* Without this the two snapshots blend while they overlap and the
+     moving pages look washed out mid-swipe. */
+  mix-blend-mode: normal;
+}
+
+/* Forward: the current page leaves to the left, the next arrives from the right. */
+::view-transition-old(root) { animation-name: swipe-out-left; }
+::view-transition-new(root) { animation-name: swipe-in-right; }
+
+/* Browser back reverses it, so the motion matches the direction of travel. */
+html:active-view-transition-type(back)::view-transition-old(root) {
+  animation-name: swipe-out-right;
+}
+html:active-view-transition-type(back)::view-transition-new(root) {
+  animation-name: swipe-in-left;
+}
+
+@keyframes swipe-out-left  { to   { transform: translateX(-100%); } }
+@keyframes swipe-in-right  { from { transform: translateX(100%); } }
+@keyframes swipe-out-right { to   { transform: translateX(100%); } }
+@keyframes swipe-in-left   { from { transform: translateX(-100%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}

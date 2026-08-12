@@ -48,7 +48,10 @@ const WORK_URL = landingOn ? "work.html" : "index.html";
 const site = settings.site || {};
 const contact = settings.contact || {};
 
-function head(title, { depth = 0, description = "" } = {}) {
+// `swipe` opts the page into the landing <-> work view transition. Both
+// documents must link transition.css for the swipe to happen, which is what
+// keeps it off every other page.
+function head(title, { depth = 0, description = "", swipe = false } = {}) {
   const up = depth ? "../".repeat(depth) : "";
   return `<!DOCTYPE html>
 <html lang="en">
@@ -58,7 +61,9 @@ function head(title, { depth = 0, description = "" } = {}) {
 <title>${esc(title)}</title>${
     description ? `\n<meta name="description" content="${attr(description)}">` : ""
   }
-<link rel="stylesheet" href="${up}css/style.css">
+<link rel="stylesheet" href="${up}css/style.css">${
+    swipe ? `\n<link rel="stylesheet" href="${up}css/transition.css">` : ""
+  }
 </head>
 <body>`;
 }
@@ -147,7 +152,10 @@ function landingPage() {
     esc(l.welcomeText || "Welcome") +
     (highlight ? ` <span class="landing-highlight">${esc(highlight)}</span>` : "");
 
-  return `${head(site.name || "Portfolio", { description: site.description })}
+  return `${head(site.name || "Portfolio", {
+    description: site.description,
+    swipe: true,
+  })}
 
 <main class="landing" style="--highlight-color: ${cssColor(l.highlightColor)}">
   <div class="landing-inner">
@@ -196,6 +204,8 @@ function workPage() {
 
   return `${head(`${site.name} — ${site.role} Portfolio`, {
     description: site.description,
+    // Only meaningful when a landing page exists to swipe from.
+    swipe: landingOn,
   })}
 ${header("work")}
 
