@@ -43,6 +43,8 @@
       "[PARAGRAPH 1 — Who you are and where you are in your career.]",
       "[PARAGRAPH 2 — How you work. Be concrete.]"
     ],
+    "portrait": "assets/images/Evan-scaled-1.webp",
+    "resume": "assets/images/Resume for CCD.pdf",
     "skills": [
       {
         "heading": "[Category 1]",
