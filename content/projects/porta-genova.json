@@ -1,0 +1,22 @@
+{
+  "title": "Porta Genova",
+  "slug": "porta-genova",
+  "published": true,
+  "order": 2,
+  "accent": 2,
+  "type": "",
+  "year": "",
+  "location": "Milan Italy",
+  "program": "",
+  "status": "",
+  "role": "",
+  "cover": "assets/images/porta-genova/cover.jpg",
+  "body": [],
+  "gallery": [
+    {
+      "src": "assets/images/porta-genova/01.jpg",
+      "wide": true,
+      "caption": ""
+    }
+  ]
+}

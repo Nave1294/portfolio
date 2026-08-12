@@ -1,0 +1,19 @@
+{
+  "title": "South Ends",
+  "slug": "south-ends",
+  "published": true,
+  "order": 1,
+  "accent": 1,
+  "type": "",
+  "year": "",
+  "location": "In south Philly",
+  "program": "",
+  "status": "",
+  "role": "",
+  "cover": "assets/images/south-ends/01.jpg",
+  "body": [
+    "South Ends is a project which marks the beginning of a multi-term endeavor addressing the vacant land once occupied by the old refinery in South Philly. My approach to using the land was from two angles: The first adresses water quality and flooding concerns, while the second connects Philadelphians to their waterfront in a unique way not found elsewhere in the city. Allowing the southernmost end of the property to be reclaimed by nature can act as protection in the event of a storm surge, while carving a river through the site allows for the enhanced control needed to create a new urban waterfront in the age of climate change.",
+    "The inhabited portions of the site are grouped into large neighborhoods, each having a unique feel and varried transportation amenities. All areas are firmly linked together by a cohesive set of greenways with trolley lines that can provide quick and reliable access throughout the site and greater city beyond. The resulting fabric encourages creative and fun designs through the serendipity of these competing organizational structures colliding and playing off one another."
+  ],
+  "gallery": []
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Tower and Music",
+  "slug": "tower-and-music",
+  "published": true,
+  "order": 8,
+  "accent": 2,
+  "type": "",
+  "year": "",
+  "location": "",
+  "program": "",
+  "status": "",
+  "role": "",
+  "cover": "assets/images/tower-and-music/cover.jpg",
+  "body": [
+    "Given the opportunity to choose a game to design a level for, Halo was an obvious choice for an architecture student. The game has a large focus on experiential qualities, paired with larger-than-life architectural moves that take inspiration from Gothic Cathedrals. The focus of this level was on framing views and creating a spiritual experience for the player. For this, I created a central tower to both guide players through the level and also create awe-inspiring spaces that the player can enjoy. The music that I composed for the level took inspiration from Halo’s existing soundtrack, but added the pipe organ for its spiritual qualities, larger-than-life appearance and sound, and striking similarity to the architecture of Halo."
+  ],
+  "gallery": [
+    {
+      "src": "assets/images/tower-and-music/01.jpg",
+      "wide": false,
+      "caption": ""
+    }
+  ]
+}

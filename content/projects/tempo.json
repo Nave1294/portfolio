@@ -1,0 +1,24 @@
+{
+  "title": "TEMPO",
+  "slug": "tempo",
+  "published": true,
+  "order": 4,
+  "accent": 4,
+  "type": "",
+  "year": "",
+  "location": "At Bartram's Garden",
+  "program": "",
+  "status": "",
+  "role": "",
+  "cover": "assets/images/tempo/cover.jpg",
+  "body": [
+    "Many know Tempo from music meaning musical time, and for a performing arts venue nothing seemed more appropriate. In this respect, Rythmic Tempo is found in this design everywhere, represented through the repeating wooden members that form the sculpture. But Tempo shares its roots with other words like temporal, meaning earthly and cyclical, and also temporary. This site is so unique because even surrounded by the built environment on all sides, the meadow seems to exist on an alternate plane, more specifically, a temporary plane. The skyline beyond thrusts humanity’s strengths high into the sky, imposing its permanence on everything around it, while the meadow could seem fragile in comparison because very little of it is built. But it, too, is unbelievably resilient in another way. If you left it alone with no intervention, it would return to its purely natural state in a matter of months. In the world of architecture, something that is temporary is usually viewed in a negative light. And in most cases, this is the correct reflex, but for this project, I wanted to capitalize on the fact that the site is so fluid and balanced. Everything from the skyline to the people who built it will return to nature. Although not all portions of my design would be gone in a matter of months if left unattended, everything from the materials to the interventions were chosen to leave as little impact as possible on the meadow while making as large of an impact as possible on those who visit. This amphitheater serves as a stellar place to see a performance, but its real purpose is much more profound. Its real purpose is to form a temporal and spacial connection to those who visit, acting as a guiding vector, pulling them towards not only the amphitheater, but tempo itself."
+  ],
+  "gallery": [
+    {
+      "src": "assets/images/tempo/01.jpg",
+      "wide": true,
+      "caption": ""
+    }
+  ]
+}

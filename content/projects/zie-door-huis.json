@@ -1,0 +1,24 @@
+{
+  "title": "Zie Door Huis",
+  "slug": "zie-door-huis",
+  "published": true,
+  "order": 11,
+  "accent": 5,
+  "type": "",
+  "year": "",
+  "location": "",
+  "program": "",
+  "status": "",
+  "role": "",
+  "cover": "assets/images/zie-door-huis/cover.jpg",
+  "body": [
+    "Zie Door Huis means “Transparent House” in Dutch. The idea behind this modern take on a boathouse is to be as transparent as possible in both a physical sense and a societal one. When tasked with adding a modern building to an iconic historical landmark such as Boathouse Row, the goal was to make it architecturally interesting while also unassuming. The buildings’ structure is almost all parallel making it transparent when viewed from the river and the road. The floors are horizontal plains without walls suspended amongst the vertical elements and are split-level to increase the sense of wonder and lightness that make this structure so unique and eye catching. Rowing was long thought of as an elite sport and in many ways it still is, so by offering the public a place as an observer, the activities here can be as transparent as the design itself."
+  ],
+  "gallery": [
+    {
+      "src": "assets/images/zie-door-huis/01.jpg",
+      "wide": false,
+      "caption": ""
+    }
+  ]
+}

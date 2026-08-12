@@ -1,0 +1,24 @@
+{
+  "title": "Eames Addition",
+  "slug": "eames-addition",
+  "published": true,
+  "order": 7,
+  "accent": 1,
+  "type": "",
+  "year": "",
+  "location": "",
+  "program": "",
+  "status": "",
+  "role": "",
+  "cover": "assets/images/eames-addition/cover.jpg",
+  "body": [
+    "The original Eames House, built in 1949, was designed to be one with its’ surroundings in an effort to stay hidden from the ocean and not disturb the natural landscape. With this in mind, any addition to this complex must consider those same conditions put in place 72 years ago. The proposed gallery addition is light filled yet entirely underground. This scheme will not disturb the views from the house while providing the artwork with all the natural light it deserves. The Eames house has a focus on reflecting the nature around it, so this addition took the opportunity to be reflective as well. A kinetic sculpture frames the new entrance to the gallery. Made from small mirrored squares that are allowed to swing in the wind, it creates a pattern determined by the swift winds coming off of the Pacific ocean. There is also a reflecting pool in the gallery so that the visitors can reflect on themselves as well as the nature around them. Using the same design language and structural elements as the historic house above it allows the gallery to feel sophisticated while fitting in and not overshadowing its above-ground counterpart."
+  ],
+  "gallery": [
+    {
+      "src": "assets/images/eames-addition/01.jpg",
+      "wide": true,
+      "caption": ""
+    }
+  ]
+}
