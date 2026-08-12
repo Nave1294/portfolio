@@ -1,16 +1,11 @@
 {
   "title": "The Laboratory",
+  "published": false,
   "slug": "the-laboratory",
-  "published": true,
   "order": 5,
-  "accent": 5,
-  "type": "",
-  "year": "",
-  "location": "At Bartram's Garden",
-  "program": "",
-  "status": "",
-  "role": "",
+  "accent": "5",
   "cover": "assets/images/the-laboratory/cover.jpg",
+  "location": "At Bartram's Garden",
   "body": [
     "A conceptual project that aims to evoke feelings of wonder and provoke exploration and curiosity in those who visit Bartram's Garden in Philadelphia. Bartram was a so called “mad scientist” and a Botanist rolled into one. The experimentation that created the unique features of Bartram’s garden today remain entrenched in its landscape, but the attitude of playfulness and experimentation has been widely lost. While rein-visioning the roll, scale, and scope of Bartram’s Garden with a focus on these attributes, I can make many improvements to tha lacking infrastructure in the Gardens while doing so in a creative and fun way. The Laboratory is a set of experiences created by nature, in nature. It is a characature of sorts, making the interplay between biomes on the gardens grounds even more obvious, exaggerating the moves that already exist on the site. There was a strong focus on adding spaces that will be useful to the existing mission of the gardens, while giving it the ability to embark on entirely new endeavors. The connection of garden elements does not stop at the boundaries of the site, but the playfulness of Bartrams will extend into the surrounding area, making the resulting plan as much about bring in the new as connecting to the old.",
     "It houses a multi-purpose laboratory in its center which provides a versatile space for universities and private companies to try out ideas and make discoveries in the areas of Botany. The research space is wrapped in layers of experiences and follies which serve to invite the public deep into their depths. The building, although static, leverages the changes in seasons and times of day to create a different experience every instance one visits. The public and private circulation is intertwined to provide interactions at a distance so that the public can have a front-row seat to the innovation while being kept at arm's length from the professionals at work. Although conceptual, the architectural principles and theories employed are concrete, making the evocative atmospheres it creates in conception have real-world effects."
@@ -18,109 +13,63 @@
   "gallery": [
     {
       "src": "assets/images/the-laboratory/01.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/02.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/03.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/04.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/05.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/06.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/07.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/08.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/09.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/10.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/11.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/12.jpg",
-      "wide": true,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/the-laboratory/13.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/the-laboratory/14.jpg",
-      "wide": true,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/the-laboratory/15.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
+      "wide": false
     }
-  ],
-  "date": ""
+  ]
 }
