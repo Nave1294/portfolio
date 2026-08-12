@@ -223,32 +223,46 @@ function landingPage() {
    Projects laid along a horizontally scrolling track. Whichever project sits
    nearest the centre becomes active and its cover fades in above. Ordering
    follows `order`; `date` is the label shown on the track. */
+// A short line for the hover preview: the project's own summary if set,
+// otherwise the opening of its description.
+function projectSummary(p) {
+  if (p.summary && p.summary.trim()) return p.summary.trim();
+  const first = (p.body || []).find((b) => b && b.trim() && !b.trim().startsWith("["));
+  if (!first) return "";
+  const clean = first.trim().replace(/\s+/g, " ");
+  if (clean.length <= 150) return clean;
+  const cut = clean.slice(0, 150);
+  return cut.slice(0, cut.lastIndexOf(" ")) + "…";
+}
+
 function renderTimeline() {
-  const stage = projects
+  const previews = projects
     .map(
-      (p, i) => `      <a class="tl-cover${i === 0 ? " is-active" : ""}" href="projects/${attr(
-        p.slug
-      )}.html" data-index="${i}" aria-hidden="${i === 0 ? "false" : "true"}" tabindex="${
-        i === 0 ? "0" : "-1"
-      }">
-        ${
+      (p, i) => `      <a class="tl-preview${i === 0 ? " is-active" : ""}"
+        href="projects/${attr(p.slug)}.html" data-index="${i}"
+        aria-hidden="${i === 0 ? "false" : "true"}" tabindex="-1">
+        <span class="tl-preview-img">${
           p.cover
             ? `<img src="${attr(p.cover)}" alt="${attr(p.title)}" loading="lazy">`
             : `<span class="placeholder-label">${esc(p.title)}</span>`
-        }
+        }</span>
+        <span class="tl-preview-text">
+          <span class="tl-preview-title">${esc(p.title)}</span>
+          <span class="tl-preview-desc">${esc(projectSummary(p))}</span>
+        </span>
       </a>`
     )
     .join("\n");
 
   const items = projects
     .map(
-      (p, i) => `      <a class="tl-item accent-${Number(p.accent) || 1}${
+      (p, i) => `        <a class="tl-item accent-${Number(p.accent) || 1}${
         i === 0 ? " is-active" : ""
       }" href="projects/${attr(p.slug)}.html" data-index="${i}">
-        <span class="tl-date">${esc(p.date || "—")}</span>
-        <span class="tl-tick"></span>
-        <span class="tl-title">${esc(p.title)}</span>
-      </a>`
+          <span class="tl-title">${esc(p.title)}</span>
+          <span class="tl-tick" aria-hidden="true"></span>
+          <span class="tl-date">${esc(p.date || "—")}</span>
+        </a>`
     )
     .join("\n");
 
@@ -260,15 +274,13 @@ function renderTimeline() {
     </div>
 
     <div class="tl-stage">
-${stage}
+${previews}
     </div>
 
-    <div class="tl-track-wrap">
-      <div class="tl-centre" aria-hidden="true"></div>
-      <div class="tl-track" tabindex="0" role="list" aria-label="Projects by date">
-        <div class="tl-pad" aria-hidden="true"></div>
+    <div class="tl-scroller" tabindex="0" role="list" aria-label="Projects">
+      <div class="tl-track">
+        <div class="tl-axis" aria-hidden="true"></div>
 ${items}
-        <div class="tl-pad" aria-hidden="true"></div>
       </div>
     </div>
   </section>`;

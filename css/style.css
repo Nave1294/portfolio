@@ -327,98 +327,136 @@ section { padding-block: var(--space-xl); }
 .timeline { padding-block: var(--space-xl); }
 
 .tl-stage {
-  /* Held in a variable so the covers can be clamped against it directly —
-     a percentage max-height does not resolve reliably against the grid
-     area and let images spill over the track below. */
-  --stage-height: clamp(220px, 40vh, 480px);
+  /* Fixed height so swapping previews never shifts the timeline below. */
+  --stage-height: clamp(240px, 42vh, 460px);
   position: relative;
   height: var(--stage-height);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
+  padding-inline: var(--gutter);
 }
 
-.tl-cover {
+/* Hover preview: cover image with the project's name and a short line. */
+.tl-preview {
+  /* The caption block is a fixed height so the image can be clamped
+     against a known remainder — a percentage max-height does not resolve
+     against an auto-sized grid row and the image overflows the stage. */
+  --caption-height: 4.5rem;
   position: absolute;
   inset: 0;
   display: grid;
-  place-items: center;
+  grid-template-rows: 1fr var(--caption-height);
+  justify-items: center;
+  gap: var(--space-sm);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.6s var(--ease);
+  transition: opacity 0.45s var(--ease);
 }
 
-.tl-cover.is-active {
+.tl-preview.is-active {
   opacity: 1;
   pointer-events: auto;
 }
 
-.tl-cover img {
-  max-width: min(100%, 1000px);
-  max-height: var(--stage-height);
+.tl-preview-img {
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  width: 100%;
+}
+
+.tl-preview-img img {
+  max-width: min(100%, 900px);
+  max-height: calc(var(--stage-height) - var(--caption-height) - var(--space-sm));
   width: auto;
   height: auto;
   object-fit: contain;
 }
 
-.tl-cover .placeholder-label {
+.tl-preview-img .placeholder-label {
   position: static;
   color: var(--color-text-muted);
 }
 
-.tl-track-wrap { position: relative; }
-
-/* The axis, and the centre mark that shows where a project becomes active. */
-.tl-track-wrap::before,
-.tl-centre {
-  content: "";
-  position: absolute;
-  background: var(--color-border);
-  pointer-events: none;
+.tl-preview-text {
+  display: block;
+  text-align: center;
+  max-width: 60ch;
+  overflow: hidden;
 }
 
-.tl-track-wrap::before {
-  left: 0;
-  right: 0;
-  top: calc(var(--space-md) + 1rem + 0.5rem + 10px);
-  height: 1px;
+.tl-preview-title {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--accent);
 }
 
-.tl-centre {
-  left: 50%;
-  top: calc(var(--space-md) + 1rem);
-  height: 20px;
-  width: 1px;
-  background: var(--color-text);
+.tl-preview-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
 }
 
-.tl-track {
-  display: flex;
-  align-items: flex-start;
-  gap: clamp(2rem, 6vw, 5rem);
+/* The axis spans the full width of the screen. Projects are distributed
+   along it; if they cannot fit, the strip scrolls sideways instead of
+   cramming. */
+.tl-scroller {
   overflow-x: auto;
   overflow-y: hidden;
-  scroll-snap-type: x proximity;
-  padding-block: var(--space-md);
   scrollbar-width: none;
 }
 
-.tl-track::-webkit-scrollbar { display: none; }
+.tl-scroller::-webkit-scrollbar { display: none; }
+.tl-scroller:focus-visible { outline: 2px solid var(--color-text); outline-offset: 4px; }
 
-/* Half a viewport of padding at each end so the first and last projects
-   can still reach the centre. */
-.tl-pad { flex: 0 0 50vw; }
-
-.tl-item {
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-  display: grid;
-  justify-items: center;
-  gap: 0.5rem;
-  text-align: center;
-  opacity: 0.35;
-  transition: opacity 0.35s var(--ease);
+.tl-track {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  /* Fill the viewport, but grow past it when the names need more room. */
+  min-width: 100%;
+  width: max-content;
+  padding: var(--space-md) var(--gutter) 0;
 }
 
-.tl-item.is-active { opacity: 1; }
+.tl-axis {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(1rem + 0.6rem);
+  height: 1px;
+  background: var(--color-border);
+}
+
+.tl-item {
+  position: relative;
+  flex: 0 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 0.6rem;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.tl-title {
+  font-size: 0.95rem;
+  white-space: nowrap;
+  color: var(--color-text-muted);
+  transition: color 0.25s var(--ease);
+}
+
+.tl-tick {
+  width: 1px;
+  height: 14px;
+  background: var(--color-border);
+  transition: background 0.25s var(--ease), height 0.25s var(--ease);
+}
 
 .tl-date {
   font-size: 0.75rem;
@@ -428,24 +466,9 @@ section { padding-block: var(--space-xl); }
   color: var(--color-text-muted);
 }
 
-.tl-tick {
-  width: 1px;
-  height: 20px;
-  background: var(--color-border);
-  transition: background 0.35s var(--ease);
-}
-
-.tl-item.is-active .tl-tick { background: var(--accent); }
-
-.tl-title {
-  font-size: 1rem;
-  white-space: nowrap;
-  transition: color 0.35s var(--ease);
-}
-
 .tl-item.is-active .tl-title { color: var(--accent); }
-
-.tl-track:focus-visible { outline: 2px solid var(--color-text); outline-offset: 4px; }
+.tl-item.is-active .tl-tick { background: var(--accent); height: 22px; }
+.tl-item.is-active .tl-date { color: var(--color-text); }
 
 /* ============================================================
    ABOUT TEASER / SPLIT SECTIONS

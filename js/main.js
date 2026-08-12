@@ -85,75 +85,111 @@
   }, 4000);
 })();
 
-// Timeline on the work page: whichever project sits nearest the centre of
-// the track becomes active, and its cover fades in above. Ships with the
-// first project active, so without scripting the page still shows a cover
-// and a scrollable list of links.
+// Timeline on the work page. Hovering (or focusing) a project shows its
+// preview above the axis. The markup ships with the first project active,
+// so without scripting the page still shows one preview and a full list of
+// links.
 document.addEventListener("DOMContentLoaded", () => {
-  const track = document.querySelector(".tl-track");
-  if (!track) return;
+  const scroller = document.querySelector(".tl-scroller");
+  if (!scroller) return;
 
-  const items = Array.from(track.querySelectorAll(".tl-item"));
-  const covers = Array.from(document.querySelectorAll(".tl-cover"));
+  const items = Array.from(scroller.querySelectorAll(".tl-item"));
+  const previews = Array.from(document.querySelectorAll(".tl-preview"));
   if (!items.length) return;
 
-  let active = -1;
+  let active = 0;
 
   const setActive = (index) => {
-    if (index === active || index < 0) return;
+    if (index === active || index < 0 || index >= items.length) return;
     active = index;
     items.forEach((el, i) => el.classList.toggle("is-active", i === index));
-    covers.forEach((el, i) => {
+    previews.forEach((el, i) => {
       const on = i === index;
       el.classList.toggle("is-active", on);
       el.setAttribute("aria-hidden", String(!on));
-      // Only the visible cover should be reachable by keyboard.
       el.tabIndex = on ? 0 : -1;
     });
   };
 
-  const update = () => {
-    const mid = track.getBoundingClientRect().left + track.clientWidth / 2;
-    let best = 0;
-    let bestDistance = Infinity;
-    items.forEach((el, i) => {
-      const rect = el.getBoundingClientRect();
-      const distance = Math.abs(rect.left + rect.width / 2 - mid);
-      if (distance < bestDistance) {
-        bestDistance = distance;
-        best = i;
-      }
+  items.forEach((el, i) => {
+    // Pointer and keyboard both drive the preview. The last one stays up
+    // rather than clearing, so the stage never blinks empty.
+    el.addEventListener("mouseenter", () => {
+      pause();
+      setActive(i);
     });
-    setActive(best);
+    el.addEventListener("focus", () => {
+      pause();
+      setActive(i);
+    });
+  });
+
+  // Drift through the projects while nobody is interacting, so the stage
+  // isn't a static image. Any interaction takes over immediately and
+  // cycling only resumes once things have been quiet for a moment.
+  const CYCLE_MS = 4500;
+  const RESUME_MS = 6000;
+  const stillMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let cycle = null;
+  let resume = null;
+
+  const stop = () => {
+    clearInterval(cycle);
+    cycle = null;
   };
 
-  // Measured directly rather than deferred to requestAnimationFrame: with
-  // only a dozen items this is cheap, and it keeps the active project in
-  // step with the scroll instead of a frame behind it.
-  track.addEventListener("scroll", update, { passive: true });
-  window.addEventListener("resize", update);
+  function play() {
+    if (cycle || stillMotion.matches || document.hidden || items.length < 2) return;
+    cycle = setInterval(() => setActive((active + 1) % items.length), CYCLE_MS);
+  }
 
-  // A vertical wheel is the natural gesture on a mouse; translate it.
-  track.addEventListener(
+  function pause() {
+    stop();
+    clearTimeout(resume);
+    resume = setTimeout(play, RESUME_MS);
+  }
+
+  const section = document.querySelector(".timeline");
+  if (section) {
+    section.addEventListener("mouseenter", stop);
+    section.addEventListener("mouseleave", () => {
+      clearTimeout(resume);
+      resume = setTimeout(play, 1200);
+    });
+  }
+  scroller.addEventListener("scroll", pause, { passive: true });
+
+  // No point animating a tab nobody is looking at.
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stop();
+    else play();
+  });
+
+  stillMotion.addEventListener?.("change", () => (stillMotion.matches ? stop() : play()));
+
+  play();
+
+  // A vertical wheel is the natural gesture for a horizontal strip.
+  scroller.addEventListener(
     "wheel",
     (event) => {
+      if (scroller.scrollWidth <= scroller.clientWidth) return;
       if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
       event.preventDefault();
-      track.scrollLeft += event.deltaY;
+      scroller.scrollLeft += event.deltaY;
     },
     { passive: false }
   );
 
-  track.addEventListener("keydown", (event) => {
+  scroller.addEventListener("keydown", (event) => {
     const step =
       event.key === "ArrowRight" ? 1 : event.key === "ArrowLeft" ? -1 : 0;
     if (!step) return;
     event.preventDefault();
     const next = Math.min(items.length - 1, Math.max(0, active + step));
-    items[next].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    setActive(next);
+    items[next].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
   });
-
-  update();
 });
 
 // Gallery tabs on project pages. The markup ships with every panel visible

@@ -139,21 +139,31 @@ whatever is in the folder.
 `home.layout` in `settings.json` chooses between `timeline` (default) and
 `grid`.
 
-The timeline lays projects along a horizontally scrolling track. Whichever
-project sits nearest the centre becomes active: its cover fades in above and
-its title takes the project's accent colour. Both the title and the cover link
-through to the project.
+The timeline is an axis spanning the full width of the screen: project names
+above the line, years below. It only scrolls sideways when the names cannot
+fit.
+
+Hovering or focusing a project reveals a preview above the axis — cover image,
+title in the project's accent colour, and a short description. Both the title
+and the preview link through to the project.
 
 - `order` controls the sequence, left to right. Set these to match your
   chronology — the timeline does not sort by date.
 - `date` is only the label shown under each title. Blank shows a dash.
+- `summary` is the preview line. Left empty, the opening of the project's
+  description is used instead.
 
-Half a viewport of padding sits at each end so the first and last projects can
-still reach the centre. A vertical mouse wheel is translated to horizontal
-scrolling, and the track takes arrow keys when focused.
+While nobody is interacting, the preview drifts through the projects every few
+seconds. Hovering takes over at once, and drifting only resumes after things
+have been quiet. It does not run for visitors who prefer reduced motion, nor
+in a background tab.
 
-Without JavaScript the first cover is shown and the track is still scrollable,
-so every project remains reachable.
+Preview images are clamped against the stage height minus a fixed caption
+block. Do not switch that to a percentage — it will not resolve against the
+auto-sized grid row and the images will overflow the axis.
+
+Without JavaScript the first preview is shown and the axis is still
+scrollable, so every project remains reachable.
 
 ### Images are never cropped
 
