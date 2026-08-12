@@ -6,49 +6,80 @@
   },
   "landing": {
     "enabled": true,
-    "welcomeText": "Welcome",
+    "welcomeText": "Welcome CCD",
     "subtitle": "enter to see your curated portfolio",
-    "welcomeColor": "#000000",
+    "welcomeColor": "#00a799",
     "buttonLabel": "Enter",
-    "buttonDelaySeconds": 3
+    "buttonDelaySeconds": 2
   },
   "home": {
     "eyebrow": "[EYEBROW — 2–4 words]",
     "headline": "[HEADLINE — one sentence, ~10 words max.]",
     "intro": "[INTRO — 1–2 sentences on your approach.]",
     "meta": [
-      { "label": "Based in", "value": "[City, State]" },
-      { "label": "Currently", "value": "[Role, or degree + school]" },
-      { "label": "Available", "value": "[e.g. Open to opportunities]" }
+      {
+        "label": "Based in",
+        "value": "[City, State]"
+      },
+      {
+        "label": "Currently",
+        "value": "[Role, or degree + school]"
+      },
+      {
+        "label": "Available",
+        "value": "[e.g. Open to opportunities]"
+      }
     ],
     "aboutHeadline": "[ABOUT HEADLINE — one short line.]",
-    "aboutSummary": "[ABOUT SUMMARY — 2–3 sentences.]",
-    "portrait": ""
+    "aboutSummary": "[ABOUT SUMMARY — 2–3 sentences.]"
   },
   "about": {
     "paragraphs": [
       "[PARAGRAPH 1 — Who you are and where you are in your career.]",
       "[PARAGRAPH 2 — How you work. Be concrete.]"
     ],
-    "portrait": "",
-    "resume": "",
     "skills": [
-      { "heading": "[Category 1]", "items": ["[Skill]", "[Skill]", "[Skill]"] },
-      { "heading": "[Category 2]", "items": ["[Skill]", "[Skill]", "[Skill]"] },
-      { "heading": "[Category 3]", "items": ["[Skill]", "[Skill]", "[Skill]"] }
+      {
+        "heading": "[Category 1]",
+        "items": [
+          "[Skill]",
+          "[Skill]",
+          "[Skill]"
+        ]
+      },
+      {
+        "heading": "[Category 2]",
+        "items": [
+          "[Skill]",
+          "[Skill]",
+          "[Skill]"
+        ]
+      },
+      {
+        "heading": "[Category 3]",
+        "items": [
+          "[Skill]",
+          "[Skill]",
+          "[Skill]"
+        ]
+      }
     ],
     "timeline": [
-      { "year": "[20XX–20XX]", "title": "[Degree or role, institution]", "detail": "[One line]" },
-      { "year": "[20XX]", "title": "[Award or exhibition]", "detail": "[One line]" }
+      {
+        "year": "[20XX–20XX]",
+        "title": "[Degree or role, institution]",
+        "detail": "[One line]"
+      },
+      {
+        "year": "[20XX]",
+        "title": "[Award or exhibition]",
+        "detail": "[One line]"
+      }
     ]
   },
   "contact": {
     "headline": "[CONTACT HEADLINE — one line.]",
-    "email": "",
-    "phone": "",
     "location": "[City, State]",
-    "linkedin": "",
-    "instagram": "",
     "footerCta": "[FOOTER CALL TO ACTION — one line.]"
   }
 }
