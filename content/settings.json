@@ -15,20 +15,24 @@
   },
   "home": {
     "eyebrow": "[EYEBROW — 2–4 words]",
-    "headline": "[HEADLINE — one sentence, ~10 words max.]",
-    "intro": "[INTRO — 1–2 sentences on your approach.]",
+    "headline": "THE BUILT ENVIRONMENT DESIGNED INTENTIONALLY",
+    "intro": "Driven Architecture graduate of the 2+4 program at Drexel University. A quick learner interested in implementing innovative and creative techniques in designing inclusive, community-oriented projects.",
     "meta": [
       {
         "label": "Based in",
-        "value": "[City, State]"
+        "value": "philadelphia, pa"
+      },
+      {
+        "label": "Education",
+        "value": "drexel university"
       },
       {
         "label": "Currently",
-        "value": "[Role, or degree + school]"
+        "value": "project manager/ designer at philly office retail"
       },
       {
-        "label": "Available",
-        "value": "[e.g. Open to opportunities]"
+        "label": "Looking for",
+        "value": "opportunities rotated to the design of the public realm"
       }
     ],
     "aboutHeadline": "[ABOUT HEADLINE — one short line.]",
