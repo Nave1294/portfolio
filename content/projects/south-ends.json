@@ -17,89 +17,123 @@
   ],
   "gallery": [
     {
-      "src": "assets/images/south-ends/01.jpg",
-      "wide": false,
-      "caption": "Site overview"
-    },
-    {
-      "src": "assets/images/south-ends/02.jpg",
-      "wide": true,
-      "caption": "Performing Arts Center massing"
-    },
-    {
       "src": "assets/images/south-ends/03.jpg",
-      "wide": true,
-      "caption": "Superblock Island overview"
-    },
-    {
-      "src": "assets/images/south-ends/04.jpg",
-      "wide": true,
-      "caption": "Campus massing"
-    },
-    {
-      "src": "assets/images/south-ends/05.jpg",
-      "wide": true,
-      "caption": "Aerial looking NE"
-    },
-    {
-      "src": "assets/images/south-ends/06.jpg",
-      "wide": true,
-      "caption": "Land use diagram"
-    },
-    {
-      "src": "assets/images/south-ends/07.jpg",
-      "wide": true,
-      "caption": "Circulation diagram"
-    },
-    {
-      "src": "assets/images/south-ends/08.jpg",
       "wide": false,
-      "caption": ""
-    },
-    {
-      "src": "assets/images/south-ends/09.jpg",
-      "wide": false,
-      "caption": "South Philly extension"
-    },
-    {
-      "src": "assets/images/south-ends/10.jpg",
-      "wide": false,
-      "caption": "South Peninsula Business District"
+      "caption": "Superblock Island overview",
+      "group": "Views",
+      "building": "Superblock"
     },
     {
       "src": "assets/images/south-ends/11.jpg",
       "wide": false,
-      "caption": "Superblock Island"
+      "caption": "Superblock Island",
+      "group": "Views",
+      "building": "Superblock"
+    },
+    {
+      "src": "assets/images/south-ends/01.jpg",
+      "wide": false,
+      "caption": "Site overview",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/south-ends/05.jpg",
+      "wide": false,
+      "caption": "Aerial looking NE",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/south-ends/08.jpg",
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/south-ends/09.jpg",
+      "wide": false,
+      "caption": "South Philly extension",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/south-ends/10.jpg",
+      "wide": false,
+      "caption": "South Peninsula Business District",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/south-ends/12.jpg",
       "wide": false,
-      "caption": "Reflection District"
+      "caption": "Reflection District",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/south-ends/13.jpg",
       "wide": false,
-      "caption": "River offshoot and damn"
+      "caption": "River offshoot and damn",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/south-ends/14.jpg",
-      "wide": true,
-      "caption": "Business District"
+      "wide": false,
+      "caption": "Business District",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/south-ends/15.jpg",
       "wide": false,
-      "caption": "Reflection District seen form cultural museum, looking East"
+      "caption": "Reflection District seen form cultural museum, looking East",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/south-ends/16.jpg",
-      "wide": true,
-      "caption": "South Philly extension Aerial"
+      "wide": false,
+      "caption": "South Philly extension Aerial",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/south-ends/17.jpg",
+      "wide": false,
+      "caption": "Breaking the grid",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/south-ends/02.jpg",
+      "wide": false,
+      "caption": "Performing Arts Center massing",
+      "group": "Diagrams",
+      "building": ""
+    },
+    {
+      "src": "assets/images/south-ends/04.jpg",
+      "wide": false,
+      "caption": "Campus massing",
+      "group": "Diagrams",
+      "building": ""
+    },
+    {
+      "src": "assets/images/south-ends/06.jpg",
+      "wide": false,
+      "caption": "Land use diagram",
+      "group": "Diagrams",
+      "building": ""
+    },
+    {
+      "src": "assets/images/south-ends/07.jpg",
       "wide": true,
-      "caption": "Breaking the grid"
+      "caption": "Circulation diagram",
+      "group": "Diagrams",
+      "building": ""
     }
   ]
 }

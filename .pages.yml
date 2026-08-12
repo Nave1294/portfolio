@@ -106,15 +106,30 @@ content:
           - name: src
             label: Image
             type: image
+          - name: caption
+            label: Caption
+            type: string
+            description: "Shown beneath the image. Also drives which tab it lands in, so name drawings plainly — \"Section\", \"Second Floor\", \"Massing Axon\"."
+          - name: group
+            label: Tab
+            type: select
+            default: Views
+            options:
+              values:
+                - Views
+                - Plans
+                - Sections & Elevations
+                - Diagrams
+            description: "Which tab this image appears under. A project with only one tab's worth of images shows a plain grid instead."
+          - name: building
+            label: Building
+            type: string
+            description: "Optional. Groups drawings within a tab under a subheading — for example Housing, Garage, School. Leave blank if the project is a single structure."
           - name: wide
             label: Full width
             type: boolean
             default: false
-            description: "Spans the full page width — good for plans, sections and elevations. Leave off to sit two-up."
-          - name: caption
-            label: Placeholder text
-            type: string
-            description: Shown in the grey frame only while no image is set.
+            description: "Spans the full page width — suited to long sections and site plans. Leave off to sit two-up."
 
   # ---------------------------------------------------------------
   - name: settings

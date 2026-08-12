@@ -18,78 +18,108 @@
   "gallery": [
     {
       "src": "assets/images/the-laboratory/01.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/02.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/03.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/04.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/05.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/06.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/07.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/08.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/09.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/10.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/11.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/12.jpg",
       "wide": true,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/13.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/14.jpg",
       "wide": true,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/the-laboratory/15.jpg",
       "wide": false,
-      "caption": "FINAL FLOOR PLANS (NO ROOF).png"
+      "caption": "",
+      "group": "Views",
+      "building": ""
     }
   ]
 }

@@ -414,6 +414,102 @@ ${right}        </dl>
 ${footer(0, { full: false })}`;
 }
 
+/* ---------- gallery ----------
+   Images carry a `group` (Views / Plans / Sections / Diagrams) and an
+   optional `building`. Projects with more than one group get tabs; the
+   rest keep a plain grid. Buildings become subheadings inside a tab so
+   floors of one structure read together instead of interleaving. */
+
+const GROUP_ORDER = ["Views", "Plans", "Sections & Elevations", "Diagrams"];
+
+function galleryFigure(g) {
+  const cls = "gallery-item" + (g.wide ? " span-2" : "");
+  const label = g.caption || "Image";
+  return `      <figure class="${cls}">
+        ${frame(g.src, label, "", 1)}${
+    g.caption ? `\n        <figcaption>${esc(g.caption)}</figcaption>` : ""
+  }
+      </figure>`;
+}
+
+// Buildings in first-seen order, each rendered as its own labelled grid.
+function renderPanelBody(items) {
+  const order = [];
+  const byBuilding = new Map();
+  for (const it of items) {
+    const b = it.building || "";
+    if (!byBuilding.has(b)) {
+      byBuilding.set(b, []);
+      order.push(b);
+    }
+    byBuilding.get(b).push(it);
+  }
+  // A single unnamed bucket needs no subheading.
+  const showHeadings = order.filter((b) => b).length > 0 && order.length > 1;
+
+  return order
+    .map((b) => {
+      const grid = byBuilding
+        .get(b)
+        .map(galleryFigure)
+        .join("\n");
+      const heading =
+        showHeadings && b ? `      <h3 class="gallery-group">${esc(b)}</h3>\n` : "";
+      return `${heading}      <div class="project-gallery">\n${grid}\n      </div>`;
+    })
+    .join("\n");
+}
+
+function renderGallery(items) {
+  if (!items.length) return "";
+
+  const groups = [];
+  for (const name of GROUP_ORDER) {
+    const inGroup = items.filter((i) => (i.group || "Views") === name);
+    if (inGroup.length) groups.push([name, inGroup]);
+  }
+  // Anything with an unrecognised group falls in at the end.
+  const known = new Set(GROUP_ORDER);
+  const rest = items.filter((i) => i.group && !known.has(i.group));
+  if (rest.length) groups.push(["More", rest]);
+
+  if (groups.length <= 1) {
+    const only = groups.length ? groups[0][1] : items;
+    return `<div class="container">\n${renderPanelBody(only)}\n  </div>`;
+  }
+
+  const id = (n) => "g-" + n.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+  const tabs = groups
+    .map(
+      ([name], i) =>
+        `      <button class="gallery-tab" role="tab" id="tab-${id(name)}"
+        aria-controls="panel-${id(name)}" aria-selected="${i === 0}">${esc(
+          name
+        )} <span class="tab-count">${groups[i][1].length}</span></button>`
+    )
+    .join("\n");
+
+  const panels = groups
+    .map(
+      ([name, items2]) =>
+        `    <section class="gallery-panel" id="panel-${id(
+          name
+        )}" role="tabpanel" aria-labelledby="tab-${id(name)}">
+      <h2 class="gallery-panel-title">${esc(name)}</h2>
+${renderPanelBody(items2)}
+    </section>`
+    )
+    .join("\n")
+
+  return `<div class="container gallery-tabs">
+    <div class="gallery-tablist" role="tablist" aria-label="Drawings and views">
+${tabs}
+    </div>
+${panels}
+  </div>`;
+}
+
 function projectPage(p, prev, next) {
   const meta = [
     ["Location", p.location],
@@ -427,11 +523,7 @@ function projectPage(p, prev, next) {
 
   const body = (p.body || []).map((t) => `      <p>${esc(t)}</p>`).join("\n");
 
-  const gallery = (p.gallery || [])
-    .map((g) =>
-      "    " + frame(g.src, g.caption, g.wide ? "span-2 wide" : "", 1)
-    )
-    .join("\n");
+  const gallery = renderGallery(p.gallery || []);
 
   const navLink = (target, label, dir) =>
     target
@@ -470,7 +562,7 @@ ${body}
       : ""
   }
 
-  ${gallery ? `<div class="container project-gallery">\n${gallery}\n  </div>` : ""}
+  ${gallery}
 
   <div class="container">
     <nav class="project-nav">

@@ -18,57 +18,79 @@
     {
       "src": "assets/images/zie-door-huis/01.jpg",
       "wide": false,
-      "caption": "Lobby"
+      "caption": "Lobby",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/zie-door-huis/02.jpg",
       "wide": false,
-      "caption": "Flex Area looking towards water"
+      "caption": "Flex Area looking towards water",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/zie-door-huis/03.jpg",
       "wide": false,
-      "caption": "Boat Storage looking towards water"
+      "caption": "Boat Storage looking towards water",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/zie-door-huis/04.jpg",
       "wide": false,
-      "caption": "Boat Storage looking towards Kelly Drive"
-    },
-    {
-      "src": "assets/images/zie-door-huis/05.jpg",
-      "wide": false,
-      "caption": "Basement Hallway"
+      "caption": "Boat Storage looking towards Kelly Drive",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/zie-door-huis/06.jpg",
       "wide": false,
-      "caption": "\"Crows Nest\" looking towards Kelly Drive"
+      "caption": "\"Crows Nest\" looking towards Kelly Drive",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/zie-door-huis/05.jpg",
+      "wide": false,
+      "caption": "Basement Hallway",
+      "group": "Plans",
+      "building": ""
     },
     {
       "src": "assets/images/zie-door-huis/07.jpg",
       "wide": false,
-      "caption": "First Floor"
+      "caption": "First Floor",
+      "group": "Plans",
+      "building": ""
     },
     {
       "src": "assets/images/zie-door-huis/08.jpg",
-      "wide": false,
-      "caption": "Section"
+      "wide": true,
+      "caption": "Section",
+      "group": "Sections & Elevations",
+      "building": ""
     },
     {
       "src": "assets/images/zie-door-huis/09.jpg",
       "wide": false,
-      "caption": "Research"
+      "caption": "Research",
+      "group": "Diagrams",
+      "building": ""
     },
     {
       "src": "assets/images/zie-door-huis/10.jpg",
       "wide": false,
-      "caption": "Research"
+      "caption": "Research",
+      "group": "Diagrams",
+      "building": ""
     },
     {
       "src": "assets/images/zie-door-huis/11.jpg",
       "wide": false,
-      "caption": "Research"
+      "caption": "Research",
+      "group": "Diagrams",
+      "building": ""
     }
   ]
 }

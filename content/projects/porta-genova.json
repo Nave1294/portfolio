@@ -15,48 +15,66 @@
   "gallery": [
     {
       "src": "assets/images/porta-genova/01.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/porta-genova/02.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/porta-genova/03.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/porta-genova/04.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/porta-genova/05.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/porta-genova/06.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/porta-genova/07.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/porta-genova/08.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/porta-genova/09.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     }
   ]
 }

@@ -85,6 +85,40 @@
   }, 4000);
 })();
 
+// Gallery tabs on project pages. The markup ships with every panel visible
+// so the drawings are reachable without scripting; this hides the inactive
+// ones and wires up the tab strip.
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".gallery-tabs").forEach((wrap) => {
+    const tabs = Array.from(wrap.querySelectorAll(".gallery-tab"));
+    const panels = Array.from(wrap.querySelectorAll(".gallery-panel"));
+    if (tabs.length < 2 || tabs.length !== panels.length) return;
+
+    const select = (index, focus) => {
+      tabs.forEach((tab, i) => {
+        const active = i === index;
+        tab.setAttribute("aria-selected", String(active));
+        tab.tabIndex = active ? 0 : -1;
+        panels[i].hidden = !active;
+      });
+      if (focus) tabs[index].focus();
+    };
+
+    tabs.forEach((tab, i) => {
+      tab.addEventListener("click", () => select(i, false));
+      tab.addEventListener("keydown", (event) => {
+        const step =
+          event.key === "ArrowRight" ? 1 : event.key === "ArrowLeft" ? -1 : 0;
+        if (!step) return;
+        event.preventDefault();
+        select((i + step + tabs.length) % tabs.length, true);
+      });
+    });
+
+    select(0, false);
+  });
+});
+
 // Mobile nav toggle
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".nav-toggle");

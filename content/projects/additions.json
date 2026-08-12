@@ -19,7 +19,9 @@
     {
       "src": "assets/images/additions/01.jpg",
       "wide": true,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     }
   ]
 }

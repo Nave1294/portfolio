@@ -17,78 +17,108 @@
   "gallery": [
     {
       "src": "assets/images/powel-s-place/01.jpg",
-      "wide": true,
-      "caption": "Entrance"
+      "wide": false,
+      "caption": "Entrance",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/02.jpg",
-      "wide": true,
-      "caption": "Lobby"
+      "wide": false,
+      "caption": "Lobby",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/03.jpg",
-      "wide": true,
-      "caption": "Auditorium"
+      "wide": false,
+      "caption": "Auditorium",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/04.jpg",
-      "wide": true,
-      "caption": "Office Space"
+      "wide": false,
+      "caption": "Office Space",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/05.jpg",
-      "wide": true,
-      "caption": "Artificial Wetland"
+      "wide": false,
+      "caption": "Artificial Wetland",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/06.jpg",
-      "wide": true,
-      "caption": "Ground Perspective"
+      "wide": false,
+      "caption": "Ground Perspective",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/07.jpg",
-      "wide": true,
-      "caption": "Resturant \"Nook\""
+      "wide": false,
+      "caption": "Resturant \"Nook\"",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/08.jpg",
-      "wide": true,
-      "caption": "Mian Hub"
+      "wide": false,
+      "caption": "Mian Hub",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/09.jpg",
-      "wide": true,
-      "caption": "Vision Vingette"
-    },
-    {
-      "src": "assets/images/powel-s-place/10.jpg",
-      "wide": true,
-      "caption": "Water Cycle Diagram"
+      "wide": false,
+      "caption": "Vision Vingette",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/11.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/12.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/13.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/14.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/powel-s-place/15.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/powel-s-place/10.jpg",
+      "wide": true,
+      "caption": "Water Cycle Diagram",
+      "group": "Diagrams",
+      "building": ""
     }
   ]
 }

@@ -20,124 +20,172 @@
   ],
   "gallery": [
     {
-      "src": "assets/images/h-o-m-e/01.jpg",
-      "wide": true,
-      "caption": "Site Section"
-    },
-    {
-      "src": "assets/images/h-o-m-e/02.jpg",
-      "wide": true,
-      "caption": "Overview"
-    },
-    {
-      "src": "assets/images/h-o-m-e/03.jpg",
-      "wide": true,
-      "caption": "Overview"
-    },
-    {
-      "src": "assets/images/h-o-m-e/04.jpg",
-      "wide": false,
-      "caption": "Site Plan in Context"
-    },
-    {
-      "src": "assets/images/h-o-m-e/05.jpg",
-      "wide": true,
-      "caption": "Housing Ground Level"
-    },
-    {
       "src": "assets/images/h-o-m-e/06.jpg",
-      "wide": true,
-      "caption": "Housing Interior"
+      "wide": false,
+      "caption": "Housing Interior",
+      "group": "Views",
+      "building": "Housing"
     },
     {
       "src": "assets/images/h-o-m-e/07.jpg",
-      "wide": true,
-      "caption": "Housing Interior"
-    },
-    {
-      "src": "assets/images/h-o-m-e/08.jpg",
-      "wide": true,
-      "caption": "Housing Roof Level"
-    },
-    {
-      "src": "assets/images/h-o-m-e/09.jpg",
-      "wide": true,
-      "caption": "Housing: Ground floor"
-    },
-    {
-      "src": "assets/images/h-o-m-e/10.jpg",
-      "wide": true,
-      "caption": "Housing: Floor 1"
-    },
-    {
-      "src": "assets/images/h-o-m-e/11.jpg",
-      "wide": true,
-      "caption": "Housing: Floor 1a"
-    },
-    {
-      "src": "assets/images/h-o-m-e/12.jpg",
-      "wide": true,
-      "caption": "Housing: Floor 2"
-    },
-    {
-      "src": "assets/images/h-o-m-e/13.jpg",
-      "wide": true,
-      "caption": "Housing: Floor 2a"
-    },
-    {
-      "src": "assets/images/h-o-m-e/14.jpg",
-      "wide": true,
-      "caption": "Housing: Floor 3"
-    },
-    {
-      "src": "assets/images/h-o-m-e/15.jpg",
-      "wide": true,
-      "caption": "Housing: Floor 3a"
+      "wide": false,
+      "caption": "Housing Interior",
+      "group": "Views",
+      "building": "Housing"
     },
     {
       "src": "assets/images/h-o-m-e/16.jpg",
       "wide": true,
-      "caption": "Garage Entry"
+      "caption": "Garage Entry",
+      "group": "Views",
+      "building": "Garage"
     },
     {
-      "src": "assets/images/h-o-m-e/17.jpg",
-      "wide": true,
-      "caption": "Garage Parking Level"
+      "src": "assets/images/h-o-m-e/22.jpg",
+      "wide": false,
+      "caption": "School Exterior",
+      "group": "Views",
+      "building": "School"
     },
     {
-      "src": "assets/images/h-o-m-e/18.jpg",
-      "wide": true,
-      "caption": "Garage Greenhouse Level"
+      "src": "assets/images/h-o-m-e/23.jpg",
+      "wide": false,
+      "caption": "School Lobby",
+      "group": "Views",
+      "building": "School"
+    },
+    {
+      "src": "assets/images/h-o-m-e/24.jpg",
+      "wide": false,
+      "caption": "School Engawa",
+      "group": "Views",
+      "building": "School"
+    },
+    {
+      "src": "assets/images/h-o-m-e/02.jpg",
+      "wide": false,
+      "caption": "Overview",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/h-o-m-e/03.jpg",
+      "wide": false,
+      "caption": "Overview",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/h-o-m-e/09.jpg",
+      "wide": false,
+      "caption": "Housing: Ground floor",
+      "group": "Plans",
+      "building": "Housing"
+    },
+    {
+      "src": "assets/images/h-o-m-e/05.jpg",
+      "wide": false,
+      "caption": "Housing Ground Level",
+      "group": "Plans",
+      "building": "Housing"
+    },
+    {
+      "src": "assets/images/h-o-m-e/11.jpg",
+      "wide": false,
+      "caption": "Housing: Floor 1a",
+      "group": "Plans",
+      "building": "Housing"
+    },
+    {
+      "src": "assets/images/h-o-m-e/13.jpg",
+      "wide": false,
+      "caption": "Housing: Floor 2a",
+      "group": "Plans",
+      "building": "Housing"
+    },
+    {
+      "src": "assets/images/h-o-m-e/15.jpg",
+      "wide": false,
+      "caption": "Housing: Floor 3a",
+      "group": "Plans",
+      "building": "Housing"
+    },
+    {
+      "src": "assets/images/h-o-m-e/10.jpg",
+      "wide": false,
+      "caption": "Housing: Floor 1",
+      "group": "Plans",
+      "building": "Housing"
+    },
+    {
+      "src": "assets/images/h-o-m-e/12.jpg",
+      "wide": false,
+      "caption": "Housing: Floor 2",
+      "group": "Plans",
+      "building": "Housing"
+    },
+    {
+      "src": "assets/images/h-o-m-e/14.jpg",
+      "wide": false,
+      "caption": "Housing: Floor 3",
+      "group": "Plans",
+      "building": "Housing"
+    },
+    {
+      "src": "assets/images/h-o-m-e/08.jpg",
+      "wide": false,
+      "caption": "Housing Roof Level",
+      "group": "Plans",
+      "building": "Housing"
     },
     {
       "src": "assets/images/h-o-m-e/19.jpg",
-      "wide": true,
-      "caption": "Garage: Ground Level"
+      "wide": false,
+      "caption": "Garage: Ground Level",
+      "group": "Plans",
+      "building": "Garage"
     },
     {
       "src": "assets/images/h-o-m-e/20.jpg",
       "wide": true,
-      "caption": "Garage: Second Level"
+      "caption": "Garage: Second Level",
+      "group": "Plans",
+      "building": "Garage"
     },
     {
       "src": "assets/images/h-o-m-e/21.jpg",
       "wide": true,
-      "caption": "Garage: Third Level"
+      "caption": "Garage: Third Level",
+      "group": "Plans",
+      "building": "Garage"
     },
     {
-      "src": "assets/images/h-o-m-e/22.jpg",
-      "wide": true,
-      "caption": "School Exterior"
+      "src": "assets/images/h-o-m-e/17.jpg",
+      "wide": false,
+      "caption": "Garage Parking Level",
+      "group": "Plans",
+      "building": "Garage"
     },
     {
-      "src": "assets/images/h-o-m-e/23.jpg",
-      "wide": true,
-      "caption": "School Lobby"
+      "src": "assets/images/h-o-m-e/18.jpg",
+      "wide": false,
+      "caption": "Garage Greenhouse Level",
+      "group": "Plans",
+      "building": "Garage"
     },
     {
-      "src": "assets/images/h-o-m-e/24.jpg",
+      "src": "assets/images/h-o-m-e/04.jpg",
       "wide": true,
-      "caption": "School Engawa"
+      "caption": "Site Plan in Context",
+      "group": "Plans",
+      "building": "Site"
+    },
+    {
+      "src": "assets/images/h-o-m-e/01.jpg",
+      "wide": true,
+      "caption": "Site Section",
+      "group": "Sections & Elevations",
+      "building": "Site"
     }
   ]
 }

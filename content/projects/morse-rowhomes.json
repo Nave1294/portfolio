@@ -18,42 +18,58 @@
     {
       "src": "assets/images/morse-rowhomes/01.jpg",
       "wide": false,
-      "caption": "From Marston Street"
+      "caption": "From Marston Street",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/02.jpg",
       "wide": false,
-      "caption": "Shared Porch"
+      "caption": "Shared Porch",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/03.jpg",
       "wide": false,
-      "caption": "Pocket Park"
+      "caption": "Pocket Park",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/04.jpg",
       "wide": false,
-      "caption": "Rowhome"
+      "caption": "Rowhome",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/05.jpg",
       "wide": false,
-      "caption": "Duplex"
+      "caption": "Duplex",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/06.jpg",
-      "wide": true,
-      "caption": ""
+      "wide": false,
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/07.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/08.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "",
+      "group": "Views",
+      "building": ""
     }
   ]
 }

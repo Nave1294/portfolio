@@ -125,7 +125,7 @@ One JSON file per project in `content/projects/`.
 | `slug` | Becomes the page URL; keep it lowercase with hyphens |
 | `cover` | Path like `assets/images/project-01/cover.jpg`. Empty shows a grey frame |
 | `body` | Array of paragraphs |
-| `gallery` | Array of `{ src, wide, caption }`. `wide: true` spans full width |
+| `gallery` | Array of `{ src, caption, group, building, wide }` — see below |
 
 Unpublishing re-chains the previous/next links automatically, so a hidden
 project never leaves a dead link behind.
@@ -133,6 +133,32 @@ project never leaves a dead link behind.
 To add a project, copy an existing JSON file, change `slug` and `order`, and
 build. There is nothing else to update — the home grid is generated from
 whatever is in the folder.
+
+### How a project page organises itself
+
+Each gallery image carries a `group` and an optional `building`:
+
+| Field | What it does |
+| --- | --- |
+| `group` | `Views`, `Plans`, `Sections & Elevations` or `Diagrams`. Becomes a tab |
+| `building` | Optional subheading within a tab — Housing, Garage, School |
+| `caption` | Shown under the image |
+| `wide` | Spans the full width; otherwise images sit two-up |
+
+**Tabs only appear when a project has more than one group.** A project whose
+images are all `Views` gets a plain grid, which is why the untitled imports
+look unchanged.
+
+Within the Plans tab, drawings are kept together by building and ordered by
+level — site, basement, ground, upper floors, roof — so a reader moves up
+through one structure instead of hopping between them.
+
+Keep `wide` for genuinely panoramic drawings (roughly 2.2:1 and wider). Making
+everything full width turns the page into one endless column; ordinary 16:9
+renders read better two-up.
+
+Without JavaScript every panel is shown with its heading and the tab strip is
+hidden, so no drawing becomes unreachable.
 
 ## Color
 

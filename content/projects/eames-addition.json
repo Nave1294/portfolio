@@ -17,23 +17,31 @@
   "gallery": [
     {
       "src": "assets/images/eames-addition/01.jpg",
-      "wide": true,
-      "caption": "Entrance to Gallery"
+      "wide": false,
+      "caption": "Entrance to Gallery",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/eames-addition/02.jpg",
-      "wide": true,
-      "caption": "Hallway as Threshold"
+      "wide": false,
+      "caption": "Hallway as Threshold",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/eames-addition/03.jpg",
-      "wide": true,
-      "caption": "Library"
+      "wide": false,
+      "caption": "Library",
+      "group": "Views",
+      "building": ""
     },
     {
       "src": "assets/images/eames-addition/04.jpg",
-      "wide": true,
-      "caption": "Reflection Pool"
+      "wide": false,
+      "caption": "Reflection Pool",
+      "group": "Views",
+      "building": ""
     }
   ]
 }
