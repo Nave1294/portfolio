@@ -86,7 +86,10 @@
   },
   "contact": {
     "headline": "[CONTACT HEADLINE — one line.]",
-    "location": "[City, State]",
+    "email": "evanthalheimer@gmail.com",
+    "phone": "2154310955",
+    "location": "Philadelphia, PA",
+    "instagram": "https://www.instagram.com/eat.arch?utm_source=qr",
     "footerCta": "[FOOTER CALL TO ACTION — one line.]"
   }
 }
