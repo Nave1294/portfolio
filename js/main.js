@@ -1,28 +1,25 @@
 // The arriving page is marked by an inline script in <head> (before first
 // paint). Once it has slid in, drop the class: a lingering transform on the
 // wrapper would become a containing block and break the sticky header.
-// Resolves once the page is settled, so reveals don't fight the swipe.
-const swipeSettled = new Promise((resolve) => {
+(() => {
   const root = document.documentElement;
-  if (!root.classList.contains("swipe-entering")) return resolve();
+  if (!root.classList.contains("swipe-entering")) return;
 
-  const done = () => {
-    root.classList.remove("swipe-entering");
-    resolve();
-  };
+  const done = () => root.classList.remove("swipe-entering");
   const wrapper = document.querySelector(".swipe-root");
   if (wrapper) wrapper.addEventListener("animationend", done, { once: true });
   // Safety net if the animation never runs (reduced motion, older browser).
   setTimeout(done, 1200);
-});
+})();
 
-// Rise items into place as they reach the viewport. Anything already on
-// screen animates immediately; the rest wait until scrolled to.
+// Rise items into place as they reach the viewport, starting immediately so
+// the cascade runs *during* the incoming swipe rather than after it. The
+// observer measures the animated position, so items begin as soon as the
+// sliding wrapper carries them into view.
 //
-// Uses plain geometry rather than IntersectionObserver. The elements start at
-// opacity 0, so whatever reveals them must be dependable — and a watchdog
-// below guarantees nothing can stay invisible even if this logic fails.
-swipeSettled.then(() => {
+// The elements start at opacity 0, so whatever reveals them must be
+// dependable — hence the watchdog below.
+(() => {
   const items = Array.from(document.querySelectorAll(".reveal"));
   if (!items.length) return;
 
@@ -39,9 +36,27 @@ swipeSettled.then(() => {
 
   let pending = items.slice();
 
-  // IntersectionObserver rather than measuring on scroll: it keeps watching
-  // as the page reflows, so late-loading images can't leave an element
-  // stranded because its position was sampled before layout settled.
+  // Arriving mid-swipe: start the on-screen items now so the cascade runs
+  // alongside the page sliding in.
+  //
+  // Deliberately measured vertically. The swipe is a horizontal transform,
+  // which leaves getBoundingClientRect().top untouched, so this is accurate
+  // even while the wrapper is still off to the right. Leaving it to the
+  // observer would be unreliable — transform animations are commonly run on
+  // the compositor, and intersection updates can lag behind them.
+  if (document.documentElement.classList.contains("swipe-entering")) {
+    const line = window.innerHeight * 0.92;
+    const onScreen = pending.filter(
+      (el) => el.getBoundingClientRect().top < line
+    );
+    onScreen.forEach((el, index) => reveal(el, index * 90));
+    pending = pending.filter((el) => !onScreen.includes(el));
+  }
+
+  // Everything further down waits until scrolled to. IntersectionObserver
+  // rather than measuring on scroll: it keeps watching as the page reflows,
+  // so a late-loading image can't strand an element whose position was
+  // sampled before layout settled.
   let observer = null;
   if ("IntersectionObserver" in window) {
     observer = new IntersectionObserver(
@@ -57,7 +72,7 @@ swipeSettled.then(() => {
       },
       { threshold: 0.08, rootMargin: "0px 0px -8% 0px" }
     );
-    items.forEach((el) => observer.observe(el));
+    pending.forEach((el) => observer.observe(el));
   }
 
   // Watchdog: these elements start invisible, so something must always
@@ -68,7 +83,7 @@ swipeSettled.then(() => {
     pending.forEach((el) => reveal(el, 0));
     if (observer) observer.disconnect();
   }, 4000);
-});
+})();
 
 // Mobile nav toggle
 document.addEventListener("DOMContentLoaded", () => {

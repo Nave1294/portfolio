@@ -79,9 +79,19 @@ page script in `build.mjs` to stay ahead of it.
 
 ### Items rising into view
 
-Elements marked `.reveal` on the work page fade and rise as they reach the
-viewport, staggered so a row of cards cascades rather than landing together.
-Driven by an IntersectionObserver in `js/main.js`.
+Elements marked `.reveal` on the work page fade and rise, staggered 90ms apart
+so a row of cards cascades rather than landing together. Handled in
+`js/main.js`.
+
+When arriving via the swipe, items already on screen start rising immediately,
+so the cascade plays *during* the incoming slide rather than after it. Those
+are picked by a vertical measurement: the swipe is a horizontal transform, so
+it leaves `getBoundingClientRect().top` untouched and the reading stays
+accurate while the page is still off to the right. Leaving that to the
+observer would be unreliable, since transform animations usually run on the
+compositor and intersection updates lag behind them.
+
+Everything below the fold waits for scroll, handled by an IntersectionObserver.
 
 Two safeguards, because these elements start at `opacity: 0` and something
 must always bring them back:
