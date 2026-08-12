@@ -18,6 +18,41 @@
     {
       "src": "assets/images/morse-rowhomes/01.jpg",
       "wide": false,
+      "caption": "From Marston Street"
+    },
+    {
+      "src": "assets/images/morse-rowhomes/02.jpg",
+      "wide": false,
+      "caption": "Shared Porch"
+    },
+    {
+      "src": "assets/images/morse-rowhomes/03.jpg",
+      "wide": false,
+      "caption": "Pocket Park"
+    },
+    {
+      "src": "assets/images/morse-rowhomes/04.jpg",
+      "wide": false,
+      "caption": "Rowhome"
+    },
+    {
+      "src": "assets/images/morse-rowhomes/05.jpg",
+      "wide": false,
+      "caption": "Duplex"
+    },
+    {
+      "src": "assets/images/morse-rowhomes/06.jpg",
+      "wide": true,
+      "caption": ""
+    },
+    {
+      "src": "assets/images/morse-rowhomes/07.jpg",
+      "wide": false,
+      "caption": ""
+    },
+    {
+      "src": "assets/images/morse-rowhomes/08.jpg",
+      "wide": false,
       "caption": ""
     }
   ]

@@ -10,10 +10,96 @@
   "program": "",
   "status": "",
   "role": "",
-  "cover": "assets/images/south-ends/01.jpg",
+  "cover": "assets/images/south-ends/cover.jpg",
   "body": [
     "South Ends is a project which marks the beginning of a multi-term endeavor addressing the vacant land once occupied by the old refinery in South Philly. My approach to using the land was from two angles: The first adresses water quality and flooding concerns, while the second connects Philadelphians to their waterfront in a unique way not found elsewhere in the city. Allowing the southernmost end of the property to be reclaimed by nature can act as protection in the event of a storm surge, while carving a river through the site allows for the enhanced control needed to create a new urban waterfront in the age of climate change.",
     "The inhabited portions of the site are grouped into large neighborhoods, each having a unique feel and varried transportation amenities. All areas are firmly linked together by a cohesive set of greenways with trolley lines that can provide quick and reliable access throughout the site and greater city beyond. The resulting fabric encourages creative and fun designs through the serendipity of these competing organizational structures colliding and playing off one another."
   ],
-  "gallery": []
+  "gallery": [
+    {
+      "src": "assets/images/south-ends/01.jpg",
+      "wide": false,
+      "caption": "Site overview"
+    },
+    {
+      "src": "assets/images/south-ends/02.jpg",
+      "wide": true,
+      "caption": "Performing Arts Center massing"
+    },
+    {
+      "src": "assets/images/south-ends/03.jpg",
+      "wide": true,
+      "caption": "Superblock Island overview"
+    },
+    {
+      "src": "assets/images/south-ends/04.jpg",
+      "wide": true,
+      "caption": "Campus massing"
+    },
+    {
+      "src": "assets/images/south-ends/05.jpg",
+      "wide": true,
+      "caption": "Aerial looking NE"
+    },
+    {
+      "src": "assets/images/south-ends/06.jpg",
+      "wide": true,
+      "caption": "Land use diagram"
+    },
+    {
+      "src": "assets/images/south-ends/07.jpg",
+      "wide": true,
+      "caption": "Circulation diagram"
+    },
+    {
+      "src": "assets/images/south-ends/08.jpg",
+      "wide": false,
+      "caption": ""
+    },
+    {
+      "src": "assets/images/south-ends/09.jpg",
+      "wide": false,
+      "caption": "South Philly extension"
+    },
+    {
+      "src": "assets/images/south-ends/10.jpg",
+      "wide": false,
+      "caption": "South Peninsula Business District"
+    },
+    {
+      "src": "assets/images/south-ends/11.jpg",
+      "wide": false,
+      "caption": "Superblock Island"
+    },
+    {
+      "src": "assets/images/south-ends/12.jpg",
+      "wide": false,
+      "caption": "Reflection District"
+    },
+    {
+      "src": "assets/images/south-ends/13.jpg",
+      "wide": false,
+      "caption": "River offshoot and damn"
+    },
+    {
+      "src": "assets/images/south-ends/14.jpg",
+      "wide": true,
+      "caption": "Business District"
+    },
+    {
+      "src": "assets/images/south-ends/15.jpg",
+      "wide": false,
+      "caption": "Reflection District seen form cultural museum, looking East"
+    },
+    {
+      "src": "assets/images/south-ends/16.jpg",
+      "wide": true,
+      "caption": "South Philly extension Aerial"
+    },
+    {
+      "src": "assets/images/south-ends/17.jpg",
+      "wide": true,
+      "caption": "Breaking the grid"
+    }
+  ]
 }

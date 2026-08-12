@@ -18,7 +18,62 @@
     {
       "src": "assets/images/lancaster-hub/01.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "View from N 40th Street"
+    },
+    {
+      "src": "assets/images/lancaster-hub/02.jpg",
+      "wide": false,
+      "caption": "Section"
+    },
+    {
+      "src": "assets/images/lancaster-hub/03.jpg",
+      "wide": false,
+      "caption": "Elevation"
+    },
+    {
+      "src": "assets/images/lancaster-hub/04.jpg",
+      "wide": false,
+      "caption": "Section"
+    },
+    {
+      "src": "assets/images/lancaster-hub/05.jpg",
+      "wide": true,
+      "caption": "Library Vingette"
+    },
+    {
+      "src": "assets/images/lancaster-hub/06.jpg",
+      "wide": true,
+      "caption": "Massing Axon"
+    },
+    {
+      "src": "assets/images/lancaster-hub/07.jpg",
+      "wide": false,
+      "caption": "Building Plan Key"
+    },
+    {
+      "src": "assets/images/lancaster-hub/08.jpg",
+      "wide": false,
+      "caption": "Basement"
+    },
+    {
+      "src": "assets/images/lancaster-hub/09.jpg",
+      "wide": false,
+      "caption": "First Floor"
+    },
+    {
+      "src": "assets/images/lancaster-hub/10.jpg",
+      "wide": false,
+      "caption": "Second Floor"
+    },
+    {
+      "src": "assets/images/lancaster-hub/11.jpg",
+      "wide": false,
+      "caption": "Third Floor"
+    },
+    {
+      "src": "assets/images/lancaster-hub/12.jpg",
+      "wide": false,
+      "caption": "Fourth Floor"
     }
   ]
 }

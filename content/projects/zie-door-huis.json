@@ -18,7 +18,57 @@
     {
       "src": "assets/images/zie-door-huis/01.jpg",
       "wide": false,
-      "caption": ""
+      "caption": "Lobby"
+    },
+    {
+      "src": "assets/images/zie-door-huis/02.jpg",
+      "wide": false,
+      "caption": "Flex Area looking towards water"
+    },
+    {
+      "src": "assets/images/zie-door-huis/03.jpg",
+      "wide": false,
+      "caption": "Boat Storage looking towards water"
+    },
+    {
+      "src": "assets/images/zie-door-huis/04.jpg",
+      "wide": false,
+      "caption": "Boat Storage looking towards Kelly Drive"
+    },
+    {
+      "src": "assets/images/zie-door-huis/05.jpg",
+      "wide": false,
+      "caption": "Basement Hallway"
+    },
+    {
+      "src": "assets/images/zie-door-huis/06.jpg",
+      "wide": false,
+      "caption": "\"Crows Nest\" looking towards Kelly Drive"
+    },
+    {
+      "src": "assets/images/zie-door-huis/07.jpg",
+      "wide": false,
+      "caption": "First Floor"
+    },
+    {
+      "src": "assets/images/zie-door-huis/08.jpg",
+      "wide": false,
+      "caption": "Section"
+    },
+    {
+      "src": "assets/images/zie-door-huis/09.jpg",
+      "wide": false,
+      "caption": "Research"
+    },
+    {
+      "src": "assets/images/zie-door-huis/10.jpg",
+      "wide": false,
+      "caption": "Research"
+    },
+    {
+      "src": "assets/images/zie-door-huis/11.jpg",
+      "wide": false,
+      "caption": "Research"
     }
   ]
 }

@@ -10,7 +10,7 @@
   "program": "Community Living, Retail, Educational, Hydroponics, Recreational Faclities",
   "status": "Academic",
   "role": "Soul Designer",
-  "cover": "assets/images/SITE PLAN.jpeg",
+  "cover": "assets/images/h-o-m-e/cover.jpg",
   "body": [
     "The built environment is a series of vast interconnected systems. ",
     "home in this case stands for housing, ownership, mentorship, and education. This project from start to finish is less about the design of the buildings, with more of a focus put into designing a system. The system, home, is an unique approach to affordable housing as a means to and end, rather than the end itself. Through housing, mentorship, and education, the goal of home is to decrease a decades long march out of poverty to less than a decade. Doing this involved rethinking the role affordable housing in America plays in the housing market. Creating a safe and affordable place for the less fortunate to live, learn, and work was the backbone of the system.",
@@ -20,19 +20,124 @@
   ],
   "gallery": [
     {
-      "src": "assets/images/SITE PLAN-1.jpeg",
+      "src": "assets/images/h-o-m-e/01.jpg",
       "wide": true,
-      "caption": "site plan"
+      "caption": "Site Section"
     },
     {
-      "src": "assets/images/OVERVIEW 2.jpg",
-      "wide": false,
-      "caption": "3-D overview"
+      "src": "assets/images/h-o-m-e/02.jpg",
+      "wide": true,
+      "caption": "Overview"
     },
     {
-      "src": "assets/images/extra 2.jpg",
+      "src": "assets/images/h-o-m-e/03.jpg",
+      "wide": true,
+      "caption": "Overview"
+    },
+    {
+      "src": "assets/images/h-o-m-e/04.jpg",
       "wide": false,
-      "caption": "residential circulation"
+      "caption": "Site Plan in Context"
+    },
+    {
+      "src": "assets/images/h-o-m-e/05.jpg",
+      "wide": true,
+      "caption": "Housing Ground Level"
+    },
+    {
+      "src": "assets/images/h-o-m-e/06.jpg",
+      "wide": true,
+      "caption": "Housing Interior"
+    },
+    {
+      "src": "assets/images/h-o-m-e/07.jpg",
+      "wide": true,
+      "caption": "Housing Interior"
+    },
+    {
+      "src": "assets/images/h-o-m-e/08.jpg",
+      "wide": true,
+      "caption": "Housing Roof Level"
+    },
+    {
+      "src": "assets/images/h-o-m-e/09.jpg",
+      "wide": true,
+      "caption": "Housing: Ground floor"
+    },
+    {
+      "src": "assets/images/h-o-m-e/10.jpg",
+      "wide": true,
+      "caption": "Housing: Floor 1"
+    },
+    {
+      "src": "assets/images/h-o-m-e/11.jpg",
+      "wide": true,
+      "caption": "Housing: Floor 1a"
+    },
+    {
+      "src": "assets/images/h-o-m-e/12.jpg",
+      "wide": true,
+      "caption": "Housing: Floor 2"
+    },
+    {
+      "src": "assets/images/h-o-m-e/13.jpg",
+      "wide": true,
+      "caption": "Housing: Floor 2a"
+    },
+    {
+      "src": "assets/images/h-o-m-e/14.jpg",
+      "wide": true,
+      "caption": "Housing: Floor 3"
+    },
+    {
+      "src": "assets/images/h-o-m-e/15.jpg",
+      "wide": true,
+      "caption": "Housing: Floor 3a"
+    },
+    {
+      "src": "assets/images/h-o-m-e/16.jpg",
+      "wide": true,
+      "caption": "Garage Entry"
+    },
+    {
+      "src": "assets/images/h-o-m-e/17.jpg",
+      "wide": true,
+      "caption": "Garage Parking Level"
+    },
+    {
+      "src": "assets/images/h-o-m-e/18.jpg",
+      "wide": true,
+      "caption": "Garage Greenhouse Level"
+    },
+    {
+      "src": "assets/images/h-o-m-e/19.jpg",
+      "wide": true,
+      "caption": "Garage: Ground Level"
+    },
+    {
+      "src": "assets/images/h-o-m-e/20.jpg",
+      "wide": true,
+      "caption": "Garage: Second Level"
+    },
+    {
+      "src": "assets/images/h-o-m-e/21.jpg",
+      "wide": true,
+      "caption": "Garage: Third Level"
+    },
+    {
+      "src": "assets/images/h-o-m-e/22.jpg",
+      "wide": true,
+      "caption": "School Exterior"
+    },
+    {
+      "src": "assets/images/h-o-m-e/23.jpg",
+      "wide": true,
+      "caption": "School Lobby"
+    },
+    {
+      "src": "assets/images/h-o-m-e/24.jpg",
+      "wide": true,
+      "caption": "School Engawa"
     }
   ]
 }

@@ -18,7 +18,22 @@
     {
       "src": "assets/images/eames-addition/01.jpg",
       "wide": true,
-      "caption": ""
+      "caption": "Entrance to Gallery"
+    },
+    {
+      "src": "assets/images/eames-addition/02.jpg",
+      "wide": true,
+      "caption": "Hallway as Threshold"
+    },
+    {
+      "src": "assets/images/eames-addition/03.jpg",
+      "wide": true,
+      "caption": "Library"
+    },
+    {
+      "src": "assets/images/eames-addition/04.jpg",
+      "wide": true,
+      "caption": "Reflection Pool"
     }
   ]
 }

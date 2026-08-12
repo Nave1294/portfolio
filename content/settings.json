@@ -14,7 +14,7 @@
     "buttonDelaySeconds": 2
   },
   "home": {
-    "eyebrow": "[EYEBROW — 2–4 words]",
+    "eyebrow": "Architecture & Design",
     "headline": "THE BUILT ENVIRONMENT DESIGNED INTENTIONALLY",
     "intro": "Driven Architecture graduate of the 2+4 program at Drexel University. A quick learner interested in implementing innovative and creative techniques in designing inclusive, community-oriented projects.",
     "meta": [
@@ -35,62 +35,82 @@
         "value": "opportunities rotated to the design of the public realm"
       }
     ],
-    "aboutHeadline": "[ABOUT HEADLINE — one short line.]",
-    "aboutSummary": "[ABOUT SUMMARY — 2–3 sentences.]"
+    "aboutHeadline": "Designing inclusive, community-oriented projects.",
+    "aboutSummary": "Architecture graduate of Drexel's 2+4 program, now managing adaptive reuse projects in Philadelphia. Most motivated by constraint-heavy problems and the creative solutions they demand."
   },
   "about": {
     "paragraphs": [
-      "[PARAGRAPH 1 — Who you are and where you are in your career.]",
-      "[PARAGRAPH 2 — How you work. Be concrete.]"
+      "Driven architecture graduate of the 2+4 program at Drexel University. A quick learner interested in implementing innovative and creative techniques in designing inclusive, community-oriented projects.",
+      "My strengths lie in early design and conceptual development — diagramming, rendering, and clearly conveying intent. I excel at communication and presentation, translating complex ideas into clear, compelling narratives. I am most motivated when tackling constraint-heavy problems, and most fulfilled when crafting creative, unique solutions.",
+      "I am seeking a civically minded, challenging role that prioritises sustainability and community while providing opportunities to broaden my skills. I aim to help positively transform Philadelphia's built environment."
     ],
     "portrait": "assets/images/Evan-scaled.jpeg",
     "resume": "assets/images/Resume for CCD-1.pdf",
     "skills": [
       {
-        "heading": "[Category 1]",
+        "heading": "Design",
         "items": [
-          "[Skill]",
-          "[Skill]",
-          "[Skill]"
+          "Revit",
+          "Rhino",
+          "AutoCAD",
+          "ARCGIS Mapping"
         ]
       },
       {
-        "heading": "[Category 2]",
+        "heading": "Visualisation",
         "items": [
-          "[Skill]",
-          "[Skill]",
-          "[Skill]"
+          "D5 Render",
+          "Enscape / Lumion",
+          "Unreal Engine",
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe InDesign"
         ]
       },
       {
-        "heading": "[Category 3]",
+        "heading": "Other",
         "items": [
-          "[Skill]",
-          "[Skill]",
-          "[Skill]"
+          "3-D printing",
+          "Microsoft Suite",
+          "LEED Green Associate"
         ]
       }
     ],
     "timeline": [
       {
-        "year": "[20XX–20XX]",
-        "title": "[Degree or role, institution]",
-        "detail": "[One line]"
+        "year": "2024–now",
+        "title": "Project Manager / Designer, Philly Office Retail",
+        "detail": "Adaptive reuse and state-of-good-repair projects from design through construction. Coordinating architects, contractors and consultants, overseeing budgets and schedules, leading RFPs and negotiations."
       },
       {
-        "year": "[20XX]",
-        "title": "[Award or exhibition]",
-        "detail": "[One line]"
+        "year": "2021–2024",
+        "title": "Designer, WRT Planning + Design",
+        "detail": "Large-scale affordable mixed-use projects from proposal to 90% CDs. Research on biophilic design and energy modelling for carbon-negative communities, and renderings across housing and education projects."
+      },
+      {
+        "year": "2025",
+        "title": "Bachelor of Architecture, Drexel University",
+        "detail": "Philadelphia, PA. Pearson Prize Silver Medal for best Drexel architectural thesis project."
+      },
+      {
+        "year": "2025",
+        "title": "Founding member, Round Table Collaborative (RoTaCo)",
+        "detail": ""
+      },
+      {
+        "year": "—",
+        "title": "LEED Green Associate",
+        "detail": "One examination away from licensure as a Registered Architect in Pennsylvania."
       }
     ]
   },
   "contact": {
-    "headline": "[CONTACT HEADLINE — one line.]",
+    "headline": "Seeking a civically minded role that prioritises sustainability and community.",
     "email": "evanthalheimer@gmail.com",
     "phone": "2154310955",
     "location": "Philadelphia, PA",
     "instagram": "https://www.instagram.com/eat.arch?utm_source=qr",
-    "footerCta": "[FOOTER CALL TO ACTION — one line.]",
+    "footerCta": "Let's talk about your next project.",
     "linkedin": "https://www.linkedin.com/in/evan-thalheimer-835120216"
   }
 }
