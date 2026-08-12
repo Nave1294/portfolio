@@ -1,40 +1,35 @@
 {
-  "title": "[PROJECT 01 NAME]",
-  "slug": "project-01",
+  "title": "Project H.O.M.E.",
   "published": true,
+  "slug": "project-01",
   "order": 1,
-  "accent": 1,
-  "type": "[Type]",
-  "year": "[Year]",
-  "location": "[City, State]",
-  "program": "[What the building is]",
-  "status": "[Built / Academic / Competition]",
-  "role": "[Your role on the project]",
-  "cover": "",
+  "accent": "1",
+  "cover": "assets/images/SITE PLAN.jpeg",
+  "type": "Mixed Use",
+  "year": "2022",
+  "location": "Mantua, Philadelphia",
+  "program": "Community Living, Retail, Educational, Hydroponics, Recreational Faclities",
+  "status": "Academic",
+  "role": "Soul Designer",
   "body": [
-    "[PARAGRAPH 1 — The problem. Site, brief, and constraints.]",
+    "The built environment is a series of vast interconnected systems. ",
     "[PARAGRAPH 2 — Your response. The key design move, and the structure or materials behind it.]"
   ],
   "gallery": [
     {
-      "src": "",
+      "src": "assets/images/SITE PLAN-1.jpeg",
       "wide": true,
-      "caption": "[Wide image — site plan, section, or exterior]"
+      "caption": "site plan"
     },
     {
-      "src": "",
+      "src": "assets/images/OVERVIEW 2.jpg",
       "wide": false,
-      "caption": "[Detail or interior]"
+      "caption": "3-D overview"
     },
     {
-      "src": "",
+      "src": "assets/images/extra 2.jpg",
       "wide": false,
-      "caption": "[Diagram or model photo]"
-    },
-    {
-      "src": "",
-      "wide": true,
-      "caption": "[Wide image — floor plan or elevation]"
+      "caption": "residential circulation"
     }
   ]
 }
