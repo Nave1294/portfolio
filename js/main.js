@@ -85,6 +85,77 @@
   }, 4000);
 })();
 
+// Timeline on the work page: whichever project sits nearest the centre of
+// the track becomes active, and its cover fades in above. Ships with the
+// first project active, so without scripting the page still shows a cover
+// and a scrollable list of links.
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".tl-track");
+  if (!track) return;
+
+  const items = Array.from(track.querySelectorAll(".tl-item"));
+  const covers = Array.from(document.querySelectorAll(".tl-cover"));
+  if (!items.length) return;
+
+  let active = -1;
+
+  const setActive = (index) => {
+    if (index === active || index < 0) return;
+    active = index;
+    items.forEach((el, i) => el.classList.toggle("is-active", i === index));
+    covers.forEach((el, i) => {
+      const on = i === index;
+      el.classList.toggle("is-active", on);
+      el.setAttribute("aria-hidden", String(!on));
+      // Only the visible cover should be reachable by keyboard.
+      el.tabIndex = on ? 0 : -1;
+    });
+  };
+
+  const update = () => {
+    const mid = track.getBoundingClientRect().left + track.clientWidth / 2;
+    let best = 0;
+    let bestDistance = Infinity;
+    items.forEach((el, i) => {
+      const rect = el.getBoundingClientRect();
+      const distance = Math.abs(rect.left + rect.width / 2 - mid);
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        best = i;
+      }
+    });
+    setActive(best);
+  };
+
+  // Measured directly rather than deferred to requestAnimationFrame: with
+  // only a dozen items this is cheap, and it keeps the active project in
+  // step with the scroll instead of a frame behind it.
+  track.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+
+  // A vertical wheel is the natural gesture on a mouse; translate it.
+  track.addEventListener(
+    "wheel",
+    (event) => {
+      if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+      event.preventDefault();
+      track.scrollLeft += event.deltaY;
+    },
+    { passive: false }
+  );
+
+  track.addEventListener("keydown", (event) => {
+    const step =
+      event.key === "ArrowRight" ? 1 : event.key === "ArrowLeft" ? -1 : 0;
+    if (!step) return;
+    event.preventDefault();
+    const next = Math.min(items.length - 1, Math.max(0, active + step));
+    items[next].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+  });
+
+  update();
+});
+
 // Gallery tabs on project pages. The markup ships with every panel visible
 // so the drawings are reachable without scripting; this hides the inactive
 // ones and wires up the tab strip.

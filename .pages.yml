@@ -39,11 +39,16 @@ content:
           message: Lowercase letters, numbers and hyphens only — for example "riverside-pavilion".
         description: Becomes the page address. Avoid changing it once you've shared a link to the project.
 
+      - name: date
+        label: Date
+        type: string
+        description: "Shown on the timeline beneath the project — a year like 2024, or something like Spring 2023. Leave blank and a dash appears instead."
+
       - name: order
-        label: Position in grid
+        label: Position on timeline
         type: number
         default: 1
-        description: Lower numbers appear first. Every third project (1st, 4th, 7th…) is displayed full width.
+        description: "Lower numbers appear first, left to right. This controls the sequence; the Date field is only the label, so set these to match your chronology."
 
       - name: accent
         label: Project colour
@@ -187,6 +192,14 @@ content:
         label: Home page
         type: object
         fields:
+          - name: layout
+            label: How projects are shown
+            type: select
+            default: timeline
+            options:
+              values:
+                - { value: timeline, label: "Timeline — scrolls sideways, cover fades in above" }
+                - { value: grid, label: "Grid — all covers at once" }
           - { name: eyebrow, label: Small label above headline, type: string }
           - { name: headline, label: Headline, type: text }
           - { name: intro, label: Intro paragraph, type: text }

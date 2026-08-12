@@ -219,6 +219,61 @@ function landingPage() {
 `;
 }
 
+/* ---------- timeline ----------
+   Projects laid along a horizontally scrolling track. Whichever project sits
+   nearest the centre becomes active and its cover fades in above. Ordering
+   follows `order`; `date` is the label shown on the track. */
+function renderTimeline() {
+  const stage = projects
+    .map(
+      (p, i) => `      <a class="tl-cover${i === 0 ? " is-active" : ""}" href="projects/${attr(
+        p.slug
+      )}.html" data-index="${i}" aria-hidden="${i === 0 ? "false" : "true"}" tabindex="${
+        i === 0 ? "0" : "-1"
+      }">
+        ${
+          p.cover
+            ? `<img src="${attr(p.cover)}" alt="${attr(p.title)}" loading="lazy">`
+            : `<span class="placeholder-label">${esc(p.title)}</span>`
+        }
+      </a>`
+    )
+    .join("\n");
+
+  const items = projects
+    .map(
+      (p, i) => `      <a class="tl-item accent-${Number(p.accent) || 1}${
+        i === 0 ? " is-active" : ""
+      }" href="projects/${attr(p.slug)}.html" data-index="${i}">
+        <span class="tl-date">${esc(p.date || "—")}</span>
+        <span class="tl-tick"></span>
+        <span class="tl-title">${esc(p.title)}</span>
+      </a>`
+    )
+    .join("\n");
+
+  return `  <section class="timeline" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Selected Work</h2>
+      </div>
+    </div>
+
+    <div class="tl-stage">
+${stage}
+    </div>
+
+    <div class="tl-track-wrap">
+      <div class="tl-centre" aria-hidden="true"></div>
+      <div class="tl-track" tabindex="0" role="list" aria-label="Projects by date">
+        <div class="tl-pad" aria-hidden="true"></div>
+${items}
+        <div class="tl-pad" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>`;
+}
+
 function workPage() {
   const h = settings.home || {};
   const cards = projects
@@ -265,7 +320,11 @@ ${header("work")}
     </div>
   </section>
 
-  <section class="work" id="work">
+${
+    projects.length === 0
+      ? '  <section class="work"><div class="container"><p class="lede">No published projects yet.</p></div></section>'
+      : (h.layout || "timeline") === "grid"
+      ? `  <section class="work" id="work">
     <div class="container">
       <div class="section-head reveal">
         <h2>Selected Work</h2>
@@ -273,11 +332,13 @@ ${header("work")}
 
       <div class="work-grid">
 
-${cards || '        <p class="lede">No published projects yet.</p>'}
+${cards}
 
       </div>
     </div>
-  </section>
+  </section>`
+      : renderTimeline()
+  }
 
   <section class="about-teaser">
     <div class="container split">

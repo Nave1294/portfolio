@@ -134,6 +134,36 @@ To add a project, copy an existing JSON file, change `slug` and `order`, and
 build. There is nothing else to update — the home grid is generated from
 whatever is in the folder.
 
+### The home page timeline
+
+`home.layout` in `settings.json` chooses between `timeline` (default) and
+`grid`.
+
+The timeline lays projects along a horizontally scrolling track. Whichever
+project sits nearest the centre becomes active: its cover fades in above and
+its title takes the project's accent colour. Both the title and the cover link
+through to the project.
+
+- `order` controls the sequence, left to right. Set these to match your
+  chronology — the timeline does not sort by date.
+- `date` is only the label shown under each title. Blank shows a dash.
+
+Half a viewport of padding sits at each end so the first and last projects can
+still reach the centre. A vertical mouse wheel is translated to horizontal
+scrolling, and the track takes arrow keys when focused.
+
+Without JavaScript the first cover is shown and the track is still scrollable,
+so every project remains reachable.
+
+### Images are never cropped
+
+Frames use `object-fit: contain` and take each image's own proportions, so no
+drawing loses an edge. This matters more than tidy grid rows: cropping a plan
+or section destroys information.
+
+If you change this, do not reintroduce `object-fit: cover` on gallery or
+project images.
+
 ### How a project page organises itself
 
 Each gallery image carries a `group` and an optional `building`:

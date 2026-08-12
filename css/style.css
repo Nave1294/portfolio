@@ -259,9 +259,10 @@ section { padding-block: var(--space-xl); }
   position: relative;
 }
 
+/* contain, never cover: cropping a plan or section loses drawing. */
 .img-frame img {
   width: 100%; height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s var(--ease);
 }
 
@@ -319,6 +320,134 @@ section { padding-block: var(--space-xl); }
 }
 
 /* ============================================================
+   TIMELINE
+   Projects along a horizontally scrolling track. The one nearest the
+   centre is active and its cover fades in above.
+   ============================================================ */
+.timeline { padding-block: var(--space-xl); }
+
+.tl-stage {
+  /* Held in a variable so the covers can be clamped against it directly —
+     a percentage max-height does not resolve reliably against the grid
+     area and let images spill over the track below. */
+  --stage-height: clamp(220px, 40vh, 480px);
+  position: relative;
+  height: var(--stage-height);
+  margin-bottom: var(--space-lg);
+}
+
+.tl-cover {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s var(--ease);
+}
+
+.tl-cover.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tl-cover img {
+  max-width: min(100%, 1000px);
+  max-height: var(--stage-height);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.tl-cover .placeholder-label {
+  position: static;
+  color: var(--color-text-muted);
+}
+
+.tl-track-wrap { position: relative; }
+
+/* The axis, and the centre mark that shows where a project becomes active. */
+.tl-track-wrap::before,
+.tl-centre {
+  content: "";
+  position: absolute;
+  background: var(--color-border);
+  pointer-events: none;
+}
+
+.tl-track-wrap::before {
+  left: 0;
+  right: 0;
+  top: calc(var(--space-md) + 1rem + 0.5rem + 10px);
+  height: 1px;
+}
+
+.tl-centre {
+  left: 50%;
+  top: calc(var(--space-md) + 1rem);
+  height: 20px;
+  width: 1px;
+  background: var(--color-text);
+}
+
+.tl-track {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(2rem, 6vw, 5rem);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  padding-block: var(--space-md);
+  scrollbar-width: none;
+}
+
+.tl-track::-webkit-scrollbar { display: none; }
+
+/* Half a viewport of padding at each end so the first and last projects
+   can still reach the centre. */
+.tl-pad { flex: 0 0 50vw; }
+
+.tl-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  opacity: 0.35;
+  transition: opacity 0.35s var(--ease);
+}
+
+.tl-item.is-active { opacity: 1; }
+
+.tl-date {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.tl-tick {
+  width: 1px;
+  height: 20px;
+  background: var(--color-border);
+  transition: background 0.35s var(--ease);
+}
+
+.tl-item.is-active .tl-tick { background: var(--accent); }
+
+.tl-title {
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: color 0.35s var(--ease);
+}
+
+.tl-item.is-active .tl-title { color: var(--accent); }
+
+.tl-track:focus-visible { outline: 2px solid var(--color-text); outline-offset: 4px; }
+
+/* ============================================================
    ABOUT TEASER / SPLIT SECTIONS
    ============================================================ */
 .split {
@@ -371,7 +500,10 @@ section { padding-block: var(--space-xl); }
    ============================================================ */
 .project-hero { padding-top: var(--space-lg); }
 
-.project-hero .img-frame { aspect-ratio: 16 / 8; margin-top: var(--space-md); }
+/* The hero also keeps the image's own proportions rather than cropping. */
+.project-hero .img-frame { aspect-ratio: auto; margin-top: var(--space-md); }
+.project-hero .img-frame img { height: auto; }
+.project-hero .img-frame:not(:has(img)) { aspect-ratio: 16 / 8; }
 
 .project-meta-bar {
   display: grid;
@@ -402,9 +534,13 @@ section { padding-block: var(--space-xl); }
   margin-bottom: var(--space-lg);
 }
 
-.project-gallery .img-frame { aspect-ratio: 4 / 3; }
+/* Frames take each drawing's own proportions — no fixed ratio, so nothing
+   is cropped and nothing is letterboxed. Rows align to the top since
+   heights now vary. */
+.project-gallery { align-items: start; }
+.project-gallery .img-frame { aspect-ratio: auto; }
+.project-gallery .img-frame img { height: auto; }
 .project-gallery .span-2 { grid-column: span 2; }
-.project-gallery .span-2 .img-frame { aspect-ratio: 16 / 9; }
 
 .gallery-item { margin: 0; }
 
