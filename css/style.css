@@ -837,6 +837,84 @@ html.js .gallery-panel[hidden] { display: none; }
   letter-spacing: -0.01em;
 }
 
+/* Full-bleed: edge to edge of the screen, no container gutter. Used where
+   a drawing deserves the whole width. */
+.chapter-full {
+  margin: 0 0 var(--space-lg);
+  width: 100%;
+}
+
+.chapter-full img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chapter-full figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* Strips: a sequence read sideways rather than stacked down the page —
+   a history, a set of comparisons, steps in a process. */
+.chapter-strip { margin-bottom: var(--space-lg); }
+
+.strip-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.strip-head h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.strip-hint {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.strip-track {
+  display: flex;
+  gap: var(--space-md);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding-inline: var(--gutter);
+  padding-bottom: var(--space-sm);
+  scrollbar-width: thin;
+}
+
+.strip-item {
+  flex: 0 0 auto;
+  width: clamp(260px, 42vw, 620px);
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.strip-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--color-bg-alt);
+}
+
+.strip-item figcaption {
+  margin-top: 0.55rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+.strip-track:focus-visible { outline: 2px solid var(--color-text); outline-offset: 2px; }
+
 .chapter-quote cite {
   display: block;
   margin-top: var(--space-sm);

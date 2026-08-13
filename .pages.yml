@@ -147,10 +147,38 @@ content:
             fields:
               - { name: text, label: Quote, type: text }
               - { name: attribution, label: Attribution, type: string }
-          - name: images
-            label: Images
+          - name: blocks
+            label: Image blocks
             type: object
             list: true
+            description: "Groups of images, each laid out a different way. Add as many as the chapter needs."
+            fields:
+              - name: kind
+                label: Layout
+                type: select
+                default: grid
+                options:
+                  values:
+                    - { value: full, label: "Full bleed — edge to edge of the screen, one per row" }
+                    - { value: strip, label: "Strip — scrolls sideways, good for sequences" }
+                    - { value: grid, label: "Grid — two up" }
+              - name: title
+                label: Strip heading
+                type: string
+                description: "Only used by strips. Shown small above the row."
+              - name: images
+                label: Images
+                type: object
+                list: true
+                fields:
+                  - { name: src, label: Image, type: image }
+                  - { name: caption, label: Caption, type: string }
+
+          - name: images
+            label: Loose images
+            type: object
+            list: true
+            description: "Optional. Images not in a block; laid out two-up unless sized otherwise."
             fields:
               - { name: src, label: Image, type: image }
               - { name: caption, label: Caption, type: string }
