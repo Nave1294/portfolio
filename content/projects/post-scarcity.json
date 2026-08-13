@@ -1,23 +1,14 @@
 {
   "title": "Post Scarcity",
-  "published": true,
   "slug": "post-scarcity",
+  "published": true,
   "order": 0,
-  "accent": "3",
-  "cover": "assets/images/post-scarcity/083.jpg",
+  "accent": 3,
+  "date": "2025",
   "type": "Thesis",
   "year": "2025",
-<<<<<<< HEAD
-  "location": "Penn Square, Philadelphia",
-  "program": "Post Scarcity Programing",
-  "status": "Academic — Bachelor of Architecture thesis",
-  "role": "Solo thesis project",
-  "body": [
-    "Post Scarcity asks what a city becomes when abundance uncouples survival from labour. It takes the premise seriously — a fifteen-hour week, a universal basic income, goods at zero marginal cost — and follows it to its conclusions for center city Philadlephia..",
-    "The answer is bringing back Philadelphia's center square, and a building a vertical neighborhood adjacent to it.. Awarded the 2025 Pearson Prize Silver Medal for best Drexel architectural thesis."
-=======
   "location": "Center Square, Philadelphia",
-  "program": "Park and vertical neighbourhood",
+  "program": "Post Scarcity Programing",
   "status": "Bachelor of Architecture thesis",
   "role": "Solo thesis project",
   "summary": "If abundance uncouples survival from labour, what happens to the city built around work? A park and a vertical neighbourhood at Center Square.",
@@ -46,11 +37,26 @@
         "Progress since was made not in the absence of crisis but in spite of it — two world wars, financial collapses, pandemics. It has not been evenly shared, and many were overlooked or exploited to fuel it. Future progress is not guaranteed, and must not come at the expense of others. But a future greater than our present, for everyone, is within reach."
       ],
       "stats": [
-        { "value": "1750", "label": "Mechanisation makes goods cheap and accessible" },
-        { "value": "1900s", "label": "Electricity drives a second wave" },
-        { "value": "1950s", "label": "Those under 2,000 calories a day fall from 51% to 3%" },
-        { "value": "2000s", "label": "Knowledge becomes essentially free" },
-        { "value": "2020", "label": "A pandemic accelerates automation and remote work" }
+        {
+          "value": "1750",
+          "label": "Mechanisation makes goods cheap and accessible"
+        },
+        {
+          "value": "1900s",
+          "label": "Electricity drives a second wave"
+        },
+        {
+          "value": "1950s",
+          "label": "Those under 2,000 calories a day fall from 51% to 3%"
+        },
+        {
+          "value": "2000s",
+          "label": "Knowledge becomes essentially free"
+        },
+        {
+          "value": "2020",
+          "label": "A pandemic accelerates automation and remote work"
+        }
       ],
       "images": []
     },
@@ -107,12 +113,30 @@
         "The chart is an oversimplification, of course. Turning it into physical reality takes many more layers — and one idea in particular."
       ],
       "stats": [
-        { "value": "−26%", "label": "Office" },
-        { "value": "+10%", "label": "Residential" },
-        { "value": "+10%", "label": "Entertainment" },
-        { "value": "+6%", "label": "Institutional" },
-        { "value": "+2%", "label": "Civic" },
-        { "value": "−2%", "label": "Retail" }
+        {
+          "value": "−26%",
+          "label": "Office"
+        },
+        {
+          "value": "+10%",
+          "label": "Residential"
+        },
+        {
+          "value": "+10%",
+          "label": "Entertainment"
+        },
+        {
+          "value": "+6%",
+          "label": "Institutional"
+        },
+        {
+          "value": "+2%",
+          "label": "Civic"
+        },
+        {
+          "value": "−2%",
+          "label": "Retail"
+        }
       ],
       "images": []
     },
@@ -227,12 +251,12 @@
         },
         {
           "src": "assets/images/post-scarcity/building-02.jpg",
-          "caption": "",
+          "caption": "Perspective section. The park is cut open to show the transit concourse running beneath it.",
           "size": "normal"
         },
         {
           "src": "assets/images/post-scarcity/building-04.jpg",
-          "caption": "",
+          "caption": "The sunken amphitheatre at dusk, City Hall behind. Grass terraces lit at the nosing ring a stage sized for a quartet.",
           "size": "normal"
         },
         {
@@ -259,22 +283,22 @@
         },
         {
           "src": "assets/images/post-scarcity/building-05.jpg",
-          "caption": "",
+          "caption": "Cafe terrace under the perforated canopy, planted spheres hung from it, the trolley and City Hall beyond.",
           "size": "normal"
         },
         {
           "src": "assets/images/post-scarcity/building-06.jpg",
-          "caption": "",
+          "caption": "Dusk. The birch grove uplit, a stepped lawn rising to the pavilion, the reflecting pool holding the light.",
           "size": "normal"
         },
         {
           "src": "assets/images/post-scarcity/building-07.jpg",
-          "caption": "",
+          "caption": "LOVE Park. An oculus cut through the plaza opens the concourse below to daylight, the fountain falling through it.",
           "size": "normal"
         },
         {
           "src": "assets/images/post-scarcity/building-09.jpg",
-          "caption": "",
+          "caption": "Looking east to City Hall's west portal at dusk, jets and pleached trees framing the axis.",
           "size": "normal"
         }
       ]
@@ -293,6 +317,5 @@
       },
       "images": []
     }
->>>>>>> 3972203 (Rebuild the thesis page from the thesis narrative document)
   ]
 }
