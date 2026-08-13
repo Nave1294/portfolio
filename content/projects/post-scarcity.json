@@ -1,24 +1,22 @@
 {
   "title": "Post Scarcity",
-  "slug": "post-scarcity",
   "published": true,
-  "order": 0,
-  "accent": 3,
+  "slug": "post-scarcity",
+  "summary": "If abundance uncouples survival from labour, what happens to the city built around work? A park and a vertical neighbourhood at Center Square.",
   "date": "2025",
+  "order": 0,
+  "accent": "3",
   "type": "Thesis",
   "year": "2025",
   "location": "Center Square, Philadelphia",
   "program": "Post Scarcity Programing",
   "status": "Bachelor of Architecture thesis",
   "role": "Solo thesis project",
-  "summary": "If abundance uncouples survival from labour, what happens to the city built around work? A park and a vertical neighbourhood at Center Square.",
-  "cover": "assets/images/post-scarcity/renders-01.jpg",
   "body": [
     "A thesis about what a city becomes when scarcity stops organising it. It takes the premise seriously — a fifteen-hour week, universal basic income, goods at near-zero marginal cost — and follows it down to a single block of Philadelphia.",
     "The answer is a park at Center Square, west of City Hall, and a building lifted above it: a structural frame treated as a street grid, filled with programs that self-organise by proximity rather than by zoning class.",
     "Awarded the 2025 Pearson Prize Silver Medal for best Drexel architectural thesis."
   ],
-  "gallery": [],
   "chapters": [
     {
       "title": "Can Architects Shape the Future?",
@@ -32,16 +30,13 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/opening-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/opening-01.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/opening-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/opening-02.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/opening-03.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/opening-03.jpg"
             }
           ]
         }
@@ -53,8 +48,7 @@
       "body": [
         "The economy shifts through decentralised production, universal basic income, zero-marginal-cost goods and a sharing culture. Work settles near fifteen hours a week, concentrated in creative and critical-thinking fields.",
         "Value moves toward social capital, environmental stewardship and community well-being. And scarcity relocates: what becomes scarce is time, privacy, natural features and genuine experience."
-      ],
-      "blocks": []
+      ]
     },
     {
       "title": "A Week Reclaimed",
@@ -87,8 +81,7 @@
           "value": "−2%",
           "label": "Retail"
         }
-      ],
-      "blocks": []
+      ]
     },
     {
       "title": "Better Pastimes",
@@ -96,8 +89,7 @@
       "body": [
         "The average American spends 2 hours 18 minutes on social media, 1 hour 19 on games and 2 hours watching television — inside a day with less than six hours of personal time.",
         "That retreat into screens reads as a failure of the public realm. So: what can architects do to encourage better pastimes?"
-      ],
-      "blocks": []
+      ]
     },
     {
       "title": "Counterpoint",
@@ -107,40 +99,32 @@
         "Four run through the project: grid against greenspace, greenspace against built space, built space against program, and program against program."
       ],
       "quote": {
-        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest, choice, and harmony between two or more independent ideas.",
-        "attribution": ""
+        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest, choice, and harmony between two or more independent ideas."
       },
       "blocks": [
         {
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/counterpoint-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/counterpoint-01.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/counterpoint-02.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-03.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/counterpoint-03.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-04.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/counterpoint-04.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-05.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/counterpoint-05.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-06.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/counterpoint-06.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-07.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/counterpoint-07.jpg"
             }
           ]
         }
@@ -156,41 +140,33 @@
       "blocks": [
         {
           "kind": "strip",
+          "title": "Rittenhouse Square, East Passyunk, John F. Collins Park, Sendai Mediatheque, Kunsthaus Graz",
           "images": [
             {
-              "src": "assets/images/post-scarcity/precedent-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/precedent-01.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/precedent-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/precedent-02.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/precedent-03.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/precedent-03.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/precedent-04.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/precedent-04.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/precedent-05.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/precedent-05.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/precedent-06.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/precedent-06.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/precedent-07.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/precedent-07.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/precedent-08.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/precedent-08.jpg"
             }
-          ],
-          "title": "Rittenhouse Square, East Passyunk, John F. Collins Park, Sendai Mediatheque, Kunsthaus Graz"
+          ]
         }
       ]
     },
@@ -211,8 +187,7 @@
           "Biophilia — none to accessible",
           "Access — none to accessible"
         ]
-      },
-      "blocks": []
+      }
     },
     {
       "title": "Philadelphia",
@@ -250,37 +225,30 @@
       "blocks": [
         {
           "kind": "strip",
+          "title": "Site and masterplan",
           "images": [
             {
-              "src": "assets/images/post-scarcity/site-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/site-01.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/site-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/site-02.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/site-03.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/site-03.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/site-04.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/site-04.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/site-05.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/site-05.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/site-06.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/site-06.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/site-07.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/site-07.jpg"
             }
-          ],
-          "title": "Site and masterplan"
+          ]
         }
       ]
     },
@@ -296,12 +264,10 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/frame-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/frame-01.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/frame-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/frame-02.jpg"
             }
           ]
         }
@@ -330,20 +296,16 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/clusters-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/clusters-01.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/clusters-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/clusters-02.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/clusters-03.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/clusters-03.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/clusters-04.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/clusters-04.jpg"
             }
           ]
         }
@@ -361,8 +323,7 @@
           "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/renders-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-01.jpg"
             }
           ]
         },
@@ -370,104 +331,81 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/renders-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-02.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-03.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-03.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-04.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-04.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-05.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-05.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-06.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-06.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-07.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-07.jpg"
             }
           ]
         },
         {
           "kind": "strip",
+          "title": "Through the building",
           "images": [
             {
-              "src": "assets/images/post-scarcity/renders-08.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-08.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-09.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-09.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-10.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-10.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-11.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-11.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-12.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-12.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-13.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-13.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-14.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-14.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-15.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-15.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-16.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-16.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-17.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-17.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-18.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-18.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-19.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-19.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-20.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-20.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-21.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-21.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-22.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-22.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-23.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-23.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/renders-24.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/renders-24.jpg"
             }
-          ],
-          "title": "Through the building"
+          ]
         }
       ]
     },
@@ -487,32 +425,25 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/close-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/close-01.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/close-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/close-02.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/close-03.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/close-03.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/close-04.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/close-04.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/close-05.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/close-05.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/close-06.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/close-06.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/close-07.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/close-07.jpg"
             }
           ]
         }
