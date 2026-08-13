@@ -4,75 +4,78 @@
   "published": true,
   "order": 2,
   "accent": 2,
-  "type": "",
+  "type": "Urban landscape",
   "year": "",
   "location": "Milan Italy",
   "program": "",
   "status": "",
   "role": "",
   "cover": "assets/images/porta-genova/cover.jpg",
-  "body": [],
+  "body": [
+    "A linear park along the former Porta Genova rail yard in Milan, running from the street down to the Naviglio. The old goods shed is kept and reopened as a market hall, with a colonnade added along its length.",
+    "The park is organized as a sequence of rooms — a sculpture court, a lawn with an open-air screen, growing houses among the planting beds, a pine grove — ending at steps down to the water."
+  ],
   "gallery": [
     {
-      "src": "assets/images/porta-genova/01.jpg",
+      "src": "assets/images/porta-genova/09.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/porta-genova/02.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/porta-genova/03.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/porta-genova/04.jpg",
-      "wide": false,
-      "caption": "",
+      "caption": "Arrival from the street, the market hall on the left.",
       "group": "Views",
       "building": ""
     },
     {
       "src": "assets/images/porta-genova/05.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/porta-genova/06.jpg",
-      "wide": false,
-      "caption": "",
+      "caption": "The entrance from the street, greenhouses beyond.",
       "group": "Views",
       "building": ""
     },
     {
       "src": "assets/images/porta-genova/07.jpg",
       "wide": false,
-      "caption": "",
+      "caption": "The colonnade, under a mirrored canopy on slender columns.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/porta-genova/03.jpg",
+      "wide": false,
+      "caption": "The sculpture court, with light poles among the planters.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/porta-genova/02.jpg",
+      "wide": false,
+      "caption": "The lawn and its open-air screen.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/porta-genova/01.jpg",
+      "wide": false,
+      "caption": "Hydrangea beds and the growing houses along the walk.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/porta-genova/04.jpg",
+      "wide": false,
+      "caption": "The pine grove, with stone seating in the grass.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/porta-genova/06.jpg",
+      "wide": false,
+      "caption": "Steps down to the Naviglio, the embankment planted above.",
       "group": "Views",
       "building": ""
     },
     {
       "src": "assets/images/porta-genova/08.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/porta-genova/09.jpg",
-      "wide": false,
-      "caption": "",
+      "caption": "Solar trackers on the embankment, the city massing beyond.",
       "group": "Views",
       "building": ""
     }

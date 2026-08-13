@@ -12,7 +12,8 @@
     {
       "src": "assets/images/tower-and-music/01.jpg",
       "caption": "Perspective",
-      "wide": true
+      "wide": true,
+      "group": "Views"
     }
   ]
 }

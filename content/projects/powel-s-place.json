@@ -4,7 +4,7 @@
   "published": true,
   "order": 6,
   "accent": 6,
-  "type": "",
+  "type": "School and business incubator",
   "year": "",
   "location": "",
   "program": "",
@@ -79,44 +79,44 @@
       "building": ""
     },
     {
-      "src": "assets/images/powel-s-place/11.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
-    },
-    {
       "src": "assets/images/powel-s-place/12.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "School, first floor.",
+      "group": "Plans",
       "building": ""
     },
     {
       "src": "assets/images/powel-s-place/13.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "Incubator, first floors.",
+      "group": "Plans",
       "building": ""
     },
     {
       "src": "assets/images/powel-s-place/14.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "School, second floor.",
+      "group": "Plans",
       "building": ""
     },
     {
       "src": "assets/images/powel-s-place/15.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "School third floor and incubator second floors.",
+      "group": "Plans",
       "building": ""
     },
     {
       "src": "assets/images/powel-s-place/10.jpg",
       "wide": true,
       "caption": "Water Cycle Diagram",
+      "group": "Diagrams",
+      "building": ""
+    },
+    {
+      "src": "assets/images/powel-s-place/11.jpg",
+      "wide": false,
+      "caption": "Exploded axonometric: structural frame, program, upper levels and roof.",
       "group": "Diagrams",
       "building": ""
     }

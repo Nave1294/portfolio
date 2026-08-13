@@ -12,57 +12,68 @@
     {
       "src": "assets/images/zie-door-huis/01.jpg",
       "caption": "Lobby",
-      "wide": false
+      "wide": false,
+      "group": "Views"
     },
     {
       "src": "assets/images/zie-door-huis/02.jpg",
       "caption": "Flex Area looking towards water",
-      "wide": false
+      "wide": false,
+      "group": "Views"
     },
     {
       "src": "assets/images/zie-door-huis/03.jpg",
       "caption": "Boat Storage looking towards water",
-      "wide": false
+      "wide": false,
+      "group": "Views"
     },
     {
       "src": "assets/images/zie-door-huis/04.jpg",
       "caption": "Boat Storage looking towards Kelly Drive",
-      "wide": false
+      "wide": false,
+      "group": "Views"
     },
     {
       "src": "assets/images/zie-door-huis/06.jpg",
       "caption": "\"Crows Nest\" looking towards Kelly Drive",
-      "wide": false
+      "wide": false,
+      "group": "Views"
     },
     {
       "src": "assets/images/zie-door-huis/05.jpg",
       "caption": "Basement Hallway",
-      "wide": false
+      "wide": false,
+      "group": "Plans"
     },
     {
       "src": "assets/images/zie-door-huis/07.jpg",
       "caption": "First Floor",
-      "wide": false
+      "wide": false,
+      "group": "Plans"
     },
     {
       "src": "assets/images/zie-door-huis/08.jpg",
       "caption": "Section",
-      "wide": true
+      "wide": true,
+      "group": "Sections & Elevations"
     },
     {
       "src": "assets/images/zie-door-huis/09.jpg",
       "caption": "Research",
-      "wide": false
+      "wide": false,
+      "group": "Diagrams"
     },
     {
       "src": "assets/images/zie-door-huis/10.jpg",
       "caption": "Research",
-      "wide": false
+      "wide": false,
+      "group": "Diagrams"
     },
     {
       "src": "assets/images/zie-door-huis/11.jpg",
       "caption": "Research",
-      "wide": false
+      "wide": false,
+      "group": "Diagrams"
     }
   ]
 }

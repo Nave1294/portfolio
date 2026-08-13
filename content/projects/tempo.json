@@ -4,7 +4,7 @@
   "published": true,
   "order": 4,
   "accent": 4,
-  "type": "",
+  "type": "Landscape and memorial",
   "year": "",
   "location": "At Bartram's Garden",
   "program": "",
@@ -18,92 +18,92 @@
     {
       "src": "assets/images/tempo/01.jpg",
       "wide": false,
-      "caption": "",
+      "caption": "Arrival: the screen begins at the road and curves away into the trees, the city behind it.",
       "group": "Views",
       "building": ""
     },
     {
       "src": "assets/images/tempo/02.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/tempo/03.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/tempo/04.jpg",
-      "wide": false,
-      "caption": "",
+      "caption": "The walk runs the length of the screen, meadow on one side, refinery tanks on the horizon.",
       "group": "Views",
       "building": ""
     },
     {
       "src": "assets/images/tempo/05.jpg",
       "wide": false,
-      "caption": "",
+      "caption": "Inside the covered walk, light broken into stripes by the fins and rafters.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/tempo/03.jpg",
+      "wide": false,
+      "caption": "Where the screen meets the water, with the tanks on the far bank.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/tempo/04.jpg",
+      "wide": false,
+      "caption": "The amphitheater steps down to the river, the stage moored on the water.",
       "group": "Views",
       "building": ""
     },
     {
       "src": "assets/images/tempo/06.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "Site plan: the meadow, the walk along its edge, and the amphitheater at the river.",
+      "group": "Plans",
       "building": ""
     },
     {
       "src": "assets/images/tempo/07.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/tempo/08.jpg",
-      "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "Enlarged plan of the amphitheater, stage and landing.",
+      "group": "Plans",
       "building": ""
     },
     {
       "src": "assets/images/tempo/09.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "Section across the meadow.",
+      "group": "Sections & Elevations",
       "building": ""
     },
     {
       "src": "assets/images/tempo/10.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "Section through the walk where it passes into the trees.",
+      "group": "Sections & Elevations",
       "building": ""
     },
     {
       "src": "assets/images/tempo/11.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "Long section: the screen running the length of the meadow, with the overlook.",
+      "group": "Sections & Elevations",
       "building": ""
     },
     {
       "src": "assets/images/tempo/12.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "Section through the walk and the ground it steps over.",
+      "group": "Sections & Elevations",
       "building": ""
     },
     {
       "src": "assets/images/tempo/13.jpg",
       "wide": false,
-      "caption": "",
-      "group": "Views",
+      "caption": "Section at the water's edge.",
+      "group": "Sections & Elevations",
+      "building": ""
+    },
+    {
+      "src": "assets/images/tempo/08.jpg",
+      "wide": false,
+      "caption": "Axonometric of the whole intervention, with the section cuts marked.",
+      "group": "Diagrams",
       "building": ""
     }
   ],
