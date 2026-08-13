@@ -272,7 +272,7 @@
       },
       "blocks": [
         {
-          "kind": "grid",
+          "kind": "full",
           "images": [
             {
               "src": "assets/images/post-scarcity/d-zoning-ui.jpg",
