@@ -756,6 +756,97 @@ html.js .gallery-panel[hidden] { display: none; }
 
 .chapter-head p + p { margin-top: var(--space-sm); }
 
+/* Figures get their own band with air around them, rather than being
+   crammed into a shared grid row. */
+.chapter-figure { margin-bottom: var(--space-lg); }
+
+/* Tertiary figures — a code screenshot, a reference scrap — stay small.
+   Nothing is enlarged just to fill a column. */
+.chapter-figure.is-small {
+  max-width: 460px;
+  margin-inline: auto;
+  margin-left: 0;
+}
+
+.chapter-figure.is-small figcaption { max-width: 46ch; }
+
+.chapter-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-md);
+  padding-block: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-lg);
+  max-width: 1000px;
+}
+
+.stat-value {
+  display: block;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.1;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+.chapter-list {
+  max-width: 1000px;
+  margin-bottom: var(--space-lg);
+}
+
+.chapter-list h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.chapter-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.chapter-list li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
+  padding-right: var(--space-md);
+}
+
+.chapter-quote {
+  max-width: 30ch;
+  margin: 0 0 var(--space-lg);
+  padding-left: var(--space-md);
+  border-left: 2px solid var(--accent);
+}
+
+.chapter-quote p {
+  font-size: clamp(1.2rem, 2.6vw, 1.7rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.chapter-quote cite {
+  display: block;
+  margin-top: var(--space-sm);
+  font-size: 0.8rem;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
 /* ============================================================
    ABOUT PAGE
    ============================================================ */

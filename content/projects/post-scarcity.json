@@ -7,6 +7,7 @@
   "cover": "assets/images/post-scarcity/083.jpg",
   "type": "Thesis",
   "year": "2025",
+<<<<<<< HEAD
   "location": "Penn Square, Philadelphia",
   "program": "Post Scarcity Programing",
   "status": "Academic — Bachelor of Architecture thesis",
@@ -14,5 +15,284 @@
   "body": [
     "Post Scarcity asks what a city becomes when abundance uncouples survival from labour. It takes the premise seriously — a fifteen-hour week, a universal basic income, goods at zero marginal cost — and follows it to its conclusions for center city Philadlephia..",
     "The answer is bringing back Philadelphia's center square, and a building a vertical neighborhood adjacent to it.. Awarded the 2025 Pearson Prize Silver Medal for best Drexel architectural thesis."
+=======
+  "location": "Center Square, Philadelphia",
+  "program": "Park and vertical neighbourhood",
+  "status": "Bachelor of Architecture thesis",
+  "role": "Solo thesis project",
+  "summary": "If abundance uncouples survival from labour, what happens to the city built around work? A park and a vertical neighbourhood at Center Square.",
+  "cover": "assets/images/post-scarcity/building-01.jpg",
+  "body": [
+    "A thesis about what a city becomes when scarcity stops organising it. It takes the premise seriously — a fifteen-hour week, universal basic income, goods at near-zero marginal cost — and follows it down to a single block of Philadelphia.",
+    "The answer is a park at Center Square, west of City Hall, and a building lifted above it: a structural frame treated as a street grid, filled with programs that self-organise by proximity rather than by zoning class.",
+    "Awarded the 2025 Pearson Prize Silver Medal for best Drexel architectural thesis."
+  ],
+  "gallery": [],
+  "chapters": [
+    {
+      "title": "Foreword",
+      "standfirst": "This is a narrative, not a research paper.",
+      "body": [
+        "The thoughts here are a synthesis of ideas explored during my capstone design thesis. Rather than an essay detailing the project itself, this discusses the research, criteria and design concepts I developed.",
+        "Every new story requires a foundation. For ours, let's reflect on our shared history."
+      ],
+      "images": []
+    },
+    {
+      "title": "Imagine a Future",
+      "standfirst": "Scarcity has been falling for three hundred years.",
+      "body": [
+        "Our story begins in 1725 Europe. Those born that year were the last generation brought into a pre-industrial world. Of every hundred children born, only about forty to sixty survived to adulthood, and those who did rarely lived past forty.",
+        "Progress since was made not in the absence of crisis but in spite of it — two world wars, financial collapses, pandemics. It has not been evenly shared, and many were overlooked or exploited to fuel it. Future progress is not guaranteed, and must not come at the expense of others. But a future greater than our present, for everyone, is within reach."
+      ],
+      "stats": [
+        { "value": "1750", "label": "Mechanisation makes goods cheap and accessible" },
+        { "value": "1900s", "label": "Electricity drives a second wave" },
+        { "value": "1950s", "label": "Those under 2,000 calories a day fall from 51% to 3%" },
+        { "value": "2000s", "label": "Knowledge becomes essentially free" },
+        { "value": "2020", "label": "A pandemic accelerates automation and remote work" }
+      ],
+      "images": []
+    },
+    {
+      "title": "Post Scarcity",
+      "standfirst": "One of countless possible futures.",
+      "body": [
+        "By 2030, poverty falls to 5% globally — a reasonable projection, given it sits at 8.5% today, down from 38% in 1990 across a period that added 2.8 billion people. By 2040, most major economies adopt some form of universal basic income, made possible by automation handling much of production. By 2050, much like the generation born in 1725, we mark the last generation born into the industrial era.",
+        "This timeline is only one path. It will remain a possibility unless we choose to believe it is within reach. So, at least for the remainder of this narrative, choose to believe."
+      ],
+      "images": []
+    },
+    {
+      "title": "The Four Pillars",
+      "standfirst": "Economy, work, value, scarcity.",
+      "body": [
+        "The economy shifts through decentralised production, universal basic income, zero-marginal-cost goods and a sharing culture. As things lose monetary value, ownership matters less — a shirt keeps its functional and sentimental value, but passing it on costs you nothing.",
+        "Work settles at around fifteen hours a week, concentrated in creative and critical-thinking fields. A 2017 study by Redwood Software and Sapio Research found roughly 40% of office work could already be automated; with modest advances that figure could reach 75%. Offices shrink and move closer to people.",
+        "Value moves toward social capital, environmental stewardship, self-actualisation and community well-being. Advancement hinges less on salary and title than on being someone people want to work with.",
+        "And scarcity itself relocates. What becomes scarce is time, privacy, natural features and genuine experience."
+      ],
+      "images": []
+    },
+    {
+      "title": "Spent Time",
+      "standfirst": "More free time does not guarantee a better life.",
+      "body": [
+        "The average American spends 2 hours 18 minutes on social media, 1 hour 19 minutes on video games and 2 hours watching television — inside a day that offers less than six hours of personal time. This retreat into digital pastimes often reflects a failure of the public realm to offer anything engaging enough to pull people away from their screens.",
+        "In Denmark and Austria, where public space is recognised for its quality and access, time spent on digital media is lower despite a culture of more free time. When we build better, people live better."
+      ],
+      "images": []
+    },
+    {
+      "title": "Scarcity and Urbanity",
+      "standfirst": "Cities are efficient, and hard on the people in them.",
+      "body": [
+        "City dwellers have carbon footprints roughly half the US average, while suburban residents generate emissions 200% higher. By 2050, 68% of the world will live in urban areas. Density is the efficient answer.",
+        "But it carries a cost. City dwellers are 21% more likely to experience anxiety, 39% more likely to develop mood disorders, and face 40% more stress and 35% more social isolation. Much of our urban history has been spent building silos — physically, socially, economically. In a post-scarcity future that isolation isn't merely unfortunate; it is kryptonite to the vision.",
+        "The remedies need not be enormous. A 2018 Philadelphia study found that greening vacant lots reduced depression by 68% among low-income residents, while simply removing trash had no measurable effect."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/site-01.jpg",
+          "caption": "Philadelphia's parks in green against its river corridors in blue. The centre of the city holds neither.",
+          "size": "wide"
+        }
+      ]
+    },
+    {
+      "title": "The Built Environment",
+      "standfirst": "Six hours a day move from productive activity into enrichment.",
+      "body": [
+        "Rebuild the week around a fifteen-hour job and the demands a city makes of its buildings move with it. Office space contracts sharply; homes, entertainment and civic space all grow.",
+        "The chart is an oversimplification, of course. Turning it into physical reality takes many more layers — and one idea in particular."
+      ],
+      "stats": [
+        { "value": "−26%", "label": "Office" },
+        { "value": "+10%", "label": "Residential" },
+        { "value": "+10%", "label": "Entertainment" },
+        { "value": "+6%", "label": "Institutional" },
+        { "value": "+2%", "label": "Civic" },
+        { "value": "−2%", "label": "Retail" }
+      ],
+      "images": []
+    },
+    {
+      "title": "Counterpoint",
+      "standfirst": "Two independent lines, played at once.",
+      "body": [
+        "Counterpoint — the relationship between independent melodic lines sounding together, creating harmony through their interaction — can guide urban planning at nearly every scale. It does not imply opposition. It uses contrast to create interest, choice and harmony.",
+        "We need counterpoints in our workplaces, our homes, our streets, our parks. Room for quiet and energy, old and new, planned and spontaneous — and those differences left visible to each other.",
+        "Four carry through the project. Grid against greenspace: Philadelphia's grid is rarely interrupted, and where it is — East Passyunk, the Parkway — the results are among the city's most memorable places. Greenspace against built space, where each elevates the other. Built space against program, dissolving the silos Koolhaas described in the skyscraper. And program against program, curated rather than leased at random, so the result is a symphony rather than noise."
+      ],
+      "quote": {
+        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest, choice, and harmony between two or more independent ideas.",
+        "attribution": ""
+      },
+      "images": []
+    },
+    {
+      "title": "Proximity Zoning",
+      "standfirst": "Zoning by how well things sit together, not by what they are.",
+      "body": [
+        "American zoning is fundamentally incompatible with a post-scarcity society. At its best it prevents obviously harmful adjacencies. At its worst it has been used, intentionally and otherwise, to exclude and segregate.",
+        "Proximity zoning is a fluid, responsive alternative: a system that understands the attributes of different programs and evaluates how well each fits its surrounding context. Working with a colleague I built it as a lightweight software tool. You establish a grid, assign attributes to programs, place them, and the system returns a fit score.",
+        "This is not a black box, and it is not meant to replace the designer. It is decision support. The score isn't final — designers can appeal, or adjust proposals to strengthen good proximities and mitigate poor ones. Tied to an official framework, the score could drive incentives rather than prohibitions.",
+        "The tool is scale-agnostic. A grid tile can be a floor of a building with three programs around a courtyard, a campus with three buildings facing a green, or a restaurant with seating zones around a pocket park."
+      ],
+      "list": {
+        "title": "Six attributes per program",
+        "items": [
+          "Daylight — dark to light",
+          "Noise — quiet to loud",
+          "Distribution — sparse to dense",
+          "Vibrancy — tranquil to vibrant",
+          "Biophilia — none to accessible",
+          "Access — none to accessible"
+        ]
+      },
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/zoning-code.jpg",
+          "caption": "The fit-score engine. Programs are keyed vectors of the six attributes; each grid cell scores against its neighbours.",
+          "size": "small"
+        }
+      ]
+    },
+    {
+      "title": "Center Square",
+      "standfirst": "A park at the heart of the city, west of City Hall.",
+      "body": [
+        "Philadelphia has argued about this ground for two centuries. Edmund Bacon proposed a civic centre here in his 1932 Cornell thesis. The square has been rebuilt continuously since — the Centre Square Water Works arrived in 1801 and was demolished in 1829; Broad Street Station was finished in 1893 and pulled down in 1953; the Parkway, the Market–Frankford line, the expressway and the concourse each took their turn.",
+        "No other site in the city is handed as many people before it opens. The Market–Frankford line brings 30,000 a day past this ground, the Broad Street line 57,000, Suburban Station 26,000 — 113,000 daily.",
+        "The park breaks the grid deliberately: soft, flowing lines against the rectilinear order around them, in the way Rittenhouse Square cuts across the formal layout and Central Park turns its back on Manhattan's geometry."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/proposal-01.jpg",
+          "caption": "Edmund Bacon, \"A Civic Center for Philadelphia\", Cornell University thesis, 1932. Credit: Edmund Bacon.",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/park-01.jpg",
+          "caption": "Connectivity as an asset — 113,000 transit riders pass the site daily.",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/history-01.jpg",
+          "caption": "1750. Middle Ferry was first recorded in 1718.",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/history-02.jpg",
+          "caption": "1862. In 1870 voters chose Penn Square as the city's civic centrepiece.",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/history-03.jpg",
+          "caption": "1910. Construction begins on the Benjamin Franklin Parkway.",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/history-04.jpg",
+          "caption": "1962. The Vine Street Expressway begins; Suburban Station's concourse expands.",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/park-03.jpg",
+          "caption": "The guiding framework for the park.",
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/post-scarcity/proposal-04.jpg",
+          "caption": "The building site, between Market Street, 15th Street and South Penn Square.",
+          "size": "wide"
+        }
+      ]
+    },
+    {
+      "title": "The Building",
+      "standfirst": "The structural grid treated as a street grid.",
+      "body": [
+        "Nearly every tall building today is designed to maximise rentable square footage. Set that constraint aside and the frame can be treated as a framework rather than a container — a three-dimensional street grid, intentionally broken when programs are applied.",
+        "It also inverts the public realm. Normally a building is private with a few public zones cut into it; here the frame and its programs are public by default, with exceptions marked private. The building is lifted so only the structural and circulation cores touch down, and the park runs beneath and around it. The elevator becomes the lobby.",
+        "The grid is uniform cubes. At its full 36-foot height it suits outdoor space, industry or sport; halved to 18 feet it takes schools, commercial services and workshops; in thirds at 12 feet it takes apartments and small retail. The same frame carries all of it, now and as it changes.",
+        "Circulation is the part that makes it work. Cable-free cars move independently within the shafts and stop every three storeys — a vertical transit system. The last leg is always on foot, through the public realm, where others are lounging, walking, eating or playing. In a world with six more hours a day, a pleasant commute may beat the fastest one.",
+        "The frame is steel and concrete: columns and beams of one-inch plate welded into rectangular profiles. The programs inside use mass timber, brick and fabric — lighter, softer materials counterbalancing the rigidity of the grid."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/building-01.jpg",
+          "caption": "Site plan. The park breaks the grid west of City Hall; the frame touches down only at its cores.",
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/post-scarcity/building-02.jpg",
+          "caption": "",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/building-04.jpg",
+          "caption": "",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/building-03.jpg",
+          "caption": "The park at ground level. A reflecting pool, a planted berm cut by an arch, and City Hall beyond.",
+          "size": "wide"
+        }
+      ]
+    },
+    {
+      "title": "A Vertical Neighbourhood",
+      "standfirst": "Programs cluster around common ground.",
+      "body": [
+        "Programs were placed by proximity zoning, and their designs derive from those proximities. Certain ones naturally form clusters organised around a central common space. Think of it as a vertical fifteen-minute neighbourhood — daily needs close by, but the pull to explore elsewhere left intact.",
+        "The Piazza Cluster centres on a market: rotating stalls and year-round restaurants, its roof doubling as the central green with a communal screen, a contemplative garden behind one core, lounges with city views and beach volleyball. Studio apartments sit alongside with four ground-floor shops; four-bedroom family units with private terraces and vegetable gardens occupy the diagonal opposite. The co-working tower is deliberately not connected to the piazza — visible from it, but separate, so work and downtime stay distinct. Fifteen storeys of green wall flank its core, filtering wastewater from the hydroponic farms.",
+        "The Family Circle gives a slice of the frame to families. A playground with boulders, half-courts and an outdoor fitness area ring the green; doctors, a grocery and salons sit just off it, supplied by the hydroponic farm below. Above the courts, two-level homes of five to six bedrooms group in threes and fours around private common space, stacked four deep and joined by stair and core. Across the circle, a four-storey K–8 school meets a community centre through a shared atrium of planted ramps and terraces.",
+        "Together these two clusters are only 30% of the building's programmable space."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/building-08.jpg",
+          "caption": "The sunken amphitheatre, pine grove and flowering beds, with a café pavilion under a planted roof.",
+          "size": "wide"
+        },
+        {
+          "src": "assets/images/post-scarcity/building-05.jpg",
+          "caption": "",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/building-06.jpg",
+          "caption": "",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/building-07.jpg",
+          "caption": "",
+          "size": "normal"
+        },
+        {
+          "src": "assets/images/post-scarcity/building-09.jpg",
+          "caption": "",
+          "size": "normal"
+        }
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "standfirst": "Abundance alone does not guarantee quality of life.",
+      "body": [
+        "Counterpoint runs through all of it — grid against greenspace, frame against program, structured work against flexible leisure. These pairings ground a concept as expansive as post-scarcity firmly in Philadelphia, and keep it from floating off into the abstract.",
+        "Proximity zoning takes the clarity of a zoning code and keeps the flexibility of a sketch. The frame follows practical constraints yet accommodates expressive programs. Even the social ideas — the shorter week, the basic income — are not ends but tools for richer lives.",
+        "This thesis was never about designing a fully realistic building. It continues a conversation begun long before me. If we stay focused only on today's problems, we risk overlooking both what we have already achieved and what is still possible."
+      ],
+      "quote": {
+        "text": "The future cannot be predicted, but futures can be invented.",
+        "attribution": "Dennis Gabor, Nobel Prize-winning physicist"
+      },
+      "images": []
+    }
+>>>>>>> 3972203 (Rebuild the thesis page from the thesis narrative document)
   ]
 }

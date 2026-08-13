@@ -605,19 +605,71 @@ function renderChapters(chapters) {
 
   const sections = chapters
     .map((c, i) => {
-      const images = (c.images || [])
-        .map(
-          (img) => `        <figure class="gallery-item${img.wide ? " span-2" : ""}">
+      // Images are grouped by size so a full-width drawing isn't forced into
+      // the same row as a pair, and a tertiary figure stays small.
+      const imgs = c.images || [];
+      const wide = imgs.filter((g) => (g.size || "normal") === "wide");
+      const small = imgs.filter((g) => g.size === "small");
+      const normal = imgs.filter(
+        (g) => (g.size || "normal") !== "wide" && g.size !== "small"
+      );
+
+      const figure = (img, cls) =>
+        `        <figure class="gallery-item${cls}">
           ${frame(img.src, img.caption || c.title, "", 1)}${
-            img.caption ? `\n          <figcaption>${esc(img.caption)}</figcaption>` : ""
-          }
-        </figure>`
-        )
-        .join("\n");
+          img.caption ? `\n          <figcaption>${esc(img.caption)}</figcaption>` : ""
+        }
+        </figure>`;
+
+      const blocks = [];
+      for (const g of wide) {
+        blocks.push(`      <div class="container chapter-figure">\n${figure(g, "")}\n      </div>`);
+      }
+      if (normal.length) {
+        blocks.push(
+          `      <div class="container project-gallery">\n${normal
+            .map((g) => figure(g, ""))
+            .join("\n")}\n      </div>`
+        );
+      }
+      for (const g of small) {
+        blocks.push(`      <div class="container chapter-figure is-small">\n${figure(g, "")}\n      </div>`);
+      }
 
       const body = (c.body || [])
         .map((t) => `          <p>${esc(t)}</p>`)
         .join("\n");
+
+      const stats = (c.stats || []).length
+        ? `      <div class="container chapter-stats">\n${c.stats
+            .map(
+              (s) => `        <div class="stat">
+          <span class="stat-value">${esc(s.value)}</span>
+          <span class="stat-label">${esc(s.label)}</span>
+        </div>`
+            )
+            .join("\n")}\n      </div>`
+        : "";
+
+      const list =
+        c.list && (c.list.items || []).length
+          ? `      <div class="container chapter-list">
+        ${c.list.title ? `<h3>${esc(c.list.title)}</h3>` : ""}
+        <ul>
+${c.list.items.map((t) => `          <li>${esc(t)}</li>`).join("\n")}
+        </ul>
+      </div>`
+          : "";
+
+      const quote =
+        c.quote && c.quote.text
+          ? `      <div class="container">
+        <blockquote class="chapter-quote">
+          <p>${esc(c.quote.text)}</p>
+          ${c.quote.attribution ? `<cite>${esc(c.quote.attribution)}</cite>` : ""}
+        </blockquote>
+      </div>`
+          : "";
 
       return `    <section class="chapter" id="chapter-${i + 1}">
       <div class="container chapter-head">
@@ -628,7 +680,7 @@ function renderChapters(chapters) {
 ${body}
         </div>
       </div>
-${images ? `      <div class="container project-gallery">\n${images}\n      </div>` : ""}
+${[stats, list, quote, ...blocks].filter(Boolean).join("\n")}
     </section>`;
     })
     .join("\n\n");
