@@ -181,11 +181,14 @@
       "body": [
         "Why do the best public spaces fill people with joy? Because they are a counterpoint the city employs.",
         "Counterpoint — the relationship between independent melodic lines sounding together, creating harmony through their interaction — can guide planning at nearly every scale. It does not imply opposition. It uses contrast to create interest, choice and harmony.",
-        "Three types of counterpoint carry the project: grid against greenspace, built space against program, and program against program. Three melodies."
+        "Three types of counterpoint carry the project: grid against greenspace, built space against program, and program against program. Three melodies.",
+        "The grid of Philadelphia is its defining organizational system, but in the few places where that grid is broken or interrupted, places feel special and interesting.",
+        "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places: East Passyunk, born of a preserved Lenape trail cutting diagonally through the south; Rittenhouse Square, whose walks ignore the street lines; John F. Collins Park, a pocket mid-block; and the Benjamin Franklin Parkway, a deliberate break drawing an axis from City Hall to the Art Museum.",
+        "A building as a stack of separate worlds.",
+        "Koolhaas described the skyscraper as a vertical collage of separate worlds. What is missing from that account is interaction — not just separation.",
+        "If those wildly different programs bled into one another instead of staying in their silos, the building itself could become the storyteller, its spaces weaving together in a choreography of contrasts.",
+        "Two buildings hold the line: Toyo Ito's Sendai Mediatheque, and Kunsthaus Graz by Peter Cook and Colin Fournier."
       ],
-      "quote": {
-        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest."
-      },
       "blocks": [
         {
           "kind": "grid",
@@ -203,16 +206,7 @@
               "caption": "Program vs Program"
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "Grid Against Green",
-      "standfirst": "The grid of Philadelphia is its defining organizational system, but in the few places where that grid is broken/interrupted, places feel special and interesting.",
-      "body": [
-        "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places: East Passyunk, born of a preserved Lenape trail cutting diagonally through the south; Rittenhouse Square, whose walks ignore the street lines; John F. Collins Park, a pocket mid-block; and the Benjamin Franklin Parkway, a deliberate break drawing an axis from City Hall to the Art Museum."
-      ],
-      "blocks": [
+        },
         {
           "kind": "full",
           "images": [
@@ -228,18 +222,7 @@
               "src": "assets/images/post-scarcity/d-cities.jpg"
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "Built Space Against Program",
-      "standfirst": "A building as a stack of separate worlds.",
-      "body": [
-        "Koolhaas described the skyscraper as a vertical collage of separate worlds. What is missing from that account is interaction — not just separation.",
-        "If those wildly different programs bled into one another instead of staying in their silos, the building itself could become the storyteller, its spaces weaving together in a choreography of contrasts.",
-        "Two buildings hold the line: Toyo Ito's Sendai Mediatheque, and Kunsthaus Graz by Peter Cook and Colin Fournier."
-      ],
-      "blocks": [
+        },
         {
           "kind": "full",
           "images": [
@@ -249,7 +232,11 @@
             }
           ]
         }
-      ]
+      ],
+      "images": [],
+      "quote": {
+        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest."
+      }
     },
     {
       "title": "Proximity Zoning",
