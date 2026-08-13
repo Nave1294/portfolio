@@ -112,7 +112,7 @@ content:
         label: Walkthrough chapters
         type: object
         list: true
-        description: "Optional. Fill these in and the project page becomes a walkthrough read in sequence, replacing the tabbed gallery below. Used for the thesis; leave empty for everything else."
+        description: "Optional. Fill these in and the project page gains a walkthrough read in sequence, below the tabbed gallery. Used for the thesis; leave empty for everything else."
         fields:
           - name: title
             label: Chapter title
@@ -190,6 +190,19 @@ content:
                     - { value: wide, label: "Full width — plans, sections, key renders" }
                     - { value: normal, label: "Two-up — the default" }
                     - { value: small, label: "Small — a tertiary reference, never enlarged" }
+
+      - name: galleryLead
+        label: Opening tab
+        type: select
+        default: ""
+        options:
+          values:
+            - ""
+            - Views
+            - Plans
+            - Sections & Elevations
+            - Diagrams
+        description: "Optional. Which tab opens first. Leave blank for the usual order, starting with Views. The thesis leads with Diagrams."
 
       - name: gallery
         label: Gallery

@@ -584,11 +584,18 @@ function renderPanelBody(items) {
     .join("\n");
 }
 
-function renderGallery(items) {
+/* `lead` promotes one group to the first, selected tab. The thesis leads
+   with Diagrams, since the argument is carried by the drawings rather than
+   by the renders. */
+function renderGallery(items, lead = "") {
   if (!items.length) return "";
 
+  const order = GROUP_ORDER.includes(lead)
+    ? [lead, ...GROUP_ORDER.filter((n) => n !== lead)]
+    : GROUP_ORDER;
+
   const groups = [];
-  for (const name of GROUP_ORDER) {
+  for (const name of order) {
     const inGroup = items.filter((i) => (i.group || "Views") === name);
     if (inGroup.length) groups.push([name, inGroup]);
   }
@@ -788,7 +795,14 @@ function projectPage(p, prev, next) {
 
   const body = (p.body || []).map((t) => `      <p>${esc(t)}</p>`).join("\n");
 
-  const gallery = renderGallery(p.gallery || []);
+  // A project can carry both: the browsable gallery leads, and the
+  // walkthrough follows for anyone who wants to read it in sequence.
+  const hasChapters = !!(p.chapters && p.chapters.length);
+  const gallery = renderGallery(p.gallery || [], p.galleryLead);
+  const sectionHead = (title) =>
+    `  <div class="container">
+    <div class="section-head reveal"><h2>${esc(title)}</h2></div>
+  </div>`;
 
   const navLink = (target, label, dir) =>
     target
@@ -827,7 +841,15 @@ ${body}
       : ""
   }
 
-  ${p.chapters && p.chapters.length ? renderChapters(p.chapters) : gallery}
+  ${
+    hasChapters && gallery
+      ? `${sectionHead("Drawings")}\n${gallery}\n\n${sectionHead(
+          "Walkthrough"
+        )}\n${renderChapters(p.chapters)}`
+      : hasChapters
+      ? renderChapters(p.chapters)
+      : gallery
+  }
 
   <div class="container">
     <nav class="project-nav">
