@@ -600,25 +600,13 @@ section { padding-block: var(--space-xl); }
 
 .gallery-item { margin: 0; }
 
-/* Captions follow the story book: a small upper-case label sitting under
-   the drawing, not a sentence floating beside it. */
 .gallery-item figcaption,
 .strip-item figcaption,
 .chapter-wide figcaption {
   margin-top: 0.6rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  font-size: 0.8rem;
   line-height: 1.5;
   color: var(--color-text-muted);
-}
-
-/* Sentence-length captions keep normal casing so they stay readable. */
-.gallery-item figcaption.is-note,
-.chapter-wide figcaption.is-note {
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 0.8rem;
 }
 
 /* Building name within a tab — Housing, Garage, and so on. */
