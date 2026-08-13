@@ -7,84 +7,100 @@
   "cover": "assets/images/the-laboratory/cover.jpg",
   "location": "At Bartram's Garden",
   "body": [
-    "A conceptual project that aims to evoke feelings of wonder and provoke exploration and curiosity in those who visit Bartram's Garden in Philadelphia. Bartram was a so called “mad scientist” and a Botanist rolled into one. The experimentation that created the unique features of Bartram’s garden today remain entrenched in its landscape, but the attitude of playfulness and experimentation has been widely lost. While re-envisioning the roll, scale, and scope of Bartram’s Garden with a focus on these attributes, I can make many improvements to tha lacking infrastructure in the Gardens while doing so in a creative and fun way. The Laboratory is a set of experiences created by nature, in nature. It is a caricature of sorts, making the interplay between biomes on the gardens grounds even more obvious, exaggerating the moves that already exist on the site. There was a strong focus on adding spaces that will be useful to the existing mission of the gardens, while giving it the ability to embark on entirely new endeavors. The connection of garden elements does not stop at the boundaries of the site, but the playfulness of Bartram's will extend into the surrounding area, making the resulting plan as much about bring in the new as connecting to the old.",
-    "It houses a multi-purpose laboratory in its center which provides a versatile space for universities and private companies to try out ideas and make discoveries in the areas of Botany. The research space is wrapped in layers of experiences and follies which serve to invite the public deep into their depths. The building, although static, leverages the changes in seasons and times of day to create a different experience every instance one visits. The public and private circulation is intertwined to provide interactions at a distance so that the public can have a front-row seat to the innovation while being kept at arm's length from the professionals at work. Although conceptual, the architectural principles and theories employed are concrete, making the evocative atmospheres it creates in conception have real-world effects."
+    "A conceptual project that aims to evoke feelings of wonder and provoke exploration and curiosity in those who visit Bartram's Garden in Philadelphia. Bartram was a so-called “mad scientist” and a Botanist rolled into one. The experimentation that created the unique features of Bartram’s garden today remain entrenched in its landscape, but the attitude of playfulness and experimentation has been widely lost. While re-envisioning the role, scale, and scope of Bartram’s Garden with a focus on these attributes, I can make many improvements to the lacking infrastructure in the Gardens while doing so in a creative and fun way. The Laboratory is a set of experiences created by nature, in nature. It is a caricature of sorts, making the interplay between biomes on the garden's grounds even more obvious, exaggerating the moves that already exist on the site. There was a strong focus on adding spaces that will be useful to the existing mission of the gardens, while giving it the ability to embark on entirely new endeavors. The connection of garden elements does not stop at the boundaries of the site, but the playfulness of Bartram's will extend into the surrounding area, making the resulting plan as much about bringing in the new as connecting to the old.",
+    "It houses a multi-purpose laboratory in its center which provides a versatile space for universities and private companies to try out ideas and make discoveries in botany. The research space is wrapped in layers of experiences and follies which serve to invite the public deep into their depths. The building, although static, leverages the changes in seasons and times of day to create a different experience every instance one visits. The public and private circulation is intertwined to provide interactions at a distance so that the public can have a front-row seat to the innovation while being kept at arm's length from the professionals at work. Although conceptual, the architectural principles and theories employed are concrete, making the evocative atmospheres it creates in conception have real-world effects."
   ],
   "gallery": [
     {
       "src": "assets/images/the-laboratory/01.jpg",
       "wide": false,
-      "group": "Views"
+      "group": "Views",
+      "caption": "The approach across the meadow: the ring seen head on, paths splitting at the entrance."
     },
     {
       "src": "assets/images/the-laboratory/02.jpg",
       "wide": false,
-      "group": "Views"
-    },
-    {
-      "src": "assets/images/the-laboratory/03.jpg",
-      "wide": false,
-      "group": "Views"
+      "group": "Views",
+      "caption": "Into the slot between the outer fins and the inner wall — compression, with the meadow still showing through the gap."
     },
     {
       "src": "assets/images/the-laboratory/04.jpg",
       "wide": false,
-      "group": "Views"
+      "group": "Views",
+      "caption": "A forest folly: trees rooted in the passage, light falling through punched openings."
     },
     {
       "src": "assets/images/the-laboratory/05.jpg",
       "wide": false,
-      "group": "Views"
+      "group": "Views",
+      "caption": "Deeper in, the overhead fins narrow the sky to a strip."
     },
     {
-      "src": "assets/images/the-laboratory/06.jpg",
+      "src": "assets/images/the-laboratory/03.jpg",
       "wide": false,
-      "group": "Views"
+      "group": "Views",
+      "caption": "The porch, under the ring's cantilever, opening onto the water with vines down the soffit."
     },
     {
       "src": "assets/images/the-laboratory/07.jpg",
       "wide": false,
-      "group": "Views"
+      "group": "Views",
+      "caption": "The gallery inside the ring, moss walls behind the arched openings."
     },
     {
       "src": "assets/images/the-laboratory/08.jpg",
       "wide": false,
-      "group": "Views"
+      "group": "Views",
+      "caption": "A dark chamber, lit only by the glowing volumes set into it."
+    },
+    {
+      "src": "assets/images/the-laboratory/06.jpg",
+      "wide": false,
+      "group": "Views",
+      "caption": "Release: the central court under the radial lattice, its shadow spiraling across the floor."
     },
     {
       "src": "assets/images/the-laboratory/09.jpg",
       "wide": false,
-      "group": "Views"
+      "group": "Views",
+      "caption": "Up on the roof, the planted walk and its runnel."
     },
     {
       "src": "assets/images/the-laboratory/10.jpg",
       "wide": false,
-      "group": "Views"
-    },
-    {
-      "src": "assets/images/the-laboratory/11.jpg",
-      "wide": false,
-      "group": "Views"
-    },
-    {
-      "src": "assets/images/the-laboratory/12.jpg",
-      "wide": true,
-      "group": "Views"
-    },
-    {
-      "src": "assets/images/the-laboratory/13.jpg",
-      "wide": false,
-      "group": "Views"
-    },
-    {
-      "src": "assets/images/the-laboratory/14.jpg",
-      "wide": true,
-      "group": "Views"
+      "group": "Views",
+      "caption": "The roof terrace, with the city across the river."
     },
     {
       "src": "assets/images/the-laboratory/15.jpg",
       "wide": false,
-      "group": "Views"
+      "group": "Plans",
+      "caption": "Three levels: dock, conference and boat storage at the bottom; labs, offices and the porch above; the catwalk on top."
+    },
+    {
+      "src": "assets/images/the-laboratory/11.jpg",
+      "wide": false,
+      "group": "Sections & Elevations",
+      "caption": "Long section: the building set into the hillside, the lattice riding above the roof."
+    },
+    {
+      "src": "assets/images/the-laboratory/13.jpg",
+      "wide": false,
+      "group": "Diagrams",
+      "caption": "Cutaway axonometric — the ring of follies and gardens wrapped around the research floor."
+    },
+    {
+      "src": "assets/images/the-laboratory/12.jpg",
+      "wide": true,
+      "group": "Diagrams",
+      "caption": "Sun paths at both solstices, and the prevailing wind."
+    },
+    {
+      "src": "assets/images/the-laboratory/14.jpg",
+      "wide": true,
+      "group": "Diagrams",
+      "caption": "Roof buildup: rain collected in the trough, stored in the tank, held in the turf and growing mixture above crushed stone."
     }
-  ]
+  ],
+  "type": "Research and public garden"
 }

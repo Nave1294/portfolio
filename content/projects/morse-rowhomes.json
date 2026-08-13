@@ -6,53 +6,66 @@
   "accent": "3",
   "cover": "assets/images/morse-rowhomes/cover.jpg",
   "body": [
-    "The Morse Rowhomes are a community of homes built on a rectangular plot of land in Brewerytown, Philadelphia. The two building masses have frontage on different streets, and so the approach to their design is tailored with this in mind. On the larger and busier street, the structure consists of artist studios on the first floor and a three-level single-family home above. The studios being placed on the ground floor increases their connection to the community as they pass by. This idea is supported by the site's location between a prominent public park and the neighborhood elementary school. The building screen is a unified design move but allows the residences above to retain a level of privacy while the studios enjoy transparency. The second type of home is a duplex with a fully accessible apartment on the first floor and a split level apartment above. The use of screening is applied throughout, creating various levels of transparency and connection. Its patterns are determined by spelling relevant words and phrases in morse code (hence the name).The pocket park located between the two types of residences is designed to offer a more intimate and protected experience than can be found in larger parks nearby."
+    "The Morse Rowhomes are a community of homes built on a rectangular plot of land in Brewerytown, Philadelphia. The two building masses have frontage on different streets, and so the approach to their design is tailored with this in mind. On the larger and busier street, the structure consists of artist studios on the first floor and a three-level single-family home above. The studios being placed on the ground floor increases their connection to the community as they pass by. This idea is supported by the site's location between a prominent public park and the neighborhood elementary school. The building screen is a unified design move but allows the residences above to retain a level of privacy while the studios enjoy transparency. The second type of home is a duplex with a fully accessible apartment on the first floor and a split level apartment above. The use of screening is applied throughout, creating various levels of transparency and connection. Its patterns are determined by spelling relevant words and phrases in morse code (hence the name). The pocket park located between the two types of residences is designed to offer a more intimate and protected experience than can be found in larger parks nearby."
   ],
   "gallery": [
     {
       "src": "assets/images/morse-rowhomes/01.jpg",
-      "caption": "From Marston Street",
+      "caption": "From Marston Street, the screen running the length of the block.",
       "group": "Views",
-      "wide": false
-    },
-    {
-      "src": "assets/images/morse-rowhomes/02.jpg",
-      "caption": "Shared Porch",
-      "group": "Views",
-      "wide": false
-    },
-    {
-      "src": "assets/images/morse-rowhomes/03.jpg",
-      "caption": "Pocket Park",
-      "group": "Views",
-      "wide": false
+      "wide": false,
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/04.jpg",
-      "caption": "Rowhome",
+      "caption": "The rowhome: artist studio at the sidewalk, three levels of house above.",
       "group": "Views",
-      "wide": false
+      "wide": false,
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/05.jpg",
-      "caption": "Duplex",
+      "caption": "The duplex, on the quieter street.",
       "group": "Views",
-      "wide": false
+      "wide": false,
+      "building": ""
     },
     {
-      "src": "assets/images/morse-rowhomes/06.jpg",
+      "src": "assets/images/morse-rowhomes/02.jpg",
+      "caption": "The shared porch.",
       "group": "Views",
-      "wide": false
+      "wide": false,
+      "building": ""
     },
     {
-      "src": "assets/images/morse-rowhomes/07.jpg",
+      "src": "assets/images/morse-rowhomes/03.jpg",
+      "caption": "The pocket park held between the two house types.",
       "group": "Views",
-      "wide": false
+      "wide": false,
+      "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/08.jpg",
-      "group": "Views",
-      "wide": false
+      "group": "Plans",
+      "wide": false,
+      "caption": "Rowhome, ground to top: studio, living, bedroom floor, upper bedrooms.",
+      "building": "Rowhome"
+    },
+    {
+      "src": "assets/images/morse-rowhomes/07.jpg",
+      "group": "Plans",
+      "wide": false,
+      "caption": "Duplex: accessible apartment at grade, split-level apartment above.",
+      "building": "Duplex"
+    },
+    {
+      "src": "assets/images/morse-rowhomes/06.jpg",
+      "group": "Sections & Elevations",
+      "wide": false,
+      "caption": "The screen, straight on: brick piers and perforated infill spelling in Morse code.",
+      "building": ""
     }
-  ]
+  ],
+  "type": "Housing",
+  "location": "Brewerytown, Philadelphia"
 }
