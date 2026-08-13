@@ -631,11 +631,13 @@ function renderChapters(chapters) {
 
         if (b.kind === "full") {
           for (const g of items) {
-            blocks.push(`      <figure class="chapter-full">
-        <img src="../${attr(g.src)}" alt="${attr(g.caption || c.title)}" loading="lazy">${
-              g.caption ? `\n        <figcaption class="container">${esc(g.caption)}</figcaption>` : ""
+            blocks.push(`      <div class="container">
+        <figure class="chapter-wide">
+          <img src="../${attr(g.src)}" alt="${attr(g.caption || c.title)}" loading="lazy">${
+              g.caption ? `\n          <figcaption>${esc(g.caption)}</figcaption>` : ""
             }
-      </figure>`);
+        </figure>
+      </div>`);
           }
         } else if (b.kind === "strip") {
           blocks.push(`      <div class="chapter-strip">

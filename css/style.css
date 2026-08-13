@@ -576,8 +576,18 @@ section { padding-block: var(--space-xl); }
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-md);
-  margin-bottom: var(--space-lg);
+  gap: var(--space-lg) var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+/* On a wide screen the extra room goes into a third column and larger gaps,
+   so more fits without anything getting tighter. */
+@media (min-width: 1500px) {
+  .chapter .project-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+  .chapter .project-gallery .span-2 { grid-column: span 3; }
 }
 
 /* Frames take each drawing's own proportions — no fixed ratio, so nothing
@@ -718,15 +728,21 @@ html.js .gallery-panel[hidden] { display: none; }
 
 .chapter-nav a:hover { color: var(--color-text); }
 
-.chapter { padding-bottom: var(--space-xl); scroll-margin-top: 140px; }
+/* Chapters are separated by a clear band of nothing, so the page reads as
+   distinct episodes rather than one continuous scroll. */
+.chapter {
+  padding-bottom: calc(var(--space-xl) * 1.4);
+  scroll-margin-top: 140px;
+}
 
+/* Text keeps a readable measure even though the images use the full width —
+   that contrast is where the white space comes from. */
 .chapter-head {
   display: grid;
-  grid-template-columns: 6ch 1fr;
-  gap: var(--space-md);
+  grid-template-columns: 6ch minmax(0, 68ch);
+  gap: var(--space-lg);
   align-items: start;
-  margin-bottom: var(--space-lg);
-  max-width: 1000px;
+  margin-bottom: calc(var(--space-lg) * 1.4);
 }
 
 .chapter-number {
@@ -837,28 +853,28 @@ html.js .gallery-panel[hidden] { display: none; }
   letter-spacing: -0.01em;
 }
 
-/* Full-bleed: edge to edge of the screen, no container gutter. Used where
-   a drawing deserves the whole width. */
-.chapter-full {
-  margin: 0 0 var(--space-lg);
-  width: 100%;
+/* A drawing given the page's full measure — wide, but still inside the
+   gutter, with air above and below rather than running to the screen edge. */
+.chapter-wide {
+  margin: 0 0 var(--space-xl);
 }
 
-.chapter-full img {
+.chapter-wide img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.chapter-full figcaption {
-  margin-top: 0.7rem;
+.chapter-wide figcaption {
+  margin-top: 0.8rem;
   font-size: 0.8rem;
   color: var(--color-text-muted);
+  max-width: 60ch;
 }
 
 /* Strips: a sequence read sideways rather than stacked down the page —
    a history, a set of comparisons, steps in a process. */
-.chapter-strip { margin-bottom: var(--space-lg); }
+.chapter-strip { margin-bottom: var(--space-xl); }
 
 .strip-head {
   display: flex;
