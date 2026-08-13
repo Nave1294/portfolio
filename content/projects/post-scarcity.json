@@ -6,6 +6,7 @@
   "date": "2025",
   "order": 0,
   "accent": "3",
+  "cover": "assets/images/post-scarcity/hero.jpg",
   "type": "Thesis",
   "year": "2025",
   "location": "Center Square, Philadelphia",
@@ -25,9 +26,7 @@
         "A thesis in architecture is a design project or research proposal exploring a central idea. Mine began with a question I could not answer.",
         "The options were many and the thesis unclear — museums, transit hubs, garages re-geared. But the state of the world felt heavy and grey, too troubled for any of them to say much.",
         "So I went the other way. To ask the question properly, I had to invent a future to design for."
-      ],
-      "blocks": [],
-      "images": []
+      ]
     },
     {
       "title": "Post Scarcity",
@@ -37,18 +36,6 @@
         "Our story begins in 1725. Those born that year were the last generation brought into a pre-industrial world; of every hundred children, forty to sixty survived to adulthood, and those who did rarely passed forty.",
         "What followed was not the absence of crisis but progress in spite of it — two world wars, financial collapses, pandemics. It has not been evenly shared, and many were overlooked or exploited to fuel it. But a future better than our present, for everyone, is within reach."
       ],
-      "blocks": [
-        {
-          "kind": "full",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/p-timeline.jpg",
-              "caption": "Falling scarcity, 1750 to today."
-            }
-          ]
-        }
-      ],
-      "images": [],
       "stats": [
         {
           "value": "1750",
@@ -65,6 +52,17 @@
         {
           "value": "2050",
           "label": "The last generation born into the industrial era"
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/p-timeline.jpg",
+              "caption": "Falling scarcity, 1750 to 2050"
+            }
+          ]
         }
       ]
     },
@@ -86,8 +84,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "Spent Time",
@@ -133,8 +130,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "The Built Environment",
@@ -143,18 +139,6 @@
         "Rebuild the week around a fifteen-hour job and what the city asks of its buildings changes. Office space contracts sharply while homes, entertainment, institutions and civic space all grow.",
         "The chart is an oversimplification, of course. Turning it into physical reality takes many more layers — and one idea in particular."
       ],
-      "blocks": [
-        {
-          "kind": "full",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/d-program-shift.jpg",
-              "caption": "Inner ring: today. Outer ring: post scarcity."
-            }
-          ]
-        }
-      ],
-      "images": [],
       "stats": [
         {
           "value": "−26%",
@@ -180,6 +164,17 @@
           "value": "−2%",
           "label": "Retail"
         }
+      ],
+      "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-program-shift.jpg",
+              "caption": "Inner ring: today. Outer ring: post scarcity."
+            }
+          ]
+        }
       ]
     },
     {
@@ -190,17 +185,18 @@
         "Counterpoint — the relationship between independent melodic lines sounding together, creating harmony through their interaction — can guide planning at nearly every scale. It does not imply opposition. It uses contrast to create interest, choice and harmony.",
         "Three carry the project: grid against greenspace, built space against program, and program against program. Three melodies, distinct yet blending into song."
       ],
+      "quote": {
+        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest, choice, and harmony between two or more independent ideas."
+      },
       "blocks": [
         {
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/d-counterpoint-1.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/d-counterpoint-1.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/d-counterpoint-2.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/d-counterpoint-2.jpg"
             },
             {
               "src": "assets/images/post-scarcity/d-counterpoint-3.jpg",
@@ -208,12 +204,7 @@
             }
           ]
         }
-      ],
-      "images": [],
-      "quote": {
-        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest, choice, and harmony between two or more independent ideas.",
-        "attribution": ""
-      }
+      ]
     },
     {
       "title": "Grid Against Green",
@@ -241,8 +232,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "Built Space Against Program",
@@ -262,8 +252,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "Proximity Zoning",
@@ -273,6 +262,17 @@
         "Proximity zoning is the alternative — a fluid system that reads the attributes of each program and evaluates how well it fits its surroundings. Built with a colleague as a lightweight software tool: establish a grid, assign attributes, place programs, and it returns a fit score.",
         "Not a black box, and not a replacement for the designer. Decision support. The score can be appealed, or the proposal adjusted to strengthen good proximities and mitigate poor ones. It is also scale-agnostic — a tile can be a floor, a campus, or a restaurant's seating zones."
       ],
+      "list": {
+        "title": "Six attributes per program",
+        "items": [
+          "Daylight — dark to light",
+          "Noise — quiet to loud",
+          "Distribution — sparse to dense",
+          "Vibrancy — tranquil to vibrant",
+          "Biophilia — none to accessible",
+          "Access — none to accessible"
+        ]
+      },
       "blocks": [
         {
           "kind": "grid",
@@ -287,19 +287,7 @@
             }
           ]
         }
-      ],
-      "images": [],
-      "list": {
-        "title": "Six attributes per program",
-        "items": [
-          "Daylight — dark to light",
-          "Noise — quiet to loud",
-          "Distribution — sparse to dense",
-          "Vibrancy — tranquil to vibrant",
-          "Biophilia — none to accessible",
-          "Access — none to accessible"
-        ]
-      }
+      ]
     },
     {
       "title": "Choosing the Site",
@@ -340,8 +328,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "One Square, Many Futures",
@@ -355,16 +342,13 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/d-plan-context.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/d-plan-context.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/d-plan-street.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/d-plan-street.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/d-plan-ground.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/d-plan-ground.jpg"
             },
             {
               "src": "assets/images/post-scarcity/p-subway-1.jpg",
@@ -372,8 +356,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "The Park",
@@ -413,8 +396,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "The Frame",
@@ -448,8 +430,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "Finding the Form",
@@ -490,8 +471,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "Systems",
@@ -523,8 +503,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "Clusters",
@@ -556,8 +535,7 @@
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "The Piazza",
@@ -613,17 +591,14 @@
               "caption": "Four bedroom apartment."
             },
             {
-              "src": "assets/images/post-scarcity/r-apartment-2.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/r-apartment-2.jpg"
             },
             {
-              "src": "assets/images/post-scarcity/r-apartment-3.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/r-apartment-3.jpg"
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "The Family Circle",
@@ -679,13 +654,11 @@
               "caption": "Entertainment district lounge."
             },
             {
-              "src": "assets/images/post-scarcity/r-lobby.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/r-lobby.jpg"
             }
           ]
         }
-      ],
-      "images": []
+      ]
     },
     {
       "title": "Can Architects Shape the Future?",
@@ -696,23 +669,20 @@
         "Abundance alone does not guarantee quality of life. It is thoughtfully designed, vibrant, interconnected places that let us feel the benefit of it — places that draw us outward rather than back to a screen.",
         "This thesis was never about designing a fully realistic building. It continues a conversation begun long before me, and one that will carry on after."
       ],
+      "quote": {
+        "text": "The future cannot be predicted, but futures can be invented.",
+        "attribution": "Dennis Gabor, Nobel Prize-winning physicist"
+      },
       "blocks": [
         {
           "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/hero.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/hero.jpg"
             }
           ]
         }
-      ],
-      "images": [],
-      "quote": {
-        "text": "The future cannot be predicted, but futures can be invented.",
-        "attribution": "Dennis Gabor, Nobel Prize-winning physicist"
-      }
+      ]
     }
-  ],
-  "cover": "assets/images/post-scarcity/hero.jpg"
+  ]
 }
