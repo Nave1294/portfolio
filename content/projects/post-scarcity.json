@@ -2,19 +2,19 @@
   "title": "Post Scarcity",
   "published": true,
   "slug": "post-scarcity",
-  "summary": "If abundance uncouples survival from labour, what happens to the city built around work? A park and a vertical neighbourhood at Center Square.",
+  "summary": "If abundance uncouples survival from labor, what happens to the city built around work? A park and a vertical neighborhood at Center Square.",
   "date": "2025",
   "order": 0,
   "accent": "3",
   "type": "Thesis",
   "year": "2025",
   "location": "Center Square, Philadelphia",
-  "program": "Post Scarcity Programing",
+  "program": "Post Scarcity Programming",
   "status": "Bachelor of Architecture thesis",
   "role": "Solo thesis project",
   "body": [
-    "A thesis about what a city becomes when scarcity stops organising it. It takes the premise seriously — a fifteen-hour week, universal basic income, goods at near-zero marginal cost — and follows it down to a single block of Philadelphia.",
-    "The answer is a park at Center Square, west of City Hall, and a building lifted above it: a structural frame treated as a street grid, filled with programs that self-organise by proximity rather than by zoning class.",
+    "A thesis about what a city becomes when scarcity stops organizing it. It takes the premise seriously — a fifteen-hour week, universal basic income, goods at near-zero marginal cost — and follows it down to a single block of Philadelphia.",
+    "The answer is a park at Center Square, west of City Hall, and a building lifted above it: a structural frame treated as a street grid, filled with programs that self-organize by proximity rather than by zoning class.",
     "Awarded the 2025 Pearson Prize Silver Medal for best Drexel architectural thesis."
   ],
   "chapters": [
@@ -26,22 +26,12 @@
         "The options were many and the thesis unclear — museums, transit hubs, garages re-geared. But the state of the world felt heavy and grey, too troubled for any of them to say much.",
         "So I went the other way. To ask the question properly, I had to invent a future to design for."
       ],
-      "blocks": [
-        {
-          "kind": "full",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/d-summary-1.jpg",
-              "caption": ""
-            }
-          ]
-        }
-      ],
+      "blocks": [],
       "images": []
     },
     {
       "title": "Post Scarcity",
-      "standfirst": "The point at which scarcity stops organising us.",
+      "standfirst": "The point at which scarcity stops organizing us.",
       "body": [
         "The phrase is Nick Bostrom's — an optimistic future in which scarcity is no longer the factor deciding how we live. Rutger Bregman revives its instruments: universal basic income, a fifteen-hour week, open borders, shown through history and modern pilots to be less radical than they sound.",
         "Our story begins in 1725. Those born that year were the last generation brought into a pre-industrial world; of every hundred children, forty to sixty survived to adulthood, and those who did rarely passed forty.",
@@ -62,7 +52,7 @@
       "stats": [
         {
           "value": "1750",
-          "label": "Mechanisation makes goods cheap and accessible"
+          "label": "Mechanization makes goods cheap and accessible"
         },
         {
           "value": "1950s",
@@ -82,8 +72,8 @@
       "title": "The Four Pillars",
       "standfirst": "Economy, work, value, scarcity.",
       "body": [
-        "Post scarcity rests on four shifts. The economy decentralises production and moves toward universal basic income, zero-marginal-cost goods and a sharing culture. Work settles near fifteen hours a week, concentrated in creative and critical-thinking fields.",
-        "Value moves toward social capital, environmental stewardship, self-actualisation and community well-being. And scarcity itself relocates — what becomes scarce is time, privacy, natural features and genuine experience.",
+        "Post scarcity rests on four shifts. The economy decentralizes production and moves toward universal basic income, zero-marginal-cost goods and a sharing culture. Work settles near fifteen hours a week, concentrated in creative and critical-thinking fields.",
+        "Value moves toward social capital, environmental stewardship, self-actualization and community well-being. And scarcity itself relocates — what becomes scarce is time, privacy, natural features and genuine experience.",
         "Each pillar makes a demand of the built environment: proximity zoning, less work, healthier buildings, and room for good times."
       ],
       "blocks": [
@@ -104,7 +94,7 @@
       "standfirst": "Six hours a day move out of work and into everything else.",
       "body": [
         "A future designed has to be quantified. Set the reality week against the post-scarcity week and the arithmetic is stark: 1,717.5 hours a year returned.",
-        "But more free time does not guarantee a better life. The average American spends 2 hours 18 minutes on social media, 1 hour 19 on games and 2 hours watching television — inside a day offering less than six hours of personal time. Denmark and Austria, whose public realms are recognised for quality and access, spend markedly less.",
+        "But more free time does not guarantee a better life. The average American spends 2 hours 18 minutes on social media, 1 hour 19 on games and 2 hours watching television — inside a day offering less than six hours of personal time. Denmark and Austria, whose public realms are recognized for quality and access, spend markedly less.",
         "That retreat into screens reads as a failure of the public realm, not of the people in it."
       ],
       "blocks": [
@@ -315,7 +305,7 @@
       "title": "Choosing the Site",
       "standfirst": "The area by City Hall had it right.",
       "body": [
-        "I needed a place for ideas to unfold. Several were analysed and measured — impervious surface, road coverage, transit, greenspace, context.",
+        "I needed a place for ideas to unfold. Several were analyzed and measured — impervious surface, road coverage, transit, greenspace, context.",
         "This ground carries the highest proportion of impervious surface in the comparison at 71.48%, and among the lowest share given to roads at 8.04%. Dense, central, hard-surfaced, and barely given over to movement.",
         "It also carries 113,000 transit riders past it every day: 30,000 on the Market–Frankford line, 57,000 on Broad Street, 26,000 through Suburban Station. No other ground in the city is handed that many people before it opens."
       ],
@@ -357,7 +347,7 @@
       "title": "One Square, Many Futures",
       "standfirst": "A park, train sheds, and a grand city hall.",
       "body": [
-        "Over the years this site saw it all. The Centre Square Water Works arrived in 1801 and was demolished in 1829. Voters chose the square as the city's civic centrepiece in 1870. Broad Street Station was finished in 1893 and pulled down in 1953. The Parkway, the Market–Frankford line, the expressway, the concourse — each took its turn.",
+        "Over the years this site saw it all. The Center Square Water Works arrived in 1801 and was demolished in 1829. Voters chose the square as the city's civic centerpiece in 1870. Broad Street Station was finished in 1893 and pulled down in 1953. The Parkway, the Market–Frankford line, the expressway, the concourse — each took its turn.",
         "Edmund Bacon's lofty goals never came to fruition, yet remnants remain of his city ambition. Though his plan was never fully created, those lingering pieces still shape what the square could be."
       ],
       "blocks": [
@@ -398,7 +388,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-masterplan.jpg",
-              "caption": "Amphitheatre, LOVE plaza, rec centre, playscape, edible gardens, grove, the hill and pond."
+              "caption": "Amphitheatre, LOVE plaza, rec center, playscape, edible gardens, grove, the hill and pond."
             }
           ]
         },
@@ -454,7 +444,7 @@
             },
             {
               "src": "assets/images/post-scarcity/p-core.jpg",
-              "caption": "Core organisation."
+              "caption": "Core organization."
             }
           ]
         }
@@ -540,7 +530,7 @@
       "title": "Clusters",
       "standfirst": "Programs gather around common ground.",
       "body": [
-        "Placed by proximity zoning, programs form clusters around a shared centre — a vertical fifteen-minute neighbourhood where daily needs are close by, but the pull outward stays intact.",
+        "Placed by proximity zoning, programs form clusters around a shared center — a vertical fifteen-minute neighborhood where daily needs are close by, but the pull outward stays intact.",
         "These two clusters are only 30% of the building's programmable space."
       ],
       "blocks": [
@@ -640,8 +630,8 @@
       "standfirst": "Spaces for learning and play at each stage.",
       "body": [
         "A large portion of the frame given to families and their needs. The central green hosts a playground with boulders for imaginative play; half-courts and a multi-purpose outdoor fitness area sit just off it, with public bathrooms and changing rooms. Out of view are the essential services — doctors, a larger grocery, salons — supplied directly by the hydroponic farm below.",
-        "Above the courts is the multigenerational neighbourhood: two-level homes of five to six bedrooms, grouped in threes and fours around private common space and circulation, stacked four deep and joined by stair and core.",
-        "Across the circle, a four-storey K–8 school meets a community centre through a shared outdoor atrium of planted ramps and terraces, integrating the school with the library and maker spaces above. The circular form is deliberate — it keeps sightlines open upward through the building."
+        "Above the courts is the multigenerational neighborhood: two-level homes of five to six bedrooms, grouped in threes and fours around private common space and circulation, stacked four deep and joined by stair and core.",
+        "Across the circle, a four-storey K–8 school meets a community center through a shared outdoor atrium of planted ramps and terraces, integrating the school with the library and maker spaces above. The circular form is deliberate — it keeps sightlines open upward through the building."
       ],
       "blocks": [
         {
@@ -678,11 +668,11 @@
             },
             {
               "src": "assets/images/post-scarcity/r-black-box.jpg",
-              "caption": "Black box theatre, one of three."
+              "caption": "Black box theater, one of three."
             },
             {
               "src": "assets/images/post-scarcity/r-multigen.jpg",
-              "caption": "Multi-generational neighbourhood, level one of four."
+              "caption": "Multi-generational neighborhood, level one of four."
             },
             {
               "src": "assets/images/post-scarcity/r-entertainment-lounge.jpg",
@@ -712,15 +702,6 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/hero.jpg",
-              "caption": ""
-            }
-          ]
-        },
-        {
-          "kind": "grid",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/d-summary-2.jpg",
               "caption": ""
             }
           ]
