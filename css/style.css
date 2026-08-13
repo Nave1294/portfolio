@@ -493,9 +493,58 @@ section { padding-block: var(--space-xl); }
 .tl-item.is-active .tl-tick { background: var(--accent); height: 22px; }
 .tl-item.is-active .tl-date { color: var(--color-text); }
 
+/* The scroller runs the full width of the page, so a wheel or trackpad
+   gesture over it scrolls the projects sideways instead of the page down.
+   This gives an explicit way past it. */
+.tl-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: var(--space-md) auto 0;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-text-muted);
+  animation: tl-down-bob 2.8s var(--ease) infinite;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease),
+    background 0.2s var(--ease);
+}
+
+.tl-down svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tl-down:hover,
+.tl-down:focus-visible {
+  color: var(--color-bg);
+  background: var(--color-text);
+  border-color: var(--color-text);
+  animation-play-state: paused;
+}
+
+/* A small nudge so the arrow reads as an invitation, not a full-stop. */
+@keyframes tl-down-bob {
+  0%, 68%, 100% { transform: translateY(0); }
+  80% { transform: translateY(5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tl-down { animation: none; }
+}
+
 /* ============================================================
    ABOUT TEASER / SPLIT SECTIONS
    ============================================================ */
+/* Clear the sticky header when the arrow jumps down here. */
+.about-teaser { scroll-margin-top: 90px; }
+
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -286,6 +286,12 @@ ${previews}
 ${items}
       </div>
     </div>
+
+    <a class="tl-down" href="#about-teaser" aria-label="Continue to About">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M5 9l7 7 7-7"></path>
+      </svg>
+    </a>
   </section>`;
 }
 
@@ -355,7 +361,7 @@ ${cards}
       : renderTimeline()
   }
 
-  <section class="about-teaser">
+  <section class="about-teaser" id="about-teaser">
     <div class="container split">
       <div class="reveal">
         <span class="eyebrow">About</span>
