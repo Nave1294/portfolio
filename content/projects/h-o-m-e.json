@@ -1,16 +1,17 @@
 {
   "title": "Project H.O.M.E.",
-  "slug": "h-o-m-e",
   "published": true,
+  "slug": "h-o-m-e",
+  "date": "2022",
   "order": 3,
-  "accent": 1,
+  "accent": "1",
+  "cover": "assets/images/h-o-m-e/cover.jpg",
   "type": "Mixed Use",
   "year": "2022",
   "location": "Mantua, Philadelphia",
   "program": "Community Living, Retail, Educational, Hydroponics, Recreational Facilities",
   "status": "Academic",
   "role": "Soul Designer",
-  "cover": "assets/images/h-o-m-e/cover.jpg",
   "body": [
     "The built environment is a series of vast interconnected systems.",
     "home in this case stands for housing, ownership, mentorship, and education. This project from start to finish is less about the design of the buildings, with more of a focus put into designing a system. The system, home, is an unique approach to affordable housing as a means to and end, rather than the end itself. Through housing, mentorship, and education, the goal of home is to decrease a decades long march out of poverty to less than a decade. Doing this involved rethinking the role affordable housing in America plays in the housing market. Creating a safe and affordable place for the less fortunate to live, learn, and work was the backbone of the system.",
@@ -21,172 +22,154 @@
   "gallery": [
     {
       "src": "assets/images/h-o-m-e/02.jpg",
-      "wide": false,
       "caption": "The scheme in its setting.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/03.jpg",
-      "wide": false,
       "caption": "Overview from the opposite corner.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/06.jpg",
-      "wide": false,
       "caption": "Living space, with the sleeping loft above.",
       "group": "Views",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/07.jpg",
-      "wide": false,
       "caption": "Looking back toward the glazed wall.",
       "group": "Views",
-      "building": "Housing"
-    },
-    {
-      "src": "assets/images/h-o-m-e/16.jpg",
-      "wide": true,
-      "caption": "The entry to the garage.",
-      "group": "Views",
-      "building": "Garage"
-    },
-    {
-      "src": "assets/images/h-o-m-e/22.jpg",
-      "wide": false,
-      "caption": "The school from the street.",
-      "group": "Views",
-      "building": "School"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/23.jpg",
-      "wide": false,
       "caption": "The school lobby.",
       "group": "Views",
-      "building": "School"
+      "building": "School",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/24.jpg",
-      "wide": false,
       "caption": "The engawa running along the school.",
       "group": "Views",
-      "building": "School"
+      "building": "School",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/04.jpg",
-      "wide": true,
       "caption": "Site plan in context.",
       "group": "Plans",
-      "building": "Site"
+      "building": "Site",
+      "wide": true
     },
     {
       "src": "assets/images/h-o-m-e/05.jpg",
-      "wide": false,
       "caption": "Ground floor, rendered.",
       "group": "Plans",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/09.jpg",
-      "wide": false,
       "caption": "Ground floor.",
       "group": "Plans",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/10.jpg",
-      "wide": false,
       "caption": "Level 1.",
       "group": "Plans",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/11.jpg",
-      "wide": false,
       "caption": "Level 1, sleeping mezzanine.",
       "group": "Plans",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/12.jpg",
-      "wide": false,
       "caption": "Level 2.",
       "group": "Plans",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/13.jpg",
-      "wide": false,
       "caption": "Level 2, sleeping mezzanine.",
       "group": "Plans",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/14.jpg",
-      "wide": false,
       "caption": "Level 3.",
       "group": "Plans",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/15.jpg",
-      "wide": false,
       "caption": "Level 3, sleeping mezzanine.",
       "group": "Plans",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/08.jpg",
-      "wide": false,
       "caption": "Roof level.",
       "group": "Plans",
-      "building": "Housing"
+      "building": "Housing",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/17.jpg",
-      "wide": false,
       "caption": "Parking level, rendered.",
       "group": "Plans",
-      "building": "Garage"
+      "building": "Garage",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/19.jpg",
-      "wide": false,
       "caption": "Ground level.",
       "group": "Plans",
-      "building": "Garage"
+      "building": "Garage",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/20.jpg",
-      "wide": true,
       "caption": "Second level.",
       "group": "Plans",
-      "building": "Garage"
+      "building": "Garage",
+      "wide": true
     },
     {
       "src": "assets/images/h-o-m-e/21.jpg",
-      "wide": true,
       "caption": "Third level.",
       "group": "Plans",
-      "building": "Garage"
+      "building": "Garage",
+      "wide": true
     },
     {
       "src": "assets/images/h-o-m-e/18.jpg",
-      "wide": false,
       "caption": "Greenhouse level.",
       "group": "Plans",
-      "building": "Garage"
+      "building": "Garage",
+      "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/01.jpg",
-      "wide": true,
       "caption": "Site section through the housing, garage and school.",
       "group": "Sections & Elevations",
-      "building": ""
+      "wide": true
     }
-  ],
-  "date": "2022"
+  ]
 }
