@@ -12,6 +12,11 @@
   "program": "Post Scarcity Programing",
   "status": "Bachelor of Architecture thesis",
   "role": "Solo thesis project",
+<<<<<<< Updated upstream
+=======
+  "summary": "If abundance uncouples survival from labour, what happens to the city built around work? A park and a vertical neighbourhood at Center Square.",
+  "cover": "assets/images/post-scarcity/cover.jpg",
+>>>>>>> Stashed changes
   "body": [
     "A thesis about what a city becomes when scarcity stops organising it. It takes the premise seriously — a fifteen-hour week, universal basic income, goods at near-zero marginal cost — and follows it down to a single block of Philadelphia.",
     "The answer is a park at Center Square, west of City Hall, and a building lifted above it: a structural frame treated as a street grid, filled with programs that self-organise by proximity rather than by zoning class.",
