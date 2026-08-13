@@ -22,64 +22,100 @@
       "title": "Can Architects Shape the Future?",
       "standfirst": "Or are architectural movements only ever a response?",
       "body": [
-        "A thesis in architecture is a design project or research proposal that explores a central idea. Mine starts with a question I could not answer: whether architects lead change, or arrive after it.",
-        "To ask it properly I had to invent a future to design for."
+        "A thesis in architecture is a design project or research proposal exploring a central idea. Mine begins with a question I could not answer: whether architects lead change, or arrive after it.",
+        "To ask it properly, I had to invent a future to design for."
       ],
       "blocks": [
         {
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/opening-01.jpg"
+              "src": "assets/images/post-scarcity/opening-01.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/opening-02.jpg"
+              "src": "assets/images/post-scarcity/opening-02.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/opening-03.jpg"
+              "src": "assets/images/post-scarcity/opening-03.jpg",
+              "caption": ""
             }
           ]
         }
       ]
     },
     {
-      "title": "Defining Post Scarcity",
+      "title": "The Four Pillars",
       "standfirst": "Economy, work, value, scarcity.",
       "body": [
-        "The economy shifts through decentralised production, universal basic income, zero-marginal-cost goods and a sharing culture. Work settles near fifteen hours a week, concentrated in creative and critical-thinking fields.",
-        "Value moves toward social capital, environmental stewardship and community well-being. And scarcity relocates: what becomes scarce is time, privacy, natural features and genuine experience."
+        "Post scarcity rests on four shifts. The economy decentralises production and moves toward universal basic income, zero-marginal-cost goods and sharing. Work settles near fifteen hours a week, in creative and critical-thinking fields.",
+        "Value moves toward social capital, environmental stewardship and community well-being. And scarcity relocates — what becomes scarce is time, privacy, natural features and genuine experience.",
+        "Each pillar makes a demand of the built environment: proximity zoning, less work, healthier buildings, and room for good times."
+      ],
+      "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-pillars.jpg",
+              "caption": "The four pillars, and what each asks of the built environment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Work and Enrichment",
+      "standfirst": "The hours change shape.",
+      "body": [
+        "Plotted against a lifetime, the balance between work and enrichment inverts. The area given to labour contracts; the area given to everything else opens up."
+      ],
+      "blocks": [
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-work-1.jpg",
+              "caption": "Work against enrichment, today."
+            },
+            {
+              "src": "assets/images/post-scarcity/d-work-2.jpg",
+              "caption": "The shift begins."
+            },
+            {
+              "src": "assets/images/post-scarcity/d-work-3.jpg",
+              "caption": "Post scarcity."
+            }
+          ]
+        }
       ]
     },
     {
       "title": "A Week Reclaimed",
-      "standfirst": "Six hours a day move out of work and into everything else.",
+      "standfirst": "1,717.5 hours a year, returned.",
       "body": [
-        "Set the reality week against the post-scarcity week and the arithmetic is stark — 1,717.5 hours a year returned. Rebuilt as program, the city's demands move with it."
+        "Set the reality week against the post-scarcity week and six hours a day move out of productive activity into enrichment and fulfilment.",
+        "Rebuilt as program, the city's demands move with it — office space contracts sharply while homes, entertainment and civic space grow."
       ],
-      "stats": [
+      "blocks": [
         {
-          "value": "−26%",
-          "label": "Office"
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-week.jpg",
+              "caption": "The reality week against the post-scarcity week."
+            }
+          ]
         },
         {
-          "value": "+10%",
-          "label": "Residential"
-        },
-        {
-          "value": "+10%",
-          "label": "Entertainment"
-        },
-        {
-          "value": "+6%",
-          "label": "Institutional"
-        },
-        {
-          "value": "+2%",
-          "label": "Civic"
-        },
-        {
-          "value": "−2%",
-          "label": "Retail"
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-program-shift.jpg",
+              "caption": "Inner ring: today. Outer ring: post scarcity."
+            }
+          ]
         }
       ]
     },
@@ -87,8 +123,19 @@
       "title": "Better Pastimes",
       "standfirst": "More free time does not guarantee a better life.",
       "body": [
-        "The average American spends 2 hours 18 minutes on social media, 1 hour 19 on games and 2 hours watching television — inside a day with less than six hours of personal time.",
-        "That retreat into screens reads as a failure of the public realm. So: what can architects do to encourage better pastimes?"
+        "The average American spends 2 hours 18 minutes on social media, 1 hour 19 on games and 2 hours watching television — inside a day offering less than six hours of personal time.",
+        "Denmark and Austria, whose public realms are recognised for quality and access, spend markedly less. That retreat into screens reads as a failure of the public realm, not of the people in it."
+      ],
+      "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-screentime.jpg",
+              "caption": "Screen time compared: United States, Denmark, Austria."
+            }
+          ]
+        }
       ]
     },
     {
@@ -99,32 +146,57 @@
         "Four run through the project: grid against greenspace, greenspace against built space, built space against program, and program against program."
       ],
       "quote": {
-        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest, choice, and harmony between two or more independent ideas."
+        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest, choice, and harmony between two or more independent ideas.",
+        "attribution": ""
       },
       "blocks": [
         {
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/counterpoint-01.jpg"
+              "src": "assets/images/post-scarcity/d-counterpoint-1.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-02.jpg"
+              "src": "assets/images/post-scarcity/d-counterpoint-2.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-03.jpg"
+              "src": "assets/images/post-scarcity/d-counterpoint-3.jpg",
+              "caption": "The four counterpoints."
+            }
+          ]
+        },
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/counterpoint-01.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-04.jpg"
+              "src": "assets/images/post-scarcity/counterpoint-02.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-05.jpg"
+              "src": "assets/images/post-scarcity/counterpoint-03.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-06.jpg"
+              "src": "assets/images/post-scarcity/counterpoint-04.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/counterpoint-07.jpg"
+              "src": "assets/images/post-scarcity/counterpoint-05.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/counterpoint-06.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/counterpoint-07.jpg",
+              "caption": ""
             }
           ]
         }
@@ -134,37 +206,62 @@
       "title": "Precedents",
       "standfirst": "Where the grid is broken, the city is at its best.",
       "body": [
-        "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places — a preserved Lenape trail cutting through South Philadelphia, a square whose walks ignore the street lines, a pocket park mid-block.",
+        "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places — a preserved Lenape trail cutting diagonally through South Philadelphia, a square whose walks ignore the street lines, a pocket park mid-block.",
         "For built space against program, two buildings: Toyo Ito's Sendai Mediatheque, and Kunsthaus Graz."
       ],
       "blocks": [
         {
-          "kind": "strip",
-          "title": "Rittenhouse Square, East Passyunk, John F. Collins Park, Sendai Mediatheque, Kunsthaus Graz",
+          "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/precedent-01.jpg"
+              "src": "assets/images/post-scarcity/d-precedent-grid.jpg",
+              "caption": "Grid against greenspace: Rittenhouse Square, East Passyunk, John F. Collins Park."
+            }
+          ]
+        },
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-precedent-program.jpg",
+              "caption": "Built space against program: Sendai Mediatheque and Kunsthaus Graz."
+            }
+          ]
+        },
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/precedent-01.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/precedent-02.jpg"
+              "src": "assets/images/post-scarcity/precedent-02.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/precedent-03.jpg"
+              "src": "assets/images/post-scarcity/precedent-03.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/precedent-04.jpg"
+              "src": "assets/images/post-scarcity/precedent-04.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/precedent-05.jpg"
+              "src": "assets/images/post-scarcity/precedent-05.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/precedent-06.jpg"
+              "src": "assets/images/post-scarcity/precedent-06.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/precedent-07.jpg"
+              "src": "assets/images/post-scarcity/precedent-07.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/precedent-08.jpg"
+              "src": "assets/images/post-scarcity/precedent-08.jpg",
+              "caption": ""
             }
           ]
         }
@@ -175,7 +272,8 @@
       "standfirst": "Zoning by how well things sit together, not by what they are.",
       "body": [
         "American zoning is incompatible with a post-scarcity society. At its best it prevents harmful adjacencies; at its worst it has been used to exclude and segregate.",
-        "Proximity zoning is the alternative: a tool that reads the attributes of each program and scores how well it fits its surroundings. Not a black box, and not a replacement for the designer — decision support, and the score can be appealed."
+        "Proximity zoning is the alternative: a tool that reads six attributes of each program and returns a fit score for its position relative to its neighbours. Not a black box, and not a replacement for the designer — decision support, and the score can be appealed.",
+        "It is scale-agnostic. A grid tile can be a floor with three programs around a courtyard, a campus with three buildings facing a green, or a restaurant with seating zones around a pocket park."
       ],
       "list": {
         "title": "Six attributes per program",
@@ -187,7 +285,22 @@
           "Biophilia — none to accessible",
           "Access — none to accessible"
         ]
-      }
+      },
+      "blocks": [
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-zoning-ui-1.jpg",
+              "caption": "The tool: a grid, programs, and a fit score."
+            },
+            {
+              "src": "assets/images/post-scarcity/d-zoning-ui-2.jpg",
+              "caption": "Scores update as programs move."
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "Philadelphia",
@@ -197,19 +310,28 @@
       ],
       "blocks": [
         {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-cities.jpg",
+              "caption": "Philadelphia 6% green space, against Vienna at 14% and Copenhagen at 12%."
+            }
+          ]
+        },
+        {
           "kind": "grid",
           "images": [
             {
               "src": "assets/images/post-scarcity/philly-01.jpg",
-              "caption": "VIENNA — 14% GREEN SPACE"
+              "caption": "Vienna — 14% green space"
             },
             {
               "src": "assets/images/post-scarcity/philly-02.jpg",
-              "caption": "COPENHAGEN — 12% GREEN SPACE"
+              "caption": "Copenhagen — 12% green space"
             },
             {
               "src": "assets/images/post-scarcity/philly-03.jpg",
-              "caption": "PHILADELPHIA — 6% GREEN SPACE"
+              "caption": "Philadelphia — 6% green space"
             }
           ]
         }
@@ -219,34 +341,75 @@
       "title": "Center Square",
       "standfirst": "A park at the heart of the city, west of City Hall.",
       "body": [
-        "The site carries 113,000 transit riders past it every day — 30,000 on the Market–Frankford line, 57,000 on Broad Street, 26,000 through Suburban Station. No other ground in the city is handed that many people before it opens.",
+        "Six sites were considered. This one carries 113,000 transit riders past it every day — 30,000 on the Market–Frankford line, 57,000 on Broad Street, 26,000 through Suburban Station. No other ground in the city is handed that many people before it opens.",
         "The park breaks the grid deliberately: soft lines against the rectilinear order, an amphitheatre, a plaza at LOVE, a rec centre and a playscape."
       ],
       "blocks": [
         {
-          "kind": "strip",
-          "title": "Site and masterplan",
+          "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/site-01.jpg"
+              "src": "assets/images/post-scarcity/d-site-options.jpg",
+              "caption": "Candidate sites across the city."
+            }
+          ]
+        },
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-plan-1.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/site-02.jpg"
+              "src": "assets/images/post-scarcity/d-plan-2.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/site-03.jpg"
+              "src": "assets/images/post-scarcity/d-plan-3.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-masterplan.jpg",
+              "caption": "The masterplan: amphitheatre, LOVE plaza, rec centre, playscape."
+            }
+          ]
+        },
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/site-01.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/site-04.jpg"
+              "src": "assets/images/post-scarcity/site-02.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/site-05.jpg"
+              "src": "assets/images/post-scarcity/site-03.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/site-06.jpg"
+              "src": "assets/images/post-scarcity/site-04.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/site-07.jpg"
+              "src": "assets/images/post-scarcity/site-05.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/site-06.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/site-07.jpg",
+              "caption": ""
             }
           ]
         }
@@ -257,17 +420,42 @@
       "standfirst": "The structural grid treated as a street grid.",
       "body": [
         "Uniform cubes. At its full 36-foot height the bay suits outdoor space, industry or sport; halved to 18 feet it takes schools and workshops; in thirds at 12 feet, apartments and small retail.",
-        "The building is lifted so only the cores touch down, and the park runs beneath it. The elevator becomes the lobby."
+        "The building is lifted so only the cores touch down, and the park runs beneath it. The elevator becomes the lobby.",
+        "The frame is steel and concrete — one-inch plate welded into rectangular profiles. The programs inside use mass timber, brick and fabric, counterbalancing the rigidity of the grid."
       ],
       "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-frame-dims.jpg",
+              "caption": "36 feet, halved to 18, or in thirds at 12."
+            }
+          ]
+        },
         {
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/frame-01.jpg"
+              "src": "assets/images/post-scarcity/d-sunshade.jpg",
+              "caption": "Natural sunshade on the south elevation."
             },
             {
-              "src": "assets/images/post-scarcity/frame-02.jpg"
+              "src": "assets/images/post-scarcity/d-winds.jpg",
+              "caption": "South-westward winds."
+            }
+          ]
+        },
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/frame-01.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/frame-02.jpg",
+              "caption": ""
             }
           ]
         }
@@ -277,7 +465,8 @@
       "title": "Clusters",
       "standfirst": "Programs gather around common ground.",
       "body": [
-        "Placed by proximity zoning, programs form clusters around a shared centre — a vertical fifteen-minute neighbourhood where daily needs are close but the pull outward stays intact."
+        "Placed by proximity zoning, programs form clusters around a shared centre — a vertical fifteen-minute neighbourhood where daily needs are close but the pull outward stays intact.",
+        "The Piazza cluster centres on a market whose roof is the common green. The Family Circle gives a slice of the frame to families: a playground, courts, a K–8 school and community centre, and two-level homes stacked four deep."
       ],
       "list": {
         "title": "Program types",
@@ -293,19 +482,32 @@
       },
       "blocks": [
         {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-clusters.jpg",
+              "caption": "The program clusters within the frame."
+            }
+          ]
+        },
+        {
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/clusters-01.jpg"
+              "src": "assets/images/post-scarcity/clusters-01.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/clusters-02.jpg"
+              "src": "assets/images/post-scarcity/clusters-02.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/clusters-03.jpg"
+              "src": "assets/images/post-scarcity/clusters-03.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/clusters-04.jpg"
+              "src": "assets/images/post-scarcity/clusters-04.jpg",
+              "caption": ""
             }
           ]
         }
@@ -320,90 +522,103 @@
       ],
       "blocks": [
         {
-          "kind": "full",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/renders-01.jpg"
-            }
-          ]
-        },
-        {
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/renders-02.jpg"
+              "src": "assets/images/post-scarcity/renders-01.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-03.jpg"
+              "src": "assets/images/post-scarcity/renders-02.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-04.jpg"
+              "src": "assets/images/post-scarcity/renders-03.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-05.jpg"
+              "src": "assets/images/post-scarcity/renders-04.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-06.jpg"
+              "src": "assets/images/post-scarcity/renders-05.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-07.jpg"
-            }
-          ]
-        },
-        {
-          "kind": "strip",
-          "title": "Through the building",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/renders-08.jpg"
+              "src": "assets/images/post-scarcity/renders-06.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-09.jpg"
+              "src": "assets/images/post-scarcity/renders-07.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-10.jpg"
+              "src": "assets/images/post-scarcity/renders-08.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-11.jpg"
+              "src": "assets/images/post-scarcity/renders-09.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-12.jpg"
+              "src": "assets/images/post-scarcity/renders-10.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-13.jpg"
+              "src": "assets/images/post-scarcity/renders-11.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-14.jpg"
+              "src": "assets/images/post-scarcity/renders-12.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-15.jpg"
+              "src": "assets/images/post-scarcity/renders-13.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-16.jpg"
+              "src": "assets/images/post-scarcity/renders-14.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-17.jpg"
+              "src": "assets/images/post-scarcity/renders-15.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-18.jpg"
+              "src": "assets/images/post-scarcity/renders-16.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-19.jpg"
+              "src": "assets/images/post-scarcity/renders-17.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-20.jpg"
+              "src": "assets/images/post-scarcity/renders-18.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-21.jpg"
+              "src": "assets/images/post-scarcity/renders-19.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-22.jpg"
+              "src": "assets/images/post-scarcity/renders-20.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-23.jpg"
+              "src": "assets/images/post-scarcity/renders-21.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-24.jpg"
+              "src": "assets/images/post-scarcity/renders-22.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/renders-23.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/renders-24.jpg",
+              "caption": ""
             }
           ]
         }
@@ -425,25 +640,45 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/close-01.jpg"
+              "src": "assets/images/post-scarcity/d-summary-1.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/close-02.jpg"
+              "src": "assets/images/post-scarcity/d-summary-2.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/close-01.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/close-03.jpg"
+              "src": "assets/images/post-scarcity/close-02.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/close-04.jpg"
+              "src": "assets/images/post-scarcity/close-03.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/close-05.jpg"
+              "src": "assets/images/post-scarcity/close-04.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/close-06.jpg"
+              "src": "assets/images/post-scarcity/close-05.jpg",
+              "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/close-07.jpg"
+              "src": "assets/images/post-scarcity/close-06.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/close-07.jpg",
+              "caption": ""
             }
           ]
         }

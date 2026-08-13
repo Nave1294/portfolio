@@ -639,22 +639,14 @@ function renderChapters(chapters) {
         </figure>
       </div>`);
           }
-        } else if (b.kind === "strip") {
-          blocks.push(`      <div class="chapter-strip">
-        ${b.title ? `<div class="container strip-head"><h3>${esc(b.title)}</h3><span class="strip-hint">Scroll →</span></div>` : ""}
-        <div class="strip-track" tabindex="0" role="list" aria-label="${attr(b.title || c.title)}">
-${items
-  .map(
-    (g) => `          <figure class="strip-item">
-            <img src="../${attr(g.src)}" alt="${attr(g.caption || c.title)}" loading="lazy">${
-      g.caption ? `\n            <figcaption>${esc(g.caption)}</figcaption>` : ""
-    }
-          </figure>`
-  )
-  .join("\n")}
-        </div>
-      </div>`);
         } else {
+          // Everything that is not full width is a grid. Sequences read down
+          // the page in order rather than sideways behind a scrollbar.
+          if (b.title) {
+            blocks.push(
+              `      <div class="container"><h3 class="block-title">${esc(b.title)}</h3></div>`
+            );
+          }
           blocks.push(
             `      <div class="container project-gallery">\n${items
               .map((g) => figure(g, ""))

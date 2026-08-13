@@ -159,8 +159,7 @@ content:
                 default: grid
                 options:
                   values:
-                    - { value: full, label: "Full bleed — edge to edge of the screen, one per row" }
-                    - { value: strip, label: "Strip — scrolls sideways, good for sequences" }
+                    - { value: full, label: "Wide — the page's full measure, one per row" }
                     - { value: grid, label: "Grid — two up" }
               - name: title
                 label: Strip heading
