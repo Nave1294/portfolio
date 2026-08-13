@@ -22,26 +22,59 @@
       "title": "Can Architects Shape the Future?",
       "standfirst": "Or are architectural movements only ever a response?",
       "body": [
-        "A thesis in architecture is a design project or research proposal exploring a central idea. Mine begins with a question I could not answer: whether architects lead change, or arrive after it.",
-        "To ask it properly, I had to invent a future to design for."
+        "A thesis in architecture is a design project or research proposal exploring a central idea. Mine began with a question I could not answer.",
+        "The options were many and the thesis unclear — museums, transit hubs, garages re-geared. But the state of the world felt heavy and grey, too troubled for any of them to say much.",
+        "So I went the other way. To ask the question properly, I had to invent a future to design for."
       ],
       "blocks": [
         {
-          "kind": "grid",
+          "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/opening-01.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/opening-02.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/opening-03.jpg",
+              "src": "assets/images/post-scarcity/d-summary-1.jpg",
               "caption": ""
             }
           ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "title": "Post Scarcity",
+      "standfirst": "The point at which scarcity stops organising us.",
+      "body": [
+        "The phrase is Nick Bostrom's — an optimistic future in which scarcity is no longer the factor deciding how we live. Rutger Bregman revives its instruments: universal basic income, a fifteen-hour week, open borders, shown through history and modern pilots to be less radical than they sound.",
+        "Our story begins in 1725. Those born that year were the last generation brought into a pre-industrial world; of every hundred children, forty to sixty survived to adulthood, and those who did rarely passed forty.",
+        "What followed was not the absence of crisis but progress in spite of it — two world wars, financial collapses, pandemics. It has not been evenly shared, and many were overlooked or exploited to fuel it. But a future better than our present, for everyone, is within reach."
+      ],
+      "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/p-timeline.jpg",
+              "caption": "Falling scarcity, 1750 to today."
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "stats": [
+        {
+          "value": "1750",
+          "label": "Mechanisation makes goods cheap and accessible"
+        },
+        {
+          "value": "1950s",
+          "label": "Those living on under 2,000 calories a day fall from 51% to 3%"
+        },
+        {
+          "value": "2000s",
+          "label": "Knowledge becomes essentially free"
+        },
+        {
+          "value": "2050",
+          "label": "The last generation born into the industrial era"
         }
       ]
     },
@@ -49,8 +82,8 @@
       "title": "The Four Pillars",
       "standfirst": "Economy, work, value, scarcity.",
       "body": [
-        "Post scarcity rests on four shifts. The economy decentralises production and moves toward universal basic income, zero-marginal-cost goods and sharing. Work settles near fifteen hours a week, in creative and critical-thinking fields.",
-        "Value moves toward social capital, environmental stewardship and community well-being. And scarcity relocates — what becomes scarce is time, privacy, natural features and genuine experience.",
+        "Post scarcity rests on four shifts. The economy decentralises production and moves toward universal basic income, zero-marginal-cost goods and a sharing culture. Work settles near fifteen hours a week, concentrated in creative and critical-thinking fields.",
+        "Value moves toward social capital, environmental stewardship, self-actualisation and community well-being. And scarcity itself relocates — what becomes scarce is time, privacy, natural features and genuine experience.",
         "Each pillar makes a demand of the built environment: proximity zoning, less work, healthier buildings, and room for good times."
       ],
       "blocks": [
@@ -63,13 +96,16 @@
             }
           ]
         }
-      ]
+      ],
+      "images": []
     },
     {
-      "title": "Work and Enrichment",
-      "standfirst": "The hours change shape.",
+      "title": "Spent Time",
+      "standfirst": "Six hours a day move out of work and into everything else.",
       "body": [
-        "Plotted against a lifetime, the balance between work and enrichment inverts. The area given to labour contracts; the area given to everything else opens up."
+        "A future designed has to be quantified. Set the reality week against the post-scarcity week and the arithmetic is stark: 1,717.5 hours a year returned.",
+        "But more free time does not guarantee a better life. The average American spends 2 hours 18 minutes on social media, 1 hour 19 on games and 2 hours watching television — inside a day offering less than six hours of personal time. Denmark and Austria, whose public realms are recognised for quality and access, spend markedly less.",
+        "That retreat into screens reads as a failure of the public realm, not of the people in it."
       ],
       "blocks": [
         {
@@ -88,17 +124,7 @@
               "caption": "Post scarcity."
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "A Week Reclaimed",
-      "standfirst": "1,717.5 hours a year, returned.",
-      "body": [
-        "Set the reality week against the post-scarcity week and six hours a day move out of productive activity into enrichment and fulfilment.",
-        "Rebuilt as program, the city's demands move with it — office space contracts sharply while homes, entertainment and civic space grow."
-      ],
-      "blocks": [
+        },
         {
           "kind": "full",
           "images": [
@@ -112,29 +138,57 @@
           "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/d-program-shift.jpg",
-              "caption": "Inner ring: today. Outer ring: post scarcity."
+              "src": "assets/images/post-scarcity/d-screentime.jpg",
+              "caption": "Screen time compared: United States, Denmark, Austria."
             }
           ]
         }
-      ]
+      ],
+      "images": []
     },
     {
-      "title": "Better Pastimes",
-      "standfirst": "More free time does not guarantee a better life.",
+      "title": "The Built Environment",
+      "standfirst": "The city's demands move with the week.",
       "body": [
-        "The average American spends 2 hours 18 minutes on social media, 1 hour 19 on games and 2 hours watching television — inside a day offering less than six hours of personal time.",
-        "Denmark and Austria, whose public realms are recognised for quality and access, spend markedly less. That retreat into screens reads as a failure of the public realm, not of the people in it."
+        "Rebuild the week around a fifteen-hour job and what the city asks of its buildings changes. Office space contracts sharply while homes, entertainment, institutions and civic space all grow.",
+        "The chart is an oversimplification, of course. Turning it into physical reality takes many more layers — and one idea in particular."
       ],
       "blocks": [
         {
           "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/d-screentime.jpg",
-              "caption": "Screen time compared: United States, Denmark, Austria."
+              "src": "assets/images/post-scarcity/d-program-shift.jpg",
+              "caption": "Inner ring: today. Outer ring: post scarcity."
             }
           ]
+        }
+      ],
+      "images": [],
+      "stats": [
+        {
+          "value": "−26%",
+          "label": "Office"
+        },
+        {
+          "value": "+10%",
+          "label": "Residential"
+        },
+        {
+          "value": "+10%",
+          "label": "Entertainment"
+        },
+        {
+          "value": "+6%",
+          "label": "Institutional"
+        },
+        {
+          "value": "+2%",
+          "label": "Civic"
+        },
+        {
+          "value": "−2%",
+          "label": "Retail"
         }
       ]
     },
@@ -142,13 +196,10 @@
       "title": "Counterpoint",
       "standfirst": "Two independent lines, played at once.",
       "body": [
-        "Counterpoint uses contrast to create interest, choice and harmony. It does not imply opposition.",
-        "Four run through the project: grid against greenspace, greenspace against built space, built space against program, and program against program."
+        "Why do the best public spaces fill people with joy? Because they are a counterpoint the city employs.",
+        "Counterpoint — the relationship between independent melodic lines sounding together, creating harmony through their interaction — can guide planning at nearly every scale. It does not imply opposition. It uses contrast to create interest, choice and harmony.",
+        "Three carry the project: grid against greenspace, built space against program, and program against program. Three melodies, distinct yet blending into song."
       ],
-      "quote": {
-        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest, choice, and harmony between two or more independent ideas.",
-        "attribution": ""
-      },
       "blocks": [
         {
           "kind": "grid",
@@ -163,51 +214,23 @@
             },
             {
               "src": "assets/images/post-scarcity/d-counterpoint-3.jpg",
-              "caption": "The four counterpoints."
-            }
-          ]
-        },
-        {
-          "kind": "grid",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/counterpoint-01.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/counterpoint-02.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/counterpoint-03.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/counterpoint-04.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/counterpoint-05.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/counterpoint-06.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/counterpoint-07.jpg",
-              "caption": ""
+              "caption": "The counterpoints, layered."
             }
           ]
         }
-      ]
+      ],
+      "images": [],
+      "quote": {
+        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest, choice, and harmony between two or more independent ideas.",
+        "attribution": ""
+      }
     },
     {
-      "title": "Precedents",
+      "title": "Grid Against Green",
       "standfirst": "Where the grid is broken, the city is at its best.",
       "body": [
-        "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places — a preserved Lenape trail cutting diagonally through South Philadelphia, a square whose walks ignore the street lines, a pocket park mid-block.",
-        "For built space against program, two buildings: Toyo Ito's Sendai Mediatheque, and Kunsthaus Graz."
+        "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places: East Passyunk, born of a preserved Lenape trail cutting diagonally through the south; Rittenhouse Square, whose walks ignore the street lines; John F. Collins Park, a pocket mid-block; and the Benjamin Franklin Parkway, a deliberate break drawing an axis from City Hall to the Art Museum.",
+        "A suspicion, tested: that Philadelphia's greenspace was in poor condition. Measured against Vienna and Copenhagen, its parks and plazas were lacking considerably more than expected."
       ],
       "blocks": [
         {
@@ -215,7 +238,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-precedent-grid.jpg",
-              "caption": "Grid against greenspace: Rittenhouse Square, East Passyunk, John F. Collins Park."
+              "caption": "Rittenhouse Square, East Passyunk, John F. Collins Park, Benjamin Franklin Parkway."
             }
           ]
         },
@@ -223,58 +246,59 @@
           "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/d-precedent-program.jpg",
-              "caption": "Built space against program: Sendai Mediatheque and Kunsthaus Graz."
-            }
-          ]
-        },
-        {
-          "kind": "grid",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/precedent-01.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/precedent-02.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/precedent-03.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/precedent-04.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/precedent-05.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/precedent-06.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/precedent-07.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/precedent-08.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/d-cities.jpg",
+              "caption": "Philadelphia at 6% green space, against Vienna at 14% and Copenhagen at 12%."
             }
           ]
         }
-      ]
+      ],
+      "images": []
+    },
+    {
+      "title": "Built Space Against Program",
+      "standfirst": "A building as a stack of separate worlds.",
+      "body": [
+        "Koolhaas described the skyscraper as a vertical collage of separate worlds. What is missing from that account is interaction — not just separation.",
+        "If those wildly different programs bled into one another instead of staying in their silos, the building itself could become the storyteller, its spaces weaving together in a choreography of contrasts.",
+        "Two buildings hold the line: Toyo Ito's Sendai Mediatheque, and Kunsthaus Graz by Peter Cook and Colin Fournier."
+      ],
+      "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-precedent-program.jpg",
+              "caption": "Sendai Mediatheque, Toyo Ito. Kunsthaus Graz, Peter Cook and Colin Fournier."
+            }
+          ]
+        }
+      ],
+      "images": []
     },
     {
       "title": "Proximity Zoning",
       "standfirst": "Zoning by how well things sit together, not by what they are.",
       "body": [
-        "American zoning is incompatible with a post-scarcity society. At its best it prevents harmful adjacencies; at its worst it has been used to exclude and segregate.",
-        "Proximity zoning is the alternative: a tool that reads six attributes of each program and returns a fit score for its position relative to its neighbours. Not a black box, and not a replacement for the designer — decision support, and the score can be appealed.",
-        "It is scale-agnostic. A grid tile can be a floor with three programs around a courtyard, a campus with three buildings facing a green, or a restaurant with seating zones around a pocket park."
+        "American zoning is incompatible with a post-scarcity society. At its best it prevents obviously harmful adjacencies; at its worst it has been used, intentionally and otherwise, to exclude and segregate.",
+        "Proximity zoning is the alternative — a fluid system that reads the attributes of each program and evaluates how well it fits its surroundings. Built with a colleague as a lightweight software tool: establish a grid, assign attributes, place programs, and it returns a fit score.",
+        "Not a black box, and not a replacement for the designer. Decision support. The score can be appealed, or the proposal adjusted to strengthen good proximities and mitigate poor ones. It is also scale-agnostic — a tile can be a floor, a campus, or a restaurant's seating zones."
       ],
+      "blocks": [
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-zoning-ui.jpg",
+              "caption": "The tool: a grid, programs, and a fit score."
+            },
+            {
+              "src": "assets/images/post-scarcity/d-zoning-scores.jpg",
+              "caption": "Scores update as programs move."
+            }
+          ]
+        }
+      ],
+      "images": [],
       "list": {
         "title": "Six attributes per program",
         "items": [
@@ -285,64 +309,15 @@
           "Biophilia — none to accessible",
           "Access — none to accessible"
         ]
-      },
-      "blocks": [
-        {
-          "kind": "grid",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/d-zoning-ui-1.jpg",
-              "caption": "The tool: a grid, programs, and a fit score."
-            },
-            {
-              "src": "assets/images/post-scarcity/d-zoning-ui-2.jpg",
-              "caption": "Scores update as programs move."
-            }
-          ]
-        }
-      ]
+      }
     },
     {
-      "title": "Philadelphia",
-      "standfirst": "A suspicion, tested.",
+      "title": "Choosing the Site",
+      "standfirst": "The area by City Hall had it right.",
       "body": [
-        "That Philadelphia's greenspace was in poor condition. Measured against Vienna and Copenhagen, its parks and plazas were lacking considerably more than expected."
-      ],
-      "blocks": [
-        {
-          "kind": "full",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/d-cities.jpg",
-              "caption": "Philadelphia 6% green space, against Vienna at 14% and Copenhagen at 12%."
-            }
-          ]
-        },
-        {
-          "kind": "grid",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/philly-01.jpg",
-              "caption": "Vienna — 14% green space"
-            },
-            {
-              "src": "assets/images/post-scarcity/philly-02.jpg",
-              "caption": "Copenhagen — 12% green space"
-            },
-            {
-              "src": "assets/images/post-scarcity/philly-03.jpg",
-              "caption": "Philadelphia — 6% green space"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Center Square",
-      "standfirst": "A park at the heart of the city, west of City Hall.",
-      "body": [
-        "Six sites were considered. This one carries 113,000 transit riders past it every day — 30,000 on the Market–Frankford line, 57,000 on Broad Street, 26,000 through Suburban Station. No other ground in the city is handed that many people before it opens.",
-        "The park breaks the grid deliberately: soft lines against the rectilinear order, an amphitheatre, a plaza at LOVE, a rec centre and a playscape."
+        "I needed a place for ideas to unfold. Several were analysed and measured — impervious surface, road coverage, transit, greenspace, context.",
+        "This ground carries the highest proportion of impervious surface in the comparison at 71.48%, and among the lowest share given to roads at 8.04%. Dense, central, hard-surfaced, and barely given over to movement.",
+        "It also carries 113,000 transit riders past it every day: 30,000 on the Market–Frankford line, 57,000 on Broad Street, 26,000 through Suburban Station. No other ground in the city is handed that many people before it opens."
       ],
       "blocks": [
         {
@@ -358,25 +333,72 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/d-plan-1.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-roads-old.jpg",
+              "caption": "Roads today."
             },
             {
-              "src": "assets/images/post-scarcity/d-plan-2.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-roads-new.jpg",
+              "caption": "Roads proposed."
             },
             {
-              "src": "assets/images/post-scarcity/d-plan-3.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-building-demo.jpg",
+              "caption": "What is removed."
+            },
+            {
+              "src": "assets/images/post-scarcity/p-park-outline.jpg",
+              "caption": "The park outline."
             }
           ]
-        },
+        }
+      ],
+      "images": []
+    },
+    {
+      "title": "One Square, Many Futures",
+      "standfirst": "A park, train sheds, and a grand city hall.",
+      "body": [
+        "Over the years this site saw it all. The Centre Square Water Works arrived in 1801 and was demolished in 1829. Voters chose the square as the city's civic centrepiece in 1870. Broad Street Station was finished in 1893 and pulled down in 1953. The Parkway, the Market–Frankford line, the expressway, the concourse — each took its turn.",
+        "Edmund Bacon's lofty goals never came to fruition, yet remnants remain of his city ambition. Though his plan was never fully created, those lingering pieces still shape what the square could be."
+      ],
+      "blocks": [
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-plan-context.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/d-plan-street.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/d-plan-ground.jpg",
+              "caption": ""
+            },
+            {
+              "src": "assets/images/post-scarcity/p-subway-1.jpg",
+              "caption": "The concourse below."
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "title": "The Park",
+      "standfirst": "Soft lines against the rectilinear order.",
+      "body": [
+        "By studying context, connections and flow, a simpler approach proved best. The park breaks the grid deliberately, the way Rittenhouse cuts across the formal layout and Central Park turns its back on Manhattan's geometry.",
+        "The lawn, the plaza, the north courtyard, the Dilworth walk, the amphitheatre, the platform, the grove, the hill and the pond — each a room, between Market Street, 16th, 15th and South Penn Square."
+      ],
+      "blocks": [
         {
           "kind": "full",
           "images": [
             {
               "src": "assets/images/post-scarcity/d-masterplan.jpg",
-              "caption": "The masterplan: amphitheatre, LOVE plaza, rec centre, playscape."
+              "caption": "Amphitheatre, LOVE plaza, rec centre, playscape, edible gardens, grove, the hill and pond."
             }
           ]
         },
@@ -384,44 +406,34 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/site-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-site-plan.jpg",
+              "caption": "Site plan."
             },
             {
-              "src": "assets/images/post-scarcity/site-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-site-perspective.jpg",
+              "caption": "The park in context."
             },
             {
-              "src": "assets/images/post-scarcity/site-03.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-site-section.jpg",
+              "caption": "Site section."
             },
             {
-              "src": "assets/images/post-scarcity/site-04.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/site-05.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/site-06.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/site-07.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-edge-condition.jpg",
+              "caption": "Edge condition."
             }
           ]
         }
-      ]
+      ],
+      "images": []
     },
     {
       "title": "The Frame",
       "standfirst": "The structural grid treated as a street grid.",
       "body": [
-        "Uniform cubes. At its full 36-foot height the bay suits outdoor space, industry or sport; halved to 18 feet it takes schools and workshops; in thirds at 12 feet, apartments and small retail.",
-        "The building is lifted so only the cores touch down, and the park runs beneath it. The elevator becomes the lobby.",
-        "The frame is steel and concrete — one-inch plate welded into rectangular profiles. The programs inside use mass timber, brick and fabric, counterbalancing the rigidity of the grid."
+        "For multiple programs I sought a frame — flexible, strong, and a counterpoint in itself, clearly contrasting the spaces within.",
+        "Start with a cell, sized to suit many uses. At its full 36-foot height it takes outdoor space, industry or sport; halved to 18 feet, schools, commercial services and workshops; in thirds at 12 feet, apartments and small retail. Roads become parcels, parcels become a three-dimensional grid.",
+        "The frame is steel and concrete — one-inch plate welded into rectangular profiles with stiffeners at intervals. The programs inside use mass timber, brick and fabric, counterbalancing the rigidity of the grid.",
+        "The building is lifted so only the structural and circulation cores touch down, and the park runs beneath and around it. The elevator becomes the lobby."
       ],
       "blocks": [
         {
@@ -437,6 +449,30 @@
           "kind": "grid",
           "images": [
             {
+              "src": "assets/images/post-scarcity/d-program-scale.jpg",
+              "caption": "Programs at scale within the frame."
+            },
+            {
+              "src": "assets/images/post-scarcity/p-core.jpg",
+              "caption": "Core organisation."
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "title": "Finding the Form",
+      "standfirst": "Solids are set, but voids are where moments are made.",
+      "body": [
+        "Start with a mass. Subtract to the eastern sun, then the western. Acknowledge context. Prevent or harness wind. Repeat on both sides.",
+        "The grid was restrictive, defining too much, so I separated the programs from its rigid touch. Climate and function shaped each space instead, and the resulting mass winds through the structure, occupying about 60% of the available volume — then smoothed and rounded against the grid's ninety-degree angles, so occupied and void read clearly apart."
+      ],
+      "blocks": [
+        {
+          "kind": "grid",
+          "images": [
+            {
               "src": "assets/images/post-scarcity/d-sunshade.jpg",
               "caption": "Natural sunshade on the south elevation."
             },
@@ -447,46 +483,73 @@
           ]
         },
         {
-          "kind": "grid",
+          "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/frame-01.jpg",
-              "caption": ""
-            },
+              "src": "assets/images/post-scarcity/p-base-1.jpg",
+              "caption": "West–east section."
+            }
+          ]
+        },
+        {
+          "kind": "full",
+          "images": [
             {
-              "src": "assets/images/post-scarcity/frame-02.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-base-2.jpg",
+              "caption": "East–west section."
             }
           ]
         }
-      ]
+      ],
+      "images": []
+    },
+    {
+      "title": "Systems",
+      "standfirst": "Water, air and structure.",
+      "body": [
+        "Grey water from the hydroponic farms is filtered by the vertical garden, used for lavatories in the co-working tower, and black water is processed on site before being released or recycled.",
+        "Circulation is the part that makes it work. Cable-free cars move independently within the shafts and stop every three storeys — a vertical transit system. The last leg is always on foot, through the public realm, where others are lounging, walking, eating or playing."
+      ],
+      "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/p-grey-water.jpg",
+              "caption": "Hydroponic grey water filtration and reuse."
+            }
+          ]
+        },
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/p-subway-2.jpg",
+              "caption": "The concourse."
+            },
+            {
+              "src": "assets/images/post-scarcity/p-basement.jpg",
+              "caption": "Basement plan."
+            }
+          ]
+        }
+      ],
+      "images": []
     },
     {
       "title": "Clusters",
       "standfirst": "Programs gather around common ground.",
       "body": [
-        "Placed by proximity zoning, programs form clusters around a shared centre — a vertical fifteen-minute neighbourhood where daily needs are close but the pull outward stays intact.",
-        "The Piazza cluster centres on a market whose roof is the common green. The Family Circle gives a slice of the frame to families: a playground, courts, a K–8 school and community centre, and two-level homes stacked four deep."
+        "Placed by proximity zoning, programs form clusters around a shared centre — a vertical fifteen-minute neighbourhood where daily needs are close by, but the pull outward stays intact.",
+        "These two clusters are only 30% of the building's programmable space."
       ],
-      "list": {
-        "title": "Program types",
-        "items": [
-          "Industrial",
-          "Residential",
-          "Green space",
-          "Commercial",
-          "Leisure / entertainment",
-          "Co-working",
-          "Civic"
-        ]
-      },
       "blocks": [
         {
           "kind": "full",
           "images": [
             {
               "src": "assets/images/post-scarcity/d-clusters.jpg",
-              "caption": "The program clusters within the frame."
+              "caption": "Industrial, residential, green space, commercial, leisure, co-working, civic."
             }
           ]
         },
@@ -494,157 +557,161 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/clusters-01.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-market-axon.jpg",
+              "caption": "Piazza cluster axonometric."
             },
             {
-              "src": "assets/images/post-scarcity/clusters-02.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/clusters-03.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/clusters-04.jpg",
-              "caption": ""
+              "src": "assets/images/post-scarcity/p-family-axon.jpg",
+              "caption": "Family Circle axonometric."
             }
           ]
         }
-      ]
+      ],
+      "images": []
     },
     {
-      "title": "Through the Building",
-      "standfirst": "A day spent moving through it.",
+      "title": "The Piazza",
+      "standfirst": "A market, apartments, and spaces to play.",
       "body": [
-        "The market and its roof-top piazza, the studios and family units, the school and community centre, the co-working tower with fifteen storeys of green wall filtering the hydroponic farms below.",
-        "Moving between them should feel like walking a street, not passing exits on a highway."
+        "The piazza is a hub where all come to stay. The market is the liveliest of its four elements — rotating stalls alongside year-round restaurants, more a permanent farmers' market than a food hall. Its roof doubles as the central greenspace, with a communal screen, a contemplative garden behind one core, lounges with city views and beach volleyball.",
+        "Studio apartments sit alongside with four ground-floor shops for everyday essentials. Across the diagonal, family units begin at four bedrooms with private terraces and vegetable gardens, transitioning upward into one-bedrooms.",
+        "The co-working tower is deliberately not connected to the piazza — visible from it, but separate, so work and downtime stay distinct. Fifteen storeys of green wall flank its core, filtering wastewater from the hydroponic farms."
       ],
       "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-piazza-plan.jpg",
+              "caption": "The piazza cluster."
+            }
+          ]
+        },
         {
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/renders-01.jpg",
+              "src": "assets/images/post-scarcity/r-nw-street-entry.jpg",
+              "caption": "North-west street level entry."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-ne-plaza-entry.jpg",
+              "caption": "North-east plaza level entry."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-market-seating.jpg",
+              "caption": "Market seating."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-market-stalls.jpg",
+              "caption": "Market stalls."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-piazza-studios.jpg",
+              "caption": "The piazza looking towards the studio apartments."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-study-level-three.jpg",
+              "caption": "Level three of the study."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-family-terrace.jpg",
+              "caption": "Family apartment common terrace."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-four-bedroom.jpg",
+              "caption": "Four bedroom apartment."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-apartment-2.jpg",
               "caption": ""
             },
             {
-              "src": "assets/images/post-scarcity/renders-02.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-03.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-04.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-05.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-06.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-07.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-08.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-09.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-10.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-11.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-12.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-13.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-14.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-15.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-16.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-17.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-18.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-19.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-20.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-21.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-22.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-23.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/renders-24.jpg",
+              "src": "assets/images/post-scarcity/r-apartment-3.jpg",
               "caption": ""
             }
           ]
         }
-      ]
+      ],
+      "images": []
+    },
+    {
+      "title": "The Family Circle",
+      "standfirst": "Spaces for learning and play at each stage.",
+      "body": [
+        "A large portion of the frame given to families and their needs. The central green hosts a playground with boulders for imaginative play; half-courts and a multi-purpose outdoor fitness area sit just off it, with public bathrooms and changing rooms. Out of view are the essential services — doctors, a larger grocery, salons — supplied directly by the hydroponic farm below.",
+        "Above the courts is the multigenerational neighbourhood: two-level homes of five to six bedrooms, grouped in threes and fours around private common space and circulation, stacked four deep and joined by stair and core.",
+        "Across the circle, a four-storey K–8 school meets a community centre through a shared outdoor atrium of planted ramps and terraces, integrating the school with the library and maker spaces above. The circular form is deliberate — it keeps sightlines open upward through the building."
+      ],
+      "blocks": [
+        {
+          "kind": "full",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-family-plan.jpg",
+              "caption": "The Family Circle cluster."
+            }
+          ]
+        },
+        {
+          "kind": "grid",
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/r-family-circle-park.jpg",
+              "caption": "Family Circle park."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-school-entry.jpg",
+              "caption": "School entry."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-school-entry-winter.jpg",
+              "caption": "School entry in winter."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-school-circulation.jpg",
+              "caption": "School, library and maker space common circulation."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-library-lounge.jpg",
+              "caption": "Library lounge."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-black-box.jpg",
+              "caption": "Black box theatre, one of three."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-multigen.jpg",
+              "caption": "Multi-generational neighbourhood, level one of four."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-entertainment-lounge.jpg",
+              "caption": "Entertainment district lounge."
+            },
+            {
+              "src": "assets/images/post-scarcity/r-lobby.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "images": []
     },
     {
       "title": "Can Architects Shape the Future?",
       "standfirst": "The question, returned to.",
       "body": [
-        "This was never about designing a fully realistic building. It continues a conversation begun long before me.",
-        "Abundance alone does not guarantee quality of life. It is thoughtfully designed, interconnected places that let us feel the benefit of it — and that draw us out into the world rather than back to a screen."
+        "This is where the story may seem to conclude — yet perhaps it is a start.",
+        "Counterpoint runs through all of it: grid against greenspace, frame against program, structured work against flexible leisure. These pairings ground a concept as expansive as post scarcity firmly in Philadelphia, and keep it from floating off into the abstract.",
+        "Abundance alone does not guarantee quality of life. It is thoughtfully designed, vibrant, interconnected places that let us feel the benefit of it — places that draw us outward rather than back to a screen.",
+        "This thesis was never about designing a fully realistic building. It continues a conversation begun long before me, and one that will carry on after."
       ],
-      "quote": {
-        "text": "The future cannot be predicted, but futures can be invented.",
-        "attribution": "Dennis Gabor, Nobel Prize-winning physicist"
-      },
       "blocks": [
         {
-          "kind": "grid",
+          "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/d-summary-1.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/d-summary-2.jpg",
+              "src": "assets/images/post-scarcity/hero.jpg",
               "caption": ""
             }
           ]
@@ -653,37 +720,18 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/close-01.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/close-02.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/close-03.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/close-04.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/close-05.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/close-06.jpg",
-              "caption": ""
-            },
-            {
-              "src": "assets/images/post-scarcity/close-07.jpg",
+              "src": "assets/images/post-scarcity/d-summary-2.jpg",
               "caption": ""
             }
           ]
         }
-      ]
+      ],
+      "images": [],
+      "quote": {
+        "text": "The future cannot be predicted, but futures can be invented.",
+        "attribution": "Dennis Gabor, Nobel Prize-winning physicist"
+      }
     }
   ],
-  "cover": "assets/images/post-scarcity/cover.jpg"
+  "cover": "assets/images/post-scarcity/hero.jpg"
 }
