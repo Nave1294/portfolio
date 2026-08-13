@@ -107,7 +107,7 @@
             },
             {
               "src": "assets/images/post-scarcity/d-work-3.jpg",
-              "caption": "More enrichment."
+              "caption": "More enrichment, but what does that look like?"
             }
           ]
         },
@@ -115,8 +115,7 @@
           "kind": "full",
           "images": [
             {
-              "src": "assets/images/post-scarcity/d-week.jpg",
-              "caption": "The reality week against the post-scarcity week."
+              "src": "assets/images/post-scarcity/d-week.jpg"
             }
           ]
         },
