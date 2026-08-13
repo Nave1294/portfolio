@@ -677,6 +677,86 @@ html.js .gallery-panel[hidden] { display: none; }
 .project-nav .eyebrow { margin-bottom: var(--space-xs); }
 
 /* ============================================================
+   WALKTHROUGH (chaptered project pages)
+   For work better read in sequence than browsed.
+   ============================================================ */
+.chapter-nav {
+  position: sticky;
+  top: 76px;
+  z-index: 40;
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-block: 1px solid var(--color-border);
+  margin-bottom: var(--space-lg);
+}
+
+.chapter-nav .container {
+  display: flex;
+  gap: var(--space-md);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-block: 0.85rem;
+}
+
+.chapter-nav .container::-webkit-scrollbar { display: none; }
+
+.chapter-nav a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  transition: color 0.2s var(--ease);
+}
+
+.chapter-nav a span {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.chapter-nav a:hover { color: var(--color-text); }
+
+.chapter { padding-bottom: var(--space-xl); scroll-margin-top: 140px; }
+
+.chapter-head {
+  display: grid;
+  grid-template-columns: 6ch 1fr;
+  gap: var(--space-md);
+  align-items: start;
+  margin-bottom: var(--space-lg);
+  max-width: 1000px;
+}
+
+.chapter-number {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  padding-top: 0.5rem;
+  border-top: 2px solid var(--accent);
+}
+
+.chapter-head h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  margin-bottom: var(--space-sm);
+}
+
+.chapter-standfirst {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+  max-width: 46ch;
+}
+
+.chapter-head p {
+  color: var(--color-text-muted);
+  max-width: 62ch;
+}
+
+.chapter-head p + p { margin-top: var(--space-sm); }
+
+/* ============================================================
    ABOUT PAGE
    ============================================================ */
 .skills-grid {

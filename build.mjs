@@ -586,6 +586,62 @@ ${panels}
   </div>`;
 }
 
+/* ---------- walkthrough ----------
+   A project can carry `chapters` instead of a tabbed gallery, for work that
+   is better read in sequence than browsed. Each chapter is a numbered
+   episode with its own heading, text and images. */
+function renderChapters(chapters) {
+  if (!chapters || !chapters.length) return "";
+
+  const nav = chapters
+    .map(
+      (c, i) =>
+        `        <a href="#chapter-${i + 1}"><span>${String(i + 1).padStart(
+          2,
+          "0"
+        )}</span>${esc(c.title)}</a>`
+    )
+    .join("\n");
+
+  const sections = chapters
+    .map((c, i) => {
+      const images = (c.images || [])
+        .map(
+          (img) => `        <figure class="gallery-item${img.wide ? " span-2" : ""}">
+          ${frame(img.src, img.caption || c.title, "", 1)}${
+            img.caption ? `\n          <figcaption>${esc(img.caption)}</figcaption>` : ""
+          }
+        </figure>`
+        )
+        .join("\n");
+
+      const body = (c.body || [])
+        .map((t) => `          <p>${esc(t)}</p>`)
+        .join("\n");
+
+      return `    <section class="chapter" id="chapter-${i + 1}">
+      <div class="container chapter-head">
+        <span class="chapter-number">${String(i + 1).padStart(2, "0")}</span>
+        <div>
+          <h2>${esc(c.title)}</h2>
+          ${c.standfirst ? `<p class="chapter-standfirst">${esc(c.standfirst)}</p>` : ""}
+${body}
+        </div>
+      </div>
+${images ? `      <div class="container project-gallery">\n${images}\n      </div>` : ""}
+    </section>`;
+    })
+    .join("\n\n");
+
+  return `  <nav class="chapter-nav" aria-label="Chapters">
+    <div class="container">
+${nav}
+    </div>
+  </nav>
+
+${sections}`;
+}
+
 function projectPage(p, prev, next) {
   const meta = [
     ["Location", p.location],
@@ -638,7 +694,7 @@ ${body}
       : ""
   }
 
-  ${gallery}
+  ${p.chapters && p.chapters.length ? renderChapters(p.chapters) : gallery}
 
   <div class="container">
     <nav class="project-nav">

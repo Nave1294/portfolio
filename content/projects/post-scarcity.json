@@ -1,0 +1,423 @@
+{
+  "title": "Post Scarcity",
+  "slug": "post-scarcity",
+  "published": true,
+  "order": 0,
+  "accent": 3,
+  "date": "2025",
+  "type": "Thesis",
+  "year": "2025",
+  "location": "Penn Square, Philadelphia",
+  "program": "Central park and civic building",
+  "status": "Academic — Bachelor of Architecture thesis",
+  "role": "Solo thesis project",
+  "summary": "If work stops organising our days, what happens to the city built around work? A central park and civic building for Penn Square.",
+  "cover": "assets/images/post-scarcity/083.jpg",
+  "body": [
+    "Post Scarcity asks what a city becomes when abundance uncouples survival from labour. It takes the premise seriously — a fifteen-hour week, a universal basic income, goods at zero marginal cost — and follows it to its consequences for the ground of Center City.",
+    "The answer is a central park for Philadelphia at Penn Square, and a building that makes it inhabitable. Awarded the 2025 Pearson Prize Silver Medal for best Drexel architectural thesis."
+  ],
+  "gallery": [],
+  "chapters": [
+    {
+      "title": "The Question",
+      "standfirst": "Why discuss post-scarcity at all?",
+      "body": [
+        "Post-scarcity is the point at which automation and abundance uncouple survival from labour. Whether or not it arrives in full, the questions it raises are already pressing: a fifteen-hour working week, a universal basic income, goods at zero marginal cost.",
+        "The thesis takes the premise seriously and asks a narrower question of it. If work stops organising our days, what happens to the city built around work?"
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/001.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/000.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/004.jpg",
+          "caption": "",
+          "wide": true
+        },
+        {
+          "src": "assets/images/post-scarcity/002.jpg",
+          "caption": "",
+          "wide": false
+        }
+      ]
+    },
+    {
+      "title": "What Changes",
+      "standfirst": "Economy, work, value, scarcity.",
+      "body": [
+        "Four forces shift together. Production decentralises, income detaches from employment, creativity and social capital displace output as measures of value, and what becomes scarce is no longer goods but time, privacy, natural features and genuine experience.",
+        "Those shifts land on the city as four demands: proximity zoning, less dedicated workspace, healthier buildings, and far more room for unique experience."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/010.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/006.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/007.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/008.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/009.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/013.jpg",
+          "caption": "",
+          "wide": false
+        }
+      ]
+    },
+    {
+      "title": "Proximity Zoning",
+      "standfirst": "Zoning by how near things are, not by what they are.",
+      "body": [
+        "If the working day shrinks, the reason to segregate uses disappears with it. Proximity zoning replaces the categorical map with one organised around access — what can be reached, and how quickly, rather than what a parcel is permitted to contain.",
+        "The proposal was tested as an interface: a way of reading a site by adjacency rather than by use class."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/021.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/006.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/007.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/008.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/009.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/019.jpg",
+          "caption": "",
+          "wide": false
+        }
+      ]
+    },
+    {
+      "title": "A Week Reclaimed",
+      "standfirst": "1,717.5 hours a year, returned.",
+      "body": [
+        "Set the 2024 week against a post-scarcity week and the arithmetic is stark. Six hours a day move out of productive activity and into enrichment and fulfilment — 1,717.5 hours across a year.",
+        "Rebuilt as program, the city's demands move with it: office space down 26%, residential up 10%, entertainment up 10%, institutional up 6%, civic up 2%, retail down 2%."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/022.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/023.jpg",
+          "caption": "",
+          "wide": false
+        }
+      ]
+    },
+    {
+      "title": "Finding the Site",
+      "standfirst": "Measured against the rest of Philadelphia.",
+      "body": [
+        "The site was chosen by what it lacked. Compared across the city — Rittenhouse, the Italian Market, West Philadelphia, Northern Liberties, North and South Philadelphia — this ground carries the highest proportion of impervious surface at 71.48%, and among the lowest share given over to roads at 8.04%.",
+        "Dense, central, hard-surfaced, and barely given to movement: a site with everything except open ground."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/024.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/053.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/040.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/047.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/037.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/036.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/025.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/026.jpg",
+          "caption": "",
+          "wide": false
+        }
+      ]
+    },
+    {
+      "title": "One Square, Three Centuries",
+      "standfirst": "1750 to 2006.",
+      "body": [
+        "Penn Square has been rebuilt continuously. The Centre Square Water Works arrived in 1801 and was demolished in 1829. Voters chose the square as the city's civic centrepiece in 1870. Broad Street Station was finished in 1893 and pulled down in 1953.",
+        "The Parkway was begun in 1910 and completed in 1926, the Market–Frankford line in 1922, the Art Museum in 1928. Then the Vine Street Expressway, Suburban Station's concourse, Market East in 1984, the Convention Center in 1993. Each generation has treated the square as unfinished."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/054.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/055.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/056.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/057.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/058.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/059.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/060.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/061.jpg",
+          "caption": "",
+          "wide": false
+        }
+      ]
+    },
+    {
+      "title": "The Proposal",
+      "standfirst": "Three moves.",
+      "body": [
+        "Reestablish a central park for all of Philadelphia. Elevate nature as the defining trait of Center City. Apply proximity zoning to what surrounds it.",
+        "The park is not a garnish on the building. It is the argument, and the building is what makes it inhabitable."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/072.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/074.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/075.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/069.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/071.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/066.jpg",
+          "caption": "",
+          "wide": false
+        }
+      ]
+    },
+    {
+      "title": "Park Thinking",
+      "standfirst": "Connectivity as an asset.",
+      "body": [
+        "Edmund Bacon argued for a civic centre here in his 1932 Cornell thesis. The case has only strengthened: the Market–Frankford line carries 30,000 people a day past this ground, the Broad Street line 57,000, Suburban Station 26,000 — 113,000 daily in total.",
+        "No other park site in the city is handed that many people before it opens."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/081.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/080.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/076.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/072.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/082.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/077.jpg",
+          "caption": "",
+          "wide": false
+        }
+      ]
+    },
+    {
+      "title": "The Building",
+      "standfirst": "Where the park becomes occupiable.",
+      "body": [
+        "The building sits between Market Street, 15th Street and South Penn Square, taking the park up into section rather than sitting beside it.",
+        "What follows is the project as walked: approach, threshold, the movement through, and the rooms the park makes possible."
+      ],
+      "images": [
+        {
+          "src": "assets/images/post-scarcity/083.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/092.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/089.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/095.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/105.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/106.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/098.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/082.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/091.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/094.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/099.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/102.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/111.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/090.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/093.jpg",
+          "caption": "",
+          "wide": false
+        },
+        {
+          "src": "assets/images/post-scarcity/096.jpg",
+          "caption": "",
+          "wide": false
+        }
+      ]
+    }
+  ]
+}

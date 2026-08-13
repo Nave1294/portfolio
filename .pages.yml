@@ -103,6 +103,35 @@ content:
         list: true
         description: One paragraph per entry. Two to four short paragraphs is plenty — let the drawings carry the rest.
 
+      - name: chapters
+        label: Walkthrough chapters
+        type: object
+        list: true
+        description: "Optional. Fill these in and the project page becomes a walkthrough read in sequence, replacing the tabbed gallery below. Used for the thesis; leave empty for everything else."
+        fields:
+          - name: title
+            label: Chapter title
+            type: string
+          - name: standfirst
+            label: Opening line
+            type: string
+            description: "One line under the title, set larger than the body."
+          - name: body
+            label: Paragraphs
+            type: text
+            list: true
+          - name: images
+            label: Images
+            type: object
+            list: true
+            fields:
+              - { name: src, label: Image, type: image }
+              - { name: caption, label: Caption, type: string }
+              - name: wide
+                label: Full width
+                type: boolean
+                default: false
+
       - name: gallery
         label: Gallery
         type: object
