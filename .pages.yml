@@ -39,6 +39,11 @@ content:
           message: Lowercase letters, numbers and hyphens only — for example "riverside-pavilion".
         description: Becomes the page address. Avoid changing it once you've shared a link to the project.
 
+      - name: summary
+        label: Timeline preview text
+        type: text
+        description: "One or two sentences shown under the project when it is previewed on the home page timeline. Leave blank and the opening of the description is used instead."
+
       - name: date
         label: Date
         type: string
@@ -120,6 +125,28 @@ content:
             label: Paragraphs
             type: text
             list: true
+          - name: stats
+            label: Figures band
+            type: object
+            list: true
+            description: "Optional. A row of large numbers with labels beneath — percentages, dates, quantities."
+            fields:
+              - { name: value, label: Number, type: string }
+              - { name: label, label: Label, type: string }
+          - name: list
+            label: Bulleted list
+            type: object
+            description: "Optional. A titled list, laid out in columns."
+            fields:
+              - { name: title, label: List title, type: string }
+              - { name: items, label: Items, type: string, list: true }
+          - name: quote
+            label: Pull quote
+            type: object
+            description: "Optional. A single line set large against the accent colour."
+            fields:
+              - { name: text, label: Quote, type: text }
+              - { name: attribution, label: Attribution, type: string }
           - name: images
             label: Images
             type: object
@@ -127,10 +154,15 @@ content:
             fields:
               - { name: src, label: Image, type: image }
               - { name: caption, label: Caption, type: string }
-              - name: wide
-                label: Full width
-                type: boolean
-                default: false
+              - name: size
+                label: Size
+                type: select
+                default: normal
+                options:
+                  values:
+                    - { value: wide, label: "Full width — plans, sections, key renders" }
+                    - { value: normal, label: "Two-up — the default" }
+                    - { value: small, label: "Small — a tertiary reference, never enlarged" }
 
       - name: gallery
         label: Gallery
