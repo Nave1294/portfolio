@@ -127,6 +127,10 @@ function footer(depth = 0, { full = true, wrapped = false } = {}) {
   <div class="container">${top}
     <div class="footer-bottom">
       <span>© ${year} ${esc(site.name || "")}</span>
+      <a class="to-top" href="#top">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+        Back to top
+      </a>
     </div>
   </div>
 </footer>
@@ -221,8 +225,30 @@ function landingPage() {
 
 /* ---------- timeline ----------
    Projects laid along a horizontally scrolling track. Whichever project sits
-   nearest the centre becomes active and its cover fades in above. Ordering
-   follows `order`; `date` is the label shown on the track. */
+   nearest the centre becomes active and its cover fades in above. The track
+   runs newest first; `date` is the label shown on it. */
+
+/* A timeline should read chronologically, so the track sorts by year rather
+   than by the authored `order` the other pages use. Projects with no year
+   keep their authored order and follow the dated ones — an unknown date
+   shouldn't get to claim it is the most recent. */
+function timelineOrder(list) {
+  const yearOf = (p) => {
+    const m = String(p.date || p.year || "").match(/\d{4}/);
+    return m ? Number(m[0]) : null;
+  };
+  return list
+    .map((p, i) => ({ p, i, y: yearOf(p) }))
+    .sort((a, b) => {
+      if (a.y === null || b.y === null) {
+        // Both undated: keep the authored order. One undated: it goes last.
+        return a.y === b.y ? a.i - b.i : a.y === null ? 1 : -1;
+      }
+      return b.y - a.y || a.i - b.i;
+    })
+    .map((x) => x.p);
+}
+
 // A short line for the hover preview: the project's own summary if set,
 // otherwise the opening of its description.
 function projectSummary(p) {
@@ -235,10 +261,32 @@ function projectSummary(p) {
   return cut.slice(0, cut.lastIndexOf(" ")) + "…";
 }
 
+/* The timeline's scroller spans the full width of the page, so a wheel or
+   trackpad gesture anywhere over it moves the projects sideways instead of
+   moving the page. These bookend it with an explicit way out in each
+   direction. "#top" is the spec's special fragment for the top of the
+   document, so it needs no matching element. */
+function jumpLink(dir, href, label) {
+  const d =
+    dir === "up" ? "M12 19V5M5 12l7-7 7 7" : "M12 5v14M5 12l7 7 7-7";
+  return `    <a class="tl-jump tl-jump--${dir}" href="${href}" aria-label="${attr(
+    dir === "up" ? "Back to top" : "Continue to " + label
+  )}">
+      <span class="tl-jump-disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false"><path d="${d}"></path></svg>
+      </span>
+      <span class="tl-jump-label" aria-hidden="true">${esc(label)}</span>
+    </a>`;
+}
+
 function renderTimeline() {
+  // Both the reel and the track index into this same ordering, so the
+  // preview that fades in always belongs to the centred project.
+  const ordered = timelineOrder(projects);
+
   // A reel of covers: the active one centred and full size, its neighbours
   // shrunk and faded either side.
-  const previews = projects
+  const previews = ordered
     .map(
       (p, i) => `        <a class="tl-preview${i === 0 ? " is-active" : ""}"
           href="projects/${attr(p.slug)}.html" data-index="${i}" tabindex="-1">
@@ -255,7 +303,7 @@ function renderTimeline() {
     )
     .join("\n");
 
-  const items = projects
+  const items = ordered
     .map(
       (p, i) => `        <a class="tl-item accent-${Number(p.accent) || 1}${
         i === 0 ? " is-active" : ""
@@ -274,6 +322,8 @@ function renderTimeline() {
       </div>
     </div>
 
+${jumpLink("up", "#top", "Top")}
+
     <div class="tl-stage">
       <div class="tl-reel">
 ${previews}
@@ -287,11 +337,7 @@ ${items}
       </div>
     </div>
 
-    <a class="tl-down" href="#about-teaser" aria-label="Continue to About">
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M5 9l7 7 7-7"></path>
-      </svg>
-    </a>
+${jumpLink("down", "#about-teaser", "About")}
   </section>`;
 }
 
