@@ -1,15 +1,9 @@
 {
   "title": "Morse Rowhomes",
+  "published": false,
   "slug": "morse-rowhomes",
-  "published": true,
   "order": 9,
-  "accent": 3,
-  "type": "",
-  "year": "",
-  "location": "",
-  "program": "",
-  "status": "",
-  "role": "",
+  "accent": "3",
   "cover": "assets/images/morse-rowhomes/cover.jpg",
   "body": [
     "The Morse Rowhomes are a community of homes built on a rectangular plot of land in Brewerytown, Philadelphia. The two building masses have frontage on different streets, and so the approach to their design is tailored with this in mind. On the larger and busier street, the structure consists of artist studios on the first floor and a three-level single-family home above. The studios being placed on the ground floor increases their connection to the community as they pass by. This idea is supported by the site's location between a prominent public park and the neighborhood elementary school. The building screen is a unified design move but allows the residences above to retain a level of privacy while the studios enjoy transparency. The second type of home is a duplex with a fully accessible apartment on the first floor and a split level apartment above. The use of screening is applied throughout, creating various levels of transparency and connection. Its patterns are determined by spelling relevant words and phrases in morse code (hence the name).The pocket park located between the two types of residences is designed to offer a more intimate and protected experience than can be found in larger parks nearby."
@@ -17,60 +11,48 @@
   "gallery": [
     {
       "src": "assets/images/morse-rowhomes/01.jpg",
-      "wide": false,
       "caption": "From Marston Street",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/morse-rowhomes/02.jpg",
-      "wide": false,
       "caption": "Shared Porch",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/morse-rowhomes/03.jpg",
-      "wide": false,
       "caption": "Pocket Park",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/morse-rowhomes/04.jpg",
-      "wide": false,
       "caption": "Rowhome",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/morse-rowhomes/05.jpg",
-      "wide": false,
       "caption": "Duplex",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/morse-rowhomes/06.jpg",
-      "wide": false,
-      "caption": "",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/morse-rowhomes/07.jpg",
-      "wide": false,
-      "caption": "",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/morse-rowhomes/08.jpg",
-      "wide": false,
-      "caption": "",
       "group": "Views",
-      "building": ""
+      "wide": false
     }
-  ],
-  "date": ""
+  ]
 }
