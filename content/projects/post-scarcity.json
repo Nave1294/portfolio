@@ -191,14 +191,16 @@
           "kind": "grid",
           "images": [
             {
-              "src": "assets/images/post-scarcity/d-counterpoint-1.jpg"
+              "src": "assets/images/post-scarcity/d-counterpoint-1.jpg",
+              "caption": "Grid vs Greenspace"
             },
             {
-              "src": "assets/images/post-scarcity/d-counterpoint-2.jpg"
+              "src": "assets/images/post-scarcity/d-counterpoint-2.jpg",
+              "caption": "Built space vs Program"
             },
             {
               "src": "assets/images/post-scarcity/d-counterpoint-3.jpg",
-              "caption": "The counterpoints, layered."
+              "caption": "Program vs Program"
             }
           ]
         }
