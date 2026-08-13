@@ -267,15 +267,11 @@ function projectSummary(p) {
    direction. "#top" is the spec's special fragment for the top of the
    document, so it needs no matching element. */
 function jumpLink(dir, href, label) {
-  const d =
-    dir === "up" ? "M12 19V5M5 12l7-7 7 7" : "M12 5v14M5 12l7 7 7-7";
+  const d = dir === "up" ? "M19 15l-7-7-7 7" : "M5 9l7 7 7-7";
   return `    <a class="tl-jump tl-jump--${dir}" href="${href}" aria-label="${attr(
-    dir === "up" ? "Back to top" : "Continue to " + label
+    label
   )}">
-      <span class="tl-jump-disc" aria-hidden="true">
-        <svg viewBox="0 0 24 24" focusable="false"><path d="${d}"></path></svg>
-      </span>
-      <span class="tl-jump-label" aria-hidden="true">${esc(label)}</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="${d}"></path></svg>
     </a>`;
 }
 
@@ -322,7 +318,7 @@ function renderTimeline() {
       </div>
     </div>
 
-${jumpLink("up", "#top", "Top")}
+${jumpLink("up", "#top", "Back to top")}
 
     <div class="tl-stage">
       <div class="tl-reel">
@@ -337,7 +333,7 @@ ${items}
       </div>
     </div>
 
-${jumpLink("down", "#about-teaser", "About")}
+${jumpLink("down", "#about-teaser", "Continue to About")}
   </section>`;
 }
 
