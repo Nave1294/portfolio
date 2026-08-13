@@ -427,7 +427,12 @@ section { padding-block: var(--space-xl); }
 /* The axis spans the full width of the screen. Projects are distributed
    along it; if they cannot fit, the strip scrolls sideways instead of
    cramming. */
+/* Only this element captures the wheel, so running it the full width of the
+   page left nowhere to scroll vertically. Holding it to 70% leaves a clear
+   gutter down each side where a wheel or trackpad gesture reaches the page. */
 .tl-scroller {
+  width: 70%;
+  margin-inline: auto;
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
@@ -1176,6 +1181,10 @@ html.js .reveal.is-in {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 860px) {
+  /* A vertical swipe isn't captured by a horizontal scroller, so the side
+     gutter buys nothing on touch and the names need the room. */
+  .tl-scroller { width: 100%; }
+
   .nav-links {
     position: fixed;
     inset: 76px 0 0 0;
