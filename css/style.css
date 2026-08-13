@@ -577,7 +577,9 @@ section { padding-block: var(--space-xl); }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-lg) var(--space-md);
-  margin-bottom: var(--space-xl);
+  /* Blocks within a chapter sit closer than chapters do to each other,
+     so the chapter break stays the larger of the two. */
+  margin-bottom: var(--space-lg);
 }
 
 /* On a wide screen the extra room goes into a third column and larger gaps,
@@ -734,8 +736,15 @@ html.js .gallery-panel[hidden] { display: none; }
 /* Chapters are separated by a clear band of nothing, so the page reads as
    distinct episodes rather than one continuous scroll. */
 .chapter {
-  padding-bottom: calc(var(--space-xl) * 1.4);
+  padding-bottom: var(--space-xl);
   scroll-margin-top: 140px;
+}
+
+/* The last block in a chapter already carries a bottom margin; letting it
+   stack with the chapter's padding doubled the gap between chapters. */
+.chapter > :last-child,
+.chapter > :last-child > :last-child {
+  margin-bottom: 0;
 }
 
 /* Text keeps a readable measure even though the images use the full width —
@@ -745,7 +754,7 @@ html.js .gallery-panel[hidden] { display: none; }
   grid-template-columns: 6ch minmax(0, 68ch);
   gap: var(--space-lg);
   align-items: start;
-  margin-bottom: calc(var(--space-lg) * 1.4);
+  margin-bottom: var(--space-lg);
 }
 
 .chapter-number {
@@ -859,7 +868,7 @@ html.js .gallery-panel[hidden] { display: none; }
 /* A drawing given the page's full measure — wide, but still inside the
    gutter, with air above and below rather than running to the screen edge. */
 .chapter-wide {
-  margin: 0 0 var(--space-xl);
+  margin: 0 0 var(--space-lg);
 }
 
 .chapter-wide img {
