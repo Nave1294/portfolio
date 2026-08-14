@@ -180,14 +180,7 @@
       "standfirst": "Two independent lines played at once, creating a sum greater than their parts. This is an approach to create a more exciting environment for people to spend their newfound free time.",
       "body": [
         "Why do the best public spaces fill people with joy? Because they are a counterpoint the city employs.",
-        "Counterpoint — the relationship between independent melodic lines sounding together, creating harmony through their interaction — can guide planning at nearly every scale. It does not imply opposition. It uses contrast to create interest, choice and harmony.",
-        "Three types of counterpoint carry the project: grid against greenspace, built space against program, and program against program. Three melodies.",
-        "The grid of Philadelphia is its defining organizational system, but in the few places where that grid is broken or interrupted, places feel special and interesting.",
-        "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places: East Passyunk, born of a preserved Lenape trail cutting diagonally through the south; Rittenhouse Square, whose walks ignore the street lines; John F. Collins Park, a pocket mid-block; and the Benjamin Franklin Parkway, a deliberate break drawing an axis from City Hall to the Art Museum.",
-        "A building as a stack of separate worlds.",
-        "Koolhaas described the skyscraper as a vertical collage of separate worlds. What is missing from that account is interaction — not just separation.",
-        "If those wildly different programs bled into one another instead of staying in their silos, the building itself could become the storyteller, its spaces weaving together in a choreography of contrasts.",
-        "Two buildings hold the line: Toyo Ito's Sendai Mediatheque, and Kunsthaus Graz by Peter Cook and Colin Fournier."
+        "Counterpoint — the relationship between independent melodic lines sounding together, creating harmony through their interaction — can guide planning at nearly every scale. It does not imply opposition. It uses contrast to create interest, choice and harmony."
       ],
       "blocks": [
         {
@@ -205,6 +198,9 @@
               "src": "assets/images/post-scarcity/d-counterpoint-3.jpg",
               "caption": "Program vs Program"
             }
+          ],
+          "text": [
+            "Three types of counterpoint carry the project: grid against greenspace, built space against program, and program against program. Three melodies."
           ]
         },
         {
@@ -213,6 +209,10 @@
             {
               "src": "assets/images/post-scarcity/d-precedent-grid.jpg"
             }
+          ],
+          "text": [
+            "The grid of Philadelphia is its defining organizational system, but in the few places where that grid is broken or interrupted, places feel special and interesting.",
+            "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places: East Passyunk, born of a preserved Lenape trail cutting diagonally through the south; Rittenhouse Square, whose walks ignore the street lines; John F. Collins Park, a pocket mid-block; and the Benjamin Franklin Parkway, a deliberate break drawing an axis from City Hall to the Art Museum."
           ]
         },
         {
@@ -230,6 +230,12 @@
               "src": "assets/images/post-scarcity/d-precedent-program.jpg",
               "caption": "Sendai Mediatheque, Toyo Ito. Kunsthaus Graz, Peter Cook and Colin Fournier."
             }
+          ],
+          "text": [
+            "A building as a stack of separate worlds.",
+            "Koolhaas described the skyscraper as a vertical collage of separate worlds. What is missing from that account is interaction — not just separation.",
+            "If those wildly different programs bled into one another instead of staying in their silos, the building itself could become the storyteller, its spaces weaving together in a choreography of contrasts.",
+            "Two buildings hold the line: Toyo Ito's Sendai Mediatheque, and Kunsthaus Graz by Peter Cook and Colin Fournier."
           ]
         }
       ],
@@ -671,58 +677,100 @@
   ],
   "gallery": [
     {
-      "src": "assets/images/post-scarcity/p-timeline.jpg",
-      "wide": true,
-      "caption": "Falling scarcity, 1750 to 2050",
+      "src": "assets/images/post-scarcity/p-core.jpg",
+      "wide": false,
+      "caption": "The core: stairs, lifts and services stacked through the frame.",
       "group": "Diagrams",
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/p-market-axon.jpg",
+      "src": "assets/images/post-scarcity/p-edge-condition.jpg",
       "wide": false,
-      "caption": "Piazza cluster axonometric.",
+      "caption": "Edge condition: metal mesh screen, curtain wall, mullion piping.",
       "group": "Diagrams",
       "building": ""
     },
     {
       "src": "assets/images/post-scarcity/p-family-axon.jpg",
-      "wide": false,
+      "wide": true,
       "caption": "Family Circle axonometric.",
       "group": "Diagrams",
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/p-roads-old.jpg",
-      "wide": false,
-      "caption": "Roads today.",
-      "group": "Plans",
+      "src": "assets/images/post-scarcity/p-grey-water.jpg",
+      "wide": true,
+      "caption": "Grey water off the hydroponics, filtered by the vertical garden, reused in the tower.",
+      "group": "Diagrams",
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/p-roads-new.jpg",
+      "src": "assets/images/post-scarcity/p-market-axon.jpg",
+      "wide": true,
+      "caption": "Piazza cluster axonometric.",
+      "group": "Diagrams",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/p-subway-1.jpg",
       "wide": false,
-      "caption": "Roads proposed.",
-      "group": "Plans",
+      "caption": "The Piazza cluster drawn as a transit map — programs as stops, cores as lines.",
+      "group": "Diagrams",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/p-subway-2.jpg",
+      "wide": false,
+      "caption": "The Family Circle cluster as a transit map.",
+      "group": "Diagrams",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/p-base-1.jpg",
+      "wide": true,
+      "caption": "Center City, the base map the study is drawn on.",
+      "group": "Maps",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/p-base-2.jpg",
+      "wide": true,
+      "caption": "Center Square and the blocks around it.",
+      "group": "Maps",
       "building": ""
     },
     {
       "src": "assets/images/post-scarcity/p-building-demo.jpg",
       "wide": false,
       "caption": "What is removed.",
-      "group": "Plans",
+      "group": "Maps",
       "building": ""
     },
     {
       "src": "assets/images/post-scarcity/p-park-outline.jpg",
       "wide": false,
       "caption": "The park outline.",
-      "group": "Plans",
+      "group": "Maps",
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/p-subway-1.jpg",
+      "src": "assets/images/post-scarcity/p-roads-new.jpg",
       "wide": false,
-      "caption": "The concourse below.",
+      "caption": "Roads proposed: through traffic pushed to a perimeter loop.",
+      "group": "Maps",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/p-roads-old.jpg",
+      "wide": false,
+      "caption": "Roads today.",
+      "group": "Maps",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/p-basement.jpg",
+      "wide": false,
+      "caption": "Basement: energy and water storage, recycling, cold storage, plant.",
       "group": "Plans",
       "building": ""
     },
@@ -734,58 +782,9 @@
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/p-core.jpg",
-      "wide": false,
-      "caption": "Core organization.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/p-subway-2.jpg",
-      "wide": false,
-      "caption": "The concourse.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/p-basement.jpg",
-      "wide": false,
-      "caption": "Basement plan.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
       "src": "assets/images/post-scarcity/p-site-section.jpg",
       "wide": false,
-      "caption": "Site section.",
-      "group": "Sections & Elevations",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/p-edge-condition.jpg",
-      "wide": false,
-      "caption": "Edge condition.",
-      "group": "Sections & Elevations",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/p-base-1.jpg",
-      "wide": true,
-      "caption": "West–east section.",
-      "group": "Sections & Elevations",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/p-base-2.jpg",
-      "wide": true,
-      "caption": "East–west section.",
-      "group": "Sections & Elevations",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/p-grey-water.jpg",
-      "wide": true,
-      "caption": "Hydroponic grey water filtration and reuse.",
+      "caption": "The building sectioned against the Philadelphia skyline.",
       "group": "Sections & Elevations",
       "building": ""
     },
@@ -793,62 +792,6 @@
       "src": "assets/images/post-scarcity/p-site-perspective.jpg",
       "wide": false,
       "caption": "The park in context.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-nw-street-entry.jpg",
-      "wide": false,
-      "caption": "North-west street level entry.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-ne-plaza-entry.jpg",
-      "wide": false,
-      "caption": "North-east plaza level entry.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-market-seating.jpg",
-      "wide": false,
-      "caption": "Market seating.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-market-stalls.jpg",
-      "wide": false,
-      "caption": "Market stalls.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-piazza-studios.jpg",
-      "wide": false,
-      "caption": "The piazza looking towards the studio apartments.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-study-level-three.jpg",
-      "wide": false,
-      "caption": "Level three of the study.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-family-terrace.jpg",
-      "wide": false,
-      "caption": "Family apartment common terrace.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-four-bedroom.jpg",
-      "wide": false,
-      "caption": "Four bedroom apartment.",
       "group": "Views",
       "building": ""
     },
@@ -867,51 +810,9 @@
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/r-family-circle-park.jpg",
-      "wide": false,
-      "caption": "Family Circle park.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-school-entry.jpg",
-      "wide": false,
-      "caption": "School entry.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-school-entry-winter.jpg",
-      "wide": false,
-      "caption": "School entry in winter.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-school-circulation.jpg",
-      "wide": false,
-      "caption": "School, library and maker space common circulation.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-library-lounge.jpg",
-      "wide": false,
-      "caption": "Library lounge.",
-      "group": "Views",
-      "building": ""
-    },
-    {
       "src": "assets/images/post-scarcity/r-black-box.jpg",
       "wide": false,
       "caption": "Black box theater, one of three.",
-      "group": "Views",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/r-multigen.jpg",
-      "wide": false,
-      "caption": "Multi-generational neighborhood, level one of four.",
       "group": "Views",
       "building": ""
     },
@@ -923,9 +824,107 @@
       "building": ""
     },
     {
+      "src": "assets/images/post-scarcity/r-family-circle-park.jpg",
+      "wide": false,
+      "caption": "Family Circle park.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-family-terrace.jpg",
+      "wide": false,
+      "caption": "Family apartment common terrace.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-four-bedroom.jpg",
+      "wide": false,
+      "caption": "Four bedroom apartment.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-library-lounge.jpg",
+      "wide": false,
+      "caption": "Library lounge.",
+      "group": "Views",
+      "building": ""
+    },
+    {
       "src": "assets/images/post-scarcity/r-lobby.jpg",
       "wide": false,
       "caption": "Lobby.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-market-seating.jpg",
+      "wide": false,
+      "caption": "Market seating.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-market-stalls.jpg",
+      "wide": false,
+      "caption": "Market stalls.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-multigen.jpg",
+      "wide": false,
+      "caption": "Multi-generational neighborhood, level one of four.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-ne-plaza-entry.jpg",
+      "wide": false,
+      "caption": "North-east plaza level entry.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-nw-street-entry.jpg",
+      "wide": false,
+      "caption": "North-west street level entry.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-piazza-studios.jpg",
+      "wide": false,
+      "caption": "The piazza looking towards the studio apartments.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-school-circulation.jpg",
+      "wide": false,
+      "caption": "School, library and maker space common circulation.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-school-entry-winter.jpg",
+      "wide": false,
+      "caption": "School entry in winter.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-school-entry.jpg",
+      "wide": false,
+      "caption": "School entry.",
+      "group": "Views",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/r-study-level-three.jpg",
+      "wide": false,
+      "caption": "Level three of the study.",
       "group": "Views",
       "building": ""
     }

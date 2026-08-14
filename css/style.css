@@ -809,15 +809,16 @@ html.js .gallery-panel[hidden] { display: none; }
   margin-bottom: var(--space-lg);
 }
 
+/* Every chapter shows. This used to be a single scrolling row, so past the
+   eighth chapter the rest sat off-screen behind a hidden scrollbar; it now
+   wraps and runs the full width of the page rather than the text column. */
 .chapter-nav .container {
   display: flex;
-  gap: var(--space-md);
-  overflow-x: auto;
-  scrollbar-width: none;
-  padding-block: 0.85rem;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.1rem;
+  max-width: none;
+  padding-block: 0.75rem;
 }
-
-.chapter-nav .container::-webkit-scrollbar { display: none; }
 
 .chapter-nav a {
   display: flex;
@@ -841,7 +842,7 @@ html.js .gallery-panel[hidden] { display: none; }
    distinct episodes rather than one continuous scroll. */
 .chapter {
   padding-bottom: var(--space-xl);
-  scroll-margin-top: 140px;
+  scroll-margin-top: 190px;
 }
 
 /* The last block in a chapter already carries a bottom margin; letting it
@@ -887,6 +888,24 @@ html.js .gallery-panel[hidden] { display: none; }
 }
 
 .chapter-head p + p { margin-top: var(--space-sm); }
+
+/* Paragraphs that belong to one block of figures rather than to the whole
+   chapter. Mirrors the chapter-head grid so the text sits in the same
+   column and reads as a continuation, not a new indent. */
+.block-text {
+  display: grid;
+  grid-template-columns: 6ch minmax(0, 68ch);
+  gap: 0 var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.block-text p {
+  grid-column: 2;
+  color: var(--color-text-muted);
+  max-width: 62ch;
+}
+
+.block-text p + p { margin-top: var(--space-sm); }
 
 /* Figures get their own band with air around them, rather than being
    crammed into a shared grid row. */
@@ -1184,6 +1203,30 @@ html.js .reveal.is-in {
   /* A vertical swipe isn't captured by a horizontal scroller, so the side
      gutter buys nothing on touch and the names need the room. */
   .tl-scroller { width: 100%; }
+
+  /* Seventeen chapters wrapped onto a narrow screen would make the sticky
+     bar taller than the content under it, so on phones it goes back to one
+     swipeable row. */
+  .chapter-nav .container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .chapter-nav .container::-webkit-scrollbar { display: none; }
+
+  .chapter { scroll-margin-top: 140px; }
+
+  /* The 6ch number column and its 4rem gap left barely 220px for text on a
+     375px screen. Both the chapter head and its block text drop to one
+     column so the prose gets the full measure. */
+  .chapter-head,
+  .block-text {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .block-text p { grid-column: 1; }
 
   .nav-links {
     position: fixed;

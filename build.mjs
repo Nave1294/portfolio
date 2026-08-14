@@ -544,7 +544,7 @@ ${footer(0, { full: false })}`;
    rest keep a plain grid. Buildings become subheadings inside a tab so
    floors of one structure read together instead of interleaving. */
 
-const GROUP_ORDER = ["Views", "Plans", "Sections & Elevations", "Diagrams"];
+const GROUP_ORDER = ["Views", "Maps", "Plans", "Sections & Elevations", "Diagrams"];
 
 function galleryFigure(g) {
   const cls = "gallery-item" + (g.wide ? " span-2" : "");
@@ -683,6 +683,18 @@ function renderChapters(chapters) {
       for (const b of c.blocks || []) {
         const items = (b.images || []).filter((g) => g && g.src);
         if (!items.length) continue;
+
+        // A block can carry its own paragraphs, so the argument sits beside
+        // the figures it is about rather than stacking at the top of the
+        // chapter and leaving the reader to match text to image.
+        const blockText = (b.text || []).filter((t) => t && t.trim());
+        if (blockText.length) {
+          blocks.push(
+            `      <div class="container block-text">\n${blockText
+              .map((t) => `        <p>${esc(t)}</p>`)
+              .join("\n")}\n      </div>`
+          );
+        }
 
         if (b.kind === "full") {
           for (const g of items) {

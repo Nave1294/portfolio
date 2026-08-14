@@ -165,6 +165,11 @@ content:
                 label: Strip heading
                 type: string
                 description: "Only used by strips. Shown small above the row."
+              - name: text
+                label: Paragraphs above these images
+                type: string
+                list: true
+                description: "Optional. Text that belongs with these particular figures rather than at the top of the chapter. One paragraph per entry."
               - name: images
                 label: Images
                 type: object
@@ -199,6 +204,7 @@ content:
           values:
             - ""
             - Views
+            - Maps
             - Plans
             - Sections & Elevations
             - Diagrams
@@ -223,6 +229,7 @@ content:
             options:
               values:
                 - Views
+                - Maps
                 - Plans
                 - Sections & Elevations
                 - Diagrams
