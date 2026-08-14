@@ -14,8 +14,8 @@
   "status": "Bachelor of Architecture thesis",
   "role": "Solo thesis project",
   "body": [
-    "A thesis about what a city becomes when scarcity stops organizing it. It takes the premise seriously — a fifteen-hour week, universal basic income, goods at near-zero marginal cost — and follows it down to a single block of Philadelphia.",
-    "The answer is a park at Center Square, west of City Hall, and a building lifted above it: a structural frame treated as a street grid, filled with programs that self-organize by proximity rather than by zoning class.",
+    "Coming Soon",
+    "C oming Soon",
     "Awarded the 2025 Pearson Prize Silver Medal for best Drexel architectural thesis."
   ],
   "chapters": [
@@ -182,9 +182,15 @@
         "Why do the best public spaces fill people with joy? Because they are a counterpoint the city employs.",
         "Counterpoint — the relationship between independent melodic lines sounding together, creating harmony through their interaction — can guide planning at nearly every scale. It does not imply opposition. It uses contrast to create interest, choice and harmony."
       ],
+      "quote": {
+        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest."
+      },
       "blocks": [
         {
           "kind": "grid",
+          "text": [
+            "Three types of counterpoint carry the project: grid against greenspace, built space against program, and program against program. Three melodies."
+          ],
           "images": [
             {
               "src": "assets/images/post-scarcity/d-counterpoint-1.jpg",
@@ -198,21 +204,18 @@
               "src": "assets/images/post-scarcity/d-counterpoint-3.jpg",
               "caption": "Program vs Program"
             }
-          ],
-          "text": [
-            "Three types of counterpoint carry the project: grid against greenspace, built space against program, and program against program. Three melodies."
           ]
         },
         {
           "kind": "full",
+          "text": [
+            "The grid of Philadelphia is its defining organizational system, but in the few places where that grid is broken or interrupted, places feel special and interesting.",
+            "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places: East Passyunk, born of a preserved Lenape trail cutting diagonally through the south; Rittenhouse Square, whose walks ignore the street lines; John F. Collins Park, a pocket mid-block; and the Benjamin Franklin Parkway, a deliberate break drawing an axis from City Hall to the Art Museum."
+          ],
           "images": [
             {
               "src": "assets/images/post-scarcity/d-precedent-grid.jpg"
             }
-          ],
-          "text": [
-            "The grid of Philadelphia is its defining organizational system, but in the few places where that grid is broken or interrupted, places feel special and interesting.",
-            "Philadelphia's grid is rarely interrupted, and where it is, the results are among its most memorable places: East Passyunk, born of a preserved Lenape trail cutting diagonally through the south; Rittenhouse Square, whose walks ignore the street lines; John F. Collins Park, a pocket mid-block; and the Benjamin Franklin Parkway, a deliberate break drawing an axis from City Hall to the Art Museum."
           ]
         },
         {
@@ -225,24 +228,20 @@
         },
         {
           "kind": "full",
-          "images": [
-            {
-              "src": "assets/images/post-scarcity/d-precedent-program.jpg",
-              "caption": "Sendai Mediatheque, Toyo Ito. Kunsthaus Graz, Peter Cook and Colin Fournier."
-            }
-          ],
           "text": [
             "A building as a stack of separate worlds.",
             "Koolhaas described the skyscraper as a vertical collage of separate worlds. What is missing from that account is interaction — not just separation.",
             "If those wildly different programs bled into one another instead of staying in their silos, the building itself could become the storyteller, its spaces weaving together in a choreography of contrasts.",
             "Two buildings hold the line: Toyo Ito's Sendai Mediatheque, and Kunsthaus Graz by Peter Cook and Colin Fournier."
+          ],
+          "images": [
+            {
+              "src": "assets/images/post-scarcity/d-precedent-program.jpg",
+              "caption": "Sendai Mediatheque, Toyo Ito. Kunsthaus Graz, Peter Cook and Colin Fournier."
+            }
           ]
         }
-      ],
-      "images": [],
-      "quote": {
-        "text": "Counterpoint doesn't imply opposition — it highlights contrast to create interest."
-      }
+      ]
     },
     {
       "title": "Proximity Zoning",
@@ -675,401 +674,331 @@
       ]
     }
   ],
+  "galleryLead": "Diagrams",
   "gallery": [
     {
       "src": "assets/images/post-scarcity/p-core.jpg",
-      "wide": false,
       "caption": "The core: stairs, lifts and services stacked through the frame.",
       "group": "Diagrams",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-edge-condition.jpg",
-      "wide": false,
       "caption": "Edge condition: metal mesh screen, curtain wall, mullion piping.",
       "group": "Diagrams",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-family-axon.jpg",
-      "wide": true,
       "caption": "Family Circle axonometric.",
       "group": "Diagrams",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-grey-water.jpg",
-      "wide": true,
       "caption": "Grey water off the hydroponics, filtered by the vertical garden, reused in the tower.",
       "group": "Diagrams",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-market-axon.jpg",
-      "wide": true,
       "caption": "Piazza cluster axonometric.",
       "group": "Diagrams",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-base-1.jpg",
-      "wide": true,
       "caption": "Center City, the base map the study is drawn on.",
       "group": "Maps",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-base-2.jpg",
-      "wide": true,
       "caption": "Center Square and the blocks around it.",
       "group": "Maps",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-building-demo.jpg",
-      "wide": false,
       "caption": "What is removed.",
       "group": "Maps",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-park-outline.jpg",
-      "wide": false,
       "caption": "The park outline.",
       "group": "Maps",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-roads-new.jpg",
-      "wide": false,
       "caption": "Roads proposed: through traffic pushed to a perimeter loop.",
       "group": "Maps",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-roads-old.jpg",
-      "wide": false,
       "caption": "Roads today.",
       "group": "Maps",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-site-plan.jpg",
-      "wide": false,
       "caption": "Site plan.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-site-section.jpg",
-      "wide": false,
       "caption": "The building sectioned against the Philadelphia skyline.",
       "group": "Sections & Elevations",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-subway-1.jpg",
-      "wide": true,
       "caption": "West–east section, with the program threaded through it as a transit map: industrial, residential, green space, commercial, leisure, co-working and civic.",
       "group": "Sections & Elevations",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-subway-2.jpg",
-      "wide": true,
       "caption": "East–west section, read the same way.",
       "group": "Sections & Elevations",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-site-perspective.jpg",
-      "wide": false,
       "caption": "The park in context.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-apartment-2.jpg",
-      "wide": false,
       "caption": "Apartment interior.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-apartment-3.jpg",
-      "wide": false,
       "caption": "Apartment interior.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-black-box.jpg",
-      "wide": false,
       "caption": "Black box theater, one of three.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-entertainment-lounge.jpg",
-      "wide": false,
       "caption": "Entertainment district lounge.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-family-circle-park.jpg",
-      "wide": false,
       "caption": "Family Circle park.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-family-terrace.jpg",
-      "wide": false,
       "caption": "Family apartment common terrace.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-four-bedroom.jpg",
-      "wide": false,
       "caption": "Four bedroom apartment.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-library-lounge.jpg",
-      "wide": false,
       "caption": "Library lounge.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-lobby.jpg",
-      "wide": false,
       "caption": "Lobby.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-market-seating.jpg",
-      "wide": false,
       "caption": "Market seating.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-market-stalls.jpg",
-      "wide": false,
       "caption": "Market stalls.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-multigen.jpg",
-      "wide": false,
       "caption": "Multi-generational neighborhood, level one of four.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-ne-plaza-entry.jpg",
-      "wide": false,
       "caption": "North-east plaza level entry.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-nw-street-entry.jpg",
-      "wide": false,
       "caption": "North-west street level entry.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-piazza-studios.jpg",
-      "wide": false,
       "caption": "The piazza looking towards the studio apartments.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-school-circulation.jpg",
-      "wide": false,
       "caption": "School, library and maker space common circulation.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-school-entry-winter.jpg",
-      "wide": false,
       "caption": "School entry in winter.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-school-entry.jpg",
-      "wide": false,
       "caption": "School entry.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-study-level-three.jpg",
-      "wide": false,
       "caption": "Level three of the study.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/post-scarcity/d-program-shift.jpg",
-      "wide": true,
       "caption": "The built environment before and after, inner ring to outer: office down 26%, residential and entertainment up 10% each, institutional up 6%, civic up 2%, retail down 2%.",
       "group": "Data",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/d-screentime.jpg",
-      "wide": true,
       "caption": "5.7 hours of free time, and where it currently goes — daily hours on social media, headsets and television in the United States, Denmark and Austria.",
       "group": "Data",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/d-week.jpg",
-      "wide": true,
       "caption": "A week now against a week after scarcity: work falls from 24% to 9%, leisure rises to 29%, and education and community appear as categories of their own.",
       "group": "Data",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/post-scarcity/massing-01.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-02.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-03.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-04.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-05.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-06.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-07.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-08.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-09.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-10.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-11.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-12.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-13.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-14.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-15.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     },
     {
       "src": "assets/images/post-scarcity/massing-16.jpg",
-      "wide": false,
-      "size": "small",
-      "caption": "",
       "group": "Massing Exploration",
-      "building": ""
+      "wide": false,
+      "size": "small"
     }
-  ],
-  "galleryLead": "Diagrams"
+  ]
 }
