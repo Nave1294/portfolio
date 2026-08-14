@@ -712,20 +712,6 @@
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/p-subway-1.jpg",
-      "wide": false,
-      "caption": "The Piazza cluster drawn as a transit map — programs as stops, cores as lines.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/p-subway-2.jpg",
-      "wide": false,
-      "caption": "The Family Circle cluster as a transit map.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
       "src": "assets/images/post-scarcity/p-base-1.jpg",
       "wide": true,
       "caption": "Center City, the base map the study is drawn on.",
@@ -768,13 +754,6 @@
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/p-basement.jpg",
-      "wide": false,
-      "caption": "Basement: energy and water storage, recycling, cold storage, plant.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
       "src": "assets/images/post-scarcity/p-site-plan.jpg",
       "wide": false,
       "caption": "Site plan.",
@@ -785,6 +764,20 @@
       "src": "assets/images/post-scarcity/p-site-section.jpg",
       "wide": false,
       "caption": "The building sectioned against the Philadelphia skyline.",
+      "group": "Sections & Elevations",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/p-subway-1.jpg",
+      "wide": true,
+      "caption": "West–east section, with the program threaded through it as a transit map: industrial, residential, green space, commercial, leisure, co-working and civic.",
+      "group": "Sections & Elevations",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/p-subway-2.jpg",
+      "wide": true,
+      "caption": "East–west section, read the same way.",
       "group": "Sections & Elevations",
       "building": ""
     },
