@@ -678,153 +678,6 @@
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/d-pillars.jpg",
-      "wide": true,
-      "caption": "The four pillars — economy, work, value, scarcity — and what each asks of architecture: proximity zoning, less work, healthy buildings, good times.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-work-1.jpg",
-      "wide": false,
-      "caption": "This represents work against enrichment, today.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-work-2.jpg",
-      "wide": false,
-      "caption": "If we work less, what fills the void?",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-work-3.jpg",
-      "wide": false,
-      "caption": "More enrichment, but what does that look like?",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-week.jpg",
-      "wide": true,
-      "caption": "A week now against a week after scarcity: work falls from 24% to 9%, and education and community appear.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-screentime.jpg",
-      "wide": true,
-      "caption": "Percentage of time available for leisure/hobbies.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-program-shift.jpg",
-      "wide": true,
-      "caption": "Inner ring: today. Outer ring: post scarcity.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-counterpoint-1.jpg",
-      "wide": false,
-      "caption": "Grid vs Greenspace",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-counterpoint-2.jpg",
-      "wide": false,
-      "caption": "Built space vs Program",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-counterpoint-3.jpg",
-      "wide": false,
-      "caption": "Program vs Program",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-precedent-grid.jpg",
-      "wide": true,
-      "caption": "Grid against green, four Philadelphia precedents: Rittenhouse Square, East Passyunk, John F. Collins Park, the Benjamin Franklin Parkway.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-cities.jpg",
-      "wide": true,
-      "caption": "Grid against green: Philadelphia at 6% green space, Vienna at 14%, Copenhagen at 12%.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-precedent-program.jpg",
-      "wide": true,
-      "caption": "Sendai Mediatheque, Toyo Ito. Kunsthaus Graz, Peter Cook and Colin Fournier.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-zoning-ui.jpg",
-      "wide": true,
-      "caption": "The tool: a grid, programs, and a fit score.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-zoning-scores.jpg",
-      "wide": true,
-      "caption": "Scores update as programs move.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-site-options.jpg",
-      "wide": true,
-      "caption": "Candidate sites across the city.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-frame-dims.jpg",
-      "wide": true,
-      "caption": "36 feet, halved to 18, or in thirds at 12.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-program-scale.jpg",
-      "wide": false,
-      "caption": "Programs at scale within the frame.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-sunshade.jpg",
-      "wide": false,
-      "caption": "Natural sunshade on the south elevation.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-winds.jpg",
-      "wide": false,
-      "caption": "South-westward winds.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-clusters.jpg",
-      "wide": true,
-      "caption": "Industrial, residential, green space, commercial, leisure, co-working, civic.",
-      "group": "Diagrams",
-      "building": ""
-    },
-    {
       "src": "assets/images/post-scarcity/p-market-axon.jpg",
       "wide": false,
       "caption": "Piazza cluster axonometric.",
@@ -867,37 +720,9 @@
       "building": ""
     },
     {
-      "src": "assets/images/post-scarcity/d-plan-context.jpg",
-      "wide": false,
-      "caption": "Context plan.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-plan-street.jpg",
-      "wide": false,
-      "caption": "Street level plan.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-plan-ground.jpg",
-      "wide": false,
-      "caption": "Ground plan.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
       "src": "assets/images/post-scarcity/p-subway-1.jpg",
       "wide": false,
       "caption": "The concourse below.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-masterplan.jpg",
-      "wide": true,
-      "caption": "Amphitheatre, LOVE plaza, rec center, playscape, edible gardens, grove, the hill and pond.",
       "group": "Plans",
       "building": ""
     },
@@ -926,20 +751,6 @@
       "src": "assets/images/post-scarcity/p-basement.jpg",
       "wide": false,
       "caption": "Basement plan.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-piazza-plan.jpg",
-      "wide": true,
-      "caption": "The piazza cluster.",
-      "group": "Plans",
-      "building": ""
-    },
-    {
-      "src": "assets/images/post-scarcity/d-family-plan.jpg",
-      "wide": true,
-      "caption": "The Family Circle cluster.",
       "group": "Plans",
       "building": ""
     },
