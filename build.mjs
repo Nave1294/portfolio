@@ -15,9 +15,15 @@ const read = (p) => JSON.parse(readFileSync(join(ROOT, p), "utf8"));
 /* Stylesheet and script URLs carry a hash of their contents. Without it a
    returning visitor can pair newly deployed HTML with a cached script — which
    is not a cosmetic mismatch: the gallery would render every panel expanded. */
+// Line endings are normalised first: git stores LF, a Windows checkout has
+// CRLF, and hashing the raw bytes would give the local build and CI different
+// versions for identical content.
 const assetVersion = (p) =>
   existsSync(join(ROOT, p))
-    ? createHash("sha1").update(readFileSync(join(ROOT, p))).digest("hex").slice(0, 8)
+    ? createHash("sha1")
+        .update(readFileSync(join(ROOT, p), "utf8").split(String.fromCharCode(13)).join(""))
+        .digest("hex")
+        .slice(0, 8)
     : "0";
 const CSS_V = assetVersion("css/style.css");
 const TRANSITION_V = assetVersion("css/transition.css");
