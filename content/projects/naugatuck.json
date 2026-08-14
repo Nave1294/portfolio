@@ -1,16 +1,129 @@
 {
-  "title": "Naugatuck ",
+  "title": "Naugatuck",
   "published": true,
   "slug": "naugatuck",
-  "summary": "Professional work: A mixed-use project in Naugatuck Connecticut by WRT Planning ad Design.",
+  "summary": "A mixed-use building on the Naugatuck River: four storeys of affordable apartments over retail, with a plaza and amphitheater lawn. WRT Planning + Design for Pennrose.",
   "date": "2022",
   "order": 1,
   "accent": "4",
   "cover": "assets/images/Screenshot 2026-08-13 182623.jpg",
   "type": "Residential Mixed-Use",
   "year": "2022",
-  "location": "Naugatuck Connecticut ",
-  "program": "Affordable Housing, Retail, Open space/Plazas",
-  "status": "Finishing Construction ",
-  "role": "Architectural Designer/Renderer "
+  "location": "Maple Street & Old Firehouse Road, Naugatuck, CT",
+  "program": "Affordable housing, retail, plazas and open space",
+  "status": "In construction",
+  "role": "Architectural designer / renderer",
+  "body": [
+    "Parcel B, Phase 1 of a mixed-use development on the Naugatuck River, designed at WRT Planning + Design for Pennrose. The building bends around the corner of Maple Street and Old Firehouse Road, holding both street edges, with retail and the residential lobby at grade and four storeys of apartments above.",
+    "The elevations are built from three families of cladding: a red running-bond brick that anchors the corner, a linen-colored stacked-bond brick along the long west face, and fiber-cement lap siding blended from three greys so the wall reads as texture rather than panel. A charcoal fiber-cement volume caps the north end, and a stained poplar veneer marks the entrances.",
+    "Apartments come in one- and two-bedroom types, each drawn in a Type A and a Type B variant — the first meeting ICC A117.1 and UFAS adaptable requirements, the second the visitable standard — so accessibility is distributed through the building rather than concentrated in a few units. The kitchens and bathrooms were drawn as a standard kit and repeated across the types."
+  ],
+  "gallery": [
+    {
+      "src": "assets/images/naugatuck/a-101-first-floor.jpg",
+      "caption": "A-101, first floor: retail and the residential lobby on Old Firehouse Road, community room and fitness off the lobby.",
+      "group": "Plans",
+      "building": "Building",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-102-second-floor.jpg",
+      "caption": "A-102, second floor.",
+      "group": "Plans",
+      "building": "Building",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-103-third-floor.jpg",
+      "caption": "A-103, third floor.",
+      "group": "Plans",
+      "building": "Building",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-104-fourth-floor.jpg",
+      "caption": "A-104, fourth floor.",
+      "group": "Plans",
+      "building": "Building",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-105-roof.jpg",
+      "caption": "A-105, roof.",
+      "group": "Plans",
+      "building": "Building",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-411-unit-plans.jpg",
+      "caption": "A-411, unit plans and reflected ceilings: one- and two-bedroom types, each in a Type A and Type B variant.",
+      "group": "Plans",
+      "building": "Units",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-201-elevations.jpg",
+      "caption": "A-201, exterior elevations — north, west and south-west — with the material legend: two bricks, two fiber-cement finishes and a wood veneer.",
+      "group": "Sections & Elevations",
+      "building": "Building",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-202-elevations.jpg",
+      "caption": "A-202, the remaining exterior elevations.",
+      "group": "Sections & Elevations",
+      "building": "Building",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-211-enlarged-elevations.jpg",
+      "caption": "A-211, enlarged elevations where the materials meet.",
+      "group": "Sections & Elevations",
+      "building": "Building",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-421-kitchen.jpg",
+      "caption": "A-421, enlarged kitchen plans.",
+      "group": "Sections & Elevations",
+      "building": "Kitchens",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-422-kitchen.jpg",
+      "caption": "A-422, kitchen elevations.",
+      "group": "Sections & Elevations",
+      "building": "Kitchens",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-423-kitchen.jpg",
+      "caption": "A-423, kitchen elevations and cabinet details.",
+      "group": "Sections & Elevations",
+      "building": "Kitchens",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-431-bathroom.jpg",
+      "caption": "A-431, enlarged bathroom plans.",
+      "group": "Sections & Elevations",
+      "building": "Bathrooms",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-432-bathroom.jpg",
+      "caption": "A-432, bathroom elevations — tub, shower and vanity walls.",
+      "group": "Sections & Elevations",
+      "building": "Bathrooms",
+      "wide": true
+    },
+    {
+      "src": "assets/images/naugatuck/a-435-bathroom.jpg",
+      "caption": "A-435, accessible bathroom plans and elevations.",
+      "group": "Sections & Elevations",
+      "building": "Bathrooms",
+      "wide": true
+    }
+  ],
+  "galleryLead": "Plans"
 }
