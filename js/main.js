@@ -404,3 +404,161 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+/* ============================================================
+   POLISH
+   Four small behaviours. Each bails out early on reduced motion, and
+   none of them is load-bearing: if any fails, the page is exactly the
+   site without it.
+   ============================================================ */
+(() => {
+  const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- page transition ----------
+     Fade the main column out, then navigate. The arrival half is armed by
+     a flag in sessionStorage and applied by an inline script in <head>,
+     before first paint, so the page cannot flash in and then fade. */
+  const startTransition = () => {
+    if (still) return;
+    document.addEventListener("click", (event) => {
+      if (event.defaultPrevented || event.button !== 0) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+      const link = event.target.closest("a");
+      if (!link || link.target === "_blank" || link.hasAttribute("download")) return;
+      if (link.id === "landing-enter") return;         // the swipe owns that one
+
+      const url = new URL(link.href, location.href);
+      if (url.origin !== location.origin) return;
+      // Same page, or a jump within it: let the browser scroll.
+      if (url.pathname === location.pathname && url.hash) return;
+      if (url.href === location.href) return;
+      if (!/\.html?$/.test(url.pathname) && !url.pathname.endsWith("/")) return;
+
+      event.preventDefault();
+      try { sessionStorage.setItem("page-in", "1"); } catch (e) {}
+      document.body.classList.add("page-leaving");
+
+      // Navigate on the animation's end, with a timer behind it so a
+      // dropped animationend event can never strand the reader.
+      let gone = false;
+      const go = () => {
+        if (gone) return;
+        gone = true;
+        location.href = url.href;
+      };
+      const main = document.querySelector("main");
+      if (main) main.addEventListener("animationend", go, { once: true });
+      setTimeout(go, 320);
+    });
+  };
+
+  /* ---------- read progress ----------
+     Project pages only; a hairline of the project's accent under the
+     header. */
+  const startProgress = () => {
+    if (still || !document.querySelector(".project-hero")) return;
+    const bar = document.createElement("div");
+    bar.className = "read-progress";
+    // Inherit the project's accent from the hero.
+    const hero = document.querySelector(".project-hero");
+    const accent = getComputedStyle(hero).getPropertyValue("--accent");
+    if (accent) bar.style.background = accent.trim();
+    document.body.appendChild(bar);
+
+    let ticking = false;
+    const draw = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+      bar.style.transform = "scaleX(" + ratio + ")";
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(draw);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+    draw();
+  };
+
+  /* ---------- timeline cursor ---------- */
+  const startCursor = () => {
+    const scroller = document.querySelector(".tl-scroller");
+    if (still || !scroller) return;
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+    const ring = document.createElement("div");
+    ring.className = "tl-cursor";
+    document.body.appendChild(ring);
+    scroller.classList.add("has-cursor");
+
+    let x = 0, y = 0, ticking = false;
+    const draw = () => {
+      ring.style.transform = ring.classList.contains("is-pressed")
+        ? "translate3d(" + x + "px," + y + "px,0) scale(0.82)"
+        : "translate3d(" + x + "px," + y + "px,0)";
+      ticking = false;
+    };
+    scroller.addEventListener("pointermove", (event) => {
+      x = event.clientX;
+      y = event.clientY;
+      if (!ticking) { ticking = true; requestAnimationFrame(draw); }
+    });
+    scroller.addEventListener("pointerenter", () => ring.classList.add("is-on"));
+    scroller.addEventListener("pointerleave", () => ring.classList.remove("is-on", "is-pressed"));
+    scroller.addEventListener("pointerdown", () => ring.classList.add("is-pressed"));
+    window.addEventListener("pointerup", () => ring.classList.remove("is-pressed"));
+  };
+
+  /* ---------- hero parallax ----------
+     A few pixels of drift, capped, so it reads as depth rather than as an
+     effect. */
+  const startParallax = () => {
+    const img = document.querySelector(".project-hero .img-frame img");
+    if (still || !img) return;
+    const frame = img.parentElement;
+    let ticking = false;
+    const draw = () => {
+      const rect = frame.getBoundingClientRect();
+      if (rect.bottom > 0 && rect.top < window.innerHeight) {
+        const past = Math.max(0, -rect.top);
+        img.style.setProperty("--parallax", Math.min(28, past * 0.08).toFixed(1) + "px");
+      }
+      ticking = false;
+    };
+    window.addEventListener("scroll", () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(draw);
+    }, { passive: true });
+    draw();
+  };
+
+  /* The arrival animation starts main at opacity 0, so something must always
+     finish it. Drop the flag once the animation has had its time: if it ran,
+     removing the class is invisible; if it never ran, this is what stops the
+     page from staying blank. Same rule as the reveal watchdog above — a lost
+     animation is cosmetic, invisible content is a broken page. */
+  const armTransitionWatchdog = () => {
+    if (!document.documentElement.classList.contains("page-entering")) return;
+    setTimeout(() => {
+      document.documentElement.classList.remove("page-entering");
+    }, 1200);
+  };
+
+  const boot = () => {
+    armTransitionWatchdog();
+    startTransition();
+    startProgress();
+    startCursor();
+    startParallax();
+  };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+})();

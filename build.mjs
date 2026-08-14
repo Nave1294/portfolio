@@ -82,10 +82,11 @@ function head(
 <title>${esc(title)}</title>${
     description ? `\n<meta name="description" content="${attr(description)}">` : ""
   }
+<link rel="preload" href="${up}assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${up}css/style.css?v=${CSS_V}">${
     swipe ? `\n<link rel="stylesheet" href="${up}css/transition.css?v=${TRANSITION_V}">` : ""
   }
-<script>document.documentElement.classList.add("js")</script>${
+<script>document.documentElement.classList.add("js");try{if(sessionStorage.getItem("page-in")==="1"){sessionStorage.removeItem("page-in");document.documentElement.classList.add("page-entering")}}catch(e){}</script>${
     swipeIn
       ? `\n<script>try{if(sessionStorage.getItem("swipe-in")==="1"){sessionStorage.removeItem("swipe-in");document.documentElement.classList.add("swipe-entering")}}catch(e){}</script>`
       : ""

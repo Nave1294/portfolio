@@ -1,4 +1,18 @@
 /* ============================================================
+   TYPEFACE
+   Schibsted Grotesk, SIL Open Font License. Self-hosted: one 46KB
+   variable file covering 400-700, so there is no third-party request on
+   any page load and no flash of fallback beyond the first paint.
+   ============================================================ */
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url("../assets/fonts/schibsted-grotesk.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
    DESIGN TOKENS
    Change these to re-skin the entire site.
    ============================================================ */
@@ -21,7 +35,8 @@
   /* Fallback so accent-dependent rules stay neutral when unassigned. */
   --accent: var(--color-text);
 
-  --font-sans: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Schibsted Grotesk", -apple-system, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
 
   --container-max: 1320px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
@@ -32,7 +47,15 @@
   --space-lg: 4rem;
   --space-xl: 7rem;
 
+  /* One motion vocabulary. Anything that moves borrows from these rather
+     than inventing its own timing, which is what separates considered
+     motion from a pile of transitions. */
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 620ms;
 
   /* Buttons sit square-ish to match the image frames and rules. */
   --radius: 4px;
@@ -1453,4 +1476,151 @@ body.lightbox-open { overflow: hidden; }
 
 @media (max-width: 860px) {
   .references-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   POLISH — hover, page transition, progress, cursor
+   Everything here is decoration. Each block is written so that if its
+   script never runs, or motion is switched off, the page is unchanged
+   and fully usable.
+   ============================================================ */
+
+/* ---------- hover: one behaviour, applied consistently ----------
+   These elements each had their own timing before. They now share the
+   token set, so the whole page responds at the same speed. */
+.text-link,
+.nav-links a,
+.gallery-tab,
+.tl-item,
+.reference .text-link,
+.footer-links a {
+  transition: color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    opacity var(--dur-fast) var(--ease);
+}
+
+/* A project card lifts very slightly and its caption tracks open. The
+   image already scales; this keeps the two in step. */
+.project-card {
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.project-card:hover { transform: translateY(-4px); }
+
+.project-card .card-caption h3 {
+  transition: letter-spacing var(--dur-base) var(--ease-out);
+}
+
+.project-card:hover .card-caption h3 { letter-spacing: 0.01em; }
+
+.img-frame img { transition: transform var(--dur-slow) var(--ease-out); }
+
+/* The gallery figure answers the pointer the same way a card does. */
+.gallery-item .img-frame {
+  transition: border-color var(--dur-base) var(--ease);
+}
+
+.gallery-item:hover .img-frame { border-color: var(--color-text-muted); }
+
+.btn {
+  transition: background var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease-out);
+}
+
+.btn:active { transform: translateY(1px); }
+
+/* ---------- page transition ----------
+   A short cross-fade on the main column between internal pages. The
+   header and footer hold still, so navigation feels like the content
+   changing rather than the whole window being replaced. */
+html.page-entering:not(.swipe-entering) main {
+  animation: page-in var(--dur-slow) var(--ease-out) both;
+}
+
+body.page-leaving main {
+  animation: page-out 240ms var(--ease-in) both;
+}
+
+@keyframes page-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes page-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* ---------- scroll progress ----------
+   A hairline under the header on project pages. The thesis runs to
+   seventeen chapters; this says how much is left. */
+.read-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: var(--accent);
+  z-index: 60;
+  pointer-events: none;
+}
+
+/* ---------- timeline cursor ----------
+   A ring that follows the pointer across the reel, so the strip reads as
+   something to be moved rather than a static list. Fine pointers only —
+   there is nothing to follow on a touchscreen. */
+.tl-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  margin: -23px 0 0 -23px;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 45;
+  transition: opacity var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease-out);
+}
+
+.tl-cursor.is-on { opacity: 1; }
+.tl-cursor.is-pressed { transform: scale(0.82); }
+
+@media (hover: hover) and (pointer: fine) {
+  .tl-scroller.has-cursor { cursor: none; }
+}
+
+/* ---------- hero parallax ----------
+   The project hero drifts a few pixels against the scroll. The variable
+   is only ever set by script; unset, this is an ordinary image. */
+.project-hero .img-frame img {
+  transform: translate3d(0, var(--parallax, 0px), 0);
+  will-change: transform;
+  /* The hover-zoom transition further up would apply here too, easing every
+     scroll frame over 620ms and turning the drift into rubber-banding.
+     Parallax has to track the scroll exactly. */
+  transition: none;
+}
+
+/* ============================================================
+   REDUCED MOTION
+   Everything above is decoration, so all of it goes.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html.page-entering main,
+  body.page-leaving main {
+    animation: none;
+  }
+
+  .project-card:hover { transform: none; }
+  .project-card:hover .card-caption h3 { letter-spacing: normal; }
+  .tl-cursor { display: none; }
+  .tl-scroller.has-cursor { cursor: auto; }
+  .read-progress { display: none; }
+  .project-hero .img-frame img { transform: none; }
 }
