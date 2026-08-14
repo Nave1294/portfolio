@@ -4,12 +4,24 @@
 
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, cpSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const OUT = join(ROOT, "dist");
 
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), "utf8"));
+
+/* Stylesheet and script URLs carry a hash of their contents. Without it a
+   returning visitor can pair newly deployed HTML with a cached script — which
+   is not a cosmetic mismatch: the gallery would render every panel expanded. */
+const assetVersion = (p) =>
+  existsSync(join(ROOT, p))
+    ? createHash("sha1").update(readFileSync(join(ROOT, p))).digest("hex").slice(0, 8)
+    : "0";
+const CSS_V = assetVersion("css/style.css");
+const TRANSITION_V = assetVersion("css/transition.css");
+const JS_V = assetVersion("js/main.js");
 
 /* ---------- escaping ----------
    Content comes from a dashboard, so it must never be trusted as markup. */
@@ -64,8 +76,8 @@ function head(
 <title>${esc(title)}</title>${
     description ? `\n<meta name="description" content="${attr(description)}">` : ""
   }
-<link rel="stylesheet" href="${up}css/style.css">${
-    swipe ? `\n<link rel="stylesheet" href="${up}css/transition.css">` : ""
+<link rel="stylesheet" href="${up}css/style.css?v=${CSS_V}">${
+    swipe ? `\n<link rel="stylesheet" href="${up}css/transition.css?v=${TRANSITION_V}">` : ""
   }
 <script>document.documentElement.classList.add("js")</script>${
     swipeIn
@@ -135,7 +147,7 @@ function footer(depth = 0, { full = true, wrapped = false } = {}) {
   </div>
 </footer>
 ${wrapped ? "</div>\n" : ""}
-<script src="${up}js/main.js"></script>
+<script src="${up}js/main.js?v=${JS_V}"></script>
 </body>
 </html>
 `;
@@ -544,10 +556,13 @@ ${footer(0, { full: false })}`;
    rest keep a plain grid. Buildings become subheadings inside a tab so
    floors of one structure read together instead of interleaving. */
 
-const GROUP_ORDER = ["Views", "Maps", "Plans", "Sections & Elevations", "Diagrams"];
+const GROUP_ORDER = ["Views", "Maps", "Plans", "Sections & Elevations", "Diagrams", "Data", "Massing Exploration"];
 
 function galleryFigure(g) {
-  const cls = "gallery-item" + (g.wide ? " span-2" : "");
+  const cls =
+    "gallery-item" +
+    (g.wide ? " span-2" : "") +
+    (g.size === "small" ? " is-small" : "");
   const label = g.caption || "Image";
   return `      <figure class="${cls}">
         ${frame(g.src, label, "", 1)}${
@@ -579,7 +594,12 @@ function renderPanelBody(items) {
         .join("\n");
       const heading =
         showHeadings && b ? `      <h3 class="gallery-group">${esc(b)}</h3>\n` : "";
-      return `${heading}      <div class="project-gallery">\n${grid}\n      </div>`;
+      // A bucket that is entirely small images packs into a denser grid,
+      // so a long serial sequence reads as one sheet, not a slow scroll.
+      const dense = byBuilding.get(b).every((g) => g.size === "small");
+      return `${heading}      <div class="project-gallery${
+        dense ? " is-dense" : ""
+      }">\n${grid}\n      </div>`;
     })
     .join("\n");
 }
@@ -611,15 +631,21 @@ function renderGallery(items, lead = "") {
 
   const id = (n) => "g-" + n.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
-  const tabs = groups
-    .map(
-      ([name], i) =>
-        `      <button class="gallery-tab" role="tab" id="tab-${id(name)}"
+  // The strip is emitted twice — above the panels and again below them — so a
+  // long tab does not have to be scrolled back up to switch. Only the top set
+  // carries ids, since the panels' aria-labelledby points at those.
+  const tabStrip = (bottom) =>
+    groups
+      .map(
+        ([name], i) =>
+          `      <button class="gallery-tab" role="tab"${
+            bottom ? "" : ` id="tab-${id(name)}"`
+          }
         aria-controls="panel-${id(name)}" aria-selected="${i === 0}">${esc(
-          name
-        )} <span class="tab-count">${groups[i][1].length}</span></button>`
-    )
-    .join("\n");
+            name
+          )} <span class="tab-count">${groups[i][1].length}</span></button>`
+      )
+      .join("\n");
 
   const panels = groups
     .map(
@@ -635,9 +661,12 @@ ${renderPanelBody(items2)}
 
   return `<div class="container gallery-tabs">
     <div class="gallery-tablist" role="tablist" aria-label="Drawings and views">
-${tabs}
+${tabStrip(false)}
     </div>
 ${panels}
+    <div class="gallery-tablist is-bottom" role="tablist" aria-label="Drawings and views">
+${tabStrip(true)}
+    </div>
   </div>`;
 }
 
@@ -869,6 +898,8 @@ ${navLink(prev, "← Previous")}
 ${navLink(next, "Next →")}
     </nav>
   </div>
+
+${jumpLink("up", "#top", "Back to top")}
 
 </main>
 ${footer(1, { full: false })}`;

@@ -208,6 +208,8 @@ content:
             - Plans
             - Sections & Elevations
             - Diagrams
+            - Data
+            - Massing Exploration
         description: "Optional. Which tab opens first. Leave blank for the usual order, starting with Views. The thesis leads with Diagrams."
 
       - name: gallery
@@ -233,6 +235,8 @@ content:
                 - Plans
                 - Sections & Elevations
                 - Diagrams
+                - Data
+                - Massing Exploration
             description: "Which tab this image appears under. A project with only one tab's worth of images shows a plain grid instead."
           - name: building
             label: Building
@@ -243,6 +247,15 @@ content:
             type: boolean
             default: false
             description: "Spans the full page width — suited to long sections and site plans. Leave off to sit two-up."
+          - name: size
+            label: Size
+            type: select
+            default: ""
+            options:
+              values:
+                - { value: "", label: "Normal — two up" }
+                - { value: small, label: "Small — packs four to a row, for serial studies" }
+            description: "Set every image in a tab to Small and they lay out four to a row."
 
   # ---------------------------------------------------------------
   - name: settings

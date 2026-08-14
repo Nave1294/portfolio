@@ -920,6 +920,155 @@
       "caption": "Level three of the study.",
       "group": "Views",
       "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/d-program-shift.jpg",
+      "wide": true,
+      "caption": "The built environment before and after, inner ring to outer: office down 26%, residential and entertainment up 10% each, institutional up 6%, civic up 2%, retail down 2%.",
+      "group": "Data",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/d-screentime.jpg",
+      "wide": true,
+      "caption": "5.7 hours of free time, and where it currently goes — daily hours on social media, headsets and television in the United States, Denmark and Austria.",
+      "group": "Data",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/d-week.jpg",
+      "wide": true,
+      "caption": "A week now against a week after scarcity: work falls from 24% to 9%, leisure rises to 29%, and education and community appear as categories of their own.",
+      "group": "Data",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-01.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-02.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-03.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-04.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-05.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-06.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-07.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-08.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-09.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-10.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-11.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-12.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-13.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-14.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-15.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
+    },
+    {
+      "src": "assets/images/post-scarcity/massing-16.jpg",
+      "wide": false,
+      "size": "small",
+      "caption": "",
+      "group": "Massing Exploration",
+      "building": ""
     }
   ],
   "galleryLead": "Diagrams"

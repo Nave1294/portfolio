@@ -243,35 +243,143 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Gallery tabs on project pages. The markup ships with every panel visible
 // so the drawings are reachable without scripting; this hides the inactive
-// ones and wires up the tab strip.
+// ones and wires up the tab strips. The strip appears twice, above and below
+// the panels, so tabs are matched to panels by aria-controls rather than by
+// position.
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".gallery-tabs").forEach((wrap) => {
-    const tabs = Array.from(wrap.querySelectorAll(".gallery-tab"));
     const panels = Array.from(wrap.querySelectorAll(".gallery-panel"));
-    if (tabs.length < 2 || tabs.length !== panels.length) return;
+    const tabs = Array.from(wrap.querySelectorAll(".gallery-tab"));
+    if (panels.length < 2 || !tabs.length) return;
 
-    const select = (index, focus) => {
-      tabs.forEach((tab, i) => {
-        const active = i === index;
+    const select = (panelId, focusTab) => {
+      panels.forEach((panel) => {
+        panel.hidden = panel.id !== panelId;
+      });
+      tabs.forEach((tab) => {
+        const active = tab.getAttribute("aria-controls") === panelId;
         tab.setAttribute("aria-selected", String(active));
         tab.tabIndex = active ? 0 : -1;
-        panels[i].hidden = !active;
       });
-      if (focus) tabs[index].focus();
+      if (focusTab) focusTab.focus();
     };
 
-    tabs.forEach((tab, i) => {
-      tab.addEventListener("click", () => select(i, false));
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        select(tab.getAttribute("aria-controls"));
+        // Switching from the strip below the panels would otherwise leave the
+        // reader stranded past the end of the panel they just chose.
+        if (tab.closest(".gallery-tablist").classList.contains("is-bottom")) {
+          wrap.scrollIntoView({ block: "start" });
+        }
+      });
       tab.addEventListener("keydown", (event) => {
         const step =
           event.key === "ArrowRight" ? 1 : event.key === "ArrowLeft" ? -1 : 0;
         if (!step) return;
         event.preventDefault();
-        select((i + step + tabs.length) % tabs.length, true);
+        const strip = Array.from(
+          tab.closest(".gallery-tablist").querySelectorAll(".gallery-tab")
+        );
+        const next = strip[(strip.indexOf(tab) + step + strip.length) % strip.length];
+        select(next.getAttribute("aria-controls"), next);
       });
     });
 
-    select(0, false);
+    select(panels[0].id);
+  });
+});
+
+// Lightbox. Any figure opens full screen, and the arrows step through the
+// other images in the same panel or the same chapter — which is what reads as
+// "adjacent" from where the reader clicked.
+document.addEventListener("DOMContentLoaded", () => {
+  const images = Array.from(
+    document.querySelectorAll(".gallery-panel figure img, .chapter figure img")
+  );
+  if (!images.length) return;
+
+  const groupOf = (img) => {
+    const scope = img.closest(".gallery-panel") || img.closest(".chapter");
+    return scope ? Array.from(scope.querySelectorAll("figure img")) : [img];
+  };
+
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.hidden = true;
+  box.innerHTML =
+    '<button class="lightbox-close" type="button" aria-label="Close">' +
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>' +
+    '<button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">' +
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>' +
+    '<figure class="lightbox-figure"><img alt=""><figcaption></figcaption></figure>' +
+    '<button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">' +
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>';
+  document.body.appendChild(box);
+
+  const shot = box.querySelector("img");
+  const cap = box.querySelector("figcaption");
+  const prev = box.querySelector(".lightbox-prev");
+  const next = box.querySelector(".lightbox-next");
+  const close = box.querySelector(".lightbox-close");
+
+  let group = [];
+  let index = 0;
+  let opener = null;
+
+  const show = (i) => {
+    index = (i + group.length) % group.length;
+    const img = group[index];
+    shot.src = img.currentSrc || img.src;
+    shot.alt = img.alt || "";
+    const figcap = img.closest("figure").querySelector("figcaption");
+    cap.textContent = figcap ? figcap.textContent.trim() : "";
+    cap.hidden = !cap.textContent;
+    const many = group.length > 1;
+    prev.hidden = next.hidden = !many;
+  };
+
+  const open = (img) => {
+    group = groupOf(img);
+    opener = img;
+    show(group.indexOf(img));
+    box.hidden = false;
+    document.body.classList.add("lightbox-open");
+    close.focus();
+  };
+
+  const hide = () => {
+    box.hidden = true;
+    document.body.classList.remove("lightbox-open");
+    shot.removeAttribute("src");
+    if (opener) opener.focus();
+  };
+
+  images.forEach((img) => {
+    img.closest("figure").classList.add("is-zoomable");
+    img.addEventListener("click", () => open(img));
+    // Reachable without a mouse.
+    img.tabIndex = 0;
+    img.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        open(img);
+      }
+    });
+  });
+
+  prev.addEventListener("click", () => show(index - 1));
+  next.addEventListener("click", () => show(index + 1));
+  close.addEventListener("click", hide);
+  box.addEventListener("click", (event) => {
+    if (event.target === box) hide();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (box.hidden) return;
+    if (event.key === "Escape") hide();
+    else if (event.key === "ArrowLeft" && group.length > 1) show(index - 1);
+    else if (event.key === "ArrowRight" && group.length > 1) show(index + 1);
   });
 });
 
