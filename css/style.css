@@ -1418,3 +1418,39 @@ body.lightbox-open { overflow: hidden; }
   .lightbox-next { right: 1rem; }
   .lightbox-figure img { max-height: calc(100vh - 12rem); }
 }
+
+/* ============================================================
+   REFERENCES
+   ============================================================ */
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.reference {
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.reference h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.reference-title { font-size: 0.95rem; }
+
+.reference-org,
+.reference-phone {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.reference-org { margin-bottom: 0.55rem; }
+.reference .text-link { font-size: 0.9rem; }
+.reference-phone { margin-top: 0.35rem; }
+
+@media (max-width: 860px) {
+  .references-grid { grid-template-columns: 1fr; }
+}

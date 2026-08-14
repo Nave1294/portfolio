@@ -469,6 +469,23 @@ function aboutPage() {
     )
     .join("\n");
 
+  const references = (a.references || [])
+    .filter((r) => r && r.name)
+    .map(
+      (r) => `        <div class="reference">
+          <h3>${esc(r.name)}</h3>
+          ${r.title ? `<p class="reference-title">${esc(r.title)}</p>` : ""}
+          ${r.organization ? `<p class="reference-org">${esc(r.organization)}</p>` : ""}
+          ${
+            r.email
+              ? `<a href="mailto:${attr(r.email)}" class="text-link">${esc(r.email)}</a>`
+              : ""
+          }
+          ${r.phone ? `<p class="reference-phone">${esc(r.phone)}</p>` : ""}
+        </div>`
+    )
+    .join("\n");
+
   return `${head(`About — ${site.name}`)}
 ${header("about")}
 
@@ -506,6 +523,19 @@ ${skills}
       <div class="section-head"><h2>Education &amp; Experience</h2></div>
       <div class="timeline">
 ${timeline}
+      </div>
+    </div>
+  </section>`
+      : ""
+  }
+
+  ${
+    references
+      ? `<section style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head"><h2>References</h2></div>
+      <div class="references-grid">
+${references}
       </div>
     </div>
   </section>`

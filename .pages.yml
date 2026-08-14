@@ -362,6 +362,18 @@ content:
               - { name: title, label: Title, type: string }
               - { name: detail, label: Detail, type: string }
 
+          - name: references
+            label: References
+            type: object
+            list: true
+            description: "Shown at the foot of the About page. These are other people's details on a public page — list only those who have agreed to it, and leave a field blank to keep it off the site."
+            fields:
+              - { name: name, label: Name, type: string }
+              - { name: title, label: Title, type: string }
+              - { name: organization, label: Organization, type: string }
+              - { name: email, label: Email, type: string }
+              - { name: phone, label: Phone, type: string, description: "Leave blank, or write 'On request', rather than publishing a number." }
+
       - name: contact
         label: Contact page
         type: object
