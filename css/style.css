@@ -460,10 +460,11 @@ section { padding-block: var(--space-xl); }
    along it; if they cannot fit, the strip scrolls sideways instead of
    cramming. */
 .tl-scroller {
-  /* The only element that captures the wheel, so it is held to the width of
-     the preview photo above it. Everywhere either side of that — most of the
-     page — a wheel gesture scrolls the page as normal. */
-  width: var(--preview-width);
+  /* Full width, because the whole point is to see every project at once.
+     This element only captures the wheel while its content overflows — and
+     the track below is sized so that, on anything wider than a tablet, it
+     does not. No overflow, no trap: the page scrolls normally over it. */
+  width: 100%;
   margin-inline: auto;
   overflow-x: auto;
   overflow-y: hidden;
@@ -478,7 +479,8 @@ section { padding-block: var(--space-xl); }
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: clamp(1.5rem, 4vw, 4rem);
+  /* Tight enough that ten projects fit the width of a laptop screen. */
+  gap: clamp(0.5rem, 2vw, 2.5rem);
   /* Fill the viewport, but grow past it when the names need more room. */
   min-width: 100%;
   width: max-content;
@@ -505,7 +507,9 @@ section { padding-block: var(--space-xl); }
 }
 
 .tl-title {
-  font-size: 0.95rem;
+  /* Shrinks with the viewport so the row keeps fitting rather than
+     spilling into a scroll. */
+  font-size: clamp(0.72rem, 1.05vw, 0.95rem);
   white-space: nowrap;
   color: var(--color-text-muted);
   transition: color 0.25s var(--ease);
