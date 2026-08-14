@@ -73,8 +73,15 @@
         "heading": "Other",
         "items": [
           "3-D printing",
-          "Microsoft Suite",
-          "LEED Green Associate"
+          "Laser cutting/etching",
+          "Microsoft Suite"
+        ]
+      },
+      {
+        "heading": "Certifications",
+        "items": [
+          "LEED Green Associate",
+          "One test away from Architectural certification in Pennsylvania "
         ]
       }
     ],
