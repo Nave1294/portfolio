@@ -1632,3 +1632,21 @@ body.page-leaving main {
   .read-progress { display: none; }
   .project-hero .img-frame img { transform: none; }
 }
+
+/* ============================================================
+   VIDEO
+   A gallery entry can hold a film. It sits in the same frame as an
+   image so a mixed tab keeps one rhythm.
+   ============================================================ */
+.img-frame.is-video {
+  background: var(--color-text);
+  border-color: var(--color-text);
+  aspect-ratio: 16 / 9;
+}
+
+.img-frame.is-video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}

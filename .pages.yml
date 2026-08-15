@@ -210,6 +210,7 @@ content:
             - Diagrams
             - Data
             - Massing Exploration
+            - Film
         description: "Optional. Which tab opens first. Leave blank for the usual order, starting with Views. The thesis leads with Diagrams."
 
       - name: gallery
@@ -220,6 +221,11 @@ content:
           - name: src
             label: Image
             type: image
+            description: "For a film entry this is the poster frame — the still shown before it plays."
+          - name: video
+            label: Film
+            type: file
+            description: "Optional. An MP4. Fill this in and the entry becomes a player instead of a picture, using the image above as its poster. Files only load when a visitor presses play."
           - name: caption
             label: Caption
             type: string
@@ -237,6 +243,7 @@ content:
                 - Diagrams
                 - Data
                 - Massing Exploration
+                - Film
             description: "Which tab this image appears under. A project with only one tab's worth of images shows a plain grid instead."
           - name: building
             label: Building

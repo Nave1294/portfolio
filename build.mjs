@@ -593,7 +593,7 @@ ${footer(0, { full: false })}`;
    rest keep a plain grid. Buildings become subheadings inside a tab so
    floors of one structure read together instead of interleaving. */
 
-const GROUP_ORDER = ["Views", "Maps", "Plans", "Sections & Elevations", "Diagrams", "Data", "Massing Exploration"];
+const GROUP_ORDER = ["Views", "Maps", "Plans", "Sections & Elevations", "Diagrams", "Data", "Massing Exploration", "Film"];
 
 function galleryFigure(g) {
   const cls =
@@ -601,8 +601,22 @@ function galleryFigure(g) {
     (g.wide ? " span-2" : "") +
     (g.size === "small" ? " is-small" : "");
   const label = g.caption || "Image";
+
+  /* An entry carrying a `video` plays in place, using its `src` as the
+     poster frame. preload="none" means the file is only fetched once the
+     reader asks for it — until then the page costs one poster image. */
+  const body = g.video
+    ? `<div class="img-frame is-video">
+          <video controls preload="none" playsinline${
+            g.src ? ` poster="../${attr(g.src)}"` : ""
+          }>
+            <source src="../${attr(g.video)}" type="video/mp4">
+          </video>
+        </div>`
+    : frame(g.src, label, "", 1);
+
   return `      <figure class="${cls}">
-        ${frame(g.src, label, "", 1)}${
+        ${body}${
     g.caption ? `\n        <figcaption>${esc(g.caption)}</figcaption>` : ""
   }
       </figure>`;
