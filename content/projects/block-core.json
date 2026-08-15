@@ -1,44 +1,41 @@
 {
   "title": "Block Core",
-  "slug": "block-core",
   "published": true,
+  "slug": "block-core",
+  "summary": "One building cannot lift up a neighborhood, but a series of smaller interventions tuned to the specific needs of a block can better address what the built environment is lacking.",
+  "date": "2024",
   "order": 3,
-  "accent": 1,
+  "accent": "1",
+  "cover": "assets/images/block-core/exterior-day.jpg",
   "type": "Adaptive reuse",
   "year": "2024",
-  "date": "2024",
   "location": "Kensington, Philadelphia",
   "program": "Community kitchen, restaurant, long-term residences",
   "status": "Academic — Drexel studio",
   "role": "Solo academic project",
-  "summary": "One corner building tested first: a community kitchen at grade with long-term residences above. The pilot for Kensington Core.",
-  "cover": "assets/images/block-core/exterior-day.jpg",
-  "galleryLead": "Views",
   "body": [
-    "Before the whole block, one building. Block Core takes a single corner in Kensington and asks what the smallest version of the idea looks like — enough program to be useful on its own, small enough to be built without waiting for anything else.",
+    "Block Core takes a single corner in Kensington and asks what the smallest version of the idea looks like — enough program to be useful on its own, small enough to be built without waiting for anything else.",
     "The zoning allows 62 feet across 80% of the site; this stops at 40, keeping the corner in scale with the rowhouses either side. A restaurant and community kitchen occupy the ground floor, sharing one long table and an open range, with long-term residences on the two floors above. The two occupancies are separated as the code requires without being separated as experience: the residents' front door is part of the same corner as the kitchen's.",
-    "The construction is drawn as carefully as the plan — triple-glazed windows to the south, cellulose insulation, magnesium oxide sheathing, timber beams sitting on recycled concrete — because a building meant to be repeated cheaply has to be worth repeating."
+    "The construction is drawn as carefully as the plan — triple-glazed windows to the south, cellulose insulation, magnesium oxide sheathing, timber beams sitting on recycled concrete."
   ],
+  "galleryLead": "Views",
   "gallery": [
     {
       "src": "assets/images/block-core/exterior-day.jpg",
       "caption": "The corner from the street: a restaurant and community kitchen at grade, apartments above.",
       "group": "Views",
-      "building": "",
       "wide": true
     },
     {
       "src": "assets/images/block-core/exterior-dusk.jpg",
       "caption": "The same corner at dusk, the signage lit.",
       "group": "Views",
-      "building": "",
       "wide": true
     },
     {
       "src": "assets/images/block-core/massing.jpg",
       "caption": "The massing the zoning allows — CMX 2.5, 80% site coverage, held to 40 feet rather than the permitted 62.",
       "group": "Views",
-      "building": "",
       "wide": false
     },
     {
@@ -87,21 +84,18 @@
       "src": "assets/images/block-core/plan-ground.jpg",
       "caption": "Ground floor: the community kitchen and its long table.",
       "group": "Plans",
-      "building": "",
       "wide": true
     },
     {
       "src": "assets/images/block-core/plan-upper.jpg",
       "caption": "Second and third floors, typical — the residences above.",
       "group": "Plans",
-      "building": "",
       "wide": true
     },
     {
       "src": "assets/images/block-core/analytical-section.jpg",
       "caption": "Analytical section: triple-glazed south windows, cellulose insulation, magnesium oxide sheathing, timber beams over recycled concrete.",
       "group": "Sections & Elevations",
-      "building": "",
       "wide": true
     },
     {
