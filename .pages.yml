@@ -224,8 +224,8 @@ content:
             description: "For a film entry this is the poster frame — the still shown before it plays."
           - name: video
             label: Film
-            type: file
-            description: "Optional. An MP4. Fill this in and the entry becomes a player instead of a picture, using the image above as its poster. Files only load when a visitor presses play."
+            type: string
+            description: "Optional. Path to an MP4 already in assets/images, for example assets/images/kensington-core/museum.mp4. Fill this in and the entry becomes a player instead of a picture, using the image above as its poster. Typed as text on purpose: a file picker dropped this value on save."
           - name: caption
             label: Caption
             type: string
@@ -267,7 +267,7 @@ content:
   # ---------------------------------------------------------------
   - name: settings
     label: Site settings
-    type: file
+    type: string
     path: content/settings.json
     format: json
     fields:

@@ -174,7 +174,8 @@
       "src": "assets/images/kensington-core/makers-market-poster.jpg",
       "caption": "The makers' market under the canopy.",
       "group": "Film",
-      "wide": true
+      "wide": true,
+      "video": "assets/images/kensington-core/makers-market.mp4"
     },
     {
       "src": "assets/images/kensington-core/rain-mode-poster.jpg",
