@@ -1,16 +1,12 @@
 {
   "title": "South Ends",
-  "slug": "south-ends",
   "published": true,
+  "slug": "south-ends",
+  "date": "2023",
   "order": 1,
-  "accent": 1,
-  "type": "",
-  "year": "",
-  "location": "In south Philly",
-  "program": "",
-  "status": "",
-  "role": "",
+  "accent": "1",
   "cover": "assets/images/south-ends/cover.jpg",
+  "location": "In south Philly",
   "body": [
     "South Ends is a project which marks the beginning of a multi-term endeavor addressing the vacant land once occupied by the old refinery in South Philly. My approach to using the land was from two angles: The first addresses water quality and flooding concerns, while the second connects Philadelphians to their waterfront in a unique way not found elsewhere in the city. Allowing the southernmost end of the property to be reclaimed by nature can act as protection in the event of a storm surge, while carving a river through the site allows for the enhanced control needed to create a new urban waterfront in the age of climate change.",
     "The inhabited portions of the site are grouped into large neighborhoods, each having a unique feel and varied transportation amenities. All areas are firmly linked together by a cohesive set of greenways with trolley lines that can provide quick and reliable access throughout the site and greater city beyond. The resulting fabric encourages creative and fun designs through the serendipity of these competing organizational structures colliding and playing off one another."
@@ -18,123 +14,107 @@
   "gallery": [
     {
       "src": "assets/images/south-ends/01.jpg",
-      "wide": false,
       "caption": "Site overview: the peninsula and the districts proposed across it.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/03.jpg",
-      "wide": false,
       "caption": "Superblock Island from above.",
       "group": "Views",
-      "building": "Superblock"
+      "building": "Superblock",
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/05.jpg",
-      "wide": false,
       "caption": "Aerial looking northeast.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/17.jpg",
-      "wide": false,
       "caption": "Breaking the grid.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/04.jpg",
-      "wide": false,
       "caption": "Campus massing.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/02.jpg",
-      "wide": false,
       "caption": "Performing Arts Center massing.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/13.jpg",
-      "wide": false,
       "caption": "The river offshoot and dam.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/14.jpg",
-      "wide": false,
       "caption": "The Business District at street level.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/15.jpg",
-      "wide": false,
       "caption": "The Reflection District, seen from the cultural museum.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/16.jpg",
-      "wide": false,
       "caption": "Aerial over the South Philadelphia extension.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/11.jpg",
-      "wide": false,
       "caption": "Superblock Island.",
       "group": "Plans",
-      "building": "Superblock"
+      "building": "Superblock",
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/10.jpg",
-      "wide": false,
       "caption": "South Peninsula Business District.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/12.jpg",
-      "wide": false,
       "caption": "Reflection District.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/09.jpg",
-      "wide": false,
       "caption": "South Philadelphia extension.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/06.jpg",
-      "wide": false,
       "caption": "Land use.",
       "group": "Diagrams",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/south-ends/07.jpg",
-      "wide": true,
       "caption": "Circulation.",
       "group": "Diagrams",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/south-ends/08.jpg",
-      "wide": false,
       "caption": "Transit routes and stops threaded through the existing rowhouse fabric.",
       "group": "Diagrams",
-      "building": ""
+      "wide": false
     }
-  ],
-  "date": ""
+  ]
 }
