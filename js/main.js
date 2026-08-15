@@ -121,40 +121,27 @@ document.addEventListener("DOMContentLoaded", () => {
     track.style.transform = "translateX(" + offset + "px)";
   };
 
-  const NUDGE = 4;
-  let pointerAt = null;
-  let pointerMoved = true;
+  /* Hovering a photo used to fire the moment the pointer touched any part
+     of it. Centring then slid the next photo under the pointer, which fired
+     too, and the reel ran away — the earlier guard only helped while the
+     pointer was perfectly still, which is not how anyone uses a mouse.
+
+     Two things stop it. The pointer has to be near the middle of a photo,
+     not merely touching its edge, so sweeping across does not rake through
+     every one. And nothing fires while a slide is in flight, so the reel
+     cannot chain: it steps once, settles, and waits to be asked again. */
+  const CENTRE_BAND = 0.22;          // of a photo's width, either side of its middle
+  const SETTLE_MS = 660;             // just past the reel's 0.6s transition
+  let sliding = false;
+  let settleTimer = null;
 
   const centre = () => {
     centreReel();
     centreNames();
-    // The row has just moved. Whatever is now under the pointer got there by
-    // sliding, so the next hover has to be earned by a real pointer move.
-    pointerMoved = false;
+    sliding = true;
+    clearTimeout(settleTimer);
+    settleTimer = setTimeout(() => { sliding = false; }, SETTLE_MS);
   };
-
-  /* Centring slides the name row, which drags a different project under a
-     pointer that has not moved — that project's mouseenter then fires, and
-     the row slides again, and again. The fix is to tell the two cases
-     apart: a hover only counts if the pointer itself moved since the last
-     slide. A few pixels of tremor should not count either. */
-
-  stage.addEventListener("pointermove", (event) => {
-    if (
-      !pointerAt ||
-      Math.abs(event.clientX - pointerAt.x) > NUDGE ||
-      Math.abs(event.clientY - pointerAt.y) > NUDGE
-    ) {
-      pointerAt = { x: event.clientX, y: event.clientY };
-      pointerMoved = true;
-    }
-  });
-
-  // Forget where the pointer was whenever it leaves, so coming back counts.
-  stage.addEventListener("pointerleave", () => {
-    pointerAt = null;
-    pointerMoved = true;
-  });
 
   /* Selecting a project and moving the reel to it are separate: the photos
      do both, the names only the first. Hovering a name lights its picture
@@ -189,18 +176,48 @@ document.addEventListener("DOMContentLoaded", () => {
     new ResizeObserver(centre).observe(stage);
   }
 
-  // Hovering a photo brings it to the middle; the names below follow it.
-  // The pictures are the part worth pointing at, and they are large enough
-  // to aim for — the names are a label, and are still keyboard-reachable
-  // and clickable below.
-  previews.forEach((el, i) => {
-    el.addEventListener("mouseenter", () => {
-      // The reel moved, not the pointer — this hover is the code's own doing.
-      if (!pointerMoved) return;
-      pause();
-      setActive(i);
-    });
+  // Aim at the middle of a picture to bring it to the middle of the stage.
+  stage.addEventListener("pointermove", (event) => {
+    if (sliding) return;
+    const x = event.clientX;
+    for (let i = 0; i < previews.length; i += 1) {
+      const rect = previews[i].getBoundingClientRect();
+      if (rect.width && Math.abs(x - (rect.left + rect.width / 2)) <= rect.width * CENTRE_BAND) {
+        if (i !== active) {
+          pause();
+          setActive(i);
+        }
+        return;
+      }
+    }
   });
+
+  /* The wheel steps through the projects, but only over the names. That row
+     is a single line of text, so the rest of the page — including the
+     pictures above it — still scrolls normally. */
+  let wheelAcc = 0;
+  let wheelLock = false;
+
+  scroller.addEventListener(
+    "wheel",
+    (event) => {
+      const delta =
+        Math.abs(event.deltaY) >= Math.abs(event.deltaX) ? event.deltaY : event.deltaX;
+      if (!delta) return;
+      event.preventDefault();
+      pause();
+      if (wheelLock) return;
+      wheelAcc += delta;
+      // One trackpad flick should move one project, not five.
+      if (Math.abs(wheelAcc) < 40) return;
+      const step = wheelAcc > 0 ? 1 : -1;
+      wheelAcc = 0;
+      wheelLock = true;
+      setTimeout(() => { wheelLock = false; }, 340);
+      setActive(Math.min(items.length - 1, Math.max(0, active + step)));
+    },
+    { passive: false }
+  );
 
   // Hovering a name selects it but leaves the reel where it is — that is
   // what the photos are for. Keyboard focus does move it, so tabbing

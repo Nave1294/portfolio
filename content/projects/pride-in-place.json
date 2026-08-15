@@ -154,27 +154,6 @@
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/key-transit-map.jpg",
-      "caption": "The city's existing lines: regional rail, the Market–Frankford and Broad Street lines, trolley and bus.",
-      "group": "Diagrams",
-      "building": "Research",
-      "wide": false
-    },
-    {
-      "src": "assets/images/pride-in-place/key-parks-vs-waste.jpg",
-      "caption": "Parks against municipal waste — where the city puts its green, and where it puts its rubbish.",
-      "group": "Diagrams",
-      "building": "Research",
-      "wide": false
-    },
-    {
-      "src": "assets/images/pride-in-place/key-life-vs-property.jpg",
-      "caption": "Life expectancy at birth against median property value, mapped together.",
-      "group": "Diagrams",
-      "building": "Research",
-      "wide": false
-    },
-    {
       "src": "assets/images/pride-in-place/dia-parti.jpg",
       "caption": "The planning parti: linkage, figure, ground and place, pulled apart.",
       "group": "Diagrams",
@@ -187,13 +166,6 @@
       "group": "Diagrams",
       "building": "Parti",
       "wide": false
-    },
-    {
-      "src": "assets/images/pride-in-place/key-circulation.jpg",
-      "caption": "The four circulation studies as they were presented, with their keys: influences, private, public, pedestrian.",
-      "group": "Diagrams",
-      "building": "Circulation",
-      "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-circ-existing.jpg",
@@ -231,18 +203,39 @@
       "wide": false
     },
     {
-      "src": "assets/images/pride-in-place/key-street-modules.jpg",
-      "caption": "The large and small street modules in section, labelled: storm water basin and utilities below, drainage gravel and soil under that.",
+      "src": "assets/images/pride-in-place/dia-module-large.jpg",
+      "caption": "The large street module in section — carriageway and planting above, storm water basin and utilities below.",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/key-module-angles.jpg",
-      "caption": "The same module tilted to meet the grade — 0, 5, 10 and 15 degrees.",
+      "src": "assets/images/pride-in-place/dia-module-small.jpg",
+      "caption": "The small street module, the same services at a narrower width.",
       "group": "Diagrams",
       "building": "Street Modules",
-      "wide": false
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-wide.jpg",
+      "caption": "The widest module, two utility runs either side of the planting.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-top.jpg",
+      "caption": "The module from above.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-angles-2.jpg",
+      "caption": "The module tilted to meet the grade — 0, 5, 10 and 15 degrees.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-module-angles-1.jpg",
@@ -287,22 +280,8 @@
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/key-indirect-sunlight.jpg",
-      "caption": "Indirect sunlight: what reaches the growing floor, and when.",
-      "group": "Diagrams",
-      "building": "Systems",
-      "wide": false
-    },
-    {
-      "src": "assets/images/pride-in-place/key-waste-cycle.jpg",
-      "caption": "Waste handled on site: a quarter composted, three quarters recovered, processed at 700–900 degrees for fifteen minutes.",
-      "group": "Diagrams",
-      "building": "Systems",
-      "wide": false
-    },
-    {
-      "src": "assets/images/pride-in-place/key-masterplan.jpg",
-      "caption": "The master plan by use — community, commercial, and the integrated structure between them.",
+      "src": "assets/images/pride-in-place/dia-masterplan.jpg",
+      "caption": "The master plan by use — community, commercial, solar, and the structure that integrates them.",
       "group": "Diagrams",
       "building": "Site",
       "wide": true
@@ -330,7 +309,7 @@
     },
     {
       "src": "assets/images/pride-in-place/dia-square.jpg",
-      "caption": "The public square in massing — the view the amenity diagram was drawn over.",
+      "caption": "The public square in massing.",
       "group": "Diagrams",
       "building": "Site",
       "wide": false
