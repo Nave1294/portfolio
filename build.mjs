@@ -339,6 +339,19 @@ function renderTimeline() {
 
 ${jumpLink("up", "#top", "Back to top")}
 
+    <div class="tl-scrub" role="group" aria-label="Sweep to browse the projects">
+      <div class="tl-scrub-inner">
+        <span class="tl-scrub-rule" aria-hidden="true"></span>
+        <span class="tl-scrub-ticks" aria-hidden="true">
+${projects.map(() => "<i></i>").join("")}
+        </span>
+        <span class="tl-scrub-knob" aria-hidden="true"></span>
+        <span class="tl-scrub-label" aria-hidden="true">
+          <i class="tl-scrub-arrow">‹</i> sweep to browse <i class="tl-scrub-arrow">›</i>
+        </span>
+      </div>
+    </div>
+
     <div class="tl-stage">
       <div class="tl-reel">
 ${previews}

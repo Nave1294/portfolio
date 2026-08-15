@@ -1653,3 +1653,133 @@ body.page-leaving main {
   display: block;
   object-fit: contain;
 }
+
+/* ============================================================
+   TIMELINE SCRUB BAR
+   A ruler above the reel: one tick per project, a knob riding the
+   current position, and a mark following the pointer. Hold the pointer
+   away from the middle and the reel runs that way — further out, faster.
+   ============================================================ */
+.tl-scrub {
+  position: relative;
+  height: 3.4rem;
+  margin: 0 auto var(--space-sm);
+  padding-inline: var(--gutter);
+  cursor: ew-resize;
+  touch-action: pan-y;      /* the bar is a pointer affordance, not a scroll trap */
+}
+
+.tl-scrub-inner {
+  position: relative;
+  height: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+}
+
+/* The rule, and the ticks sitting on it. */
+.tl-scrub-rule {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.tl-scrub-ticks {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tl-scrub-ticks i {
+  width: 1px;
+  height: 9px;
+  background: var(--color-border);
+  transition: height var(--dur-base) var(--ease-out),
+    background var(--dur-base) var(--ease);
+}
+
+/* The knob rides the current position; --at is set by script. */
+.tl-scrub-knob {
+  position: absolute;
+  top: 50%;
+  left: var(--at, 0%);
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+  border-radius: 50%;
+  background: var(--color-text);
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+/* A hairline that follows the pointer, so the speed is legible: the
+   further it sits from the knob, the faster the reel is running. */
+.tl-scrub::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: var(--aim, 50%);
+  width: 1px;
+  background: var(--accent, var(--color-text));
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease);
+  pointer-events: none;
+}
+
+.tl-scrub.is-live::after { opacity: 0.5; }
+
+.tl-scrub-label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0 0.7rem;
+  background: var(--color-bg);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  transition: opacity var(--dur-base) var(--ease);
+}
+
+.tl-scrub-arrow {
+  font-style: normal;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+/* Once you are using it, the instruction is in the way. */
+.tl-scrub.is-live .tl-scrub-label { opacity: 0; }
+
+.tl-scrub:hover .tl-scrub-ticks i { height: 13px; background: var(--color-text-muted); }
+.tl-scrub.is-live .tl-scrub-knob { transform: scale(1.35); }
+
+/* While the pointer is driving it, the rows follow exactly rather than
+   easing behind — an eased transform would lag the pointer and feel loose. */
+.timeline.is-scrubbing .tl-reel,
+.timeline.is-scrubbing .tl-track {
+  transition: none;
+}
+
+@media (max-width: 860px) {
+  /* On touch the bar is dragged rather than hovered — pointer events cover
+     both. It has to stay: the rows do not scroll themselves, so this is the
+     only way to reach the other projects on a phone. */
+  .tl-scrub { height: 3.8rem; }
+  .tl-scrub-label { font-size: 0.65rem; letter-spacing: 0.14em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Kept — it is a control, not decoration, and the motion it makes is the
+     reader's own. Only the flourishes go. */
+  .tl-scrub-knob,
+  .tl-scrub-ticks i { transition: none; }
+}

@@ -98,60 +98,37 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!items.length) return;
 
   const reel = document.querySelector(".tl-reel");
+  const section = document.querySelector(".timeline");
+  const scrub = document.querySelector(".tl-scrub");
+  const knob = document.querySelector(".tl-scrub-knob");
   const stage = document.querySelector(".tl-stage");
   let active = 0;
 
-  // Centre the active preview by measuring it, rather than with percentage
-  // maths that would resolve against the reel's own width.
-  const centreReel = () => {
-    if (!reel || !stage || !previews[active]) return;
-    const el = previews[active];
-    const offset = stage.clientWidth / 2 - (el.offsetLeft + el.offsetWidth / 2);
-    reel.style.transform = "translateX(" + offset + "px)";
-  };
-
+  /* The reel is driven by a continuous position rather than a list index, so
+     the scrub bar can move it smoothly between projects. `pos` is a float:
+     4.0 is the fifth project dead centre, 4.5 is halfway to the sixth. */
   const track = scroller.querySelector(".tl-track");
+  let pos = 0;
 
-  // The name rides under its own image: same measurement, same moment, so
-  // the two never drift apart.
-  const centreNames = () => {
-    if (!track || !items[active]) return;
-    const el = items[active];
-    const offset = scroller.clientWidth / 2 - (el.offsetLeft + el.offsetWidth / 2);
-    track.style.transform = "translateX(" + offset + "px)";
+  // Where a row has to sit for item i to be centred in its window.
+  const offsetFor = (list, box, i) => {
+    const el = list[i];
+    if (!el) return 0;
+    return box.clientWidth / 2 - (el.offsetLeft + el.offsetWidth / 2);
   };
 
-  /* Hovering a photo used to fire the moment the pointer touched any part
-     of it. Centring then slid the next photo under the pointer, which fired
-     too, and the reel ran away — the earlier guard only helped while the
-     pointer was perfectly still, which is not how anyone uses a mouse.
-
-     Two things stop it. The pointer has to be near the middle of a photo,
-     not merely touching its edge, so sweeping across does not rake through
-     every one. And nothing fires while a slide is in flight, so the reel
-     cannot chain: it steps once, settles, and waits to be asked again. */
-  const CENTRE_BAND = 0.22;          // of a photo's width, either side of its middle
-  const SETTLE_MS = 660;             // just past the reel's 0.6s transition
-  let sliding = false;
-  let settleTimer = null;
-
-  const centre = () => {
-    centreReel();
-    centreNames();
-    sliding = true;
-    clearTimeout(settleTimer);
-    settleTimer = setTimeout(() => { sliding = false; }, SETTLE_MS);
+  // Items are not evenly spaced — project names vary in width — so the
+  // in-between positions are interpolated from the two they fall between
+  // rather than assumed to be a fixed step apart.
+  const offsetAt = (list, box, p) => {
+    const i = Math.max(0, Math.min(list.length - 1, Math.floor(p)));
+    const j = Math.min(list.length - 1, i + 1);
+    const f = p - i;
+    return offsetFor(list, box, i) * (1 - f) + offsetFor(list, box, j) * f;
   };
 
-  /* Selecting a project and moving the reel to it are separate: the photos
-     do both, the names only the first. Hovering a name lights its picture
-     up wherever it happens to sit, without dragging everything sideways. */
-  const setActive = (index, { slide = true } = {}) => {
-    if (index < 0 || index >= items.length) return;
-    if (index === active) {
-      if (slide) centre();
-      return;
-    }
+  const markActive = (index) => {
+    if (index === active) return;
     active = index;
     items.forEach((el, i) => el.classList.toggle("is-active", i === index));
     previews.forEach((el, i) => {
@@ -159,42 +136,42 @@ document.addEventListener("DOMContentLoaded", () => {
       el.classList.toggle("is-active", on);
       el.tabIndex = on ? 0 : -1;
     });
-    if (slide) centre();
+  };
+
+  const paint = () => {
+    if (reel && stage) reel.style.transform = "translateX(" + offsetAt(previews, stage, pos) + "px)";
+    if (track) track.style.transform = "translateX(" + offsetAt(items, scroller, pos) + "px)";
+    if (knob) knob.style.setProperty("--at", (items.length > 1 ? pos / (items.length - 1) : 0) * 100 + "%");
+    markActive(Math.round(pos));
+  };
+
+  const setPos = (p, { glide = true } = {}) => {
+    pos = Math.max(0, Math.min(items.length - 1, p));
+    section.classList.toggle("is-scrubbing", !glide);
+    paint();
+  };
+
+  const centre = () => setPos(pos, { glide: true });
+
+  /* Kept so the rest of the file — idle cycling, keyboard, the wheel — can
+     still ask for a project by number. */
+  const setActive = (index, { slide = true } = {}) => {
+    if (index < 0 || index >= items.length) return;
+    if (slide) setPos(index, { glide: true });
+    else markActive(index);
   };
 
   window.addEventListener("resize", centre);
-  // Covers arrive late and change the reel's measurements.
   window.addEventListener("load", centre);
   previews.forEach((p) => {
     const img = p.querySelector("img");
     if (img && !img.complete) img.addEventListener("load", centre, { once: true });
   });
-  // Catches layout changes a window resize would miss — a late webfont, or
-  // the pane itself being resized — which would otherwise leave the reel
-  // measured against a stale width and visibly off centre.
-  if (window.ResizeObserver && stage) {
-    new ResizeObserver(centre).observe(stage);
-  }
-
-  // Aim at the middle of a picture to bring it to the middle of the stage.
-  stage.addEventListener("pointermove", (event) => {
-    if (sliding) return;
-    const x = event.clientX;
-    for (let i = 0; i < previews.length; i += 1) {
-      const rect = previews[i].getBoundingClientRect();
-      if (rect.width && Math.abs(x - (rect.left + rect.width / 2)) <= rect.width * CENTRE_BAND) {
-        if (i !== active) {
-          pause();
-          setActive(i);
-        }
-        return;
-      }
-    }
-  });
+  if (window.ResizeObserver && stage) new ResizeObserver(centre).observe(stage);
 
   /* The wheel steps through the projects, but only over the names. That row
-     is a single line of text, so the rest of the page — including the
-     pictures above it — still scrolls normally. */
+     is a single line of text, so the pictures above it and the rest of the
+     page still scroll normally. */
   let wheelAcc = 0;
   let wheelLock = false;
 
@@ -214,19 +191,63 @@ document.addEventListener("DOMContentLoaded", () => {
       wheelAcc = 0;
       wheelLock = true;
       setTimeout(() => { wheelLock = false; }, 340);
-      setActive(Math.min(items.length - 1, Math.max(0, active + step)));
+      setActive(Math.min(items.length - 1, Math.max(0, Math.round(pos) + step)));
     },
     { passive: false }
   );
+
+  /* ---------- the scrub bar ----------
+     Hold the pointer away from the middle and the reel runs that way, faster
+     the further out you hold it. The curve is deliberately steep near the
+     centre: the middle third barely moves, so it is easy to hold still and
+     read, and the ends are quick enough to cross thirteen projects without
+     a long sweep. */
+  if (scrub) {
+    const DEAD = 0.08;        // of half the bar — a still zone in the middle
+    const CURVE = 1.8;        // >1 puts the speed at the ends, not the centre
+    const TOP_SPEED = 2.6;    // projects per second, held right at the edge
+    let rate = 0;
+    let raf = null;
+    let last = 0;
+
+    const step = (now) => {
+      if (!rate) { raf = null; return; }
+      const dt = Math.min(0.05, (now - last) / 1000 || 0);
+      last = now;
+      setPos(pos + rate * dt, { glide: false });
+      raf = requestAnimationFrame(step);
+    };
+
+    const run = () => {
+      if (raf) return;
+      last = performance.now();
+      raf = requestAnimationFrame(step);
+    };
+
+    const aim = (event) => {
+      const r = scrub.getBoundingClientRect();
+      const rel = (event.clientX - (r.left + r.width / 2)) / (r.width / 2);
+      const mag = Math.abs(rel);
+      rate = mag < DEAD ? 0 : Math.sign(rel) * Math.pow((mag - DEAD) / (1 - DEAD), CURVE) * TOP_SPEED;
+      scrub.style.setProperty("--aim", ((rel + 1) / 2) * 100 + "%");
+      if (rate) { pause(); run(); }
+    };
+
+    scrub.addEventListener("pointerenter", () => scrub.classList.add("is-live"));
+    scrub.addEventListener("pointermove", aim);
+    scrub.addEventListener("pointerleave", () => {
+      scrub.classList.remove("is-live");
+      rate = 0;
+      if (raf) { cancelAnimationFrame(raf); raf = null; }
+      // Settle on whichever project is nearest, with the transition back on.
+      setPos(Math.round(pos), { glide: true });
+    });
+  }
 
   // Hovering a name selects it but leaves the reel where it is — that is
   // what the photos are for. Keyboard focus does move it, so tabbing
   // cannot leave the focused project off-screen.
   items.forEach((el, i) => {
-    el.addEventListener("mouseenter", () => {
-      pause();
-      setActive(i, { slide: false });
-    });
     el.addEventListener("focus", () => {
       pause();
       setActive(i);
@@ -264,7 +285,6 @@ document.addEventListener("DOMContentLoaded", () => {
     resume = setTimeout(play, RESUME_MS);
   }
 
-  const section = document.querySelector(".timeline");
   if (section) {
     section.addEventListener("mouseenter", stop);
     section.addEventListener("mouseleave", () => {
@@ -546,14 +566,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ---------- timeline cursor ---------- */
   const startCursor = () => {
-    const scroller = document.querySelector(".tl-stage");
-    if (still || !scroller) return;
+    // The pictures: hovering does not move anything now, but they are still
+    // the click target for entering a project, and the ring says so.
+    const zone = document.querySelector(".tl-stage");
+    if (still || !zone) return;
     if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
 
     const ring = document.createElement("div");
     ring.className = "tl-cursor";
     document.body.appendChild(ring);
-    scroller.classList.add("has-cursor");
+    zone.classList.add("has-cursor");
 
     let x = 0, y = 0, ticking = false;
     const draw = () => {
@@ -562,14 +584,14 @@ document.addEventListener("DOMContentLoaded", () => {
         : "translate3d(" + x + "px," + y + "px,0)";
       ticking = false;
     };
-    stage.addEventListener("pointermove", (event) => {
+    zone.addEventListener("pointermove", (event) => {
       x = event.clientX;
       y = event.clientY;
       if (!ticking) { ticking = true; requestAnimationFrame(draw); }
     });
-    scroller.addEventListener("pointerenter", () => ring.classList.add("is-on"));
-    scroller.addEventListener("pointerleave", () => ring.classList.remove("is-on", "is-pressed"));
-    scroller.addEventListener("pointerdown", () => ring.classList.add("is-pressed"));
+    zone.addEventListener("pointerenter", () => ring.classList.add("is-on"));
+    zone.addEventListener("pointerleave", () => ring.classList.remove("is-on", "is-pressed"));
+    zone.addEventListener("pointerdown", () => ring.classList.add("is-pressed"));
     window.addEventListener("pointerup", () => ring.classList.remove("is-pressed"));
   };
 
