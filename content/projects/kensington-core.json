@@ -27,12 +27,6 @@
       "wide": true
     },
     {
-      "src": "assets/images/kensington-core/axon-alt.jpg",
-      "caption": "The same block from the north, the elevated line running along its edge.",
-      "group": "Views",
-      "wide": true
-    },
-    {
       "src": "assets/images/kensington-core/core-day.jpg",
       "caption": "The Core at midday — a splash pad and stepped gathering ground under the canopy.",
       "group": "Views",
@@ -177,6 +171,7 @@
       "wide": true
     },
     {
+      "video": "assets/video/kensington-core/museum.mp4",
       "caption": "The makers' market under the canopy.",
       "group": "Film",
       "wide": true
