@@ -154,31 +154,164 @@
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/board-1-pride-in-place.jpg",
-      "caption": "Board 1: the district, and the three things asked of it — transportation, organic growth, ownership.",
+      "src": "assets/images/pride-in-place/dia-parti.jpg",
+      "caption": "The planning parti: linkage, figure, ground and place, pulled apart.",
       "group": "Diagrams",
-      "building": "Boards",
+      "building": "Parti",
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/board-2-transit.jpg",
-      "caption": "Board 2, transit: the city's existing lines, the circulation they imply, and the street modules that carry them at 0, 5, 10 and 15 degrees.",
+      "src": "assets/images/pride-in-place/dia-site-axon.jpg",
+      "caption": "The site in line, the whole district drawn as one object.",
       "group": "Diagrams",
-      "building": "Boards",
+      "building": "Parti",
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/board-3-organic-growth.jpg",
-      "caption": "Board 3, organic growth: the master plan by use, and the catalogue of pieces it is assembled from.",
+      "src": "assets/images/pride-in-place/dia-circ-existing.jpg",
+      "caption": "What is already there: the lines the city runs through the site today.",
       "group": "Diagrams",
-      "building": "Boards",
+      "building": "Circulation",
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/board-4-ownership.jpg",
-      "caption": "Board 4, ownership: parks against municipal waste, life expectancy against property value, and what the ground could do instead.",
+      "src": "assets/images/pride-in-place/dia-circ-influences.jpg",
+      "caption": "Influences — what the plan is answering to.",
       "group": "Diagrams",
-      "building": "Boards",
+      "building": "Circulation",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-circ-private.jpg",
+      "caption": "Private circulation.",
+      "group": "Diagrams",
+      "building": "Circulation",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-circ-public.jpg",
+      "caption": "Public circulation.",
+      "group": "Diagrams",
+      "building": "Circulation",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-circ-pedestrian.jpg",
+      "caption": "Pedestrian circulation.",
+      "group": "Diagrams",
+      "building": "Circulation",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-large.jpg",
+      "caption": "The large street module in section: carriageway, planting, and the storm water basin and utilities beneath.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-small.jpg",
+      "caption": "The small street module — the same services at a narrower width.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-wide.jpg",
+      "caption": "The widest module, two utility runs either side of the planting.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-top.jpg",
+      "caption": "The module from above.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-angles-1.jpg",
+      "caption": "The module tilted to suit the grade — 0, 5, 10 and 15 degrees.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-angles-2.jpg",
+      "caption": "The same pieces, laid out.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-angles-3.jpg",
+      "caption": "And how they step across a slope.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-module-axon.jpg",
+      "caption": "One module built up: planting, seating and the ground it sits on.",
+      "group": "Diagrams",
+      "building": "Street Modules",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-solar-greenhouse.jpg",
+      "caption": "Solar roofs and the greenhouse between them, worked out against the sun angle.",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-energy-section.jpg",
+      "caption": "Energy and water through the district: what the roofs collect, and where it goes.",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-waterfront-section.jpg",
+      "caption": "The waterfront edge in section.",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-masterplan.jpg",
+      "caption": "The master plan by use — community, commercial, solar, and the structure that integrates them.",
+      "group": "Diagrams",
+      "building": "Site",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-figure-ground.jpg",
+      "caption": "Figure ground, with the site outlined.",
+      "group": "Diagrams",
+      "building": "Site",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-base-map.jpg",
+      "caption": "The base map the study is drawn on.",
+      "group": "Diagrams",
+      "building": "Site",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-massing.jpg",
+      "caption": "The district in massing.",
+      "group": "Diagrams",
+      "building": "Site",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/dia-square.jpg",
+      "caption": "The public square in massing — the view the amenity diagram was drawn over.",
+      "group": "Diagrams",
+      "building": "Site",
       "wide": true
     }
   ]
