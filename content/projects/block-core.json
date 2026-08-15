@@ -93,6 +93,13 @@
       "wide": true
     },
     {
+      "src": "assets/images/block-core/kitchen-back-elevation.jpg",
+      "caption": "Community kitchen, elevation of the back wall — open shelving and glassware, the rolling ladder, and the neon over the range.",
+      "group": "Sections & Elevations",
+      "building": "Community Kitchen",
+      "wide": true
+    },
+    {
       "src": "assets/images/block-core/apartment-elevation.jpg",
       "caption": "Apartment, interior elevation.",
       "group": "Sections & Elevations",
