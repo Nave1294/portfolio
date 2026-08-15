@@ -1,0 +1,185 @@
+{
+  "title": "Pride in Place",
+  "slug": "pride-in-place",
+  "published": true,
+  "order": 5,
+  "accent": 2,
+  "type": "Urban design",
+  "year": "2023",
+  "date": "2023",
+  "location": "Philadelphia",
+  "program": "Housing, transit, public rooms, energy, water and food infrastructure",
+  "status": "Academic — Drexel studio",
+  "role": "Solo academic project",
+  "summary": "A district built from a kit of street and building modules, where the infrastructure everyone shares is the part you are meant to be proud of.",
+  "cover": "assets/images/pride-in-place/aerial-whole.jpg",
+  "galleryLead": "Views",
+  "body": [
+    "We can spend our entire lives looking up at architecture from the ground, but until the ground we stand on shines as brightly as the towers above, our greatest architecture will remain a monument to our greatest shortcomings as a society. Every building, and the space between them, has to be a symbol of pride for all people — only then is the view from below as good as the one from above.",
+    "The district is assembled rather than composed. A catalogue of street and building modules, tilted at 0, 5, 10 and 15 degrees to suit the grade, sets a ground that carries its own drainage, utilities and storm water basins; the blocks are then grown against it, so the plan can extend or stop without a redesign. Transit comes first: the trolley runs level with the pavement, and private, public and pedestrian circulation are drawn as three separate networks that meet where they should.",
+    "What the ground pays for is the argument. Roofs collect energy, structure carries food production, waste is processed on site at 700–900 degrees rather than hauled away, and the shared rooms — library, gym, lecture hall, the waterfront amphitheater — sit in the public fabric rather than behind an institution's door. Mapping the city's parks against its municipal waste, and life expectancy against property value, is what set the target."
+  ],
+  "gallery": [
+    {
+      "src": "assets/images/pride-in-place/aerial-whole.jpg",
+      "caption": "The district entire: a modular ground of streets, roofs and water, grown block by block.",
+      "group": "Views",
+      "building": "",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/aerial-fabric.jpg",
+      "caption": "The fabric from above — every roof a collector, every street a drain.",
+      "group": "Views",
+      "building": "",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/aerial-sunset.jpg",
+      "caption": "Sunset across the solar roofs.",
+      "group": "Views",
+      "building": "",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/aerial-waterfront.jpg",
+      "caption": "The waterfront edge.",
+      "group": "Views",
+      "building": "",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/trolley-stop.jpg",
+      "caption": "The trolley at its stop, level with the pavement.",
+      "group": "Views",
+      "building": "Streets & Transit",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/trolley-seating.jpg",
+      "caption": "Seating alongside the line, under the trees.",
+      "group": "Views",
+      "building": "Streets & Transit",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/green-spine.jpg",
+      "caption": "The green spine, with the energy tower closing the view.",
+      "group": "Views",
+      "building": "Streets & Transit",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/park-playground.jpg",
+      "caption": "The play ground.",
+      "group": "Views",
+      "building": "Streets & Transit",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/park-beanbags.jpg",
+      "caption": "The same ground on an ordinary afternoon.",
+      "group": "Views",
+      "building": "Streets & Transit",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/fountains-night.jpg",
+      "caption": "The water plaza after dark.",
+      "group": "Views",
+      "building": "Streets & Transit",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/library.jpg",
+      "caption": "The library.",
+      "group": "Views",
+      "building": "Public Rooms",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/gym.jpg",
+      "caption": "The gym.",
+      "group": "Views",
+      "building": "Public Rooms",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/lecture-hall.jpg",
+      "caption": "The lecture hall.",
+      "group": "Views",
+      "building": "Public Rooms",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/waterfront-amphitheater.jpg",
+      "caption": "The waterfront amphitheater.",
+      "group": "Views",
+      "building": "Public Rooms",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/energy-generation.jpg",
+      "caption": "Energy generation: the collectors, and the turbine above them.",
+      "group": "Views",
+      "building": "Infrastructure",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/energy-tower-night.jpg",
+      "caption": "The same tower at night.",
+      "group": "Views",
+      "building": "Infrastructure",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/stormwater.jpg",
+      "caption": "Storm water held and planted where it falls.",
+      "group": "Views",
+      "building": "Infrastructure",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/vertical-farm.jpg",
+      "caption": "Food grown in the structure itself.",
+      "group": "Views",
+      "building": "Infrastructure",
+      "wide": false
+    },
+    {
+      "src": "assets/images/pride-in-place/site-plan.jpg",
+      "caption": "Site plan.",
+      "group": "Plans",
+      "building": "",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/board-1-pride-in-place.jpg",
+      "caption": "Board 1: the district, and the three things asked of it — transportation, organic growth, ownership.",
+      "group": "Diagrams",
+      "building": "Boards",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/board-2-transit.jpg",
+      "caption": "Board 2, transit: the city's existing lines, the circulation they imply, and the street modules that carry them at 0, 5, 10 and 15 degrees.",
+      "group": "Diagrams",
+      "building": "Boards",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/board-3-organic-growth.jpg",
+      "caption": "Board 3, organic growth: the master plan by use, and the catalogue of pieces it is assembled from.",
+      "group": "Diagrams",
+      "building": "Boards",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/board-4-ownership.jpg",
+      "caption": "Board 4, ownership: parks against municipal waste, life expectancy against property value, and what the ground could do instead.",
+      "group": "Diagrams",
+      "building": "Boards",
+      "wide": true
+    }
+  ]
+}
