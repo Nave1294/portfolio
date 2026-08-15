@@ -87,7 +87,7 @@
 /* Body copy was sitting at the 16px default and reading small. Lifting the
    root scales everything measured in rem together, keeping the proportions. */
 html {
-  font-size: 107.5%;
+  font-size: 115%;
   scroll-behavior: smooth;
 }
 
@@ -122,8 +122,12 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 h1, h2, h3 { font-weight: 500; letter-spacing: -0.01em; }
 
 h1 {
-  font-size: clamp(2.6rem, 7vw, 5.5rem);
+  /* The floor has to stay under what a phone can hold: at the lifted root,
+     2.6rem put "INTENTIONALLY" wider than a 375px screen and the whole page
+     scrolled sideways. */
+  font-size: clamp(1.95rem, 7vw, 5.5rem);
   line-height: 1.02;
+  overflow-wrap: break-word;
 }
 
 h2 {
@@ -481,13 +485,11 @@ section { padding-block: var(--space-xl); }
   align-items: flex-end;
   transition: transform 0.6s var(--ease);
   will-change: transform;
-  /* Tight enough that ten projects fit the width of a laptop screen. */
-  gap: clamp(0.5rem, 1.7vw, 2.25rem);
+  /* The reel slides, so the row is spaced to be read rather than squeezed
+     to fit — projects either side stay visible at the edges. */
+  gap: clamp(2rem, 4.5vw, 5.5rem);
   width: max-content;
-  /* A narrower inset than the page gutter: the row needs the width more
-     than it needs to line up with the text column, and the type is
-     already at the smallest size that stays legible. */
-  padding: var(--space-md) var(--space-sm) 0;
+  padding: var(--space-md) var(--gutter) 0;
 }
 
 .tl-axis {
@@ -514,7 +516,7 @@ section { padding-block: var(--space-xl); }
 .tl-title {
   /* Shrinks with the viewport so the row keeps fitting rather than
      spilling into a scroll. */
-  font-size: clamp(0.72rem, 1.05vw, 0.95rem);
+  font-size: 1.05rem;
   white-space: nowrap;
   color: var(--color-text-muted);
   transition: color 0.25s var(--ease);
@@ -528,8 +530,8 @@ section { padding-block: var(--space-xl); }
 }
 
 .tl-date {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-text-muted);
@@ -751,8 +753,8 @@ section { padding-block: var(--space-xl); }
 .strip-item figcaption,
 .chapter-wide figcaption {
   margin-top: 0.6rem;
-  font-size: 0.8rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.55;
   color: var(--color-text-muted);
 }
 
