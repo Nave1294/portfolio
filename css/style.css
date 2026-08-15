@@ -460,15 +460,13 @@ section { padding-block: var(--space-xl); }
    along it; if they cannot fit, the strip scrolls sideways instead of
    cramming. */
 .tl-scroller {
-  /* Full width, because the whole point is to see every project at once.
-     This element only captures the wheel while its content overflows — and
-     the track below is sized so that, on anything wider than a tablet, it
-     does not. No overflow, no trap: the page scrolls normally over it. */
+  /* A window onto the name track, which is moved by script so the active
+     project sits dead centre, directly under its image. Hidden rather than
+     scrollable: nothing here can capture a wheel gesture, so the page always
+     scrolls over it. */
   width: 100%;
   margin-inline: auto;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: none;
+  overflow: hidden;
 }
 
 .tl-scroller::-webkit-scrollbar { display: none; }
@@ -477,12 +475,14 @@ section { padding-block: var(--space-xl); }
 .tl-track {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  /* Natural spacing, not spread to the edges: the row is a reel that slides,
+     so its width is its content and script decides which part shows. */
+  justify-content: flex-start;
   align-items: flex-end;
+  transition: transform 0.6s var(--ease);
+  will-change: transform;
   /* Tight enough that ten projects fit the width of a laptop screen. */
   gap: clamp(0.5rem, 1.7vw, 2.25rem);
-  /* Fill the viewport, but grow past it when the names need more room. */
-  min-width: 100%;
   width: max-content;
   /* A narrower inset than the page gutter: the row needs the width more
      than it needs to line up with the text column, and the type is
@@ -492,8 +492,10 @@ section { padding-block: var(--space-xl); }
 
 .tl-axis {
   position: absolute;
-  left: 0;
-  right: 0;
+  /* Overshoot the track so the rule still reaches both edges of the window
+     whichever way the reel has slid. */
+  left: -100vw;
+  right: -100vw;
   bottom: calc(1rem + 0.6rem);
   height: 1px;
   background: var(--color-border);
@@ -1252,10 +1254,6 @@ html.js .reveal.is-in {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 860px) {
-  /* A vertical swipe isn't captured by a horizontal scroller, so the side
-     gutter buys nothing on touch and the names need the room. */
-  .tl-scroller { width: 100%; }
-
   /* Seventeen chapters wrapped onto a narrow screen would make the sticky
      bar taller than the content under it, so on phones it goes back to one
      swipeable row. */

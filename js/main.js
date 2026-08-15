@@ -110,10 +110,26 @@ document.addEventListener("DOMContentLoaded", () => {
     reel.style.transform = "translateX(" + offset + "px)";
   };
 
+  const track = scroller.querySelector(".tl-track");
+
+  // The name rides under its own image: same measurement, same moment, so
+  // the two never drift apart.
+  const centreNames = () => {
+    if (!track || !items[active]) return;
+    const el = items[active];
+    const offset = scroller.clientWidth / 2 - (el.offsetLeft + el.offsetWidth / 2);
+    track.style.transform = "translateX(" + offset + "px)";
+  };
+
+  const centre = () => {
+    centreReel();
+    centreNames();
+  };
+
   const setActive = (index, { scrollAxis = false } = {}) => {
     if (index < 0 || index >= items.length) return;
     if (index === active) {
-      centreReel();
+      centre();
       return;
     }
     active = index;
@@ -123,24 +139,21 @@ document.addEventListener("DOMContentLoaded", () => {
       el.classList.toggle("is-active", on);
       el.tabIndex = on ? 0 : -1;
     });
-    centreReel();
-    if (scrollAxis) {
-      items[index].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
-    }
+    centre();
   };
 
-  window.addEventListener("resize", centreReel);
+  window.addEventListener("resize", centre);
   // Covers arrive late and change the reel's measurements.
-  window.addEventListener("load", centreReel);
+  window.addEventListener("load", centre);
   previews.forEach((p) => {
     const img = p.querySelector("img");
-    if (img && !img.complete) img.addEventListener("load", centreReel, { once: true });
+    if (img && !img.complete) img.addEventListener("load", centre, { once: true });
   });
   // Catches layout changes a window resize would miss — a late webfont, or
   // the pane itself being resized — which would otherwise leave the reel
   // measured against a stale width and visibly off centre.
   if (window.ResizeObserver && stage) {
-    new ResizeObserver(centreReel).observe(stage);
+    new ResizeObserver(centre).observe(stage);
   }
 
   items.forEach((el, i) => {
@@ -189,7 +202,6 @@ document.addEventListener("DOMContentLoaded", () => {
       resume = setTimeout(play, 1200);
     });
   }
-  scroller.addEventListener("scroll", pause, { passive: true });
 
   // No point animating a tab nobody is looking at.
   document.addEventListener("visibilitychange", () => {
@@ -462,30 +474,6 @@ document.addEventListener("DOMContentLoaded", () => {
     draw();
   };
 
-  /* ---------- timeline wheel ----------
-     A container that scrolls horizontally and not vertically makes the
-     browser translate a vertical wheel gesture into sideways movement. Over
-     a full-width strip that means the page will not scroll at all while the
-     pointer is on it. Sizing the row to fit avoids it only until another
-     project is added, so the gesture is corrected at the source: anything
-     predominantly vertical is handed back to the page, anything sideways is
-     left to the strip. */
-  const startTimelineWheel = () => {
-    const scroller = document.querySelector(".tl-scroller");
-    if (!scroller) return;
-    scroller.addEventListener(
-      "wheel",
-      (event) => {
-        // Nothing to steal when the row already fits.
-        if (scroller.scrollWidth <= scroller.clientWidth) return;
-        if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
-        event.preventDefault();
-        window.scrollBy(0, event.deltaY);
-      },
-      { passive: false }
-    );
-  };
-
   /* ---------- timeline cursor ---------- */
   const startCursor = () => {
     const scroller = document.querySelector(".tl-scroller");
@@ -554,7 +542,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const boot = () => {
     armTransitionWatchdog();
     startTransition();
-    startTimelineWheel();
     startProgress();
     startCursor();
     startParallax();
