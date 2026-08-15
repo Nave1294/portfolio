@@ -121,10 +121,40 @@ document.addEventListener("DOMContentLoaded", () => {
     track.style.transform = "translateX(" + offset + "px)";
   };
 
+  const NUDGE = 4;
+  let pointerAt = null;
+  let pointerMoved = true;
+
   const centre = () => {
     centreReel();
     centreNames();
+    // The row has just moved. Whatever is now under the pointer got there by
+    // sliding, so the next hover has to be earned by a real pointer move.
+    pointerMoved = false;
   };
+
+  /* Centring slides the name row, which drags a different project under a
+     pointer that has not moved — that project's mouseenter then fires, and
+     the row slides again, and again. The fix is to tell the two cases
+     apart: a hover only counts if the pointer itself moved since the last
+     slide. A few pixels of tremor should not count either. */
+
+  scroller.addEventListener("pointermove", (event) => {
+    if (
+      !pointerAt ||
+      Math.abs(event.clientX - pointerAt.x) > NUDGE ||
+      Math.abs(event.clientY - pointerAt.y) > NUDGE
+    ) {
+      pointerAt = { x: event.clientX, y: event.clientY };
+      pointerMoved = true;
+    }
+  });
+
+  // Forget where the pointer was whenever it leaves, so coming back counts.
+  scroller.addEventListener("pointerleave", () => {
+    pointerAt = null;
+    pointerMoved = true;
+  });
 
   const setActive = (index, { scrollAxis = false } = {}) => {
     if (index < 0 || index >= items.length) return;
@@ -160,6 +190,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Pointer and keyboard both drive the preview. The last one stays up
     // rather than clearing, so the stage never blinks empty.
     el.addEventListener("mouseenter", () => {
+      // The row moved, not the pointer — this hover is the code's own doing.
+      if (!pointerMoved) return;
       pause();
       setActive(i);
     });
