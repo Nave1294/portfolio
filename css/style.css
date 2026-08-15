@@ -480,11 +480,14 @@ section { padding-block: var(--space-xl); }
   justify-content: space-between;
   align-items: flex-end;
   /* Tight enough that ten projects fit the width of a laptop screen. */
-  gap: clamp(0.5rem, 2vw, 2.5rem);
+  gap: clamp(0.5rem, 1.7vw, 2.25rem);
   /* Fill the viewport, but grow past it when the names need more room. */
   min-width: 100%;
   width: max-content;
-  padding: var(--space-md) var(--gutter) 0;
+  /* A narrower inset than the page gutter: the row needs the width more
+     than it needs to line up with the text column, and the type is
+     already at the smallest size that stays legible. */
+  padding: var(--space-md) var(--space-sm) 0;
 }
 
 .tl-axis {

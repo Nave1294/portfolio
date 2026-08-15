@@ -201,33 +201,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   play();
 
-  // Wheel anywhere over the timeline — including the image — steps through
-  // the projects. Deltas are accumulated so one trackpad flick does not
-  // skip several at once. `section` is declared with the idle cycling above.
-  let wheelAcc = 0;
-  let wheelLock = false;
-
-  if (section) {
-    section.addEventListener(
-      "wheel",
-      (event) => {
-        if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
-        event.preventDefault();
-        pause();
-        if (wheelLock) return;
-        wheelAcc += event.deltaY;
-        if (Math.abs(wheelAcc) < 40) return;
-        const step = wheelAcc > 0 ? 1 : -1;
-        wheelAcc = 0;
-        wheelLock = true;
-        setTimeout(() => (wheelLock = false), 320);
-        setActive(Math.min(items.length - 1, Math.max(0, active + step)), {
-          scrollAxis: true,
-        });
-      },
-      { passive: false }
-    );
-  }
+  /* A wheel gesture over the timeline used to step through the projects,
+     which meant preventDefault() on every vertical scroll across the whole
+     section — so the page could not be scrolled past the strip at all. The
+     projects are reachable by hover, click, arrow keys and the row's own
+     sideways scroll, none of which cost the reader the page. */
 
   scroller.addEventListener("keydown", (event) => {
     const step =
@@ -484,6 +462,30 @@ document.addEventListener("DOMContentLoaded", () => {
     draw();
   };
 
+  /* ---------- timeline wheel ----------
+     A container that scrolls horizontally and not vertically makes the
+     browser translate a vertical wheel gesture into sideways movement. Over
+     a full-width strip that means the page will not scroll at all while the
+     pointer is on it. Sizing the row to fit avoids it only until another
+     project is added, so the gesture is corrected at the source: anything
+     predominantly vertical is handed back to the page, anything sideways is
+     left to the strip. */
+  const startTimelineWheel = () => {
+    const scroller = document.querySelector(".tl-scroller");
+    if (!scroller) return;
+    scroller.addEventListener(
+      "wheel",
+      (event) => {
+        // Nothing to steal when the row already fits.
+        if (scroller.scrollWidth <= scroller.clientWidth) return;
+        if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+        event.preventDefault();
+        window.scrollBy(0, event.deltaY);
+      },
+      { passive: false }
+    );
+  };
+
   /* ---------- timeline cursor ---------- */
   const startCursor = () => {
     const scroller = document.querySelector(".tl-scroller");
@@ -552,6 +554,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const boot = () => {
     armTransitionWatchdog();
     startTransition();
+    startTimelineWheel();
     startProgress();
     startCursor();
     startParallax();
