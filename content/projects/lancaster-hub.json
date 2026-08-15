@@ -1,15 +1,9 @@
 {
   "title": "Lancaster Hub",
+  "published": false,
   "slug": "lancaster-hub",
-  "published": true,
   "order": 10,
-  "accent": 4,
-  "type": "",
-  "year": "",
-  "location": "",
-  "program": "",
-  "status": "",
-  "role": "",
+  "accent": "4",
   "cover": "assets/images/lancaster-hub/cover.jpg",
   "body": [
     "The Lancaster Hub is aimed at being both a center of community and a bridge between the Lancaster corridor and the greater Lancaster neighborhood. Encompassing 20 apartments ranging from one to three bedrooms, a multistory library, community rooms, a cafe, and a public park, the Lancaster Hub will be an important asset not only to its residents but also to the wider community as well. The cafe is intended to be rented out to members of the community who want to give the restaurant industry a try before acquiring the capital required to go out on their own. The underground library utilizes carefully curated natural light to create different atmospheres. Soft materials like slate siding and walnut accents along with the mullions break the large building into more digestible pieces, lessening its impact on the scale of the neighborhood."
@@ -17,88 +11,75 @@
   "gallery": [
     {
       "src": "assets/images/lancaster-hub/01.jpg",
-      "wide": false,
       "caption": "From N 40th Street.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/05.jpg",
-      "wide": false,
       "caption": "The library, below the courtyard.",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/07.jpg",
-      "wide": false,
       "caption": "Plan key: how the floors stack.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/08.jpg",
-      "wide": false,
       "caption": "Basement.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/09.jpg",
-      "wide": false,
       "caption": "First floor.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/10.jpg",
-      "wide": false,
       "caption": "Second floor.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/11.jpg",
-      "wide": false,
       "caption": "Third floor.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/12.jpg",
-      "wide": false,
       "caption": "Fourth floor.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/02.jpg",
-      "wide": false,
       "caption": "Section through the courtyard: the hall below, apartments on both sides, trees between.",
       "group": "Sections & Elevations",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/04.jpg",
-      "wide": false,
       "caption": "Section through the library, sunk below the courtyard and reached by the open stair.",
       "group": "Sections & Elevations",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/03.jpg",
-      "wide": false,
       "caption": "Street elevation.",
       "group": "Sections & Elevations",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/06.jpg",
-      "wide": true,
       "caption": "Massing axonometric.",
       "group": "Diagrams",
-      "building": ""
+      "wide": true
     }
-  ],
-  "date": ""
+  ]
 }
