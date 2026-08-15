@@ -93,35 +93,8 @@
       "wide": true
     },
     {
-      "src": "assets/images/block-core/analytical-section.jpg",
-      "caption": "Analytical section: triple-glazed south windows, cellulose insulation, magnesium oxide sheathing, timber beams over recycled concrete.",
-      "group": "Sections & Elevations",
-      "wide": true
-    },
-    {
-      "src": "assets/images/block-core/kitchen-elevation.jpg",
-      "caption": "Community kitchen, interior elevation.",
-      "group": "Sections & Elevations",
-      "building": "Community Kitchen",
-      "wide": true
-    },
-    {
-      "src": "assets/images/block-core/kitchen-elevation-line.jpg",
-      "caption": "The same elevation drawn.",
-      "group": "Sections & Elevations",
-      "building": "Community Kitchen",
-      "wide": true
-    },
-    {
       "src": "assets/images/block-core/apartment-elevation.jpg",
       "caption": "Apartment, interior elevation.",
-      "group": "Sections & Elevations",
-      "building": "Apartments",
-      "wide": true
-    },
-    {
-      "src": "assets/images/block-core/apartment-elevation-line.jpg",
-      "caption": "The same elevation drawn.",
       "group": "Sections & Elevations",
       "building": "Apartments",
       "wide": true
