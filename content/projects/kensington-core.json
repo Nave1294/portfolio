@@ -161,7 +161,6 @@
       "video": "assets/images/kensington-core/maker-factory.mp4",
       "caption": "The Maker Factory: exhibition space, hydroponic labs and workshops.",
       "group": "Film",
-      "building": "",
       "wide": true
     },
     {
@@ -169,15 +168,12 @@
       "video": "assets/images/kensington-core/museum.mp4",
       "caption": "Foundations of Kensington Past museum.",
       "group": "Film",
-      "building": "",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/makers-market-poster.jpg",
-      "video": "assets/images/kensington-core/makers-market.mp4",
       "caption": "The makers' market under the canopy.",
       "group": "Film",
-      "building": "",
       "wide": true
     },
     {
@@ -185,7 +181,6 @@
       "video": "assets/images/kensington-core/rain-mode.mp4",
       "caption": "The Core in rain mode.",
       "group": "Film",
-      "building": "",
       "wide": true
     }
   ]
