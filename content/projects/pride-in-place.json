@@ -154,6 +154,27 @@
       "wide": true
     },
     {
+      "src": "assets/images/pride-in-place/key-transit-map.jpg",
+      "caption": "The city's existing lines: regional rail, the Market–Frankford and Broad Street lines, trolley and bus.",
+      "group": "Diagrams",
+      "building": "Research",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/key-parks-vs-waste.jpg",
+      "caption": "Parks against municipal waste — where the city puts its green, and where it puts its rubbish.",
+      "group": "Diagrams",
+      "building": "Research",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/key-life-vs-property.jpg",
+      "caption": "Life expectancy at birth against median property value, mapped together.",
+      "group": "Diagrams",
+      "building": "Research",
+      "wide": true
+    },
+    {
       "src": "assets/images/pride-in-place/dia-parti.jpg",
       "caption": "The planning parti: linkage, figure, ground and place, pulled apart.",
       "group": "Diagrams",
@@ -168,15 +189,22 @@
       "wide": true
     },
     {
+      "src": "assets/images/pride-in-place/key-circulation.jpg",
+      "caption": "The four circulation studies as they were presented, with their keys: influences, private, public, pedestrian.",
+      "group": "Diagrams",
+      "building": "Circulation",
+      "wide": true
+    },
+    {
       "src": "assets/images/pride-in-place/dia-circ-existing.jpg",
-      "caption": "What is already there: the lines the city runs through the site today.",
+      "caption": "What is already there — the lines the city runs through the site today.",
       "group": "Diagrams",
       "building": "Circulation",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-circ-influences.jpg",
-      "caption": "Influences — what the plan is answering to.",
+      "caption": "Influences: what the plan is answering to.",
       "group": "Diagrams",
       "building": "Circulation",
       "wide": true
@@ -203,71 +231,57 @@
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/dia-module-large.jpg",
-      "caption": "The large street module in section: carriageway, planting, and the storm water basin and utilities beneath.",
+      "src": "assets/images/pride-in-place/key-street-modules.jpg",
+      "caption": "The large and small street modules in section, labelled: storm water basin and utilities below, drainage gravel and soil under that.",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/dia-module-small.jpg",
-      "caption": "The small street module — the same services at a narrower width.",
-      "group": "Diagrams",
-      "building": "Street Modules",
-      "wide": true
-    },
-    {
-      "src": "assets/images/pride-in-place/dia-module-wide.jpg",
-      "caption": "The widest module, two utility runs either side of the planting.",
-      "group": "Diagrams",
-      "building": "Street Modules",
-      "wide": true
-    },
-    {
-      "src": "assets/images/pride-in-place/dia-module-top.jpg",
-      "caption": "The module from above.",
+      "src": "assets/images/pride-in-place/key-module-angles.jpg",
+      "caption": "The same module tilted to meet the grade — 0, 5, 10 and 15 degrees.",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-module-angles-1.jpg",
-      "caption": "The module tilted to suit the grade — 0, 5, 10 and 15 degrees.",
-      "group": "Diagrams",
-      "building": "Street Modules",
-      "wide": true
-    },
-    {
-      "src": "assets/images/pride-in-place/dia-module-angles-2.jpg",
-      "caption": "The same pieces, laid out.",
+      "caption": "The pieces themselves, stepping across a slope.",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-module-angles-3.jpg",
-      "caption": "And how they step across a slope.",
+      "caption": "And laid out as a set.",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-module-axon.jpg",
-      "caption": "One module built up: planting, seating and the ground it sits on.",
+      "caption": "One module built up: planting, seating, and the ground it sits on.",
       "group": "Diagrams",
       "building": "Street Modules",
-      "wide": false
+      "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-solar-greenhouse.jpg",
-      "caption": "Solar roofs and the greenhouse between them, worked out against the sun angle.",
+      "caption": "Solar roofs and the greenhouse between them, worked against the sun angle.",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/key-indirect-sunlight.jpg",
+      "caption": "Indirect sunlight: what reaches the growing floor, and when.",
       "group": "Diagrams",
       "building": "Systems",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-energy-section.jpg",
-      "caption": "Energy and water through the district: what the roofs collect, and where it goes.",
+      "caption": "Energy and water through the district — what the roofs collect and where it goes.",
       "group": "Diagrams",
       "building": "Systems",
       "wide": true
@@ -280,8 +294,15 @@
       "wide": true
     },
     {
-      "src": "assets/images/pride-in-place/dia-masterplan.jpg",
-      "caption": "The master plan by use — community, commercial, solar, and the structure that integrates them.",
+      "src": "assets/images/pride-in-place/key-waste-cycle.jpg",
+      "caption": "Waste handled on site: a quarter composted, three quarters recovered, processed at 700–900 degrees for fifteen minutes.",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": true
+    },
+    {
+      "src": "assets/images/pride-in-place/key-masterplan.jpg",
+      "caption": "The master plan by use — community, commercial, and the integrated structure between them.",
       "group": "Diagrams",
       "building": "Site",
       "wide": true

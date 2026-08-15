@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
      apart: a hover only counts if the pointer itself moved since the last
      slide. A few pixels of tremor should not count either. */
 
-  scroller.addEventListener("pointermove", (event) => {
+  stage.addEventListener("pointermove", (event) => {
     if (
       !pointerAt ||
       Math.abs(event.clientX - pointerAt.x) > NUDGE ||
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Forget where the pointer was whenever it leaves, so coming back counts.
-  scroller.addEventListener("pointerleave", () => {
+  stage.addEventListener("pointerleave", () => {
     pointerAt = null;
     pointerMoved = true;
   });
@@ -186,15 +186,28 @@ document.addEventListener("DOMContentLoaded", () => {
     new ResizeObserver(centre).observe(stage);
   }
 
-  items.forEach((el, i) => {
-    // Pointer and keyboard both drive the preview. The last one stays up
-    // rather than clearing, so the stage never blinks empty.
+  // Hovering a photo brings it to the middle; the names below follow it.
+  // The pictures are the part worth pointing at, and they are large enough
+  // to aim for — the names are a label, and are still keyboard-reachable
+  // and clickable below.
+  previews.forEach((el, i) => {
     el.addEventListener("mouseenter", () => {
-      // The row moved, not the pointer — this hover is the code's own doing.
+      // The reel moved, not the pointer — this hover is the code's own doing.
       if (!pointerMoved) return;
       pause();
       setActive(i);
     });
+  });
+
+  // Keyboard still drives it from either row. The last preview stays up
+  // rather than clearing, so the stage never blinks empty.
+  items.forEach((el, i) => {
+    el.addEventListener("focus", () => {
+      pause();
+      setActive(i);
+    });
+  });
+  previews.forEach((el, i) => {
     el.addEventListener("focus", () => {
       pause();
       setActive(i);
@@ -508,7 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ---------- timeline cursor ---------- */
   const startCursor = () => {
-    const scroller = document.querySelector(".tl-scroller");
+    const scroller = document.querySelector(".tl-stage");
     if (still || !scroller) return;
     if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
 
@@ -524,7 +537,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : "translate3d(" + x + "px," + y + "px,0)";
       ticking = false;
     };
-    scroller.addEventListener("pointermove", (event) => {
+    stage.addEventListener("pointermove", (event) => {
       x = event.clientX;
       y = event.clientY;
       if (!ticking) { ticking = true; requestAnimationFrame(draw); }

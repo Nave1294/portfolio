@@ -1580,9 +1580,9 @@ body.page-leaving main {
 }
 
 /* ---------- timeline cursor ----------
-   A ring that follows the pointer across the reel, so the strip reads as
-   something to be moved rather than a static list. Fine pointers only —
-   there is nothing to follow on a touchscreen. */
+   A ring that follows the pointer across the photographs, which is where
+   the timeline is steered from. Fine pointers only — there is nothing to
+   follow on a touchscreen. */
 .tl-cursor {
   position: fixed;
   top: 0;
@@ -1603,7 +1603,7 @@ body.page-leaving main {
 .tl-cursor.is-pressed { transform: scale(0.82); }
 
 @media (hover: hover) and (pointer: fine) {
-  .tl-scroller.has-cursor { cursor: none; }
+  .tl-stage.has-cursor { cursor: none; }
 }
 
 /* ---------- hero parallax ----------
@@ -1631,7 +1631,7 @@ body.page-leaving main {
   .project-card:hover { transform: none; }
   .project-card:hover .card-caption h3 { letter-spacing: normal; }
   .tl-cursor { display: none; }
-  .tl-scroller.has-cursor { cursor: auto; }
+  .tl-stage.has-cursor { cursor: auto; }
   .read-progress { display: none; }
   .project-hero .img-frame img { transform: none; }
 }
