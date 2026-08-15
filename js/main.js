@@ -156,10 +156,13 @@ document.addEventListener("DOMContentLoaded", () => {
     pointerMoved = true;
   });
 
-  const setActive = (index, { scrollAxis = false } = {}) => {
+  /* Selecting a project and moving the reel to it are separate: the photos
+     do both, the names only the first. Hovering a name lights its picture
+     up wherever it happens to sit, without dragging everything sideways. */
+  const setActive = (index, { slide = true } = {}) => {
     if (index < 0 || index >= items.length) return;
     if (index === active) {
-      centre();
+      if (slide) centre();
       return;
     }
     active = index;
@@ -169,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
       el.classList.toggle("is-active", on);
       el.tabIndex = on ? 0 : -1;
     });
-    centre();
+    if (slide) centre();
   };
 
   window.addEventListener("resize", centre);
@@ -199,9 +202,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Keyboard still drives it from either row. The last preview stays up
-  // rather than clearing, so the stage never blinks empty.
+  // Hovering a name selects it but leaves the reel where it is — that is
+  // what the photos are for. Keyboard focus does move it, so tabbing
+  // cannot leave the focused project off-screen.
   items.forEach((el, i) => {
+    el.addEventListener("mouseenter", () => {
+      pause();
+      setActive(i, { slide: false });
+    });
     el.addEventListener("focus", () => {
       pause();
       setActive(i);
