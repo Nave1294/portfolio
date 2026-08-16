@@ -1600,10 +1600,27 @@ body.page-leaving main {
 }
 
 .tl-cursor.is-on { opacity: 1; }
-.tl-cursor.is-pressed { transform: scale(0.82); }
+
+/* While it waits out the dwell the ring is hollow and quiet. Once the bar
+   has taken control it fills with the project's colour, which is the only
+   signal needed that a sweep will now do something. */
+.tl-cursor::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  background: var(--accent, var(--color-text));
+  opacity: 0;
+  transform: scale(0.4);
+  transition: opacity var(--dur-base) var(--ease),
+    transform var(--dur-base) var(--ease-out);
+}
+
+.tl-cursor.is-armed { border-color: var(--accent, var(--color-text)); }
+.tl-cursor.is-armed::after { opacity: 1; transform: scale(1); }
 
 @media (hover: hover) and (pointer: fine) {
-  .tl-stage.has-cursor { cursor: none; }
+  .tl-scrub.has-cursor { cursor: none; }
 }
 
 /* ---------- hero parallax ----------
@@ -1631,7 +1648,7 @@ body.page-leaving main {
   .project-card:hover { transform: none; }
   .project-card:hover .card-caption h3 { letter-spacing: normal; }
   .tl-cursor { display: none; }
-  .tl-stage.has-cursor { cursor: auto; }
+  .tl-scrub.has-cursor { cursor: ew-resize; }
   .read-progress { display: none; }
   .project-hero .img-frame img { transform: none; }
 }
@@ -1731,7 +1748,7 @@ body.page-leaving main {
   pointer-events: none;
 }
 
-.tl-scrub.is-live::after { opacity: 0.5; }
+.tl-scrub.is-armed::after { opacity: 0.5; }
 
 .tl-scrub-label {
   position: absolute;

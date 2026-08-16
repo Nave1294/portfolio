@@ -224,19 +224,81 @@ document.addEventListener("DOMContentLoaded", () => {
       raf = requestAnimationFrame(step);
     };
 
-    const aim = (event) => {
+    // Where the pointer was last seen, so arming can pick up from a hand that
+    // has been holding still — the dwell would otherwise expire against a
+    // stale rate of zero and nothing would happen until the pointer twitched.
+    let aimX = null;
+
+    const applyAim = () => {
+      if (aimX === null) return;
       const r = scrub.getBoundingClientRect();
-      const rel = (event.clientX - (r.left + r.width / 2)) / (r.width / 2);
+      const rel = (aimX - (r.left + r.width / 2)) / (r.width / 2);
       const mag = Math.abs(rel);
-      rate = mag < DEAD ? 0 : Math.sign(rel) * Math.pow((mag - DEAD) / (1 - DEAD), CURVE) * TOP_SPEED;
       scrub.style.setProperty("--aim", ((rel + 1) / 2) * 100 + "%");
+      if (!armed) { rate = 0; return; }   // still waiting out the dwell
+      rate = mag < DEAD ? 0 : Math.sign(rel) * Math.pow((mag - DEAD) / (1 - DEAD), CURVE) * TOP_SPEED;
       if (rate) { pause(); run(); }
     };
 
-    scrub.addEventListener("pointerenter", () => scrub.classList.add("is-live"));
-    scrub.addEventListener("pointermove", aim);
+    const aim = (event) => {
+      aimX = event.clientX;
+      applyAim();
+    };
+
+    /* A ring stands in for the pointer over the bar, and the bar only takes
+       control once the pointer has stayed on it for a moment. Passing
+       across on the way somewhere else leaves the reel alone; the ring
+       filling in is what says the bar is now listening. */
+    const DWELL = 1000;
+    // Asked here rather than borrowed from the cycling block below, which is
+    // declared later — reading it early would throw before it exists.
+    const fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let armed = false;
+    let armTimer = null;
+    let ring = null;
+    let ringX = 0, ringY = 0, ringRaf = null;
+
+    if (fine && !calm) {
+      ring = document.createElement("div");
+      ring.className = "tl-cursor";
+      document.body.appendChild(ring);
+      scrub.classList.add("has-cursor");
+    }
+
+    const drawRing = () => {
+      ring.style.transform = "translate3d(" + ringX + "px," + ringY + "px,0)";
+      ringRaf = null;
+    };
+
+    scrub.addEventListener("pointerenter", () => {
+      scrub.classList.add("is-live");
+      if (ring) ring.classList.add("is-on");
+      armed = false;
+      clearTimeout(armTimer);
+      armTimer = setTimeout(() => {
+        armed = true;
+        scrub.classList.add("is-armed");
+        if (ring) ring.classList.add("is-armed");
+        applyAim();                  // pick up wherever the pointer is resting
+      }, DWELL);
+    });
+
+    scrub.addEventListener("pointermove", (event) => {
+      if (ring) {
+        ringX = event.clientX;
+        ringY = event.clientY;
+        if (!ringRaf) ringRaf = requestAnimationFrame(drawRing);
+      }
+      aim(event);
+    });
+
     scrub.addEventListener("pointerleave", () => {
-      scrub.classList.remove("is-live");
+      clearTimeout(armTimer);
+      armed = false;
+      aimX = null;
+      scrub.classList.remove("is-live", "is-armed");
+      if (ring) ring.classList.remove("is-on", "is-armed");
       rate = 0;
       if (raf) { cancelAnimationFrame(raf); raf = null; }
       // Settle on whichever project is nearest, with the transition back on.
@@ -565,36 +627,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   /* ---------- timeline cursor ---------- */
-  const startCursor = () => {
-    // The pictures: hovering does not move anything now, but they are still
-    // the click target for entering a project, and the ring says so.
-    const zone = document.querySelector(".tl-stage");
-    if (still || !zone) return;
-    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
-
-    const ring = document.createElement("div");
-    ring.className = "tl-cursor";
-    document.body.appendChild(ring);
-    zone.classList.add("has-cursor");
-
-    let x = 0, y = 0, ticking = false;
-    const draw = () => {
-      ring.style.transform = ring.classList.contains("is-pressed")
-        ? "translate3d(" + x + "px," + y + "px,0) scale(0.82)"
-        : "translate3d(" + x + "px," + y + "px,0)";
-      ticking = false;
-    };
-    zone.addEventListener("pointermove", (event) => {
-      x = event.clientX;
-      y = event.clientY;
-      if (!ticking) { ticking = true; requestAnimationFrame(draw); }
-    });
-    zone.addEventListener("pointerenter", () => ring.classList.add("is-on"));
-    zone.addEventListener("pointerleave", () => ring.classList.remove("is-on", "is-pressed"));
-    zone.addEventListener("pointerdown", () => ring.classList.add("is-pressed"));
-    window.addEventListener("pointerup", () => ring.classList.remove("is-pressed"));
-  };
-
   /* ---------- hero parallax ----------
      A few pixels of drift, capped, so it reads as depth rather than as an
      effect. */
@@ -635,7 +667,6 @@ document.addEventListener("DOMContentLoaded", () => {
     armTransitionWatchdog();
     startTransition();
     startProgress();
-    startCursor();
     startParallax();
   };
   if (document.readyState === "loading") {
