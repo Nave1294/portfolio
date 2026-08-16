@@ -1,125 +1,105 @@
 {
   "title": "Powel's Place",
-  "slug": "powel-s-place",
   "published": true,
+  "slug": "powel-s-place",
+  "date": "2021",
   "order": 12,
-  "accent": 6,
-  "type": "School and business incubator",
-  "year": "",
-  "location": "",
-  "program": "",
-  "status": "",
-  "role": "",
+  "accent": "6",
   "cover": "assets/images/powel-s-place/cover.jpg",
+  "type": "School and business incubator",
   "body": [
     "Powel’s Place is a multipurpose business incubator aimed at cultivating meaningful community-oriented business ideas through the use of education and subsidization. The educational portion of the project houses classrooms and an auditorium in the renovated former Samuel Powel Elementary School. The Incubator is split up throughout the remainder of the site in order to provide different amenities for each business while also creating a large variety of outdoor usable spaces that entice and draw visitors through. The architectural language chosen is simple and industrial, allowing activities in the complex to do the talking. In addition to being an asset to the community in an economical and educational sense, a large focus of this project is environmental as well. The new construction will have a positive impact on both the human and non-human residents in the area. The ecological impact of the building is lessened with solar panels, green roofs, and efficient building practices, but the site also functions as a natural gray water and storm-water filtration system that purifies runoff before returning it to the water table."
   ],
   "gallery": [
     {
       "src": "assets/images/powel-s-place/01.jpg",
-      "wide": false,
       "caption": "Entrance",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/02.jpg",
-      "wide": false,
       "caption": "Lobby",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/03.jpg",
-      "wide": false,
       "caption": "Auditorium",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/04.jpg",
-      "wide": false,
       "caption": "Office Space",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/05.jpg",
-      "wide": false,
       "caption": "Artificial Wetland",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/06.jpg",
-      "wide": false,
       "caption": "Ground Perspective",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/07.jpg",
-      "wide": false,
       "caption": "Restaurant \"Nook\"",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/08.jpg",
-      "wide": false,
       "caption": "Main Hub",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/09.jpg",
-      "wide": false,
       "caption": "Vision Vignette",
       "group": "Views",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/12.jpg",
-      "wide": false,
       "caption": "School, first floor.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/13.jpg",
-      "wide": false,
       "caption": "Incubator, first floors.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/14.jpg",
-      "wide": false,
       "caption": "School, second floor.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/15.jpg",
-      "wide": false,
       "caption": "School third floor and incubator second floors.",
       "group": "Plans",
-      "building": ""
+      "wide": false
     },
     {
       "src": "assets/images/powel-s-place/10.jpg",
-      "wide": true,
       "caption": "Water Cycle Diagram",
       "group": "Diagrams",
-      "building": ""
+      "wide": true
     },
     {
       "src": "assets/images/powel-s-place/11.jpg",
-      "wide": false,
       "caption": "Exploded axonometric: structural frame, program, upper levels and roof.",
       "group": "Diagrams",
-      "building": ""
+      "wide": false
     }
-  ],
-  "date": ""
+  ]
 }
