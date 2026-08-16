@@ -146,11 +146,15 @@
     "routes": [
       {
         "label": "I'm hiring",
-        "blurb": "Naugatuck is the professional work — a mixed-use building for Pennrose, drawn at WRT and in construction now. Block Core and Kensington Core show how a scheme develops from a single corner to a whole block. My résumé and references are on the About page.",
+        "blurb": "Naugatuck is the professional work — a mixed-use building for Pennrose, drawn at WRT and in construction now. For planning at the district scale, Pride in Place is the one to read: a whole neighborhood worked out from the street up, with the mapping and circulation studies behind it. Block Core and Kensington Core show a scheme developing from a single corner to a whole block. My résumé and references are on the About page.",
         "links": [
           {
             "label": "Naugatuck",
             "href": "projects/naugatuck.html"
+          },
+          {
+            "label": "Pride in Place — urban planning",
+            "href": "projects/pride-in-place.html"
           },
           {
             "label": "About, résumé and references",
