@@ -1,16 +1,13 @@
 {
   "title": "Additions",
-  "slug": "additions",
   "published": true,
+  "slug": "additions",
+  "date": "2019",
   "order": 12,
-  "accent": 6,
-  "type": "Adaptive reuse studies",
-  "year": "",
-  "location": "",
-  "program": "Church addition; rowhouse addition",
-  "status": "",
-  "role": "",
+  "accent": "6",
   "cover": "assets/images/additions/cover.jpg",
+  "type": "Adaptive reuse studies",
+  "program": "Church addition; rowhouse addition",
   "body": [
     "The goal with this addition was to acknowledge and build upon the style established by the left half of the drawing. To do this, datum lines were drawn and the visual vocabulary of the building was used. The grounding concept for the new design is to turn the original scheme upside down, placing the visual weight on top and linking it to the original building by carrying the cornice through and up both structures.",
     "Although originally a bank building, the classic piece was converted into a church. When tasked with adding an addition, the new space must project the strength and grounded values of the bank structure while incorporating more light and airiness into its’ interior. To accomplish this, a clerestory was added along the top of the structure. The original building materials were used for the addition, but certain blocks were removed and replaced with stained glass in a pattern that is Morse code for “Praise be the Lord.”"
@@ -18,18 +15,15 @@
   "gallery": [
     {
       "src": "assets/images/additions/cover.jpg",
-      "wide": true,
       "caption": "Brick addition: the new bay picks up the floor lines and corbelled cornice of the original and carries them across.",
-      "group": "",
-      "building": ""
+      "group": "Views",
+      "wide": true
     },
     {
       "src": "assets/images/additions/01.jpg",
-      "wide": true,
       "caption": "Bank turned church, with its addition: the cornice runs through, the weight is carried on top, and blocks of the ashlar are swapped for stained glass spelling “Praise be the Lord” in Morse code.",
-      "group": "",
-      "building": ""
+      "group": "Views",
+      "wide": true
     }
-  ],
-  "date": ""
+  ]
 }
