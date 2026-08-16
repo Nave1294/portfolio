@@ -395,6 +395,50 @@ content:
               - { name: email, label: Email, type: string }
               - { name: phone, label: Phone, type: string, description: "Leave blank, or write 'On request', rather than publishing a number." }
 
+      - name: guide
+        label: "\"What brings you by?\""
+        type: object
+        description: "The short question above the timeline on the work page. A visitor picks an answer and gets a few sentences telling them where to look — nothing pops up, and the page reads normally if they ignore it."
+        fields:
+          - name: enabled
+            label: Show the question
+            type: boolean
+            default: true
+            description: Turn off to remove it from the work page entirely.
+          - name: eyebrow
+            label: Small label above
+            type: string
+            description: "A couple of words in grey — for example \"New here?\". Leave blank to show only the question."
+          - name: question
+            label: The question
+            type: string
+            description: "Keep it to one short line; it sits above the answer buttons."
+          - name: routes
+            label: Answers
+            type: object
+            list: true
+            description: "Two or three works best — more and it stops reading as a quick choice. Each answer shows its own paragraph and links when clicked."
+            fields:
+              - name: label
+                label: Button text
+                type: string
+                description: "What the visitor clicks — written as their own words, e.g. \"I'm hiring\". A few words at most."
+              - name: blurb
+                label: What to tell them
+                type: text
+                description: "Two or three sentences pointing them at the right projects and saying why. This is the useful part — name things and give a reason, rather than just listing links."
+              - name: links
+                label: Links
+                type: object
+                list: true
+                description: "Two or three shortcuts shown under the paragraph."
+                fields:
+                  - { name: label, label: Link text, type: string }
+                  - name: href
+                    label: Address
+                    type: string
+                    description: "Relative to the work page — for example projects/naugatuck.html, about.html or contact.html."
+
       - name: contact
         label: Contact page
         type: object

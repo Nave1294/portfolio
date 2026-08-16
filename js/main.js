@@ -479,6 +479,50 @@ document.addEventListener("DOMContentLoaded", () => {
 // ones and wires up the tab strips. The strip appears twice, above and below
 // the panels, so tabs are matched to panels by aria-controls rather than by
 // position.
+/* Orientation question above the work. All three answers are already in the
+   page; this only decides which one is showing. The choice is remembered for
+   the session so coming back from a project does not ask again — nothing is
+   kept beyond that, and nothing opens itself on arrival. */
+document.addEventListener("DOMContentLoaded", () => {
+  const guide = document.querySelector(".guide");
+  if (!guide) return;
+
+  const choices = Array.from(guide.querySelectorAll(".guide-choice"));
+  const answers = Array.from(guide.querySelectorAll(".guide-answer"));
+  if (!choices.length || !answers.length) return;
+
+  const KEY = "guide-route";
+
+  const show = (id) => {
+    answers.forEach((answer) => {
+      answer.classList.toggle("is-open", answer.id === id);
+    });
+    choices.forEach((choice) => {
+      const open = choice.getAttribute("aria-controls") === id;
+      choice.setAttribute("aria-expanded", String(open));
+    });
+  };
+
+  choices.forEach((choice) => {
+    choice.addEventListener("click", () => {
+      // Clicking the open answer closes it — the way out is the way in.
+      const isOpen = choice.getAttribute("aria-expanded") === "true";
+      const id = isOpen ? "" : choice.getAttribute("aria-controls");
+      show(id);
+      try {
+        if (id) sessionStorage.setItem(KEY, id);
+        else sessionStorage.removeItem(KEY);
+      } catch (e) {}
+    });
+  });
+
+  let saved = "";
+  try {
+    saved = sessionStorage.getItem(KEY) || "";
+  } catch (e) {}
+  if (saved && answers.some((answer) => answer.id === saved)) show(saved);
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".gallery-tabs").forEach((wrap) => {
     const panels = Array.from(wrap.querySelectorAll(".gallery-panel"));

@@ -243,6 +243,115 @@ section { padding-block: var(--space-xl); }
 .hero-meta strong { display: block; color: var(--color-text); font-weight: 500; font-size: 0.95rem; }
 
 /* ============================================================
+   ORIENTATION QUESTION
+   A single line above the work, answered in place. It is a rule and some
+   text — no panel, no shadow, nothing that arrives on its own — so a
+   visitor who ignores it reads straight past into the timeline.
+   ============================================================ */
+.guide-band { padding-bottom: var(--space-md); }
+
+.guide {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-md);
+}
+
+.guide-ask {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm) var(--space-md);
+  flex-wrap: wrap;
+}
+
+.guide-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.guide-question {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Pushed to the far end on a wide screen, dropped below on a narrow one. */
+.guide-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-left: auto;
+}
+
+.guide-choice {
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.55rem 1.1rem;
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    background var(--dur-fast) var(--ease);
+}
+
+.guide-choice:hover,
+.guide-choice:focus-visible {
+  color: var(--color-text);
+  border-color: var(--color-text);
+}
+
+/* The chosen answer stays legible as the one that is open. */
+.guide-choice[aria-expanded="true"] {
+  color: var(--color-bg);
+  background: var(--color-text);
+  border-color: var(--color-text);
+}
+
+.guide-answer {
+  max-width: 62ch;
+  margin-top: var(--space-md);
+}
+
+.guide-answer p {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.guide-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-md);
+  margin-top: var(--space-sm);
+  font-size: 0.95rem;
+}
+
+/* Without script every answer is simply visible — three suggestions in a
+   column, which is still worth reading. With script only the chosen one is. */
+html.js .guide-answer { display: none; }
+
+html.js .guide-answer.is-open {
+  display: block;
+  animation: guide-open var(--dur-base) var(--ease-out) both;
+}
+
+@keyframes guide-open {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .guide-answer.is-open { animation: none; }
+}
+
+@media (max-width: 700px) {
+  .guide-choices { margin-left: 0; }
+  .guide-choice { flex: 1 1 auto; }
+}
+
+/* ============================================================
    BUTTONS / LINKS
    ============================================================ */
 .btn {

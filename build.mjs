@@ -242,6 +242,69 @@ function landingPage() {
 `;
 }
 
+/* ---------- orientation ----------
+   One question above the work, answered in place. Each answer is a short lay
+   of the land rather than a single link — where to look and why, so a visitor
+   who says what they came for gets pointed rather than routed.
+
+   Every answer is rendered up front and the script collapses the ones not
+   chosen. Without script the page just shows all three as plain suggestions:
+   useful either way, and nothing pops up at anybody. */
+function guideStrip() {
+  const g = settings.guide || {};
+  const routes = (g.routes || []).filter((r) => r && r.label);
+  if (g.enabled === false || !routes.length) return "";
+
+  const id = (i) => `guide-answer-${i}`;
+
+  const buttons = routes
+    .map(
+      (r, i) =>
+        `            <button class="guide-choice" type="button" aria-controls="${id(
+          i
+        )}" aria-expanded="false">${esc(r.label)}</button>`
+    )
+    .join("\n");
+
+  const panels = routes
+    .map((r, i) => {
+      const links = (r.links || [])
+        .filter((l) => l && l.label && l.href)
+        .map(
+          (l) =>
+            `              <a href="${attr(l.href)}" class="text-link">${esc(
+              l.label
+            )}</a>`
+        )
+        .join("\n");
+      return `        <div class="guide-answer" id="${id(i)}">
+          <p>${esc(r.blurb || "")}</p>${
+        links
+          ? `\n          <div class="guide-links">\n${links}\n          </div>`
+          : ""
+      }
+        </div>`;
+    })
+    .join("\n");
+
+  return `
+  <section class="guide-band" aria-label="Where to start">
+    <div class="container">
+      <div class="guide reveal">
+        <div class="guide-ask">
+          ${g.eyebrow ? `<span class="guide-eyebrow">${esc(g.eyebrow)}</span>` : ""}
+          <p class="guide-question">${esc(g.question || "What brings you by?")}</p>
+          <div class="guide-choices">
+${buttons}
+          </div>
+        </div>
+${panels}
+      </div>
+    </div>
+  </section>
+`;
+}
+
 /* ---------- timeline ----------
    Projects laid along a horizontally scrolling track. Whichever project sits
    nearest the centre becomes active and its cover fades in above. The track
@@ -415,6 +478,7 @@ ${header("work")}
     </div>
   </section>
 
+${guideStrip()}
 ${
     projects.length === 0
       ? '  <section class="work"><div class="container"><p class="lede">No published projects yet.</p></div></section>'

@@ -138,5 +138,58 @@
     "linkedin": "https://www.linkedin.com/in/evan-thalheimer-835120216",
     "instagram": "https://www.instagram.com/eat.arch?utm_source=qr",
     "footerCta": "Let's talk."
+  },
+  "guide": {
+    "enabled": true,
+    "eyebrow": "New here?",
+    "question": "What brings you by?",
+    "routes": [
+      {
+        "label": "I'm hiring",
+        "blurb": "Naugatuck is the professional work — a mixed-use building for Pennrose, drawn at WRT and in construction now. Block Core and Kensington Core show how a scheme develops from a single corner to a whole block. My résumé and references are on the About page.",
+        "links": [
+          {
+            "label": "Naugatuck",
+            "href": "projects/naugatuck.html"
+          },
+          {
+            "label": "About, résumé and references",
+            "href": "about.html"
+          },
+          {
+            "label": "Get in touch",
+            "href": "contact.html"
+          }
+        ]
+      },
+      {
+        "label": "I'm an architect or designer",
+        "blurb": "Post Scarcity is the thesis, laid out as a walkthrough you can read straight through. Pride in Place carries the analysis — circulation studies, street modules, the research the plan answers to. Both have the drawings behind the renders.",
+        "links": [
+          {
+            "label": "Post Scarcity",
+            "href": "projects/post-scarcity.html"
+          },
+          {
+            "label": "Pride in Place",
+            "href": "projects/pride-in-place.html"
+          }
+        ]
+      },
+      {
+        "label": "Just looking around",
+        "blurb": "Kensington Core has the films, if you would rather watch than read. Garden Schools is the one with the landscape. Otherwise sweep the timeline below and open whatever catches your eye — every project opens with its pictures.",
+        "links": [
+          {
+            "label": "Kensington Core",
+            "href": "projects/kensington-core.html"
+          },
+          {
+            "label": "Garden Schools",
+            "href": "projects/garden-schools.html"
+          }
+        ]
+      }
+    ]
   }
 }
