@@ -1590,33 +1590,72 @@ body.page-leaving main {
   width: 46px;
   height: 46px;
   margin: -23px 0 0 -23px;
-  border: 1px solid var(--color-text);
-  border-radius: 50%;
   pointer-events: none;
   opacity: 0;
   z-index: 45;
-  transition: opacity var(--dur-fast) var(--ease),
-    transform var(--dur-fast) var(--ease-out);
+  transition: opacity var(--dur-fast) var(--ease);
+}
+
+.tl-cursor svg {
+  width: 100%;
+  height: 100%;
+  /* Start the sweep at twelve o'clock rather than three. */
+  transform: rotate(-90deg);
+  overflow: visible;
+}
+
+.tl-cursor circle {
+  fill: none;
+  stroke-width: 1.5;
+  /* 2 * pi * r, r = 21 */
+  --circ: 131.95;
+}
+
+.tl-cursor-track {
+  stroke: var(--color-text-muted);
+  opacity: 0.4;
+}
+
+.tl-cursor-fill {
+  stroke: var(--accent, var(--color-text));
+  stroke-linecap: round;
+  stroke-dasharray: var(--circ);
+  stroke-dashoffset: var(--circ);
 }
 
 .tl-cursor.is-on { opacity: 1; }
 
-/* While it waits out the dwell the ring is hollow and quiet. Once the bar
-   has taken control it fills with the project's colour, which is the only
-   signal needed that a sweep will now do something. */
+/* The stroke draws itself around the ring across the dwell, so how long is
+   left is legible at a glance. Timed from the same constant that gates the
+   control, passed in as --dwell. */
+.tl-cursor.is-filling .tl-cursor-fill {
+  animation: tl-ring-fill var(--dwell, 1000ms) linear forwards;
+}
+
+@keyframes tl-ring-fill {
+  from { stroke-dashoffset: var(--circ); }
+  to   { stroke-dashoffset: 0; }
+}
+
+/* Complete, and holding — a closed ring with a dot in it reads as live in a
+   way a merely-finished animation does not. */
+.tl-cursor.is-armed .tl-cursor-fill {
+  animation: none;
+  stroke-dashoffset: 0;
+}
+
 .tl-cursor::after {
   content: "";
   position: absolute;
-  inset: 6px;
+  inset: 17px;
   border-radius: 50%;
   background: var(--accent, var(--color-text));
   opacity: 0;
-  transform: scale(0.4);
-  transition: opacity var(--dur-base) var(--ease),
-    transform var(--dur-base) var(--ease-out);
+  transform: scale(0.2);
+  transition: opacity var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease-out);
 }
 
-.tl-cursor.is-armed { border-color: var(--accent, var(--color-text)); }
 .tl-cursor.is-armed::after { opacity: 1; transform: scale(1); }
 
 @media (hover: hover) and (pointer: fine) {

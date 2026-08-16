@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const reel = document.querySelector(".tl-reel");
   const section = document.querySelector(".timeline");
   const scrub = document.querySelector(".tl-scrub");
+  let ring = null;
   const knob = document.querySelector(".tl-scrub-knob");
   const stage = document.querySelector(".tl-stage");
   let active = 0;
@@ -130,6 +131,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const markActive = (index) => {
     if (index === active) return;
     active = index;
+    // The ring wears the colour of whatever project it is sitting on.
+    if (ring) {
+      ring.style.setProperty(
+        "--accent",
+        getComputedStyle(items[index]).getPropertyValue("--accent").trim()
+      );
+    }
     items.forEach((el, i) => el.classList.toggle("is-active", i === index));
     previews.forEach((el, i) => {
       const on = i === index;
@@ -256,12 +264,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let armed = false;
     let armTimer = null;
-    let ring = null;
     let ringX = 0, ringY = 0, ringRaf = null;
 
     if (fine && !calm) {
       ring = document.createElement("div");
       ring.className = "tl-cursor";
+      // Two circles: a faint track, and a stroke that sweeps around it over
+      // the dwell so the wait is visible rather than merely endured.
+      ring.innerHTML =
+        '<svg viewBox="0 0 44 44" aria-hidden="true">' +
+        '<circle class="tl-cursor-track" cx="22" cy="22" r="21"></circle>' +
+        '<circle class="tl-cursor-fill" cx="22" cy="22" r="21"></circle></svg>';
+      // The sweep is timed from the same constant that gates the control, so
+      // the ring completing and the bar engaging cannot drift apart.
+      ring.style.setProperty("--dwell", DWELL + "ms");
       document.body.appendChild(ring);
       scrub.classList.add("has-cursor");
     }
@@ -273,7 +289,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     scrub.addEventListener("pointerenter", () => {
       scrub.classList.add("is-live");
-      if (ring) ring.classList.add("is-on");
+      if (ring) {
+        // Restart the sweep from empty on every entry, not just the first.
+        ring.classList.remove("is-filling", "is-armed");
+        void ring.offsetWidth;
+        ring.classList.add("is-on", "is-filling");
+        ring.style.setProperty(
+          "--accent",
+          getComputedStyle(items[active]).getPropertyValue("--accent").trim()
+        );
+      }
       armed = false;
       clearTimeout(armTimer);
       armTimer = setTimeout(() => {
@@ -298,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
       armed = false;
       aimX = null;
       scrub.classList.remove("is-live", "is-armed");
-      if (ring) ring.classList.remove("is-on", "is-armed");
+      if (ring) ring.classList.remove("is-on", "is-filling", "is-armed");
       rate = 0;
       if (raf) { cancelAnimationFrame(raf); raf = null; }
       // Settle on whichever project is nearest, with the transition back on.
