@@ -370,7 +370,12 @@ section { padding-block: var(--space-xl); }
   height: var(--stage-height);
   margin-bottom: var(--space-md);
   overflow: hidden;
+  /* Sideways is ours, vertical stays the page's. */
+  touch-action: pan-y;
+  cursor: grab;
 }
+
+.tl-stage:active { cursor: grabbing; }
 
 /* The reel is shifted by script so the active project sits centred, with
    its neighbours visible either side. */
@@ -471,7 +476,11 @@ section { padding-block: var(--space-xl); }
   width: 100%;
   margin-inline: auto;
   overflow: hidden;
+  touch-action: pan-y;
+  cursor: grab;
 }
+
+.tl-scroller:active { cursor: grabbing; }
 
 .tl-scroller::-webkit-scrollbar { display: none; }
 .tl-scroller:focus-visible { outline: 2px solid var(--color-text); outline-offset: 4px; }

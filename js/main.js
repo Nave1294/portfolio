@@ -204,6 +204,72 @@ document.addEventListener("DOMContentLoaded", () => {
     { passive: false }
   );
 
+  /* ---------- drag the timeline itself ----------
+     Grab the pictures or the names and pull. The reel follows the finger one
+     for one, which is the only gesture that makes sense on a touchscreen —
+     the scrub bar wants a pointer that can hover, and a finger cannot.
+     Works with a mouse too. */
+  const DRAG_MIN = 6;      // px before it counts as a drag rather than a tap
+  let dragFrom = null;
+  let dragPos = 0;
+  let dragTravel = 0;
+  // Set only by a drag that actually happened, and spent on the very next
+  // click. Testing the travel counter instead let a stale value from an
+  // earlier drag swallow a perfectly ordinary tap.
+  let swallowClick = false;
+
+  // Distance between two neighbouring pictures, so a pixel of finger maps to
+  // the right fraction of a project.
+  const previewStep = () => {
+    if (previews.length < 2) return stage.clientWidth || 1;
+    return Math.abs(previews[1].offsetLeft - previews[0].offsetLeft) || stage.clientWidth || 1;
+  };
+
+  const dragStart = (event) => {
+    if (event.button && event.button !== 0) return;
+    dragFrom = event.clientX;
+    dragPos = pos;
+    dragTravel = 0;
+  };
+
+  const dragMove = (event) => {
+    if (dragFrom === null) return;
+    const dx = event.clientX - dragFrom;
+    dragTravel = Math.max(dragTravel, Math.abs(dx));
+    if (dragTravel < DRAG_MIN) return;
+    pause();
+    setPos(dragPos - dx / previewStep(), { glide: false });
+  };
+
+  const dragEnd = () => {
+    if (dragFrom === null) return;
+    dragFrom = null;
+    if (dragTravel >= DRAG_MIN) {
+      setPos(Math.round(pos), { glide: true });
+      swallowClick = true;
+    }
+  };
+
+  [stage, scroller].forEach((zone) => {
+    if (!zone) return;
+    zone.addEventListener("pointerdown", dragStart);
+    zone.addEventListener("pointermove", dragMove);
+    zone.addEventListener("pointerup", dragEnd);
+    zone.addEventListener("pointercancel", dragEnd);
+    zone.addEventListener("pointerleave", dragEnd);
+    // A drag that ends on a picture must not also follow its link.
+    zone.addEventListener(
+      "click",
+      (event) => {
+        if (!swallowClick) return;
+        swallowClick = false;
+        event.preventDefault();
+        event.stopPropagation();
+      },
+      true
+    );
+  });
+
   /* ---------- the scrub bar ----------
      Hold the pointer away from the middle and the reel runs that way, faster
      the further out you hold it. The curve is deliberately steep near the
