@@ -200,12 +200,12 @@ document.addEventListener("DOMContentLoaded", () => {
      Hold the pointer away from the middle and the reel runs that way, faster
      the further out you hold it. The curve is deliberately steep near the
      centre: the middle third barely moves, so it is easy to hold still and
-     read, and the ends are quick enough to cross thirteen projects without
-     a long sweep. */
+     read, while the last stretch of the pull is much quicker — the whole
+     run in under two seconds if you hold it right at the edge. */
   if (scrub) {
     const DEAD = 0.08;        // of half the bar — a still zone in the middle
-    const CURVE = 1.8;        // >1 puts the speed at the ends, not the centre
-    const TOP_SPEED = 2.6;    // projects per second, held right at the edge
+    const CURVE = 2.5;        // >1 puts the speed at the ends, not the centre
+    const TOP_SPEED = 6.5;    // projects per second, held right at the edge
     let rate = 0;
     let raf = null;
     let last = 0;
