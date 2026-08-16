@@ -1,51 +1,47 @@
 {
   "title": "Pride in Place",
-  "slug": "pride-in-place",
   "published": true,
-  "order": 5,
-  "accent": 2,
+  "slug": "pride-in-place",
+  "summary": "A district built from a kit of street and building modules, where the infrastructure everyone shares is the part you are meant to be proud of.",
+  "date": "2023",
+  "order": 4,
+  "accent": "2",
+  "cover": "assets/images/pride-in-place/park-playground.jpg",
   "type": "Urban design",
   "year": "2023",
-  "date": "2023",
   "location": "Philadelphia",
   "program": "Housing, transit, public rooms, energy, water and food infrastructure",
   "status": "Academic — Drexel studio",
   "role": "Solo academic project",
-  "summary": "A district built from a kit of street and building modules, where the infrastructure everyone shares is the part you are meant to be proud of.",
-  "cover": "assets/images/pride-in-place/park-playground.jpg",
-  "galleryLead": "Views",
   "body": [
     "We can spend our entire lives looking up at architecture from the ground, but until the ground we stand on shines as brightly as the towers above, our greatest architecture will remain a monument to our greatest shortcomings as a society. Every building, and the space between them, has to be a symbol of pride for all people — only then is the view from below as good as the one from above.",
     "The district is assembled rather than composed. A catalogue of street and building modules, tilted at 0, 5, 10 and 15 degrees to suit the grade, sets a ground that carries its own drainage, utilities and storm water basins; the blocks are then grown against it, so the plan can extend or stop without a redesign. Transit comes first: the trolley runs level with the pavement, and private, public and pedestrian circulation are drawn as three separate networks that meet where they should.",
     "What the ground pays for is the argument. Roofs collect energy, structure carries food production, waste is processed on site at 700–900 degrees rather than hauled away, and the shared rooms — library, gym, lecture hall, the waterfront amphitheater — sit in the public fabric rather than behind an institution's door. Mapping the city's parks against its municipal waste, and life expectancy against property value, is what set the target."
   ],
+  "galleryLead": "Views",
   "gallery": [
     {
       "src": "assets/images/pride-in-place/aerial-whole.jpg",
       "caption": "The district entire: a modular ground of streets, roofs and water, grown block by block.",
       "group": "Views",
-      "building": "",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/aerial-fabric.jpg",
       "caption": "The fabric from above — every roof a collector, every street a drain.",
       "group": "Views",
-      "building": "",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/aerial-sunset.jpg",
       "caption": "Sunset across the solar roofs.",
       "group": "Views",
-      "building": "",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/aerial-waterfront.jpg",
       "caption": "The waterfront edge.",
       "group": "Views",
-      "building": "",
       "wide": false
     },
     {
@@ -150,7 +146,6 @@
       "src": "assets/images/pride-in-place/site-plan.jpg",
       "caption": "Site plan.",
       "group": "Plans",
-      "building": "",
       "wide": true
     },
     {
