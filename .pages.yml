@@ -15,7 +15,9 @@ content:
     filename: "{fields.slug}.json"
     format: json
     view:
-      fields: [title, type, year, published]
+      # Position and visibility on the list itself, so the timeline order can
+      # be read and fixed without opening each project.
+      fields: [title, year, order, published]
       primary: title
       sort: [order, title, year]
     fields:
@@ -23,6 +25,7 @@ content:
         label: Project name
         type: string
         required: true
+        description: "Shown on the timeline, at the top of the project page, and in the browser tab."
 
       - name: published
         label: Show on site
@@ -82,10 +85,12 @@ content:
       - name: year
         label: Year
         type: string
+        description: "Used to order the timeline — newest first. Projects with no year sit after the dated ones."
 
       - name: location
         label: Location
         type: string
+        description: "City or street. Shown in the bar of details under the cover image."
 
       - name: program
         label: Program
@@ -104,7 +109,7 @@ content:
 
       - name: body
         label: Overview paragraphs
-        type: string
+        type: text
         list: true
         description: One paragraph per entry. Two to four short paragraphs is plenty — let the drawings carry the rest.
 
@@ -117,14 +122,16 @@ content:
           - name: title
             label: Chapter title
             type: string
+            description: "Shown large at the top of the chapter, and in the sticky chapter bar."
           - name: standfirst
             label: Opening line
-            type: string
+            type: text
             description: "One line under the title, set larger than the body."
           - name: body
             label: Paragraphs
             type: text
             list: true
+            description: "One paragraph per entry. These sit at the top of the chapter; text that belongs with particular figures goes in the block below instead."
           - name: stats
             label: Figures band
             type: object
@@ -157,6 +164,7 @@ content:
                 label: Layout
                 type: select
                 default: grid
+                description: "Wide runs one image the full measure of the page. Grid sets them two up."
                 options:
                   values:
                     - { value: full, label: "Wide — the page's full measure, one per row" }
@@ -167,16 +175,17 @@ content:
                 description: "Only used by strips. Shown small above the row."
               - name: text
                 label: Paragraphs above these images
-                type: string
+                type: text
                 list: true
                 description: "Optional. Text that belongs with these particular figures rather than at the top of the chapter. One paragraph per entry."
               - name: images
                 label: Images
                 type: object
                 list: true
+                description: "The pictures in this block, in the order they should be read."
                 fields:
                   - { name: src, label: Image, type: image }
-                  - { name: caption, label: Caption, type: string }
+                  - { name: caption, label: Caption, type: text }
 
           - name: images
             label: Loose images
@@ -185,7 +194,7 @@ content:
             description: "Optional. Images not in a block; laid out two-up unless sized otherwise."
             fields:
               - { name: src, label: Image, type: image }
-              - { name: caption, label: Caption, type: string }
+              - { name: caption, label: Caption, type: text }
               - name: size
                 label: Size
                 type: select
@@ -217,6 +226,7 @@ content:
         label: Gallery
         type: object
         list: true
+        description: "Every picture on the project page. Each one needs a tab; give related drawings the same Building to group them under a subheading."
         fields:
           - name: src
             label: Image
@@ -228,7 +238,7 @@ content:
             description: "Optional. Path to an MP4 already in assets/images, for example assets/images/kensington-core/museum.mp4. Fill this in and the entry becomes a player instead of a picture, using the image above as its poster. Typed as text on purpose: a file picker dropped this value on save."
           - name: caption
             label: Caption
-            type: string
+            type: text
             description: "Shown beneath the image. Also drives which tab it lands in, so name drawings plainly — \"Section\", \"Second Floor\", \"Massing Axon\"."
           - name: group
             label: Tab
@@ -274,6 +284,7 @@ content:
       - name: site
         label: Site
         type: object
+        description: "Your name and role, used in the header, the browser tab and the footer."
         fields:
           - { name: name, label: Your name, type: string }
           - name: role
@@ -285,6 +296,7 @@ content:
       - name: landing
         label: Landing page
         type: object
+        description: "The door before the site: a greeting, a line under it, and the button through."
         fields:
           - name: enabled
             label: Show landing page
@@ -308,7 +320,7 @@ content:
             description: "Colours your text only — the greeting and everything else stay black on white. Anything other than a hex value falls back to black."
           - name: subtitle
             label: Subtitle
-            type: string
+            type: text
             description: "The line beneath."
           - { name: buttonLabel, label: Button text, type: string }
           - name: buttonDelaySeconds
@@ -319,6 +331,7 @@ content:
       - name: home
         label: Home page
         type: object
+        description: "The work page — the headline, the introduction, and the About teaser at the foot."
         fields:
           - name: layout
             label: How projects are shown
@@ -338,13 +351,14 @@ content:
             fields:
               - { name: label, label: Label, type: string }
               - { name: value, label: Value, type: string }
-          - { name: aboutHeadline, label: About teaser headline, type: string }
+          - { name: aboutHeadline, label: About teaser headline, type: text, description: "The sentence over the About block at the foot of the work page." }
           - { name: aboutSummary, label: About teaser text, type: text }
           - { name: portrait, label: Portrait or studio photo, type: image }
 
       - name: about
         label: About page
         type: object
+        description: "Everything on /about: the paragraphs, portrait, résumé, skills, history and references."
         fields:
           - name: paragraphs
             label: Biography
@@ -367,7 +381,7 @@ content:
             fields:
               - { name: year, label: Years, type: string }
               - { name: title, label: Title, type: string }
-              - { name: detail, label: Detail, type: string }
+              - { name: detail, label: Detail, type: text, description: "What the role or qualification involved. A sentence or two." }
 
           - name: references
             label: References
@@ -384,6 +398,7 @@ content:
       - name: contact
         label: Contact page
         type: object
+        description: "Everything on /contact, plus the email and links repeated in every page footer."
         fields:
           - { name: headline, label: Headline, type: text }
           - { name: email, label: Email, type: string, description: Leave blank to hide it from the site entirely. }
@@ -391,4 +406,5 @@ content:
           - { name: location, label: Location, type: string }
           - { name: linkedin, label: LinkedIn URL, type: string }
           - { name: instagram, label: Instagram URL, type: string }
-          - { name: footerCta, label: Footer message, type: string, description: The line in the footer across the site. }
+          - { name: footerCta, label: Footer message, type: text, description: "The line in the footer across the site." }
+

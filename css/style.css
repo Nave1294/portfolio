@@ -1661,10 +1661,13 @@ body.page-leaving main {
    away from the middle and the reel runs that way — further out, faster.
    ============================================================ */
 .tl-scrub {
+  /* The box that responds is the box you can see: as wide as the ruler and
+     only as tall as it, so the pointer does not start driving the reel while
+     it is merely on its way somewhere else. */
   position: relative;
-  height: 3.4rem;
+  width: min(100% - var(--gutter) * 2, var(--container-max));
+  height: 2.1rem;
   margin: 0 auto var(--space-sm);
-  padding-inline: var(--gutter);
   cursor: ew-resize;
   touch-action: pan-y;      /* the bar is a pointer affordance, not a scroll trap */
 }
@@ -1672,8 +1675,6 @@ body.page-leaving main {
 .tl-scrub-inner {
   position: relative;
   height: 100%;
-  max-width: var(--container-max);
-  margin-inline: auto;
 }
 
 /* The rule, and the ticks sitting on it. */
@@ -1720,8 +1721,8 @@ body.page-leaving main {
 .tl-scrub::after {
   content: "";
   position: absolute;
-  top: 1rem;
-  bottom: 1rem;
+  top: 0.15rem;
+  bottom: 0.15rem;
   left: var(--aim, 50%);
   width: 1px;
   background: var(--accent, var(--color-text));
@@ -1773,7 +1774,7 @@ body.page-leaving main {
   /* On touch the bar is dragged rather than hovered — pointer events cover
      both. It has to stay: the rows do not scroll themselves, so this is the
      only way to reach the other projects on a phone. */
-  .tl-scrub { height: 3.8rem; }
+  .tl-scrub { height: 2.6rem; }
   .tl-scrub-label { font-size: 0.65rem; letter-spacing: 0.14em; }
 }
 
