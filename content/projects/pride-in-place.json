@@ -22,289 +22,289 @@
   "gallery": [
     {
       "src": "assets/images/pride-in-place/aerial-whole.jpg",
-      "caption": "The district entire: a modular ground of streets, roofs and water, grown block by block.",
+      "caption": "",
       "group": "Views",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/aerial-fabric.jpg",
-      "caption": "The fabric from above — every roof a collector, every street a drain.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/aerial-sunset.jpg",
-      "caption": "Sunset across the solar roofs.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/aerial-waterfront.jpg",
-      "caption": "The waterfront edge.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/trolley-stop.jpg",
-      "caption": "The trolley at its stop, level with the pavement.",
+      "caption": "",
       "group": "Views",
       "building": "Streets & Transit",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/trolley-seating.jpg",
-      "caption": "Seating alongside the line, under the trees.",
+      "caption": "",
       "group": "Views",
       "building": "Streets & Transit",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/green-spine.jpg",
-      "caption": "The green spine, with the energy tower closing the view.",
+      "caption": "",
       "group": "Views",
       "building": "Streets & Transit",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/park-playground.jpg",
-      "caption": "The play ground.",
+      "caption": "",
       "group": "Views",
       "building": "Streets & Transit",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/park-beanbags.jpg",
-      "caption": "The same ground on an ordinary afternoon.",
+      "caption": "",
       "group": "Views",
       "building": "Streets & Transit",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/fountains-night.jpg",
-      "caption": "The water plaza after dark.",
+      "caption": "",
       "group": "Views",
       "building": "Streets & Transit",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/library.jpg",
-      "caption": "The library.",
+      "caption": "",
       "group": "Views",
       "building": "Public Rooms",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/gym.jpg",
-      "caption": "The gym.",
+      "caption": "",
       "group": "Views",
       "building": "Public Rooms",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/lecture-hall.jpg",
-      "caption": "The lecture hall.",
+      "caption": "",
       "group": "Views",
       "building": "Public Rooms",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/waterfront-amphitheater.jpg",
-      "caption": "The waterfront amphitheater.",
+      "caption": "",
       "group": "Views",
       "building": "Public Rooms",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/energy-generation.jpg",
-      "caption": "Energy generation: the collectors, and the turbine above them.",
+      "caption": "",
       "group": "Views",
       "building": "Infrastructure",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/energy-tower-night.jpg",
-      "caption": "The same tower at night.",
+      "caption": "",
       "group": "Views",
       "building": "Infrastructure",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/stormwater.jpg",
-      "caption": "Storm water held and planted where it falls.",
+      "caption": "",
       "group": "Views",
       "building": "Infrastructure",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/vertical-farm.jpg",
-      "caption": "Food grown in the structure itself.",
+      "caption": "",
       "group": "Views",
       "building": "Infrastructure",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/site-plan.jpg",
-      "caption": "Site plan.",
+      "caption": "Site plan",
       "group": "Plans",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-parti.jpg",
-      "caption": "The planning parti: linkage, figure, ground and place, pulled apart.",
+      "caption": "Parti",
       "group": "Diagrams",
       "building": "Parti",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-site-axon.jpg",
-      "caption": "The site in line, the whole district drawn as one object.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Parti",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-circ-existing.jpg",
-      "caption": "What is already there — the lines the city runs through the site today.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Circulation",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-circ-influences.jpg",
-      "caption": "Influences: what the plan is answering to.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Circulation",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-circ-private.jpg",
-      "caption": "Private circulation.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Circulation",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-circ-public.jpg",
-      "caption": "Public circulation.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Circulation",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-circ-pedestrian.jpg",
-      "caption": "Pedestrian circulation.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Circulation",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-module-large.jpg",
-      "caption": "The large street module in section — carriageway and planting above, storm water basin and utilities below.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-module-small.jpg",
-      "caption": "The small street module, the same services at a narrower width.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-module-wide.jpg",
-      "caption": "The widest module, two utility runs either side of the planting.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-module-top.jpg",
-      "caption": "The module from above.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-module-angles-2.jpg",
-      "caption": "The module tilted to meet the grade — 0, 5, 10 and 15 degrees.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-module-angles-1.jpg",
-      "caption": "The pieces themselves, stepping across a slope.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-module-angles-3.jpg",
-      "caption": "And laid out as a set.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-module-axon.jpg",
-      "caption": "One module built up: planting, seating, and the ground it sits on.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Street Modules",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-solar-greenhouse.jpg",
-      "caption": "Solar roofs and the greenhouse between them, worked against the sun angle.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-energy-section.jpg",
-      "caption": "Energy and water through the district — what the roofs collect and where it goes.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-waterfront-section.jpg",
-      "caption": "The waterfront edge in section.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-masterplan.jpg",
-      "caption": "The master plan by use — community, commercial, solar, and the structure that integrates them.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Site",
       "wide": true
     },
     {
       "src": "assets/images/pride-in-place/dia-figure-ground.jpg",
-      "caption": "Figure ground, with the site outlined.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Site",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-base-map.jpg",
-      "caption": "The base map the study is drawn on.",
+      "caption": "Base map",
       "group": "Diagrams",
       "building": "Site",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-massing.jpg",
-      "caption": "The district in massing.",
+      "caption": "",
       "group": "Diagrams",
       "building": "Site",
       "wide": false
     },
     {
       "src": "assets/images/pride-in-place/dia-square.jpg",
-      "caption": "The public square in massing.",
+      "caption": "Square diagram",
       "group": "Diagrams",
       "building": "Site",
       "wide": false

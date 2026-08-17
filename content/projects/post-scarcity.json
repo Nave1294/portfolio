@@ -169,7 +169,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-program-shift.jpg",
-              "caption": "Inner ring: today. Outer ring: post scarcity."
+              "caption": ""
             }
           ]
         }
@@ -237,7 +237,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-precedent-program.jpg",
-              "caption": "Sendai Mediatheque, Toyo Ito. Kunsthaus Graz, Peter Cook and Colin Fournier."
+              "caption": ""
             }
           ]
         }
@@ -268,11 +268,11 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-zoning-ui.jpg",
-              "caption": "The tool: a grid, programs, and a fit score."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/d-zoning-scores.jpg",
-              "caption": "Scores update as programs move."
+              "caption": ""
             }
           ]
         }
@@ -292,7 +292,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-site-options.jpg",
-              "caption": "Candidate sites across the city."
+              "caption": ""
             }
           ]
         },
@@ -301,19 +301,19 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/p-roads-old.jpg",
-              "caption": "Roads today."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/p-roads-new.jpg",
-              "caption": "Roads proposed."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/p-building-demo.jpg",
-              "caption": "What is removed."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/p-park-outline.jpg",
-              "caption": "The park outline."
+              "caption": ""
             }
           ]
         }
@@ -341,7 +341,7 @@
             },
             {
               "src": "assets/images/post-scarcity/p-subway-1.jpg",
-              "caption": "The concourse below."
+              "caption": ""
             }
           ]
         }
@@ -360,7 +360,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-masterplan.jpg",
-              "caption": "Amphitheatre, LOVE plaza, rec center, playscape, edible gardens, grove, the hill and pond."
+              "caption": ""
             }
           ]
         },
@@ -369,19 +369,19 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/p-site-plan.jpg",
-              "caption": "Site plan."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/p-site-perspective.jpg",
-              "caption": "The park in context."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/p-site-section.jpg",
-              "caption": "Site section."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/p-edge-condition.jpg",
-              "caption": "Edge condition."
+              "caption": ""
             }
           ]
         }
@@ -402,7 +402,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-frame-dims.jpg",
-              "caption": "36 feet, halved to 18, or in thirds at 12."
+              "caption": ""
             }
           ]
         },
@@ -411,11 +411,11 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-program-scale.jpg",
-              "caption": "Programs at scale within the frame."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/p-core.jpg",
-              "caption": "Core organization."
+              "caption": ""
             }
           ]
         }
@@ -434,11 +434,11 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-sunshade.jpg",
-              "caption": "Natural sunshade on the south elevation."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/d-winds.jpg",
-              "caption": "South-westward winds."
+              "caption": ""
             }
           ]
         },
@@ -447,7 +447,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/p-base-1.jpg",
-              "caption": "West–east section."
+              "caption": ""
             }
           ]
         },
@@ -456,7 +456,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/p-base-2.jpg",
-              "caption": "East–west section."
+              "caption": ""
             }
           ]
         }
@@ -475,7 +475,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/p-grey-water.jpg",
-              "caption": "Hydroponic grey water filtration and reuse."
+              "caption": ""
             }
           ]
         },
@@ -484,11 +484,11 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/p-subway-2.jpg",
-              "caption": "The concourse."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/p-basement.jpg",
-              "caption": "Basement plan."
+              "caption": ""
             }
           ]
         }
@@ -507,7 +507,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-clusters.jpg",
-              "caption": "Industrial, residential, green space, commercial, leisure, co-working, civic."
+              "caption": ""
             }
           ]
         },
@@ -516,11 +516,11 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/p-market-axon.jpg",
-              "caption": "Piazza cluster axonometric."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/p-family-axon.jpg",
-              "caption": "Family Circle axonometric."
+              "caption": ""
             }
           ]
         }
@@ -540,7 +540,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-piazza-plan.jpg",
-              "caption": "The piazza cluster."
+              "caption": ""
             }
           ]
         },
@@ -549,35 +549,35 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/r-nw-street-entry.jpg",
-              "caption": "North-west street level entry."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-ne-plaza-entry.jpg",
-              "caption": "North-east plaza level entry."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-market-seating.jpg",
-              "caption": "Market seating."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-market-stalls.jpg",
-              "caption": "Market stalls."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-piazza-studios.jpg",
-              "caption": "The piazza looking towards the studio apartments."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-study-level-three.jpg",
-              "caption": "Level three of the study."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-family-terrace.jpg",
-              "caption": "Family apartment common terrace."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-four-bedroom.jpg",
-              "caption": "Four bedroom apartment."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-apartment-2.jpg"
@@ -603,7 +603,7 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/d-family-plan.jpg",
-              "caption": "The Family Circle cluster."
+              "caption": ""
             }
           ]
         },
@@ -612,35 +612,35 @@
           "images": [
             {
               "src": "assets/images/post-scarcity/r-family-circle-park.jpg",
-              "caption": "Family Circle park."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-school-entry.jpg",
-              "caption": "School entry."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-school-entry-winter.jpg",
-              "caption": "School entry in winter."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-school-circulation.jpg",
-              "caption": "School, library and maker space common circulation."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-library-lounge.jpg",
-              "caption": "Library lounge."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-black-box.jpg",
-              "caption": "Black box theater, one of three."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-multigen.jpg",
-              "caption": "Multi-generational neighborhood, level one of four."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-entertainment-lounge.jpg",
-              "caption": "Entertainment district lounge."
+              "caption": ""
             },
             {
               "src": "assets/images/post-scarcity/r-lobby.jpg"
@@ -678,217 +678,217 @@
   "gallery": [
     {
       "src": "assets/images/post-scarcity/p-core.jpg",
-      "caption": "The core: stairs, lifts and services stacked through the frame.",
+      "caption": "",
       "group": "Diagrams",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-edge-condition.jpg",
-      "caption": "Edge condition: metal mesh screen, curtain wall, mullion piping.",
+      "caption": "",
       "group": "Diagrams",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-family-axon.jpg",
-      "caption": "Family Circle axonometric.",
+      "caption": "",
       "group": "Diagrams",
       "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-grey-water.jpg",
-      "caption": "Grey water off the hydroponics, filtered by the vertical garden, reused in the tower.",
+      "caption": "",
       "group": "Diagrams",
       "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-market-axon.jpg",
-      "caption": "Piazza cluster axonometric.",
+      "caption": "",
       "group": "Diagrams",
       "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-base-1.jpg",
-      "caption": "Center City, the base map the study is drawn on.",
+      "caption": "",
       "group": "Maps",
       "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-base-2.jpg",
-      "caption": "Center Square and the blocks around it.",
+      "caption": "",
       "group": "Maps",
       "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-building-demo.jpg",
-      "caption": "What is removed.",
+      "caption": "",
       "group": "Maps",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-park-outline.jpg",
-      "caption": "The park outline.",
+      "caption": "",
       "group": "Maps",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-roads-new.jpg",
-      "caption": "Roads proposed: through traffic pushed to a perimeter loop.",
+      "caption": "",
       "group": "Maps",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-roads-old.jpg",
-      "caption": "Roads today.",
+      "caption": "",
       "group": "Maps",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-site-plan.jpg",
-      "caption": "Site plan.",
+      "caption": "",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-site-section.jpg",
-      "caption": "The building sectioned against the Philadelphia skyline.",
+      "caption": "",
       "group": "Sections & Elevations",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/p-subway-1.jpg",
-      "caption": "West–east section, with the program threaded through it as a transit map: industrial, residential, green space, commercial, leisure, co-working and civic.",
+      "caption": "",
       "group": "Sections & Elevations",
       "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-subway-2.jpg",
-      "caption": "East–west section, read the same way.",
+      "caption": "",
       "group": "Sections & Elevations",
       "wide": true
     },
     {
       "src": "assets/images/post-scarcity/p-site-perspective.jpg",
-      "caption": "The park in context.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-apartment-2.jpg",
-      "caption": "Apartment interior.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-apartment-3.jpg",
-      "caption": "Apartment interior.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-black-box.jpg",
-      "caption": "Black box theater, one of three.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-entertainment-lounge.jpg",
-      "caption": "Entertainment district lounge.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-family-circle-park.jpg",
-      "caption": "Family Circle park.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-family-terrace.jpg",
-      "caption": "Family apartment common terrace.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-four-bedroom.jpg",
-      "caption": "Four bedroom apartment.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-library-lounge.jpg",
-      "caption": "Library lounge.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-lobby.jpg",
-      "caption": "Lobby.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-market-seating.jpg",
-      "caption": "Market seating.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-market-stalls.jpg",
-      "caption": "Market stalls.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-multigen.jpg",
-      "caption": "Multi-generational neighborhood, level one of four.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-ne-plaza-entry.jpg",
-      "caption": "North-east plaza level entry.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-nw-street-entry.jpg",
-      "caption": "North-west street level entry.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-piazza-studios.jpg",
-      "caption": "The piazza looking towards the studio apartments.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-school-circulation.jpg",
-      "caption": "School, library and maker space common circulation.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-school-entry-winter.jpg",
-      "caption": "School entry in winter.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-school-entry.jpg",
-      "caption": "School entry.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/r-study-level-three.jpg",
-      "caption": "Level three of the study.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/post-scarcity/d-program-shift.jpg",
-      "caption": "The built environment before and after, inner ring to outer: office down 26%, residential and entertainment up 10% each, institutional up 6%, civic up 2%, retail down 2%.",
+      "caption": "",
       "group": "Data",
       "wide": true
     },

@@ -21,105 +21,105 @@
   "gallery": [
     {
       "src": "assets/images/naugatuck/a-101-first-floor.jpg",
-      "caption": "A-101, first floor: retail and the residential lobby on Old Firehouse Road, community room and fitness off the lobby.",
+      "caption": "A-101 — 1st Floor Plan",
       "group": "Plans",
       "building": "Building",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-102-second-floor.jpg",
-      "caption": "A-102, second floor.",
+      "caption": "A-102 — 2nd Floor Plan",
       "group": "Plans",
       "building": "Building",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-103-third-floor.jpg",
-      "caption": "A-103, third floor.",
+      "caption": "A-103 — 3rd Floor Plan",
       "group": "Plans",
       "building": "Building",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-104-fourth-floor.jpg",
-      "caption": "A-104, fourth floor.",
+      "caption": "A-104 — 4th Floor Plan",
       "group": "Plans",
       "building": "Building",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-105-roof.jpg",
-      "caption": "A-105, roof.",
+      "caption": "A-105 — Roof Plan",
       "group": "Plans",
       "building": "Building",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-411-unit-plans.jpg",
-      "caption": "A-411, unit plans and reflected ceilings: one- and two-bedroom types, each in a Type A and Type B variant.",
+      "caption": "A-411 — Unit Floor Plans & RCPs",
       "group": "Plans",
       "building": "Units",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-201-elevations.jpg",
-      "caption": "A-201, exterior elevations — north, west and south-west — with the material legend: two bricks, two fiber-cement finishes and a wood veneer.",
+      "caption": "A-201 — Exterior Building Elevations",
       "group": "Sections & Elevations",
       "building": "Building",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-202-elevations.jpg",
-      "caption": "A-202, the remaining exterior elevations.",
+      "caption": "A-202 — Exterior Building Elevations",
       "group": "Sections & Elevations",
       "building": "Building",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-211-enlarged-elevations.jpg",
-      "caption": "A-211, enlarged elevations where the materials meet.",
+      "caption": "A-211 — Enlarged Exterior Elevations",
       "group": "Sections & Elevations",
       "building": "Building",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-421-kitchen.jpg",
-      "caption": "A-421, enlarged kitchen plans.",
+      "caption": "A-421 — Unit Kitchen Plans & Elevations",
       "group": "Sections & Elevations",
       "building": "Kitchens",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-422-kitchen.jpg",
-      "caption": "A-422, kitchen elevations.",
+      "caption": "A-422 — Common Space Kitchen Plans & Elevations",
       "group": "Sections & Elevations",
       "building": "Kitchens",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-423-kitchen.jpg",
-      "caption": "A-423, kitchen elevations and cabinet details.",
+      "caption": "A-423 — Kitchen Details",
       "group": "Sections & Elevations",
       "building": "Kitchens",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-431-bathroom.jpg",
-      "caption": "A-431, enlarged bathroom plans.",
+      "caption": "A-431 — WCs Plans and Elevation",
       "group": "Sections & Elevations",
       "building": "Bathrooms",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-432-bathroom.jpg",
-      "caption": "A-432, bathroom elevations — tub, shower and vanity walls.",
+      "caption": "A-432 — Bathroom Plans and Elevations",
       "group": "Sections & Elevations",
       "building": "Bathrooms",
       "wide": true
     },
     {
       "src": "assets/images/naugatuck/a-435-bathroom.jpg",
-      "caption": "A-435, accessible bathroom plans and elevations.",
+      "caption": "A-435 — Bathroom Details",
       "group": "Sections & Elevations",
       "building": "Bathrooms",
       "wide": true

@@ -15,105 +15,105 @@
   "gallery": [
     {
       "src": "assets/images/south-ends/01.jpg",
-      "caption": "Site overview: the peninsula and the districts proposed across it.",
+      "caption": "Site overview",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/03.jpg",
-      "caption": "Superblock Island from above.",
+      "caption": "Superblock Island overview",
       "group": "Views",
       "building": "Superblock",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/05.jpg",
-      "caption": "Aerial looking northeast.",
+      "caption": "Aerial looking NE",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/17.jpg",
-      "caption": "Breaking the grid.",
+      "caption": "Breaking the grid",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/04.jpg",
-      "caption": "Campus massing.",
+      "caption": "Campus massing",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/02.jpg",
-      "caption": "Performing Arts Center massing.",
+      "caption": "Performing Arts Center massing",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/13.jpg",
-      "caption": "The river offshoot and dam.",
+      "caption": "River offshoot and dam",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/14.jpg",
-      "caption": "The Business District at street level.",
+      "caption": "Business District",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/15.jpg",
-      "caption": "The Reflection District, seen from the cultural museum.",
+      "caption": "Reflection District seen from cultural museum, looking East",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/16.jpg",
-      "caption": "Aerial over the South Philadelphia extension.",
+      "caption": "South Philly extension Aerial",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/11.jpg",
-      "caption": "Superblock Island.",
+      "caption": "Superblock Island",
       "group": "Plans",
       "building": "Superblock",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/10.jpg",
-      "caption": "South Peninsula Business District.",
+      "caption": "South Peninsula Business District",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/12.jpg",
-      "caption": "Reflection District.",
+      "caption": "Reflection District",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/09.jpg",
-      "caption": "South Philadelphia extension.",
+      "caption": "South Philly extension",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/06.jpg",
-      "caption": "Land use.",
+      "caption": "Land use diagram",
       "group": "Diagrams",
       "wide": false
     },
     {
       "src": "assets/images/south-ends/07.jpg",
-      "caption": "Circulation.",
+      "caption": "Circulation diagram",
       "group": "Diagrams",
       "wide": true
     },
     {
       "src": "assets/images/south-ends/08.jpg",
-      "caption": "Transit routes and stops threaded through the existing rowhouse fabric.",
+      "caption": "",
       "group": "Diagrams",
       "wide": false
     }

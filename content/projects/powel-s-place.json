@@ -67,25 +67,25 @@
     },
     {
       "src": "assets/images/powel-s-place/12.jpg",
-      "caption": "School, first floor.",
+      "caption": "",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/powel-s-place/13.jpg",
-      "caption": "Incubator, first floors.",
+      "caption": "",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/powel-s-place/14.jpg",
-      "caption": "School, second floor.",
+      "caption": "",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/powel-s-place/15.jpg",
-      "caption": "School third floor and incubator second floors.",
+      "caption": "",
       "group": "Plans",
       "wide": false
     },
@@ -97,7 +97,7 @@
     },
     {
       "src": "assets/images/powel-s-place/11.jpg",
-      "caption": "Exploded axonometric: structural frame, program, upper levels and roof.",
+      "caption": "",
       "group": "Diagrams",
       "wide": false
     }

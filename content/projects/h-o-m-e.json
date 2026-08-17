@@ -22,152 +22,152 @@
   "gallery": [
     {
       "src": "assets/images/h-o-m-e/02.jpg",
-      "caption": "The scheme in its setting.",
+      "caption": "Overview",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/03.jpg",
-      "caption": "Overview from the opposite corner.",
+      "caption": "Overview",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/06.jpg",
-      "caption": "Living space, with the sleeping loft above.",
+      "caption": "Housing Interior",
       "group": "Views",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/07.jpg",
-      "caption": "Looking back toward the glazed wall.",
+      "caption": "Housing Interior",
       "group": "Views",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/23.jpg",
-      "caption": "The school lobby.",
+      "caption": "School Lobby",
       "group": "Views",
       "building": "School",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/24.jpg",
-      "caption": "The engawa running along the school.",
+      "caption": "School Engawa",
       "group": "Views",
       "building": "School",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/04.jpg",
-      "caption": "Site plan in context.",
+      "caption": "Site Plan in Context",
       "group": "Plans",
       "building": "Site",
       "wide": true
     },
     {
       "src": "assets/images/h-o-m-e/05.jpg",
-      "caption": "Ground floor, rendered.",
+      "caption": "Housing Ground Level",
       "group": "Plans",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/09.jpg",
-      "caption": "Ground floor.",
+      "caption": "Housing: Ground floor",
       "group": "Plans",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/10.jpg",
-      "caption": "Level 1.",
+      "caption": "Housing: Floor 1",
       "group": "Plans",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/11.jpg",
-      "caption": "Level 1, sleeping mezzanine.",
+      "caption": "Housing: Floor 1a",
       "group": "Plans",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/12.jpg",
-      "caption": "Level 2.",
+      "caption": "Housing: Floor 2",
       "group": "Plans",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/13.jpg",
-      "caption": "Level 2, sleeping mezzanine.",
+      "caption": "Housing: Floor 2a",
       "group": "Plans",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/14.jpg",
-      "caption": "Level 3.",
+      "caption": "Housing: Floor 3",
       "group": "Plans",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/15.jpg",
-      "caption": "Level 3, sleeping mezzanine.",
+      "caption": "Housing: Floor 3a",
       "group": "Plans",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/08.jpg",
-      "caption": "Roof level.",
+      "caption": "Housing Roof Level",
       "group": "Plans",
       "building": "Housing",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/17.jpg",
-      "caption": "Parking level, rendered.",
+      "caption": "Garage Parking Level",
       "group": "Plans",
       "building": "Garage",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/19.jpg",
-      "caption": "Ground level.",
+      "caption": "Garage: Ground Level",
       "group": "Plans",
       "building": "Garage",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/20.jpg",
-      "caption": "Second level.",
+      "caption": "Garage: Second Level",
       "group": "Plans",
       "building": "Garage",
       "wide": true
     },
     {
       "src": "assets/images/h-o-m-e/21.jpg",
-      "caption": "Third level.",
+      "caption": "Garage: Third Level",
       "group": "Plans",
       "building": "Garage",
       "wide": true
     },
     {
       "src": "assets/images/h-o-m-e/18.jpg",
-      "caption": "Greenhouse level.",
+      "caption": "Garage Greenhouse Level",
       "group": "Plans",
       "building": "Garage",
       "wide": false
     },
     {
       "src": "assets/images/h-o-m-e/01.jpg",
-      "caption": "Site section through the housing, garage and school.",
+      "caption": "Site Section",
       "group": "Sections & Elevations",
       "wide": true
     }

@@ -11,35 +11,35 @@
   "gallery": [
     {
       "src": "assets/images/morse-rowhomes/01.jpg",
-      "caption": "From Marston Street, the screen running the length of the block.",
+      "caption": "From Marston Street",
       "group": "Views",
       "wide": false,
       "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/04.jpg",
-      "caption": "The rowhome: artist studio at the sidewalk, three levels of house above.",
+      "caption": "Rowhome",
       "group": "Views",
       "wide": false,
       "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/05.jpg",
-      "caption": "The duplex, on the quieter street.",
+      "caption": "Duplex",
       "group": "Views",
       "wide": false,
       "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/02.jpg",
-      "caption": "The shared porch.",
+      "caption": "Shared Porch",
       "group": "Views",
       "wide": false,
       "building": ""
     },
     {
       "src": "assets/images/morse-rowhomes/03.jpg",
-      "caption": "The pocket park held between the two house types.",
+      "caption": "Pocket Park",
       "group": "Views",
       "wide": false,
       "building": ""
@@ -48,21 +48,21 @@
       "src": "assets/images/morse-rowhomes/08.jpg",
       "group": "Plans",
       "wide": false,
-      "caption": "Rowhome, ground to top: studio, living, bedroom floor, upper bedrooms.",
+      "caption": "",
       "building": "Rowhome"
     },
     {
       "src": "assets/images/morse-rowhomes/07.jpg",
       "group": "Plans",
       "wide": false,
-      "caption": "Duplex: accessible apartment at grade, split-level apartment above.",
+      "caption": "",
       "building": "Duplex"
     },
     {
       "src": "assets/images/morse-rowhomes/06.jpg",
       "group": "Sections & Elevations",
       "wide": false,
-      "caption": "The screen, straight on: brick piers and perforated infill spelling in Morse code.",
+      "caption": "",
       "building": ""
     }
   ],

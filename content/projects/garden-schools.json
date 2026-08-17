@@ -22,196 +22,196 @@
   "gallery": [
     {
       "src": "assets/images/garden-schools/aerial-day.jpg",
-      "caption": "The block entire: three schools, a recreation building and a community hub sharing one landscape.",
+      "caption": "",
       "group": "Views",
       "building": "",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/arrival-sports-1.jpg",
-      "caption": "Arrival at the sports complex, the splash pad open to the street.",
+      "caption": "",
       "group": "Views",
       "building": "Arrival",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/arrival-sports-2.jpg",
-      "caption": "The fountains, with the fluted facade behind.",
+      "caption": "",
       "group": "Views",
       "building": "Arrival",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/arrival-kindergarten.jpg",
-      "caption": "Arrival at the Pre-K and kindergarten, across the flower field.",
+      "caption": "",
       "group": "Views",
       "building": "Arrival",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/arrival-arts.jpg",
-      "caption": "The arts center after dark.",
+      "caption": "",
       "group": "Views",
       "building": "Arrival",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/arrival-middle-1.jpg",
-      "caption": "Arrival at the middle school, between the low walls.",
+      "caption": "",
       "group": "Views",
       "building": "Arrival",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/arrival-middle-2.jpg",
-      "caption": "The walk in through the trees.",
+      "caption": "",
       "group": "Views",
       "building": "Arrival",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/arrival-middle-3.jpg",
-      "caption": "The steps at the entrance, sized to sit on.",
+      "caption": "",
       "group": "Views",
       "building": "Arrival",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/library-elementary.jpg",
-      "caption": "The elementary library, looking out to the playground.",
+      "caption": "",
       "group": "Views",
       "building": "Libraries",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/library-middle.jpg",
-      "caption": "The middle school library, shared with the public.",
+      "caption": "",
       "group": "Views",
       "building": "Libraries",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/rec-learning-canopy.jpg",
-      "caption": "The learning canopy.",
+      "caption": "",
       "group": "Views",
       "building": "Recreation",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/rec-wetlands.jpg",
-      "caption": "The wetlands and their boardwalk.",
+      "caption": "",
       "group": "Views",
       "building": "Recreation",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/rec-theater.jpg",
-      "caption": "The theater.",
+      "caption": "",
       "group": "Views",
       "building": "Recreation",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/rec-pool.jpg",
-      "caption": "The pool.",
+      "caption": "",
       "group": "Views",
       "building": "Recreation",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/rec-fields.jpg",
-      "caption": "The fields under their canopy.",
+      "caption": "",
       "group": "Views",
       "building": "Recreation",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/rec-basketball-indoor.jpg",
-      "caption": "The indoor courts.",
+      "caption": "",
       "group": "Views",
       "building": "Recreation",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/rec-basketball-outdoor.jpg",
-      "caption": "The outdoor courts.",
+      "caption": "",
       "group": "Views",
       "building": "Recreation",
       "wide": false
     },
     {
       "src": "assets/images/garden-schools/aerial-night.jpg",
-      "caption": "The block at night.",
+      "caption": "",
       "group": "Views",
       "building": "Recreation",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/site-plan.jpg",
-      "caption": "Site plan: the three schools threaded through one continuous landscape.",
+      "caption": "",
       "group": "Plans",
       "building": "",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/plan-kindergarten.jpg",
-      "caption": "Pre-K and kindergarten, first floor — classrooms opening onto their own gardens.",
+      "caption": "",
       "group": "Plans",
       "building": "Pre-K & Kindergarten",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/plan-elementary-1.jpg",
-      "caption": "Elementary, first floor: library, admin, health suite, first and second grade.",
+      "caption": "",
       "group": "Plans",
       "building": "Elementary",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/plan-elementary-2.jpg",
-      "caption": "Elementary, second floor: third and fourth grade, art, music and the main dining.",
+      "caption": "",
       "group": "Plans",
       "building": "Elementary",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/plan-elementary-3.jpg",
-      "caption": "Elementary, third floor: fifth grade, science, and the learning canopy.",
+      "caption": "",
       "group": "Plans",
       "building": "Elementary",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/plan-middle-ground.jpg",
-      "caption": "Middle school, library and recreation — ground floor.",
+      "caption": "",
       "group": "Plans",
       "building": "Middle, Library & Recreation",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/plan-middle-2.jpg",
-      "caption": "Second floor.",
+      "caption": "",
       "group": "Plans",
       "building": "Middle, Library & Recreation",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/plan-middle-3.jpg",
-      "caption": "Third floor.",
+      "caption": "",
       "group": "Plans",
       "building": "Middle, Library & Recreation",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/plan-middle-4.jpg",
-      "caption": "Fourth floor: the courts and gym.",
+      "caption": "",
       "group": "Plans",
       "building": "Middle, Library & Recreation",
       "wide": true
     },
     {
       "src": "assets/images/garden-schools/diagram-program.jpg",
-      "caption": "How the block is organised: Pre-K and kindergarten to the west, elementary south, middle east, with the community hub and indoor recreation, parking beneath, and the drop-offs kept apart.",
+      "caption": "",
       "group": "Diagrams",
       "building": "",
       "wide": true

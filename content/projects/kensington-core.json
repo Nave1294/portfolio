@@ -22,157 +22,157 @@
   "gallery": [
     {
       "src": "assets/images/kensington-core/axon-overview.jpg",
-      "caption": "The whole block: the Maker Factory, the Core, the Garage, temporary housing, the transit building and the Kensington Foundation museum.",
+      "caption": "Axon",
       "group": "Views",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/core-day.jpg",
-      "caption": "The Core at midday — a splash pad and stepped gathering ground under the canopy.",
+      "caption": "",
       "group": "Views",
       "building": "The Core",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/core-dusk.jpg",
-      "caption": "The Core after dark.",
+      "caption": "",
       "group": "Views",
       "building": "The Core",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/core-tables.jpg",
-      "caption": "Tables under the canopy, between the brick shells.",
+      "caption": "",
       "group": "Views",
       "building": "The Core",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/core-passage.jpg",
-      "caption": "The passage in from Jasper Street.",
+      "caption": "",
       "group": "Views",
       "building": "The Core",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/core-alley.jpg",
-      "caption": "Looking back along the alley to the canopy.",
+      "caption": "",
       "group": "Views",
       "building": "The Core",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/transit-hall.jpg",
-      "caption": "The transit building: one long room for markets, meetings and whatever else the neighborhood needs.",
+      "caption": "",
       "group": "Views",
       "building": "Transit Building",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/museum-hall.jpg",
-      "caption": "Foundations of Kensington Past: the main hall and its ramp.",
+      "caption": "",
       "group": "Views",
       "building": "Museum",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/museum-stair.jpg",
-      "caption": "The stair down into the museum.",
+      "caption": "",
       "group": "Views",
       "building": "Museum",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/residence-interior.jpg",
-      "caption": "Temporary residences: a shared kitchen and living room.",
+      "caption": "",
       "group": "Views",
       "building": "Temporary Residences",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/residence-corridor.jpg",
-      "caption": "The corridor doubles as seating.",
+      "caption": "",
       "group": "Views",
       "building": "Temporary Residences",
       "wide": false
     },
     {
       "src": "assets/images/kensington-core/plan-basement.jpg",
-      "caption": "Basement.",
+      "caption": "Basement",
       "group": "Plans",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/plan-1.jpg",
-      "caption": "First floor: the Core at grade, open to Jasper Street.",
+      "caption": "1st Floor",
       "group": "Plans",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/plan-2.jpg",
-      "caption": "Second floor.",
+      "caption": "2nd Floor",
       "group": "Plans",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/plan-3.jpg",
-      "caption": "Third floor.",
+      "caption": "3rd Floor",
       "group": "Plans",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/plan-4.jpg",
-      "caption": "Fourth floor.",
+      "caption": "4th Floor",
       "group": "Plans",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/plan-5.jpg",
-      "caption": "Fifth floor.",
+      "caption": "5th Floor",
       "group": "Plans",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/section-1.jpg",
-      "caption": "Section 1, colored by program: housing, education, employment, office and support, gathering.",
+      "caption": "Section 1",
       "group": "Sections & Elevations",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/section-2.jpg",
-      "caption": "Section 2, across the block from the elevated line to the museum.",
+      "caption": "Section 2",
       "group": "Sections & Elevations",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/section-3.jpg",
-      "caption": "Section 3, through the temporary residences and the Core.",
+      "caption": "Section 3",
       "group": "Sections & Elevations",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/section-4.jpg",
-      "caption": "Section 4, the long cut through the transit building.",
+      "caption": "Section 4",
       "group": "Sections & Elevations",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/maker-factory-poster.jpg",
       "video": "assets/images/kensington-core/maker-factory.mp4",
-      "caption": "The Maker Factory: exhibition space, hydroponic labs and workshops.",
+      "caption": "Maker Building",
       "group": "Film",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/museum-poster.jpg",
       "video": "assets/images/kensington-core/museum.mp4",
-      "caption": "Foundations of Kensington Past museum.",
+      "caption": "Museum",
       "group": "Film",
       "wide": true
     },
     {
       "src": "assets/images/kensington-core/makers-market-poster.jpg",
-      "caption": "The makers' market under the canopy.",
+      "caption": "Market",
       "group": "Film",
       "wide": true,
       "video": "assets/images/kensington-core/makers-market.mp4"
@@ -180,7 +180,7 @@
     {
       "src": "assets/images/kensington-core/rain-mode-poster.jpg",
       "video": "assets/images/kensington-core/rain-mode.mp4",
-      "caption": "The Core in rain mode.",
+      "caption": "Rain mode",
       "group": "Film",
       "wide": true
     }

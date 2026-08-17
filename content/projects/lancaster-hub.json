@@ -11,73 +11,73 @@
   "gallery": [
     {
       "src": "assets/images/lancaster-hub/01.jpg",
-      "caption": "From N 40th Street.",
+      "caption": "View from N 40th Street",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/05.jpg",
-      "caption": "The library, below the courtyard.",
+      "caption": "Library Vignette",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/07.jpg",
-      "caption": "Plan key: how the floors stack.",
+      "caption": "Building Plan Key",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/08.jpg",
-      "caption": "Basement.",
+      "caption": "Basement",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/09.jpg",
-      "caption": "First floor.",
+      "caption": "First Floor",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/10.jpg",
-      "caption": "Second floor.",
+      "caption": "Second Floor",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/11.jpg",
-      "caption": "Third floor.",
+      "caption": "Third Floor",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/12.jpg",
-      "caption": "Fourth floor.",
+      "caption": "Fourth Floor",
       "group": "Plans",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/02.jpg",
-      "caption": "Section through the courtyard: the hall below, apartments on both sides, trees between.",
+      "caption": "Section",
       "group": "Sections & Elevations",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/04.jpg",
-      "caption": "Section through the library, sunk below the courtyard and reached by the open stair.",
+      "caption": "Section",
       "group": "Sections & Elevations",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/03.jpg",
-      "caption": "Street elevation.",
+      "caption": "Elevation",
       "group": "Sections & Elevations",
       "wide": false
     },
     {
       "src": "assets/images/lancaster-hub/06.jpg",
-      "caption": "Massing axonometric.",
+      "caption": "Massing Axon",
       "group": "Diagrams",
       "wide": true
     }

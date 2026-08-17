@@ -22,86 +22,86 @@
   "gallery": [
     {
       "src": "assets/images/block-core/exterior-day.jpg",
-      "caption": "The corner from the street: a restaurant and community kitchen at grade, apartments above.",
+      "caption": "",
       "group": "Views",
       "wide": true
     },
     {
       "src": "assets/images/block-core/exterior-dusk.jpg",
-      "caption": "The same corner at dusk, the signage lit.",
+      "caption": "",
       "group": "Views",
       "wide": true
     },
     {
       "src": "assets/images/block-core/massing.jpg",
-      "caption": "The massing the zoning allows — CMX 2.5, 80% site coverage, held to 40 feet rather than the permitted 62.",
+      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/block-core/kitchen-open.jpg",
-      "caption": "The community kitchen: one open range the neighborhood cooks on together.",
+      "caption": "",
       "group": "Views",
       "building": "Community Kitchen",
       "wide": false
     },
     {
       "src": "assets/images/block-core/kitchen-table.jpg",
-      "caption": "One long table, laid for everyone who turns up.",
+      "caption": "",
       "group": "Views",
       "building": "Community Kitchen",
       "wide": false
     },
     {
       "src": "assets/images/block-core/kitchen-patio.jpg",
-      "caption": "The patio outside, in use after dark.",
+      "caption": "",
       "group": "Views",
       "building": "Community Kitchen",
       "wide": false
     },
     {
       "src": "assets/images/block-core/apartment-kitchen.jpg",
-      "caption": "A long-term resident's kitchen.",
+      "caption": "",
       "group": "Views",
       "building": "Apartments",
       "wide": false
     },
     {
       "src": "assets/images/block-core/apartment-living.jpg",
-      "caption": "The living room.",
+      "caption": "",
       "group": "Views",
       "building": "Apartments",
       "wide": false
     },
     {
       "src": "assets/images/block-core/apartment-kids.jpg",
-      "caption": "A child's room.",
+      "caption": "",
       "group": "Views",
       "building": "Apartments",
       "wide": false
     },
     {
       "src": "assets/images/block-core/plan-ground.jpg",
-      "caption": "Ground floor: the community kitchen and its long table.",
+      "caption": "Floor 1",
       "group": "Plans",
       "wide": true
     },
     {
       "src": "assets/images/block-core/plan-upper.jpg",
-      "caption": "Second and third floors, typical — the residences above.",
+      "caption": "Floors 2+3",
       "group": "Plans",
       "wide": true
     },
     {
       "src": "assets/images/block-core/kitchen-back-elevation.jpg",
-      "caption": "Community kitchen, elevation of the back wall — open shelving and glassware, the rolling ladder, and the neon over the range.",
+      "caption": "Kitchen, interior elevation",
       "group": "Sections & Elevations",
       "building": "Community Kitchen",
       "wide": true
     },
     {
       "src": "assets/images/block-core/apartment-elevation.jpg",
-      "caption": "Apartment, interior elevation.",
+      "caption": "Apartment, interior elevation",
       "group": "Sections & Elevations",
       "building": "Apartments",
       "wide": true
