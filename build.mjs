@@ -46,6 +46,37 @@ const cssColor = (s, fallback = "#000000") =>
 
 const attr = (s) => esc(s);
 
+/* ---------- prose ----------
+   The paragraph fields are edited as rich text in the dashboard, which stores
+   markdown. Everything is escaped first, so only the four constructs below can
+   ever produce markup: the dashboard is trusted, but not trusted to be a
+   template. Plain prose passes through untouched, which is what nearly all of
+   it is. */
+const mdInline = (s) =>
+  esc(s)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[\s(])\*([^*\n]+)\*/g, "$1<em>$2</em>")
+    .replace(/(^|[\s(])_([^_\n]+)_/g, "$1<em>$2</em>")
+    // Any relative path, plus http(s) and mailto. Anything else carrying a
+    // scheme — javascript:, data:, vbscript: — is left as the literal text it
+    // was typed as, rather than becoming a link.
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (whole, text, href) => {
+      const scheme = /^([a-zA-Z][a-zA-Z0-9+.-]*):/.exec(href);
+      if (scheme && !/^(https?|mailto)$/i.test(scheme[1])) return whole;
+      return `<a href="${href}">${text}</a>`;
+    });
+
+// One rich-text value can hold several paragraphs; each becomes its own <p>,
+// carrying whatever attributes the surrounding layout needs.
+const paras = (value, attrs = "") =>
+  String(value ?? "")
+    .split(/\n{2,}/)
+    .map((t) => t.trim())
+    .filter(Boolean)
+    .map((t) => `<p${attrs ? " " + attrs : ""}>${mdInline(t)}</p>`);
+
+
 /* ---------- load content ---------- */
 const settings = read("content/settings.json");
 
@@ -65,6 +96,19 @@ const WORK_URL = landingOn ? "work.html" : "index.html";
 /* ---------- shared partials ---------- */
 const site = settings.site || {};
 const contact = settings.contact || {};
+
+/* ---------- wording ----------
+   The site's own furniture — section headings, buttons, the navigation. Held
+   here with defaults so every visible string is editable from the dashboard,
+   without the config file having to carry copy for a site nobody has edited.
+   A blank value in the dashboard means "use the wording below". */
+const labels = settings.labels || {};
+const lab = (key, fallback) => {
+  const v = labels[key];
+  return v === undefined || v === null || String(v).trim() === ""
+    ? fallback
+    : String(v).trim();
+};
 
 // `swipe` links the swipe stylesheet; `swipeIn` additionally marks the page as
 // the arrival side. The inline script must run before the first paint,
@@ -106,12 +150,12 @@ function header(current, depth = 0) {
   )} <span>/ ${esc(site.role || "")}</span></a>
     <nav>
       <ul class="nav-links">
-        <li><a href="${up}${WORK_URL}"${on("work")}>Work</a></li>
-        <li><a href="${up}about.html"${on("about")}>About</a></li>
-        <li><a href="${up}contact.html"${on("contact")}>Contact</a></li>
+        <li><a href="${up}${WORK_URL}"${on("work")}>${esc(lab("navWork", "Work"))}</a></li>
+        <li><a href="${up}about.html"${on("about")}>${esc(lab("navAbout", "About"))}</a></li>
+        <li><a href="${up}contact.html"${on("contact")}>${esc(lab("navContact", "Contact"))}</a></li>
       </ul>
     </nav>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">Menu</button>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">${esc(lab("navMenu", "Menu"))}</button>
   </div>
 </header>`;
 }
@@ -124,10 +168,10 @@ function footer(depth = 0, { full = true, wrapped = false } = {}) {
     links.push(
       `<a href="mailto:${attr(contact.email)}" class="text-link">${esc(contact.email)}</a>`
     );
-  links.push(`<a href="${up}contact.html" class="text-link">Contact page →</a>`);
+  links.push(`<a href="${up}contact.html" class="text-link">${esc(lab("footerContact", "Contact page →"))}</a>`);
   if (contact.linkedin)
     links.push(
-      `<a href="${attr(contact.linkedin)}" class="text-link" rel="noopener">LinkedIn</a>`
+      `<a href="${attr(contact.linkedin)}" class="text-link" rel="noopener">${esc(lab("footerLinkedin", "LinkedIn"))}</a>`
     );
 
   const top =
@@ -148,7 +192,7 @@ function footer(depth = 0, { full = true, wrapped = false } = {}) {
       <span>© ${year} ${esc(site.name || "")}</span>
       <a class="to-top" href="#top">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
-        Back to top
+        ${esc(lab("backToTop", "Back to top"))}
       </a>
     </div>
   </div>
@@ -278,7 +322,7 @@ function guideStrip() {
         )
         .join("\n");
       return `        <div class="guide-answer" id="${id(i)}">
-          <p>${esc(r.blurb || "")}</p>${
+          ${paras(r.blurb).join("\n          ")}${
         links
           ? `\n          <div class="guide-links">\n${links}\n          </div>`
           : ""
@@ -396,11 +440,11 @@ function renderTimeline() {
   return `  <section class="timeline" id="work">
     <div class="container">
       <div class="section-head reveal">
-        <h2>Selected Work</h2>
+        <h2>${esc(lab("selectedWork", "Selected Work"))}</h2>
       </div>
     </div>
 
-${jumpLink("up", "#top", "Back to top")}
+${jumpLink("up", "#top", lab("backToTop", "Back to top"))}
 
     <div class="tl-scrub" role="group" aria-label="Sweep to browse the projects">
       <div class="tl-scrub-inner">
@@ -473,7 +517,7 @@ ${header("work")}
     <div class="container">
       ${h.eyebrow ? `<span class="eyebrow reveal">${esc(h.eyebrow)}</span>` : ""}
       <h1 class="reveal">${esc(h.headline)}</h1>
-      ${h.intro ? `<p class="lede reveal">${esc(h.intro)}</p>` : ""}
+      ${paras(h.intro, 'class="lede reveal"').join("\n      ")}
       ${metaRow ? `\n      <div class="hero-meta">\n        ${metaRow}\n      </div>` : ""}
     </div>
   </section>
@@ -481,12 +525,12 @@ ${header("work")}
 ${guideStrip()}
 ${
     projects.length === 0
-      ? '  <section class="work"><div class="container"><p class="lede">No published projects yet.</p></div></section>'
+      ? '  <section class="work"><div class="container"><p class="lede">' + esc(lab("emptyWork", "No published projects yet.")) + '</p></div></section>'
       : (h.layout || "timeline") === "grid"
       ? `  <section class="work" id="work">
     <div class="container">
       <div class="section-head reveal">
-        <h2>Selected Work</h2>
+        <h2>${esc(lab("selectedWork", "Selected Work"))}</h2>
       </div>
 
       <div class="work-grid">
@@ -502,10 +546,10 @@ ${cards}
   <section class="about-teaser" id="about-teaser">
     <div class="container split">
       <div class="reveal">
-        <span class="eyebrow">About</span>
+        <span class="eyebrow">${esc(lab("aboutEyebrow", "About"))}</span>
         <h2>${esc(h.aboutHeadline)}</h2>
-        <p class="lede" style="margin-top: 1rem;">${esc(h.aboutSummary)}</p>
-        <a href="about.html" class="btn" style="margin-top: 2rem;">More about me →</a>
+        ${paras(h.aboutSummary, 'class="lede" style="margin-top: 1rem;"').join("\n        ")}
+        <a href="about.html" class="btn" style="margin-top: 2rem;">${esc(lab("aboutButton", "More about me →"))}</a>
       </div>
       ${frame(h.portrait, "[Portrait or studio photo]", "reveal")}
     </div>
@@ -517,10 +561,9 @@ ${footer(0, { wrapped: landingOn })}`;
 
 function aboutPage() {
   const a = settings.about || {};
-  const paras = (a.paragraphs || [])
-    .map(
-      (p) =>
-        `<p class="lede" style="margin-top: 1rem; max-width: 50ch;">${esc(p)}</p>`
+  const bio = (a.paragraphs || [])
+    .map((p) =>
+      paras(p, 'class="lede" style="margin-top: 1rem; max-width: 50ch;"').join("\n        ")
     )
     .join("\n        ");
 
@@ -572,10 +615,10 @@ ${header("about")}
   <section class="hero" style="padding-bottom: 0;">
     <div class="container split">
       <div>
-        <span class="eyebrow">About</span>
+        <span class="eyebrow">${esc(lab("aboutEyebrow", "About"))}</span>
         <h1 style="max-width: 14ch;">${esc(site.name)}</h1>
-        ${paras}
-        ${a.resume ? `<a href="${attr(a.resume)}" class="btn" style="margin-top: 2rem;">Download Résumé / CV ↓</a>` : ""}
+        ${bio}
+        ${a.resume ? `<a href="${attr(a.resume)}" class="btn" style="margin-top: 2rem;">${esc(lab("resumeButton", "Download Résumé / CV ↓"))}</a>` : ""}
       </div>
       ${frame(a.portrait, "[Portrait photo]")}
     </div>
@@ -585,7 +628,7 @@ ${header("about")}
     skills
       ? `<section>
     <div class="container">
-      <div class="section-head"><h2>Software &amp; Skills</h2></div>
+      <div class="section-head"><h2>${esc(lab("skillsHeading", "Software & Skills"))}</h2></div>
       <div class="skills-grid">
 ${skills}
       </div>
@@ -598,7 +641,7 @@ ${skills}
     timeline
       ? `<section style="padding-top: 0;">
     <div class="container">
-      <div class="section-head"><h2>Education &amp; Experience</h2></div>
+      <div class="section-head"><h2>${esc(lab("experienceHeading", "Education & Experience"))}</h2></div>
       <div class="timeline">
 ${timeline}
       </div>
@@ -611,7 +654,7 @@ ${timeline}
     references
       ? `<section style="padding-top: 0;">
     <div class="container">
-      <div class="section-head"><h2>References</h2></div>
+      <div class="section-head"><h2>${esc(lab("referencesHeading", "References"))}</h2></div>
       <div class="references-grid">
 ${references}
       </div>
@@ -649,7 +692,7 @@ ${header("contact")}
 <main>
   <section class="hero contact-main">
     <div class="container">
-      <span class="eyebrow">Contact</span>
+      <span class="eyebrow">${esc(lab("contactEyebrow", "Contact"))}</span>
       <h1>${esc(c.headline)}</h1>
 
       <div class="contact-grid">
@@ -848,7 +891,7 @@ function renderChapters(chapters) {
         if (blockText.length) {
           blocks.push(
             `      <div class="container block-text">\n${blockText
-              .map((t) => `        <p>${esc(t)}</p>`)
+              .map((t) => "        " + paras(t).join("\n        "))
               .join("\n")}\n      </div>`
           );
         }
@@ -894,7 +937,7 @@ function renderChapters(chapters) {
       }
 
       const body = (c.body || [])
-        .map((t) => `          <p>${esc(t)}</p>`)
+        .map((t) => "          " + paras(t).join("\n          "))
         .join("\n");
 
       const stats = (c.stats || []).length
@@ -962,7 +1005,9 @@ function projectPage(p, prev, next) {
     .map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`)
     .join("\n        ");
 
-  const body = (p.body || []).map((t) => `      <p>${esc(t)}</p>`).join("\n");
+  const body = (p.body || [])
+    .map((t) => "      " + paras(t).join("\n      "))
+    .join("\n");
 
   // A project can carry both: the browsable gallery leads, and the
   // walkthrough follows for anyone who wants to read it in sequence.
@@ -1002,7 +1047,7 @@ ${header("work", 1)}
   ${
     body
       ? `<div class="container project-body">
-    <div><h2>Overview</h2></div>
+    <div><h2>${esc(lab("overviewHeading", "Overview"))}</h2></div>
     <div>
 ${body}
     </div>
@@ -1022,12 +1067,12 @@ ${body}
 
   <div class="container">
     <nav class="project-nav">
-${navLink(prev, "← Previous")}
-${navLink(next, "Next →")}
+${navLink(prev, lab("prevProject", "← Previous"))}
+${navLink(next, lab("nextProject", "Next →"))}
     </nav>
   </div>
 
-${jumpLink("up", "#top", "Back to top")}
+${jumpLink("up", "#top", lab("backToTop", "Back to top"))}
 
 </main>
 ${footer(1, { full: false })}`;

@@ -94,7 +94,7 @@ content:
 
       - name: program
         label: Program
-        type: string
+        type: text
         description: What the building is — e.g. "Single-family residence"
 
       - name: status
@@ -109,7 +109,10 @@ content:
 
       - name: body
         label: Overview paragraphs
-        type: text
+        type: rich-text
+        options:
+          format: markdown
+          media: false
         list: true
         description: One paragraph per entry. Two to four short paragraphs is plenty — let the drawings carry the rest.
 
@@ -129,7 +132,10 @@ content:
             description: "One line under the title, set larger than the body."
           - name: body
             label: Paragraphs
-            type: text
+            type: rich-text
+            options:
+              format: markdown
+              media: false
             list: true
             description: "One paragraph per entry. These sit at the top of the chapter; text that belongs with particular figures goes in the block below instead."
           - name: stats
@@ -175,7 +181,10 @@ content:
                 description: "Only used by strips. Shown small above the row."
               - name: text
                 label: Paragraphs above these images
-                type: text
+                type: rich-text
+                options:
+                  format: markdown
+                  media: false
                 list: true
                 description: "Optional. Text that belongs with these particular figures rather than at the top of the chapter. One paragraph per entry."
               - name: images
@@ -343,7 +352,13 @@ content:
                 - { value: grid, label: "Grid — all covers at once" }
           - { name: eyebrow, label: Small label above headline, type: string }
           - { name: headline, label: Headline, type: text }
-          - { name: intro, label: Intro paragraph, type: text }
+          - name: intro
+            label: Intro paragraph
+            type: rich-text
+            options:
+              format: markdown
+              media: false
+            description: "The paragraph under the headline on the work page."
           - name: meta
             label: Quick facts
             type: object
@@ -352,7 +367,13 @@ content:
               - { name: label, label: Label, type: string }
               - { name: value, label: Value, type: string }
           - { name: aboutHeadline, label: About teaser headline, type: text, description: "The sentence over the About block at the foot of the work page." }
-          - { name: aboutSummary, label: About teaser text, type: text }
+          - name: aboutSummary
+            label: About teaser text
+            type: rich-text
+            options:
+              format: markdown
+              media: false
+            description: "The paragraph in the About block at the foot of the work page."
           - { name: portrait, label: Portrait or studio photo, type: image }
 
       - name: about
@@ -362,7 +383,10 @@ content:
         fields:
           - name: paragraphs
             label: Biography
-            type: text
+            type: rich-text
+            options:
+              format: markdown
+              media: false
             list: true
             description: One paragraph per entry.
           - { name: portrait, label: Portrait photo, type: image }
@@ -381,7 +405,13 @@ content:
             fields:
               - { name: year, label: Years, type: string }
               - { name: title, label: Title, type: string }
-              - { name: detail, label: Detail, type: text, description: "What the role or qualification involved. A sentence or two." }
+              - name: detail
+                label: Detail
+                type: rich-text
+                options:
+                  format: markdown
+                  media: false
+                description: "What the role or qualification involved. A sentence or two."
 
           - name: references
             label: References
@@ -425,7 +455,10 @@ content:
                 description: "What the visitor clicks — written as their own words, e.g. \"I'm hiring\". A few words at most."
               - name: blurb
                 label: What to tell them
-                type: text
+                type: rich-text
+                options:
+                  format: markdown
+                  media: false
                 description: "Two or three sentences pointing them at the right projects and saying why. This is the useful part — name things and give a reason, rather than just listing links."
               - name: links
                 label: Links
@@ -451,4 +484,90 @@ content:
           - { name: linkedin, label: LinkedIn URL, type: string }
           - { name: instagram, label: Instagram URL, type: string }
           - { name: footerCta, label: Footer message, type: text, description: "The line in the footer across the site." }
+
+      - name: labels
+        label: Headings & wording
+        type: object
+        description: "Every other word the site says for itself — section headings, buttons, the navigation. Leave any of these blank and the wording in its description is used, so you only need to fill in what you want to change."
+        fields:
+          - name: navWork
+            label: "Navigation: Work"
+            type: string
+            description: 'Blank = "Work"'
+          - name: navAbout
+            label: "Navigation: About"
+            type: string
+            description: 'Blank = "About"'
+          - name: navContact
+            label: "Navigation: Contact"
+            type: string
+            description: 'Blank = "Contact"'
+          - name: navMenu
+            label: "Navigation: menu button (small screens)"
+            type: string
+            description: 'Blank = "Menu"'
+
+          - name: selectedWork
+            label: Heading above the projects
+            type: string
+            description: 'Blank = "Selected Work"'
+          - name: emptyWork
+            label: Shown when no project is published
+            type: text
+            description: 'Blank = "No published projects yet."'
+
+          - name: aboutEyebrow
+            label: Small label on the About block
+            type: string
+            description: 'Blank = "About"'
+          - name: aboutButton
+            label: Button to the About page
+            type: string
+            description: 'Blank = "More about me →"'
+          - name: resumeButton
+            label: Résumé download button
+            type: string
+            description: 'Blank = "Download Résumé / CV ↓"'
+          - name: skillsHeading
+            label: Skills heading
+            type: string
+            description: 'Blank = "Software & Skills"'
+          - name: experienceHeading
+            label: Experience heading
+            type: string
+            description: 'Blank = "Education & Experience"'
+          - name: referencesHeading
+            label: References heading
+            type: string
+            description: 'Blank = "References"'
+          - name: contactEyebrow
+            label: Small label on the Contact page
+            type: string
+            description: 'Blank = "Contact"'
+
+          - name: overviewHeading
+            label: Heading above a project's text
+            type: string
+            description: 'Blank = "Overview"'
+          - name: prevProject
+            label: Previous project link
+            type: string
+            description: 'Blank = "← Previous"'
+          - name: nextProject
+            label: Next project link
+            type: string
+            description: 'Blank = "Next →"'
+
+          - name: backToTop
+            label: Back-to-top link
+            type: string
+            description: 'Blank = "Back to top"'
+          - name: footerContact
+            label: Footer link to the Contact page
+            type: string
+            description: 'Blank = "Contact page →"'
+          - name: footerLinkedin
+            label: Footer LinkedIn link
+            type: string
+            description: 'Blank = "LinkedIn"'
 
