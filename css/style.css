@@ -1987,6 +1987,17 @@ body.page-leaving main {
   object-fit: contain;
 }
 
+/* The frame keeps a fixed ratio rather than taking its height from the film.
+   A video has no intrinsic size until its metadata loads, so height:auto
+   collapsed the hero to nothing and then shoved the whole page down when the
+   first frame arrived. Sized by the frame, nothing moves. */
+/* Specificity has to clear `.project-hero .img-frame:not(:has(img))` above,
+   which sets 16/8 for the empty placeholder frame and would otherwise win. */
+.project-hero .img-frame.is-hero-video {
+  aspect-ratio: 16 / 9;
+  margin-top: var(--space-md);
+}
+
 /* ============================================================
    TIMELINE SCRUB BAR
    A ruler above the reel: one tick per project, a knob riding the

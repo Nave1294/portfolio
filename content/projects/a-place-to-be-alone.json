@@ -7,6 +7,8 @@
   "order": 6,
   "accent": 5,
   "cover": "assets/images/a-place-to-be-alone/aerial.jpg",
+  "coverVideo": "assets/images/a-place-to-be-alone/film-yoga.mp4",
+  "coverVideoPoster": "assets/images/a-place-to-be-alone/film-yoga-poster.jpg",
   "type": "Pavilion",
   "year": "2023",
   "location": "Powelton Village, Philadelphia",

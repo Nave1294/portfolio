@@ -1056,7 +1056,25 @@ ${header("work", 1)}
       )}</span>
       <h1>${esc(p.title)}</h1>
 
-      ${frame(p.cover, p.cover ? p.title : "[Hero image]", "", 1)}
+      ${
+        p.coverVideo
+          ? // A film as the hero, with the cover still as its poster so the
+            // frame is filled before a byte of video arrives. The timeline and
+            // the work grid keep using the still — a looping video in a reel of
+            // twelve would be neither legible nor cheap.
+            `<div class="img-frame is-video is-hero-video">
+        <video autoplay muted loop playsinline preload="metadata"${
+          // The film's own still by preference: the cover is a different
+          // picture, and flashing it first reads as the wrong image loading.
+          p.coverVideoPoster || p.cover
+            ? ` poster="../${attr(p.coverVideoPoster || p.cover)}"`
+            : ""
+        }>
+          <source src="../${attr(p.coverVideo)}" type="video/mp4">
+        </video>
+      </div>`
+          : frame(p.cover, p.cover ? p.title : "[Hero image]", "", 1)
+      }
 
       ${meta ? `<dl class="project-meta-bar">\n        ${meta}\n      </dl>` : ""}
     </div>

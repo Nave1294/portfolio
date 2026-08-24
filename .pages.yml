@@ -77,6 +77,16 @@ content:
         type: image
         description: The strongest render or photo. Export around 2400px wide as a JPG — full-size renders will make the page slow to load.
 
+      - name: coverVideo
+        label: Cover film
+        type: string
+        description: "Optional. Path to an MP4 already in assets/images, for example assets/images/my-project/film.mp4. Fill this in and the film plays in place of the cover image at the top of the project page — silent, looping, with the cover image as its still. The timeline and the work grid keep using the cover image. Typed as text on purpose: a file picker dropped this value on save."
+
+      - name: coverVideoPoster
+        label: Cover film still
+        type: image
+        description: "Optional, and only used with a Cover film. The frame shown before the film plays. Leave blank and the cover image is used, which is usually a different picture — a still taken from the film itself looks better."
+
       - name: type
         label: Type
         type: string

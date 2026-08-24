@@ -765,6 +765,18 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ---------- hero parallax ----------
      A few pixels of drift, capped, so it reads as depth rather than as an
      effect. */
+  /* A hero film autoplays, which is exactly what a reduced-motion setting is
+     asking us not to do. Stop it and hand over the controls instead, so the
+     film is still available to anyone who wants it. */
+  const settleHeroVideo = () => {
+    const video = document.querySelector(".is-hero-video video");
+    if (!video || !still) return;
+    video.autoplay = false;
+    video.loop = false;
+    video.controls = true;
+    video.pause();
+  };
+
   const startParallax = () => {
     const img = document.querySelector(".project-hero .img-frame img");
     if (still || !img) return;
@@ -803,6 +815,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startTransition();
     startProgress();
     startParallax();
+    settleHeroVideo();
   };
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", boot);
