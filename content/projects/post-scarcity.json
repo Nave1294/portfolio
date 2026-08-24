@@ -2,7 +2,7 @@
   "title": "Post Scarcity",
   "published": true,
   "slug": "post-scarcity",
-  "summary": "If abundance uncouples survival from labor, what happens to the city built around work? A park and a vertical neighborhood at Center Square.",
+  "summary": "A thesis on the city after scarcity: a park and a vertical neighborhood over Center Square, Philadelphia.",
   "date": "2025",
   "order": 1,
   "accent": "3",
@@ -14,8 +14,8 @@
   "status": "Bachelor of Architecture thesis",
   "role": "Solo thesis project",
   "body": [
-    "Coming Soon",
-    "Coming Soon",
+    "A Bachelor of Architecture thesis asking what becomes of a city organized around work once abundance separates survival from labor. If automation moves six hours a day out of employment, the built environment has to absorb that time.",
+    "The proposal places a park and a vertical neighborhood over Center Square in Philadelphia. Program is arranged by proximity rather than by use: the structural grid is treated as a street grid, with clusters of housing, market, learning and play gathered around common ground.",
     "Awarded the 2025 Pearson Prize Silver Medal for best Drexel architectural thesis."
   ],
   "chapters": [
@@ -24,8 +24,8 @@
       "standfirst": "Or are architectural movements only ever a response?",
       "body": [
         "A thesis in architecture is a design project or research proposal exploring a central idea. Mine began with a question I could not answer.",
-        "The options were many and the thesis unclear — museums, transit hubs, garages re-geared. But the state of the world felt heavy and grey, too troubled for any of them to say much.",
-        "So I went the other way. To ask the question properly, I had to invent a future to design for."
+        "The obvious options — museums, transit hubs, garages re-geared — all felt too small for the moment. None of them addressed the conditions that made the question worth asking.",
+        "The alternative was to work backward. To ask the question properly, I first had to define a future to design for."
       ]
     },
     {
@@ -72,7 +72,7 @@
       "body": [
         "Post scarcity rests on four shifts. The economy decentralizes production and moves toward universal basic income, zero-marginal-cost goods and a sharing culture. Work settles near fifteen hours a week, concentrated in creative and critical-thinking fields.",
         "Value moves toward social capital, environmental stewardship, self-actualization and community well-being. And scarcity itself relocates — what becomes scarce is time, privacy, natural features and genuine experience.",
-        "Each pillar makes a demand of the built environment: proximity zoning, less work, healthier buildings, and room for good times."
+        "Each pillar makes a demand of the built environment: proximity zoning, reduced workspace, healthier buildings, and room for leisure."
       ],
       "blocks": [
         {
@@ -89,8 +89,8 @@
       "title": "Spent Time",
       "standfirst": "Six hours a day move out of work and into everything else.",
       "body": [
-        "A future designed has to be quantified. Set the reality week against the post-scarcity week and the arithmetic is stark: 1,717.5 hours a year returned.",
-        "But more free time does not guarantee a better life. The average American spends 2 hours 18 minutes on social media, 1 hour 19 on games and 2 hours watching television — inside a day offering less than six hours of personal time. Denmark and Austria, whose public realms are recognized for quality and access, spend markedly less.",
+        "A designed future has to be quantified. Set the current week against the post-scarcity week and the difference is 1,717.5 hours returned each year.",
+        "More free time does not guarantee a better life. The average American spends 2 hours 18 minutes on social media, 1 hour 19 on games and 2 hours watching television — inside a day offering less than six hours of personal time. Denmark and Austria, whose public realms are recognized for quality and access, spend markedly less.",
         "That retreat into screens reads as a failure of the public realm, not of the people in it."
       ],
       "blocks": [
@@ -132,10 +132,10 @@
     },
     {
       "title": "The Built Environment",
-      "standfirst": "How the city must adjust to meet the needs of a post scarcity society. ",
+      "standfirst": "How the city must adjust to meet the needs of a post scarcity society.",
       "body": [
         "Rebuild the week around a fifteen-hour job and what the city asks of its buildings changes. Office space contracts sharply while homes, entertainment, institutions and civic space all grow.",
-        "The chart is an oversimplification, of course. Turning it into physical reality takes many more layers — and one idea in particular."
+        "The chart is a simplification. Turning it into built form takes several further layers, and one organizing idea in particular."
       ],
       "stats": [
         {
@@ -177,9 +177,9 @@
     },
     {
       "title": "Counterpoint",
-      "standfirst": "Two independent lines played at once, creating a sum greater than their parts. This is an approach to create a more exciting environment for people to spend their newfound free time.",
+      "standfirst": "Two independent lines played at once, each stronger for the other. The organizing idea behind the project.",
       "body": [
-        "Why do the best public spaces fill people with joy? Because they are a counterpoint the city employs.",
+        "The best public spaces work as a counterpoint to the city around them.",
         "Counterpoint — the relationship between independent melodic lines sounding together, creating harmony through their interaction — can guide planning at nearly every scale. It does not imply opposition. It uses contrast to create interest, choice and harmony."
       ],
       "quote": {
@@ -189,7 +189,7 @@
         {
           "kind": "grid",
           "text": [
-            "Three types of counterpoint carry the project: grid against greenspace, built space against program, and program against program. Three melodies."
+            "Three types of counterpoint carry the project: grid against greenspace, built space against program, and program against program."
           ],
           "images": [
             {
@@ -249,7 +249,7 @@
       "body": [
         "American zoning is incompatible with a post-scarcity society. At its best it prevents obviously harmful adjacencies; at its worst it has been used, intentionally and otherwise, to exclude and segregate.",
         "Proximity zoning is the alternative — a fluid system that reads the attributes of each program and evaluates how well it fits its surroundings. Built with a colleague as a lightweight software tool: establish a grid, assign attributes, place programs, and it returns a fit score.",
-        "Not a black box, and not a replacement for the designer. Decision support. The score can be appealed, or the proposal adjusted to strengthen good proximities and mitigate poor ones. It is also scale-agnostic — a tile can be a floor, a campus, or a restaurant's seating zones."
+        "It is decision support rather than a black box, and it does not replace the designer. The score can be appealed, or the proposal adjusted to strengthen good proximities and mitigate poor ones. It is also scale-agnostic — a tile can be a floor, a campus, or a restaurant's seating zones."
       ],
       "list": {
         "title": "Six attributes per program",
@@ -283,7 +283,7 @@
       "standfirst": "The area by City Hall had it right.",
       "body": [
         "I needed a place for ideas to unfold. Several were analyzed and measured — impervious surface, road coverage, transit, greenspace, context.",
-        "This ground carries the highest proportion of impervious surface in the comparison at 71.48%, and among the lowest share given to roads at 8.04%. Dense, central, hard-surfaced, and barely given over to movement.",
+        "This ground carries the highest proportion of impervious surface in the comparison at 71.48%, and among the lowest share given to roads at 8.04%: dense, central, hard-surfaced, and barely given over to movement.",
         "It also carries 113,000 transit riders past it every day: 30,000 on the Market–Frankford line, 57,000 on Broad Street, 26,000 through Suburban Station. No other ground in the city is handed that many people before it opens."
       ],
       "blocks": [
@@ -324,7 +324,7 @@
       "standfirst": "A park, train sheds, and a grand city hall.",
       "body": [
         "Over the years this site saw it all. The Center Square Water Works arrived in 1801 and was demolished in 1829. Voters chose the square as the city's civic centerpiece in 1870. Broad Street Station was finished in 1893 and pulled down in 1953. The Parkway, the Market–Frankford line, the expressway, the concourse — each took its turn.",
-        "Edmund Bacon's lofty goals never came to fruition, yet remnants remain of his city ambition. Though his plan was never fully created, those lingering pieces still shape what the square could be."
+        "Edmund Bacon's plan for the square was never fully realized, but fragments of it were built, and those pieces still shape what the square could become."
       ],
       "blocks": [
         {
@@ -352,7 +352,7 @@
       "standfirst": "Soft lines against the rectilinear order.",
       "body": [
         "By studying context, connections and flow, a simpler approach proved best. The park breaks the grid deliberately, the way Rittenhouse cuts across the formal layout and Central Park turns its back on Manhattan's geometry.",
-        "The lawn, the plaza, the north courtyard, the Dilworth walk, the amphitheatre, the platform, the grove, the hill and the pond — each a room, between Market Street, 16th, 15th and South Penn Square."
+        "The lawn, the plaza, the north courtyard, the Dilworth walk, the amphitheater, the platform, the grove, the hill and the pond — each a room, between Market Street, 16th, 15th and South Penn Square."
       ],
       "blocks": [
         {
@@ -423,9 +423,9 @@
     },
     {
       "title": "Finding the Form",
-      "standfirst": "Solids are set, but voids are where moments are made.",
+      "standfirst": "The solids are fixed; the voids do the work.",
       "body": [
-        "Start with a mass. Subtract to the eastern sun, then the western. Acknowledge context. Prevent or harness wind. Repeat on both sides.",
+        "The form begins as a mass, subtracted first to the eastern sun and then to the western, adjusted for context, and shaped to block or channel wind. The operation repeats on both sides.",
         "The grid was restrictive, defining too much, so I separated the programs from its rigid touch. Climate and function shaped each space instead, and the resulting mass winds through the structure, occupying about 60% of the available volume — then smoothed and rounded against the grid's ninety-degree angles, so occupied and void read clearly apart."
       ],
       "blocks": [
@@ -530,7 +530,7 @@
       "title": "The Piazza",
       "standfirst": "A market, apartments, and spaces to play.",
       "body": [
-        "The piazza is a hub where all come to stay. The market is the liveliest of its four elements — rotating stalls alongside year-round restaurants, more a permanent farmers' market than a food hall. Its roof doubles as the central greenspace, with a communal screen, a contemplative garden behind one core, lounges with city views and beach volleyball.",
+        "The piazza is the building's principal gathering space. The market is the liveliest of its four elements — rotating stalls alongside year-round restaurants, more a permanent farmers' market than a food hall. Its roof doubles as the central greenspace, with a communal screen, a contemplative garden behind one core, lounges with city views and beach volleyball.",
         "Studio apartments sit alongside with four ground-floor shops for everyday essentials. Across the diagonal, family units begin at four bedrooms with private terraces and vegetable gardens, transitioning upward into one-bedrooms.",
         "The co-working tower is deliberately not connected to the piazza — visible from it, but separate, so work and downtime stay distinct. Fifteen storeys of green wall flank its core, filtering wastewater from the hydroponic farms."
       ],
@@ -593,7 +593,7 @@
       "title": "The Family Circle",
       "standfirst": "Spaces for learning and play at each stage.",
       "body": [
-        "A large portion of the frame given to families and their needs. The central green hosts a playground with boulders for imaginative play; half-courts and a multi-purpose outdoor fitness area sit just off it, with public bathrooms and changing rooms. Out of view are the essential services — doctors, a larger grocery, salons — supplied directly by the hydroponic farm below.",
+        "A large portion of the frame is given over to families and their needs. The central green hosts a playground with boulders for imaginative play; half-courts and a multi-purpose outdoor fitness area sit just off it, with public bathrooms and changing rooms. Out of view are the essential services — doctors, a larger grocery, salons — supplied directly by the hydroponic farm below.",
         "Above the courts is the multigenerational neighborhood: two-level homes of five to six bedrooms, grouped in threes and fours around private common space and circulation, stacked four deep and joined by stair and core.",
         "Across the circle, a four-storey K–8 school meets a community center through a shared outdoor atrium of planted ramps and terraces, integrating the school with the library and maker spaces above. The circular form is deliberate — it keeps sightlines open upward through the building."
       ],
@@ -653,7 +653,7 @@
       "title": "Can Architects Shape the Future?",
       "standfirst": "The question, returned to.",
       "body": [
-        "This is where the story may seem to conclude — yet perhaps it is a start.",
+        "This is where the project concludes, though the argument it makes is a starting point rather than an answer.",
         "Counterpoint runs through all of it: grid against greenspace, frame against program, structured work against flexible leisure. These pairings ground a concept as expansive as post scarcity firmly in Philadelphia, and keep it from floating off into the abstract.",
         "Abundance alone does not guarantee quality of life. It is thoughtfully designed, vibrant, interconnected places that let us feel the benefit of it — places that draw us outward rather than back to a screen.",
         "This thesis was never about designing a fully realistic building. It continues a conversation begun long before me, and one that will carry on after."

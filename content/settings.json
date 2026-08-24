@@ -9,7 +9,7 @@
     "welcomeText": "Welcome",
     "highlightText": "CCD",
     "highlightColor": "#00a799",
-    "subtitle": "enter to see your curated portfolio",
+    "subtitle": "Selected work in architecture and urban design.",
     "buttonLabel": "Enter",
     "buttonDelaySeconds": 2
   },
@@ -17,34 +17,34 @@
     "layout": "timeline",
     "eyebrow": "Architecture & Design",
     "headline": "THE BUILT ENVIRONMENT DESIGNED INTENTIONALLY",
-    "intro": "Driven Architecture graduate of the 2+4 program at Drexel University. A quick learner interested in implementing innovative and creative techniques in designing inclusive, community-oriented projects.",
+    "intro": "Architecture graduate of the 2+4 program at Drexel University, now managing adaptive reuse projects in Philadelphia. My work is directed at inclusive, community-oriented projects and the design of the public realm.",
     "meta": [
       {
         "label": "Based in",
-        "value": "philadelphia, pa"
+        "value": "Philadelphia, PA"
       },
       {
         "label": "Education",
-        "value": "drexel university"
+        "value": "Drexel University"
       },
       {
         "label": "Currently",
-        "value": "project manager/ designer at philly office retail"
+        "value": "Project Manager & Designer, Philly Office Retail"
       },
       {
         "label": "Looking for",
-        "value": "opportunities related to the design of the public realm"
+        "value": "Roles in the design of the public realm"
       }
     ],
     "aboutHeadline": "Designing inclusive, community-oriented projects.",
-    "aboutSummary": "Architecture graduate of Drexel's 2+4 program, now managing adaptive reuse projects in Philadelphia. Most motivated by constraint-heavy problems and the creative solutions they demand.",
+    "aboutSummary": "Architecture graduate of Drexel's 2+4 program, now managing adaptive reuse projects in Philadelphia. Strongest on constraint-heavy problems and the early design work that resolves them.",
     "portrait": "assets/images/VERY SMALL.png"
   },
   "about": {
     "paragraphs": [
-      "Driven architecture graduate of the 2+4 program at Drexel University. A quick learner interested in implementing innovative and creative techniques in designing inclusive, community-oriented projects.",
-      "My strengths lie in early design and conceptual development — diagramming, rendering, and clearly conveying intent. I excel at communication and presentation, translating complex ideas into clear, compelling narratives. I am most motivated when tackling constraint-heavy problems, and most fulfilled when crafting creative, unique solutions.",
-      "I am seeking a civically minded, challenging role that prioritizes sustainability and community while providing opportunities to broaden my skills. I aim to help positively transform Philadelphia's built environment."
+      "Architecture graduate of the 2+4 program at Drexel University, currently managing adaptive reuse and state-of-good-repair projects in Philadelphia.",
+      "My strengths are in early design and conceptual development: diagramming, rendering, and communicating intent. I am comfortable translating complex ideas into clear narratives for clients and consultants, and I work best on constraint-heavy problems.",
+      "I am looking for a civically minded role that prioritizes sustainability and community while broadening my technical range, with the aim of contributing to Philadelphia's built environment."
     ],
     "portrait": "assets/images/Evan-scaled.jpeg",
     "resume": "assets/images/Resume for CCD-1.pdf",
@@ -141,19 +141,19 @@
   },
   "guide": {
     "enabled": true,
-    "eyebrow": "New here?",
-    "question": "What brings you by?",
+    "eyebrow": "Where to start",
+    "question": "What would you like to see?",
     "routes": [
       {
-        "label": "I'm hiring",
-        "blurb": "Naugatuck is the professional work — a mixed-use building for Pennrose, drawn at WRT and in construction now. For planning at the district scale, Pride in Place is the one to read: a whole neighborhood worked out from the street up, with the mapping and circulation studies behind it. Block Core and Kensington Core show a scheme developing from a single corner to a whole block. My résumé and references are on the About page.",
+        "label": "Professional work",
+        "blurb": "Naugatuck is a mixed-use building for Pennrose, drawn at WRT Planning + Design and now in construction. Pride in Place is the planning work, a district resolved from the street module upward. Block Core and Kensington Core follow one scheme from a single corner to a full block. A résumé and references are on the About page.",
         "links": [
           {
             "label": "Naugatuck",
             "href": "projects/naugatuck.html"
           },
           {
-            "label": "Pride in Place — urban planning",
+            "label": "Pride in Place",
             "href": "projects/pride-in-place.html"
           },
           {
@@ -161,14 +161,14 @@
             "href": "about.html"
           },
           {
-            "label": "Get in touch",
+            "label": "Contact",
             "href": "contact.html"
           }
         ]
       },
       {
-        "label": "I'm an architect or designer",
-        "blurb": "Post Scarcity is the thesis, laid out as a walkthrough you can read straight through. Pride in Place carries the analysis — circulation studies, street modules, the research the plan answers to. Both have the drawings behind the renders.",
+        "label": "Design and research",
+        "blurb": "Post Scarcity is the thesis, awarded the 2025 Pearson Prize Silver Medal, and is laid out as a walkthrough from premise to building. Pride in Place carries the supporting analysis: circulation studies, street modules, and the mapping the plan answers to.",
         "links": [
           {
             "label": "Post Scarcity",
@@ -181,8 +181,8 @@
         ]
       },
       {
-        "label": "Just looking around",
-        "blurb": "Kensington Core has the films, if you would rather watch than read. Garden Schools is the one with the landscape. Otherwise sweep the timeline below and open whatever catches your eye — every project opens with its pictures.",
+        "label": "A quick overview",
+        "blurb": "Kensington Core includes four short films. Garden Schools sets three schools within a single shared landscape. Every project opens with its images, and the timeline below runs from the most recent backward.",
         "links": [
           {
             "label": "Kensington Core",
