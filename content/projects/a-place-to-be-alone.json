@@ -1,0 +1,167 @@
+{
+  "title": "A Place to Be Alone",
+  "published": true,
+  "slug": "a-place-to-be-alone",
+  "summary": "A net-zero pavilion beside the Drexel Smart House that reconfigures for eight solitary activities, from meditation to cooking.",
+  "date": "Fall 2023",
+  "order": 6,
+  "accent": 5,
+  "cover": "assets/images/a-place-to-be-alone/aerial.jpg",
+  "type": "Pavilion",
+  "year": "2023",
+  "location": "Powelton Village, Philadelphia",
+  "program": "Contemplative space for eight solitary activities",
+  "status": "Academic — Drexel studio",
+  "body": [
+    "A net-zero pavilion on the Drexel Smart House site in Powelton Village, designed as a place to be alone. The program set out to connect the Powelton and Drexel communities, to give the area a room it does not otherwise have, and to make both the building's use and its energy use readable from the street. It is grounded in research on solitude, which identifies competence, autonomy, self-growth, interpersonal connection, self-care and appreciation of the environment as what people draw from time by themselves.",
+    "One room supports eight solitary activities — painting, cooking, music, tea, yoga, prayer, meditation and workspace — each with its own requirements for acoustics, temperature, light and ventilation. Six moving elements reconfigure it between them: a sliding door, acoustic paneling, a combined mechanical and kitchen unit, a desk, an iris skylight and rolling blinds.",
+    "The structure is glulam over rammed earth, with Wissahickon schist, mineral wool and bamboo. Wall assemblies were modeled from 8 to 30 inches of rammed earth against denim, mycelium and cellulose insulation to find the thickness at which energy use intensity turns negative. A solar roof and a gravity battery supply and store the power — the sizing study set 27 tonnes of concrete falling 26 feet to hold about 0.58 kWh — while a heat chimney drives ventilation and rainwater is collected and stored below grade."
+  ],
+  "gallery": [
+    {
+      "src": "assets/images/a-place-to-be-alone/aerial.jpg",
+      "caption": "",
+      "group": "Views",
+      "wide": true
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/exterior-night.jpg",
+      "caption": "",
+      "group": "Views",
+      "wide": false
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/interior-yoga.jpg",
+      "caption": "",
+      "group": "Views",
+      "wide": false
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/site-plan.jpg",
+      "caption": "Site plan",
+      "group": "Plans",
+      "wide": true
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/section-north-south.jpg",
+      "caption": "North–south section",
+      "group": "Sections & Elevations",
+      "wide": true
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/section-context.jpg",
+      "caption": "Section",
+      "group": "Sections & Elevations",
+      "wide": true
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/section-perspective.jpg",
+      "caption": "",
+      "group": "Sections & Elevations",
+      "wide": false
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/axon-exploded.jpg",
+      "caption": "Exploded axon",
+      "group": "Diagrams",
+      "wide": false
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/dia-heat-chimney.jpg",
+      "caption": "Heat chimney",
+      "group": "Diagrams",
+      "wide": true
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/sys-1-acoustic-wall.jpg",
+      "caption": "",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": false,
+      "size": "small"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/sys-2-sliding-partition.jpg",
+      "caption": "",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": false,
+      "size": "small"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/sys-3-roof-services.jpg",
+      "caption": "",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": false,
+      "size": "small"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/sys-4-solar-skylight.jpg",
+      "caption": "",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": false,
+      "size": "small"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/sys-5-roof-structure.jpg",
+      "caption": "",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": false,
+      "size": "small"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/sys-6-skylight-closed.jpg",
+      "caption": "",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": false,
+      "size": "small"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/sys-7-vault.jpg",
+      "caption": "",
+      "group": "Diagrams",
+      "building": "Systems",
+      "wide": false,
+      "size": "small"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/film-approach-poster.jpg",
+      "caption": "",
+      "group": "Film",
+      "wide": false,
+      "video": "assets/images/a-place-to-be-alone/film-approach.mp4"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/film-exterior-poster.jpg",
+      "caption": "Outdoor",
+      "group": "Film",
+      "wide": false,
+      "video": "assets/images/a-place-to-be-alone/film-exterior.mp4"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/film-cooking-poster.jpg",
+      "caption": "Cooking",
+      "group": "Film",
+      "wide": false,
+      "video": "assets/images/a-place-to-be-alone/film-cooking.mp4"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/film-yoga-poster.jpg",
+      "caption": "Yoga",
+      "group": "Film",
+      "wide": false,
+      "video": "assets/images/a-place-to-be-alone/film-yoga.mp4"
+    },
+    {
+      "src": "assets/images/a-place-to-be-alone/film-stargazing-poster.jpg",
+      "caption": "Star gazing",
+      "group": "Film",
+      "wide": false,
+      "video": "assets/images/a-place-to-be-alone/film-stargazing.mp4"
+    }
+  ]
+}
