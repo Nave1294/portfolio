@@ -89,6 +89,18 @@ const projects = existsSync(projectsDir)
       .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
   : [];
 
+// Research papers and presentations. A separate collection from projects:
+// these are read rather than looked at, so they get their own section and a
+// long-form page instead of a gallery.
+const researchDir = join(ROOT, "content", "research");
+const research = existsSync(researchDir)
+  ? readdirSync(researchDir)
+      .filter((f) => f.endsWith(".json"))
+      .map((f) => JSON.parse(readFileSync(join(researchDir, f), "utf8")))
+      .filter((r) => r.published !== false)
+      .sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+  : [];
+
 const landingOn = settings.landing?.enabled !== false;
 // With a landing page, the grid moves to work.html so index.html can be the door.
 const WORK_URL = landingOn ? "work.html" : "index.html";
@@ -150,7 +162,13 @@ function header(current, depth = 0) {
   )} <span>/ ${esc(site.role || "")}</span></a>
     <nav>
       <ul class="nav-links">
-        <li><a href="${up}${WORK_URL}"${on("work")}>${esc(lab("navWork", "Work"))}</a></li>
+        <li><a href="${up}${WORK_URL}"${on("work")}>${esc(lab("navWork", "Work"))}</a></li>${
+    research.length
+      ? `\n        <li><a href="${up}research.html"${on("research")}>${esc(
+          lab("navResearch", "Research")
+        )}</a></li>`
+      : ""
+  }
         <li><a href="${up}about.html"${on("about")}>${esc(lab("navAbout", "About"))}</a></li>
         <li><a href="${up}contact.html"${on("contact")}>${esc(lab("navContact", "Contact"))}</a></li>
       </ul>
@@ -1078,6 +1096,155 @@ ${jumpLink("up", "#top", lab("backToTop", "Back to top"))}
 ${footer(1, { full: false })}`;
 }
 
+/* ---------- research ----------
+   Papers and presentations. The index lists them; each gets a long-form page
+   with the text set to a reading measure, and the original document offered
+   alongside for anyone who would rather have the PDF. */
+function researchLine(r) {
+  return [r.kind, r.date, r.context].filter(Boolean).join(" · ");
+}
+
+function researchIndexPage() {
+  const cards = research
+    .map((r) => {
+      const topics = (r.topics || [])
+        .filter(Boolean)
+        .map((t) => `<li>${esc(t)}</li>`)
+        .join("");
+      return `        <a class="paper-card reveal" href="research/${attr(r.slug)}.html">
+          <span class="paper-meta">${esc(researchLine(r))}</span>
+          <h2>${esc(r.title)}</h2>${
+        r.summary ? `\n          <p>${esc(r.summary)}</p>` : ""
+      }${topics ? `\n          <ul class="paper-topics">${topics}</ul>` : ""}
+        </a>`;
+    })
+    .join("\n\n");
+
+  const h = settings.researchPage || {};
+  return `${head(`${lab("researchHeading", "Research")} — ${site.name}`, {
+    description: h.intro || "",
+  })}
+${header("research")}
+
+<main>
+
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow reveal">${esc(lab("researchEyebrow", "Writing"))}</span>
+      <h1 class="reveal">${esc(h.headline || lab("researchHeading", "Research"))}</h1>${
+    h.intro ? `\n      ${paras(h.intro, 'class="lede reveal"').join("\n      ")}` : ""
+  }
+    </div>
+  </section>
+
+  <section class="papers">
+    <div class="container">
+
+${cards}
+
+    </div>
+  </section>
+
+</main>
+${footer(0)}`;
+}
+
+function researchPage(r) {
+  const blocks = (b) => {
+    if (b.kind === "quote") {
+      // Its own field rather than reusing `text`: paragraphs are a list and a
+      // quotation is one string, and the dashboard cannot hold both under one
+      // name without mangling whichever it did not expect.
+      const t = String(b.quoteText || "").trim();
+      if (!t) return "";
+      return `        <blockquote class="paper-quote">
+          ${paras(t).join("\n          ")}${
+        b.attribution
+          ? `\n          <cite>${esc(b.attribution)}</cite>`
+          : ""
+      }
+        </blockquote>`;
+    }
+    if (b.kind === "list") {
+      const items = (b.items || []).filter(Boolean);
+      if (!items.length) return "";
+      return `        <div class="paper-list">${
+        b.title ? `\n          <h3>${esc(b.title)}</h3>` : ""
+      }
+          <ul>
+${items.map((i) => `            <li>${esc(i)}</li>`).join("\n")}
+          </ul>
+        </div>`;
+    }
+    const text = Array.isArray(b.text) ? b.text : [b.text];
+    return text
+      .filter((t) => t && String(t).trim())
+      .flatMap((t) => paras(t))
+      .map((p) => "        " + p)
+      .join("\n");
+  };
+
+  const body = (r.sections || [])
+    .map((s) => {
+      const inner = (s.blocks || []).map(blocks).filter(Boolean).join("\n\n");
+      if (!inner && !s.heading) return "";
+      return `      <section class="paper-section">${
+        s.heading ? `\n        <h2>${esc(s.heading)}</h2>` : ""
+      }
+${inner}
+      </section>`;
+    })
+    .filter(Boolean)
+    .join("\n\n");
+
+  const refs = (r.references || []).filter(Boolean);
+  const refBlock = refs.length
+    ? `
+      <section class="paper-section paper-refs">
+        <h2>${esc(lab("referencesListHeading", "Work cited"))}</h2>
+        <ol>
+${refs.map((x) => `          <li>${esc(x)}</li>`).join("\n")}
+        </ol>
+      </section>`
+    : "";
+
+  return `${head(`${r.title} — ${site.name}`, {
+    depth: 1,
+    description: r.summary || "",
+  })}
+${header("research", 1)}
+
+<main class="paper">
+
+  <section class="hero paper-hero">
+    <div class="container">
+      <span class="eyebrow reveal">${esc(researchLine(r))}</span>
+      <h1 class="reveal">${esc(r.title)}</h1>${
+    r.standfirst
+      ? `\n      ${paras(r.standfirst, 'class="lede reveal"').join("\n      ")}`
+      : ""
+  }${
+    r.pdf
+      ? `\n      <a class="btn" href="../${attr(r.pdf)}" style="margin-top: 2rem;">${esc(
+          lab("paperDownload", "Read the original PDF ↓")
+        )}</a>`
+      : ""
+  }
+    </div>
+  </section>
+
+  <article class="paper-body">
+    <div class="container">
+
+${body}
+${refBlock}
+    </div>
+  </article>
+
+</main>
+${footer(1)}`;
+}
+
 /* ---------- write ---------- */
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(join(OUT, "projects"), { recursive: true });
@@ -1098,6 +1265,11 @@ if (landingOn) {
 }
 put("about.html", aboutPage());
 put("contact.html", contactPage());
+
+if (research.length) {
+  put("research.html", researchIndexPage());
+  research.forEach((r) => put(`research/${r.slug}.html`, researchPage(r)));
+}
 
 projects.forEach((p, i) => {
   const prev = projects[(i - 1 + projects.length) % projects.length];

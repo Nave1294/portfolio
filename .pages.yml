@@ -284,6 +284,141 @@ content:
             description: "Set every image in a tab to Small and they lay out four to a row."
 
   # ---------------------------------------------------------------
+  - name: research
+    label: Research & writing
+    type: collection
+    path: content/research
+    filename: "{fields.slug}.json"
+    format: json
+    view:
+      fields: [title, kind, date, order, published]
+      primary: title
+      sort: [order, title, date]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+        description: "Shown in the Research list, at the top of the page, and in the browser tab."
+
+      - name: published
+        label: Show on site
+        type: boolean
+        default: true
+        description: "Turn off to hide this piece. With nothing published, the Research link disappears from the navigation entirely."
+
+      - name: slug
+        label: URL name
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9]+(-[a-z0-9]+)*$"
+          message: Lowercase letters, numbers and hyphens only.
+        description: "Becomes the page address, under /research/."
+
+      - name: kind
+        label: Kind
+        type: string
+        description: "What this is — Research paper, Presentation, Essay, Thesis chapter. Shown in small type above the title."
+
+      - name: date
+        label: Date
+        type: string
+        description: "A year, or something like Spring 2021."
+
+      - name: context
+        label: Written for
+        type: string
+        description: "Optional. The course, institution or occasion. Shown after the kind and date."
+
+      - name: order
+        label: Position in the list
+        type: number
+        default: 1
+        description: "Lower numbers appear first."
+
+      - name: standfirst
+        label: Opening line
+        type: text
+        description: "One sentence under the title, set larger than the body. A line from the piece itself works well."
+
+      - name: summary
+        label: Summary
+        type: rich-text
+        options:
+          format: markdown
+          media: false
+        description: "Two or three sentences shown in the Research list. Say what the piece argues, not just what it is about."
+
+      - name: topics
+        label: Topics
+        type: string
+        list: true
+        description: "A few keywords shown under the summary in the list."
+
+      - name: pdf
+        label: Original document
+        type: file
+        description: "Optional. The PDF, offered as a download at the top of the page for anyone who would rather read it that way."
+
+      - name: sections
+        label: Sections
+        type: object
+        list: true
+        description: "The piece itself, in order. Give the first section a blank heading if it is an introduction."
+        fields:
+          - name: heading
+            label: Section heading
+            type: string
+            description: "Leave blank for an untitled opening section."
+          - name: blocks
+            label: Blocks
+            type: object
+            list: true
+            description: "Paragraphs, quotes and lists, in the order they should be read."
+            fields:
+              - name: kind
+                label: Block type
+                type: select
+                default: text
+                options:
+                  values:
+                    - { value: text, label: "Paragraphs" }
+                    - { value: quote, label: "Block quote" }
+                    - { value: list, label: "List" }
+              - name: text
+                label: Paragraphs
+                type: rich-text
+                options:
+                  format: markdown
+                  media: false
+                list: true
+                description: "Used by Paragraphs blocks. One paragraph per entry."
+              - name: quoteText
+                label: Quotation
+                type: text
+                description: "Used by Block quote blocks. Ignored by the others."
+              - name: attribution
+                label: Quotation source
+                type: string
+                description: "Optional. Shown under the quotation."
+              - name: title
+                label: List heading
+                type: string
+                description: "Optional, used by List blocks."
+              - name: items
+                label: List items
+                type: string
+                list: true
+                description: "Used by List blocks. One entry per item; they lay out in columns."
+
+      - name: references
+        label: Work cited
+        type: text
+        list: true
+        description: "One citation per entry. Shown as a numbered list at the foot of the page."
+
+  # ---------------------------------------------------------------
   - name: settings
     label: Site settings
     type: string
@@ -485,6 +620,23 @@ content:
           - { name: instagram, label: Instagram URL, type: string }
           - { name: footerCta, label: Footer message, type: text, description: "The line in the footer across the site." }
 
+      - name: researchPage
+        label: Research page
+        type: object
+        description: "The heading and introduction at the top of the Research list. The list itself is built from the Research & writing collection."
+        fields:
+          - name: headline
+            label: Headline
+            type: string
+            description: 'Blank = "Research"'
+          - name: intro
+            label: Intro paragraph
+            type: rich-text
+            options:
+              format: markdown
+              media: false
+            description: "Optional. One paragraph under the headline."
+
       - name: labels
         label: Headings & wording
         type: object
@@ -494,6 +646,10 @@ content:
             label: "Navigation: Work"
             type: string
             description: 'Blank = "Work"'
+          - name: navResearch
+            label: "Navigation: Research"
+            type: string
+            description: 'Blank = "Research". Only shown when something is published in Research & writing.'
           - name: navAbout
             label: "Navigation: About"
             type: string
@@ -544,6 +700,23 @@ content:
             label: Small label on the Contact page
             type: string
             description: 'Blank = "Contact"'
+
+          - name: researchEyebrow
+            label: Small label on the Research page
+            type: string
+            description: 'Blank = "Writing"'
+          - name: researchHeading
+            label: Research page heading
+            type: string
+            description: 'Blank = "Research"'
+          - name: paperDownload
+            label: Document download button
+            type: string
+            description: 'Blank = "Read the original PDF ↓"'
+          - name: referencesListHeading
+            label: Citations heading
+            type: string
+            description: 'Blank = "Work cited"'
 
           - name: overviewHeading
             label: Heading above a project's text

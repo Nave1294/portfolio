@@ -1227,6 +1227,165 @@ html.js .gallery-panel[hidden] { display: none; }
 .timeline-item .year { color: var(--color-text-muted); font-size: 0.9rem; }
 
 /* ============================================================
+   RESEARCH
+   Papers and presentations. These are read rather than looked at, so the
+   measure is set for reading and nothing competes with the text.
+   ============================================================ */
+.papers {
+  padding-bottom: var(--space-xl);
+  display: grid;
+  gap: 0;
+}
+
+.papers .container { display: grid; gap: 0; }
+
+/* Each paper is a rule and some text — the same language as the rest of the
+   site, with nothing that pretends to be a thumbnail. */
+.paper-card {
+  display: block;
+  padding-block: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  max-width: 72ch;
+}
+
+.papers .container > :last-child { border-bottom: 1px solid var(--color-border); }
+
+.paper-meta {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.paper-card h2 {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  margin-bottom: var(--space-sm);
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.paper-card p {
+  color: var(--color-text-muted);
+  max-width: 62ch;
+}
+
+.paper-card:hover h2 { color: var(--accent-1); }
+
+.paper-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+  margin-top: var(--space-sm);
+  list-style: none;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.paper-topics li::after { content: " ·"; }
+.paper-topics li:last-child::after { content: ""; }
+
+/* ---------- the paper itself ---------- */
+.paper-hero h1 { max-width: 22ch; }
+.paper-hero .lede { max-width: 52ch; }
+
+.paper-body {
+  padding-bottom: var(--space-xl);
+  /* Held in rem rather than ch so every block lands on the same measure —
+     a ch resolves against each element's own font size, which put the
+     section rules a good 400px wider than the text under them. */
+  --measure: 38rem;
+}
+
+.paper-section { margin-bottom: var(--space-lg); }
+
+.paper-section h2 {
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  margin-bottom: var(--space-md);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+/* One measure for every kind of block, so neither edge moves as you read. */
+.paper-section h2,
+.paper-body p,
+.paper-quote,
+.paper-list {
+  max-width: var(--measure);
+}
+
+/* Citations set smaller, so they take their own measure rather than running
+   to 95 characters a line. */
+.paper-refs ol { max-width: 62ch; }
+
+.paper-body p {
+  margin-bottom: var(--space-sm);
+  line-height: 1.7;
+}
+
+.paper-quote {
+  margin: var(--space-md) 0;
+  padding-left: var(--space-md);
+  border-left: 2px solid var(--accent-1);
+}
+
+.paper-quote p {
+  font-size: 1.05rem;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.paper-quote cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+.paper-list { margin: var(--space-md) 0; }
+
+.paper-list h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.paper-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  border-top: 1px solid var(--color-border);
+  list-style: none;
+}
+
+.paper-list li {
+  padding: 0.6rem var(--space-md) 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
+}
+
+/* Citations run smaller and hang their numbers, so a long list of sources
+   reads as apparatus rather than as more argument. */
+.paper-refs ol {
+  padding-left: 1.6rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.paper-refs li {
+  margin-bottom: 0.6rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .paper-list ul { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
    CONTACT PAGE
    ============================================================ */
 .contact-main h1 { max-width: 20ch; }
