@@ -5,10 +5,8 @@
   "summary": "A net-zero pavilion beside the Drexel Smart House that reconfigures for eight solitary activities, from meditation to cooking.",
   "date": "Fall 2023",
   "order": 6,
-  "accent": 5,
+  "accent": "5",
   "cover": "assets/images/a-place-to-be-alone/aerial.jpg",
-  "coverVideo": "assets/images/a-place-to-be-alone/film-yoga.mp4",
-  "coverVideoPoster": "assets/images/a-place-to-be-alone/film-yoga-poster.jpg",
   "type": "Pavilion",
   "year": "2023",
   "location": "Powelton Village, Philadelphia",
@@ -22,19 +20,16 @@
   "gallery": [
     {
       "src": "assets/images/a-place-to-be-alone/aerial.jpg",
-      "caption": "",
       "group": "Views",
       "wide": true
     },
     {
       "src": "assets/images/a-place-to-be-alone/exterior-night.jpg",
-      "caption": "",
       "group": "Views",
       "wide": false
     },
     {
       "src": "assets/images/a-place-to-be-alone/interior-yoga.jpg",
-      "caption": "",
       "group": "Views",
       "wide": false
     },
@@ -58,7 +53,6 @@
     },
     {
       "src": "assets/images/a-place-to-be-alone/section-perspective.jpg",
-      "caption": "",
       "group": "Sections & Elevations",
       "wide": false
     },
@@ -76,7 +70,6 @@
     },
     {
       "src": "assets/images/a-place-to-be-alone/sys-1-acoustic-wall.jpg",
-      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": false,
@@ -84,7 +77,6 @@
     },
     {
       "src": "assets/images/a-place-to-be-alone/sys-2-sliding-partition.jpg",
-      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": false,
@@ -92,7 +84,6 @@
     },
     {
       "src": "assets/images/a-place-to-be-alone/sys-3-roof-services.jpg",
-      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": false,
@@ -100,7 +91,6 @@
     },
     {
       "src": "assets/images/a-place-to-be-alone/sys-4-solar-skylight.jpg",
-      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": false,
@@ -108,7 +98,6 @@
     },
     {
       "src": "assets/images/a-place-to-be-alone/sys-5-roof-structure.jpg",
-      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": false,
@@ -116,7 +105,6 @@
     },
     {
       "src": "assets/images/a-place-to-be-alone/sys-6-skylight-closed.jpg",
-      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": false,
@@ -124,46 +112,38 @@
     },
     {
       "src": "assets/images/a-place-to-be-alone/sys-7-vault.jpg",
-      "caption": "",
       "group": "Diagrams",
       "building": "Systems",
       "wide": false,
       "size": "small"
     },
     {
-      "src": "assets/images/a-place-to-be-alone/film-approach-poster.jpg",
-      "caption": "",
-      "group": "Film",
-      "wide": false,
-      "video": "assets/images/a-place-to-be-alone/film-approach.mp4"
-    },
-    {
       "src": "assets/images/a-place-to-be-alone/film-exterior-poster.jpg",
+      "video": "assets/images/a-place-to-be-alone/film-exterior.mp4",
       "caption": "Outdoor",
       "group": "Film",
-      "wide": false,
-      "video": "assets/images/a-place-to-be-alone/film-exterior.mp4"
+      "wide": false
     },
     {
       "src": "assets/images/a-place-to-be-alone/film-cooking-poster.jpg",
+      "video": "assets/images/a-place-to-be-alone/film-cooking.mp4",
       "caption": "Cooking",
       "group": "Film",
-      "wide": false,
-      "video": "assets/images/a-place-to-be-alone/film-cooking.mp4"
+      "wide": false
     },
     {
       "src": "assets/images/a-place-to-be-alone/film-yoga-poster.jpg",
+      "video": "assets/images/a-place-to-be-alone/film-yoga.mp4",
       "caption": "Yoga",
       "group": "Film",
-      "wide": false,
-      "video": "assets/images/a-place-to-be-alone/film-yoga.mp4"
+      "wide": false
     },
     {
       "src": "assets/images/a-place-to-be-alone/film-stargazing-poster.jpg",
+      "video": "assets/images/a-place-to-be-alone/film-stargazing.mp4",
       "caption": "Star gazing",
       "group": "Film",
-      "wide": false,
-      "video": "assets/images/a-place-to-be-alone/film-stargazing.mp4"
+      "wide": false
     }
   ]
 }
