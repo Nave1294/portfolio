@@ -185,7 +185,7 @@
       },
       {
         "label": "A quick overview",
-        "blurb": "Two projects will tell you most of it. Post Scarcity is the thesis, read straight through as a walkthrough; Kensington Core is the block it would apply to, and includes four short films if you would rather watch than read. Every project opens with its images, and the timeline below runs from the most recent backward.",
+        "blurb": "Post Scarcity is the thesis, read straight through as a walkthrough. Kensington Core is the block it would apply to, and includes four short films if you would rather watch than read. Powel's Place is the adaptive reuse — a business incubator built into the former Samuel Powel Elementary School. Every project opens with its images, and the timeline below runs from the most recent backward.",
         "links": [
           {
             "label": "Post Scarcity",
@@ -194,6 +194,10 @@
           {
             "label": "Kensington Core",
             "href": "projects/kensington-core.html"
+          },
+          {
+            "label": "Powel's Place",
+            "href": "projects/powel-s-place.html"
           }
         ]
       }
