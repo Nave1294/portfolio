@@ -8,7 +8,7 @@
     "enabled": true,
     "welcomeText": "Welcome",
     "highlightText": "SCOUT",
-    "highlightColor": "#00a799",
+    "highlightColor": "#F7BB41",
     "subtitle": "Selected work in architecture and urban design.",
     "buttonLabel": "Enter",
     "buttonDelaySeconds": 2
@@ -136,5 +136,62 @@
     "linkedin": "https://www.linkedin.com/in/evan-thalheimer-835120216",
     "instagram": "https://www.instagram.com/eat.arch?utm_source=qr",
     "footerCta": "Let's talk."
+  },
+  "guide": {
+    "enabled": true,
+    "eyebrow": "Where to start",
+    "question": "What would you like to see?",
+    "routes": [
+      {
+        "label": "Professional work",
+        "blurb": "Naugatuck is a mixed-use building for Pennrose, drawn at WRT Planning + Design and now in construction. Pride in Place is the planning work, a district resolved from the street module upward. Block Core and Kensington Core follow one scheme from a single corner to a full block. A résumé and references are on the About page.",
+        "links": [
+          {
+            "label": "Naugatuck",
+            "href": "projects/naugatuck.html"
+          },
+          {
+            "label": "Pride in Place",
+            "href": "projects/pride-in-place.html"
+          },
+          {
+            "label": "About, résumé and references",
+            "href": "about.html"
+          },
+          {
+            "label": "Contact",
+            "href": "contact.html"
+          }
+        ]
+      },
+      {
+        "label": "Design and research",
+        "blurb": "Post Scarcity is the thesis, awarded the 2025 Pearson Prize Silver Medal, and is laid out as a walkthrough from premise to building. Pride in Place carries the supporting analysis: circulation studies, street modules, and the mapping the plan answers to.",
+        "links": [
+          {
+            "label": "Post Scarcity",
+            "href": "projects/post-scarcity.html"
+          },
+          {
+            "label": "Pride in Place",
+            "href": "projects/pride-in-place.html"
+          }
+        ]
+      },
+      {
+        "label": "A quick overview",
+        "blurb": "Kensington Core includes four short films. Garden Schools sets three schools within a single shared landscape. Every project opens with its images, and the timeline below runs from the most recent backward.",
+        "links": [
+          {
+            "label": "Kensington Core",
+            "href": "projects/kensington-core.html"
+          },
+          {
+            "label": "Garden Schools",
+            "href": "projects/garden-schools.html"
+          }
+        ]
+      }
+    ]
   }
 }
