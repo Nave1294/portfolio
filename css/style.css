@@ -12,13 +12,21 @@
   font-display: swap;
 }
 
-/* Faustina, SIL Open Font License. Self-hosted beside the grotesk, latin
-   subset only, 26KB. Used by the landing page's colour-field theme and
-   nowhere else, so it is preloaded only on that page. */
+/* Poppins Light and SemiBold, SIL Open Font License. Self-hosted beside the
+   grotesk, latin subset only, 15KB for the pair. Used by the landing page's
+   colour-field theme and nowhere else, so it is preloaded only there. */
 @font-face {
-  font-family: "Faustina";
-  src: url("../assets/fonts/faustina.woff2") format("woff2");
-  font-weight: 400 600;
+  font-family: "Poppins";
+  src: url("../assets/fonts/poppins-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/poppins-600.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -48,7 +56,7 @@
 
   --font-sans: "Schibsted Grotesk", -apple-system, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
-  --font-serif: "Faustina", Georgia, "Times New Roman", serif;
+  --font-display: "Poppins", var(--font-sans);
 
   --container-max: 1320px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
@@ -1499,27 +1507,40 @@ html.js .gallery-panel[hidden] { display: none; }
 
 .landing.is-field > * { position: relative; z-index: 1; }
 
+/* One family across the page, two weights. Light carries the greeting and
+   semibold picks out the name, which is the pairing Scout uses on their own
+   site — and at display size a geometric sans stays cleaner than a serif. */
 .landing.is-field .landing-welcome {
-  font-family: var(--font-serif);
-  font-size: clamp(3rem, 9.5vw, 7.5rem);
+  font-family: var(--font-display);
+  font-size: clamp(2.9rem, 9vw, 7rem);
   /* Their signature: the lines almost touch. */
-  line-height: 0.98;
-  letter-spacing: -0.015em;
-  font-weight: 400;
+  line-height: 1;
+  /* Poppins is wide and round; without this it sprawls at display size. */
+  letter-spacing: -0.035em;
+  font-weight: 300;
   color: #ffffff;
 }
 
 .landing.is-field .landing-highlight {
   color: #ffffff;
   font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 /* Black, not white. White at this size reads at about 1.7:1 on the amber —
    fine for the display line as a deliberate gesture, unreadable for a line
    of body copy. */
 .landing.is-field .landing-subtitle {
+  font-family: var(--font-display);
+  font-weight: 300;
   color: #000000;
   max-width: 34ch;
+}
+
+.landing.is-field .landing-enter {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .landing.is-field .landing-enter {

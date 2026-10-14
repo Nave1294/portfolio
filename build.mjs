@@ -127,7 +127,7 @@ const lab = (key, fallback) => {
 // otherwise the page renders in place and then jumps right to animate in.
 function head(
   title,
-  { depth = 0, description = "", swipe = false, swipeIn = false, serif = false } = {}
+  { depth = 0, description = "", swipe = false, swipeIn = false, display = false } = {}
 ) {
   const up = depth ? "../".repeat(depth) : "";
   return `<!DOCTYPE html>
@@ -139,9 +139,11 @@ function head(
     description ? `\n<meta name="description" content="${attr(description)}">` : ""
   }
 <link rel="preload" href="${up}assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>${
-    serif
+    display
       ? `
-<link rel="preload" href="${up}assets/fonts/faustina.woff2" as="font" type="font/woff2" crossorigin>`
+<link rel="preload" href="${up}assets/fonts/poppins-300.woff2" as="font" type="font/woff2" crossorigin>` +
+        `
+<link rel="preload" href="${up}assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>`
       : ""
   }
 <link rel="stylesheet" href="${up}css/style.css?v=${CSS_V}">${
@@ -256,7 +258,7 @@ function landingPage() {
   return `${head(site.name || "Portfolio", {
     description: site.description,
     swipe: true,
-    serif: field,
+    display: field,
   })}
 
 <div class="swipe-root">
