@@ -1496,7 +1496,11 @@ html.js .gallery-panel[hidden] { display: none; }
 
 /* A rule grid, the weight of graph paper. Two gradients, no asset. Held at
    0.11: past about 0.15 the lines start competing with the greeting rather
-   than sitting behind it. */
+   than sitting behind it.
+
+   It draws itself on once, as a diagonal wipe — a sheet being ruled up
+   before anything is drawn on it. The mask is oversized and slid across;
+   masks are composited, so this costs no repaint of the gradients. */
 .landing.is-field::after {
   content: "";
   position: absolute;
@@ -1505,7 +1509,19 @@ html.js .gallery-panel[hidden] { display: none; }
   background-image:
     repeating-linear-gradient(to right, rgba(0, 0, 0, 0.11) 0 1px, transparent 1px 64px),
     repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.11) 0 1px, transparent 1px 64px);
+  /* A right triangle anchored at the top-left corner, grown until its
+     hypotenuse is clear of the opposite corner. Clip-path rather than a
+     mask: anything outside a mask image counts as transparent, so an
+     oversized mask slid across ends by wiping the grid back off. */
+  clip-path: polygon(0 0, 0 0, 0 0);
+  animation: grid-rule 2.4s var(--ease-out) 0.15s both;
 }
+
+@keyframes grid-rule {
+  from { clip-path: polygon(0 0, 0 0, 0 0); }
+  to { clip-path: polygon(0 0, 260% 0, 0 260%); }
+}
+
 
 .landing.is-field > * { position: relative; z-index: 1; }
 
@@ -1576,6 +1592,12 @@ html.js .gallery-panel[hidden] { display: none; }
     transform: none;
   }
   .landing-enter { transition: none; }
+
+  /* The grid is simply there, fully ruled, with no wipe. */
+  .landing.is-field::after {
+    animation: none;
+    clip-path: none;
+  }
 }
 
 /* ============================================================
