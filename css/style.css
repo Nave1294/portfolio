@@ -1494,9 +1494,11 @@ html.js .gallery-panel[hidden] { display: none; }
   color: #ffffff;
 }
 
-/* A rule grid, the weight of graph paper. Two gradients, no asset. Held at
-   0.11: past about 0.15 the lines start competing with the greeting rather
-   than sitting behind it.
+/* A rule grid, the weight of graph paper. Two gradients, no asset.
+
+   Hairlines in white rather than 1px in black: half-pixel rules land as a
+   true hairline on a retina screen and antialias to a softer line on a 1x
+   one, which is the right failure either way.
 
    It draws itself on once, as a diagonal wipe — a sheet being ruled up
    before anything is drawn on it. The mask is oversized and slid across;
@@ -1507,8 +1509,8 @@ html.js .gallery-panel[hidden] { display: none; }
   inset: 0;
   pointer-events: none;
   background-image:
-    repeating-linear-gradient(to right, rgba(0, 0, 0, 0.11) 0 1px, transparent 1px 64px),
-    repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.11) 0 1px, transparent 1px 64px);
+    repeating-linear-gradient(to right, rgba(255, 255, 255, 0.38) 0 0.5px, transparent 0.5px 64px),
+    repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.38) 0 0.5px, transparent 0.5px 64px);
   /* A right triangle anchored at the top-left corner, grown until its
      hypotenuse is clear of the opposite corner. Clip-path rather than a
      mask: anything outside a mask image counts as transparent, so an
