@@ -445,6 +445,10 @@ content:
             label: Discipline
             type: string
             description: "Shown after your name in the header — for example, Architecture."
+          - name: title
+            label: Browser tab title
+            type: string
+            description: "What a bookmark, a browser tab and a pasted link show for the front page. Leave blank and your name plus \"Portfolio\" is used."
           - { name: description, label: Search description, type: text, description: One sentence shown in Google results and link previews. }
 
       - name: landing

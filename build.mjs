@@ -255,7 +255,9 @@ function landingPage() {
   // "field" fills the page with the accent and sets the greeting in the serif.
   const field = String(l.theme || "plain").trim() === "field";
 
-  return `${head(site.name || "Portfolio", {
+  // The landing page is the address people share, so its title is what shows
+  // in a bookmark, a tab and a pasted link — not just the name.
+  return `${head(site.title || `${site.name || "Portfolio"} Portfolio`, {
     description: site.description,
     swipe: true,
     display: field,
