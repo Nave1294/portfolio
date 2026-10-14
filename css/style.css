@@ -1516,7 +1516,7 @@ html.js .gallery-panel[hidden] { display: none; }
      mask: anything outside a mask image counts as transparent, so an
      oversized mask slid across ends by wiping the grid back off. */
   clip-path: polygon(0 0, 0 0, 0 0);
-  animation: grid-rule 2.4s var(--ease-out) 0.15s both;
+  animation: grid-rule 3.4s var(--ease-out) 0.15s both;
 }
 
 @keyframes grid-rule {

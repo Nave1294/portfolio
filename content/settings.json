@@ -145,15 +145,15 @@
     "routes": [
       {
         "label": "Professional work",
-        "blurb": "Naugatuck is a mixed-use building for Pennrose, drawn at WRT Planning + Design and now in construction. Pride in Place is the planning work, a district resolved from the street module upward. Block Core and Kensington Core follow one scheme from a single corner to a full block. A résumé and references are on the About page.",
+        "blurb": "Kensington Core is the fullest piece of work here: a whole block on Jasper Street carrying housing, work, education and gathering, with films, plans and sections behind it. Naugatuck is the built professional work — a mixed-use building for Pennrose, drawn at WRT Planning + Design and now in construction. A résumé and references are on the About page.",
         "links": [
+          {
+            "label": "Kensington Core",
+            "href": "projects/kensington-core.html"
+          },
           {
             "label": "Naugatuck",
             "href": "projects/naugatuck.html"
-          },
-          {
-            "label": "Pride in Place",
-            "href": "projects/pride-in-place.html"
           },
           {
             "label": "About, résumé and references",
@@ -167,11 +167,15 @@
       },
       {
         "label": "Design and research",
-        "blurb": "Post Scarcity is the thesis, awarded the 2025 Pearson Prize Silver Medal, and is laid out as a walkthrough from premise to building. Pride in Place carries the supporting analysis: circulation studies, street modules, and the mapping the plan answers to.",
+        "blurb": "Post Scarcity is the thesis, awarded the 2025 Pearson Prize Silver Medal, and reads as a walkthrough from premise to building. Kensington Core takes the same argument to one real block and resolves it in drawings. Between them they cover most of what the rest of the work is doing.",
         "links": [
           {
             "label": "Post Scarcity",
             "href": "projects/post-scarcity.html"
+          },
+          {
+            "label": "Kensington Core",
+            "href": "projects/kensington-core.html"
           },
           {
             "label": "Pride in Place",
@@ -181,15 +185,15 @@
       },
       {
         "label": "A quick overview",
-        "blurb": "Kensington Core includes four short films. Garden Schools sets three schools within a single shared landscape. Every project opens with its images, and the timeline below runs from the most recent backward.",
+        "blurb": "Two projects will tell you most of it. Post Scarcity is the thesis, read straight through as a walkthrough; Kensington Core is the block it would apply to, and includes four short films if you would rather watch than read. Every project opens with its images, and the timeline below runs from the most recent backward.",
         "links": [
+          {
+            "label": "Post Scarcity",
+            "href": "projects/post-scarcity.html"
+          },
           {
             "label": "Kensington Core",
             "href": "projects/kensington-core.html"
-          },
-          {
-            "label": "Garden Schools",
-            "href": "projects/garden-schools.html"
           }
         ]
       }
