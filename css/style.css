@@ -1494,15 +1494,17 @@ html.js .gallery-panel[hidden] { display: none; }
   color: #ffffff;
 }
 
-/* A faint rule grid, the weight of graph paper. Two gradients, no asset. */
+/* A rule grid, the weight of graph paper. Two gradients, no asset. Held at
+   0.11: past about 0.15 the lines start competing with the greeting rather
+   than sitting behind it. */
 .landing.is-field::after {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
   background-image:
-    repeating-linear-gradient(to right, rgba(0, 0, 0, 0.05) 0 1px, transparent 1px 64px),
-    repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0 1px, transparent 1px 64px);
+    repeating-linear-gradient(to right, rgba(0, 0, 0, 0.11) 0 1px, transparent 1px 64px),
+    repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.11) 0 1px, transparent 1px 64px);
 }
 
 .landing.is-field > * { position: relative; z-index: 1; }
