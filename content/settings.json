@@ -6,6 +6,7 @@
   },
   "landing": {
     "enabled": true,
+    "theme": "field",
     "welcomeText": "Welcome",
     "highlightText": "SCOUT",
     "highlightColor": "#F7BB41",

@@ -127,7 +127,7 @@ const lab = (key, fallback) => {
 // otherwise the page renders in place and then jumps right to animate in.
 function head(
   title,
-  { depth = 0, description = "", swipe = false, swipeIn = false } = {}
+  { depth = 0, description = "", swipe = false, swipeIn = false, serif = false } = {}
 ) {
   const up = depth ? "../".repeat(depth) : "";
   return `<!DOCTYPE html>
@@ -138,7 +138,12 @@ function head(
 <title>${esc(title)}</title>${
     description ? `\n<meta name="description" content="${attr(description)}">` : ""
   }
-<link rel="preload" href="${up}assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${up}assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>${
+    serif
+      ? `
+<link rel="preload" href="${up}assets/fonts/faustina.woff2" as="font" type="font/woff2" crossorigin>`
+      : ""
+  }
 <link rel="stylesheet" href="${up}css/style.css?v=${CSS_V}">${
     swipe ? `\n<link rel="stylesheet" href="${up}css/transition.css?v=${TRANSITION_V}">` : ""
   }
@@ -245,13 +250,19 @@ function landingPage() {
     esc(l.welcomeText || "Welcome") +
     (highlight ? ` <span class="landing-highlight">${esc(highlight)}</span>` : "");
 
+  // "field" fills the page with the accent and sets the greeting in the serif.
+  const field = String(l.theme || "plain").trim() === "field";
+
   return `${head(site.name || "Portfolio", {
     description: site.description,
     swipe: true,
+    serif: field,
   })}
 
 <div class="swipe-root">
-  <main class="landing" style="--highlight-color: ${cssColor(l.highlightColor)}">
+  <main class="landing${field ? " is-field" : ""}" style="--highlight-color: ${cssColor(
+    l.highlightColor
+  )}">
     <div class="landing-inner">
       <h1 class="landing-welcome fade-in">${heading}</h1>
       <p class="landing-subtitle fade-in fade-delay-1">${esc(l.subtitle || "")}</p>

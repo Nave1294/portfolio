@@ -457,6 +457,16 @@ content:
             type: boolean
             default: true
             description: Turn off to send visitors straight to your work. All navigation links adjust automatically.
+          - name: theme
+            label: Treatment
+            type: select
+            default: plain
+            options:
+              values:
+                - { value: plain, label: "Plain — black on white, one word in colour" }
+                - { value: field, label: "Colour field — the colour fills the page, greeting set in the serif" }
+            description: "How the landing page is dressed. Colour field uses the colour below as the whole background and sets the greeting large in a serif."
+
           - name: welcomeText
             label: Greeting
             type: string
