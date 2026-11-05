@@ -7,16 +7,18 @@
   },
   "landing": {
     "enabled": true,
-    "theme": "field",
+    "theme": "plain",
     "welcomeText": "Welcome",
-    "highlightText": "SCOUT",
-    "highlightColor": "#F7BB41",
+    "highlightText": "",
+    "highlightColor": "#000000",
     "subtitle": "Selected work in architecture and urban design.",
     "buttonLabel": "Enter",
     "buttonDelaySeconds": 2
   },
   "home": {
     "layout": "timeline",
+    "backHref": "https://nave1294.github.io/",
+    "backLabel": "Back to evanthalheimer",
     "eyebrow": "Architecture & Design",
     "headline": "THE BUILT ENVIRONMENT DESIGNED INTENTIONALLY",
     "intro": "Architecture graduate of the 2+4 program at Drexel University, now managing adaptive reuse projects in Philadelphia. My work is directed at inclusive, community-oriented projects and the design of the public realm.",

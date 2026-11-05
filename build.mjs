@@ -545,7 +545,17 @@ ${landingOn ? '<div class="swipe-root">' : ""}
 ${header("work")}
 
 <main>
-
+${
+    h.backHref
+      ? `
+  <div class="container">
+    <a class="back-link" href="${attr(h.backHref)}">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
+      ${esc(h.backLabel || "Back")}
+    </a>
+  </div>`
+      : ""
+  }
   <section class="hero">
     <div class="container">
       ${h.eyebrow ? `<span class="eyebrow reveal">${esc(h.eyebrow)}</span>` : ""}

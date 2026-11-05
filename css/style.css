@@ -766,6 +766,36 @@ html.js .guide-answer.is-open {
   .to-top svg { transition: none; }
 }
 
+/* Out of the portfolio and back to whatever sent you here. Same language as
+   the back-to-top link in the footer, arrow pointing the other way. */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: var(--space-md);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  transition: color 0.2s var(--ease);
+}
+
+.back-link svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s var(--ease);
+}
+
+.back-link:hover { color: var(--color-text); }
+.back-link:hover svg { transform: translateX(-3px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .back-link svg { transition: none; }
+}
+
 /* ============================================================
    ABOUT TEASER / SPLIT SECTIONS
    ============================================================ */

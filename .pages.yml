@@ -509,6 +509,15 @@ content:
               values:
                 - { value: timeline, label: "Timeline — scrolls sideways, cover fades in above" }
                 - { value: grid, label: "Grid — all covers at once" }
+          - name: backHref
+            label: Back link address
+            type: string
+            description: "Optional. Shows a small back arrow at the top of this page. Use it to return to another site of yours — leave blank and no arrow appears."
+          - name: backLabel
+            label: Back link text
+            type: string
+            description: "What the back arrow says. Blank = \"Back\"."
+
           - { name: eyebrow, label: Small label above headline, type: string }
           - { name: headline, label: Headline, type: text }
           - name: intro
