@@ -215,9 +215,7 @@ hidden, so no drawing becomes unreachable.
 The site is pure white and black. Color appears **only** to identify a
 project: the swatch beside its category, the title on hover, and the rule above
 its metadata. Six accents (`--accent-1`…`6`) are defined in `css/style.css`.
-For now all six are the same corten-steel rust (`--corten`, #9c4a26), the
-accent shared by all of my sites; the comment there lists the old
-per-project colours to restore them.
+Keeping color scarce is what makes the projects read as distinct.
 
 ## Images
 
