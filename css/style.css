@@ -43,13 +43,17 @@
   --color-border: #e2e2e2;
 
   /* Project accents — the ONLY color on the site.
-     Assign one per project via an .accent-N class. See CONVENTIONS.md. */
-  --accent-1: #c8452b;
-  --accent-2: #1f5fbf;
-  --accent-3: #2f8f5b;
-  --accent-4: #c98a12;
-  --accent-5: #7a3fb5;
-  --accent-6: #c2337a;
+     Assign one per project via an .accent-N class. See CONVENTIONS.md.
+     For now every project shares the corten-steel rust used across all of
+     my sites; the old per-project colours were #c8452b, #1f5fbf, #2f8f5b,
+     #c98a12, #7a3fb5 and #c2337a, in that order, to restore them. */
+  --corten: #9c4a26;
+  --accent-1: var(--corten);
+  --accent-2: var(--corten);
+  --accent-3: var(--corten);
+  --accent-4: var(--corten);
+  --accent-5: var(--corten);
+  --accent-6: var(--corten);
 
   /* Fallback so accent-dependent rules stay neutral when unassigned. */
   --accent: var(--color-text);
