@@ -1358,8 +1358,22 @@ html.js .gallery-panel[hidden] { display: none; }
   border-top: 1px solid var(--color-border);
 }
 
+/* A third level, for documents whose chapters carry their own sections. No
+   rule above it — the section headings own that, and two ruled levels read
+   as two competing hierarchies. */
+.paper-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+  max-width: var(--measure);
+}
+
+.paper-section h3:first-child { margin-top: 0; }
+
 /* One measure for every kind of block, so neither edge moves as you read. */
 .paper-section h2,
+.paper-section h3,
 .paper-body p,
 .paper-quote,
 .paper-list {

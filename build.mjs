@@ -1210,6 +1210,10 @@ function researchPage(r) {
       }
         </blockquote>`;
     }
+    if (b.kind === "subheading") {
+      const h = String(b.title || "").trim();
+      return h ? `        <h3>${esc(h)}</h3>` : "";
+    }
     if (b.kind === "list") {
       const items = (b.items || []).filter(Boolean);
       if (!items.length) return "";

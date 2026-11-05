@@ -1,0 +1,682 @@
+{
+  "title": "Post Scarcity: A Retrospective Analysis",
+  "published": true,
+  "slug": "post-scarcity-narrative",
+  "kind": "Thesis narrative",
+  "date": "2025",
+  "context": "Bachelor of Architecture thesis, Drexel University",
+  "order": 1,
+  "standfirst": "The future cannot be predicted, but futures can be invented.",
+  "summary": "The written thesis behind Post Scarcity. It builds a timeline from 1725 to 2050, sets out four pillars on which a post-scarcity society would rest, and works from that premise down to a single building in Philadelphia — by way of counterpoint as a planning strategy and a proximity-based alternative to zoning. The project page carries the drawings and the illustrated walkthrough.",
+  "topics": [
+    "Post scarcity",
+    "Urban design",
+    "Proximity zoning",
+    "Counterpoint",
+    "Philadelphia"
+  ],
+  "pdf": "assets/docs/post-scarcity-narrative.pdf",
+  "sections": [
+    {
+      "heading": "",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "Hello. This is not a research paper, and any facts or figures presented here should not be treated or referenced as such. The thoughts and opinions shared are a synthesis of ideas explored during my capstone design thesis, but this is not an essay detailing the thesis project itself. Rather, this is a narrative that discusses the research, criteria, and design concepts I developed. If your goal is to fully understand the project, this narrative alone will not provide a comprehensive view, and should be viewed in concert with the progress book.",
+            "Please enjoy."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Imagine a future",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "Today, as I sit down to write, it is “liberation day.” While I, along with many others, feel emotions quite distant from “liberation,” one thing remains certain: today, history is unfolding. The idea of creating history might sound unusual—we usually strive to shape it deliberately—but today proves it can emerge from thin air with the stroke of a pen, or perhaps a sharpie. With that in mind, let’s grab our pencils, markers, and pens and begin crafting our own narratives. Every new story requires a foundation, and for ours, let's reflect on our shared history.",
+            "Our story begins in 1725 Europe. Those born this year represent the final generation brought into a pre-industrial world, and of every 100 children born, only about 40–60 would survive to adulthood (Wrigley & Schofield). Most jobs required harsh physical labor, medical care was scarce, and frequent disease outbreaks were the norm. Even those who reached adulthood typically did not live beyond age 40. Life was hard; surviving it was even harder—but this began to change in the 1750s, as the first Industrial Revolution emerged.",
+            "1750: Although initially met with fear and hostility, the rise of mechanization brought mass-produced goods, making resources cheaper and more accessible to everyone.",
+            "1900s: Jumping ahead to the 1900s, electricity sparked a second wave of mechanization, shifting society away from purely mechanical power.",
+            "1950s: Advances in mass production reached agriculture, allowing humanity to double global food output and reducing the share of the Earth's population surviving on fewer than 2,000 calories a day to just 3%, down from 51% only fifty years earlier.",
+            "2000s: After material and edible goods grew less scarce, the next domino to fall was knowledge. The advent of the internet placed information and communication into the hands of everyone—and it was essentially free, especially compared to a not-so-distant past when books were luxuries for the wealthy and influential.",
+            "2020: Although unprecedented in modern times, COVID-19 proved that pandemics weren’t relics of the past. Its global disruptions accelerated automation, remote work, and shifts in supply chains—and even now in 2025, we’re still feeling the aftershocks.",
+            "2025: In 2025, we find ourselves in a world both deeply connected and increasingly fragmented. Technology continues to advance at breakneck speed—AI, renewable energy, and biotech pushing new boundaries—yet inequality, climate anxiety, and political instability shape the daily rhythm of life. We live in a moment suspended between potential and uncertainty, where the future feels closer than ever but not always positive.",
+            "So where does our story go from here? When imagining the future, it’s easy to mistake short-term trends for long-term destiny—but history reminds us otherwise. The progress outlined on the previous page was made not in the absence of crisis, but in spite of two world wars, multiple global financial collapses, civil wars, pandemics, and more. Humanity has continued to grow, adapt, and raise the global standard of living at an astonishing pace. But we cannot ignore our faults. Though mortality rates have fallen overall, this progress has not been evenly shared. Many were overlooked—or worse, exploited—to fuel this momentum. Our future progress is not guaranteed, and it must not come at the expense of others, but a future greater than our present—for everyone—is within reach, and we are closer than ever to realizing it. All we have to do is imagine."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Post scarcity",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "2030: The word poverty shrinks in usage as it drops to just 5% globally, driven by economic growth, automation-driven abundance, and more open borders enabling broader distribution of goods and services. This is a reasonable projection—today, global poverty sits at 8.5%, down from 38% in 1990, even as the world has added over 2.8 billion people in that same span.",
+            "2040: The world sees the first widescale adoption of Universal Basic Income (UBI). Most major economies implement some form of it, made possible by automation handling a large share of production and services with minimal human input—while developing nations are no longer far behind.",
+            "2050: Much like the generation born in 1725, 2050 will mark the last generation born into the industrial era—for in the second half of this century, post-scarcity will be realized.",
+            "The timeline above is just one of countless possible futures—but as hard as it may be to see now, I hope you believe this future is possible. Even if it takes longer to arrive, or we take a different path along the way, it will remain only a possibility unless we choose to believe it’s within our reach.",
+            "So, at least for the remainder of this narrative, choose to believe.",
+            "Through my research into this subject, I’ve found that every futurist, economist, or any other -ist who envisions a post-scarcity future imagines it differently. I have my own take on what this future could—or should—look like, but yours will undoubtedly diverge from mine in some way. This is inconsequential.",
+            "The World Trade Center in New York City stands as North America’s tallest building (including its spire), a shining testament to American resilience and unity in the wake of tragedy. After the devastating attacks of September 11 cleared and the world began turning again, a debate emerged over the site’s future. Some argued for leaving the space untouched—a stark, haunting reminder of the loss—while others wanted to rebuild the Twin Towers exactly as they were. Many proposed a contemporary tower that would break convention and showcase America’s unwavering pursuit of life, liberty, and freedom. Because of these differing visions, it took 13 years for the new tower to be completed.",
+            "Today’s World Trade Center complex is a blend of the many ideas originally floated. The towers’ silhouettes remain vacant in the skyline, but a monument and museum now stand in their foundations, preserving the memory of what happened and educating future generations. Meanwhile, the new tower itself embodies the strength and sophistication of the finest architects and engineers. Its final form didn’t follow the plans of any one individual, but rather emerged from a collective discourse—making the World Trade Center not just a monument to 9/11, but also to the very nature of American dialogue.",
+            "This example shows that as each of us strives for our own vision of utopia, we ultimately converge on a future that integrates the best of those varied dreams."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The four pillars",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "My version of post-scarcity reflects my personal beliefs, distilled from research I conducted in preparation for this project. In my view, this future is defined by four key pillars. They are:"
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "",
+          "items": [
+            "Economy",
+            "Work",
+            "Value",
+            "Scarcity"
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Economy"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "The future economy will differ from today's in a number of ways, but four major shifts stand out: decentralized production, universal basic income, zero-marginal-cost goods, and a sharing-based economy."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Decentralized production"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "By creating goods closer to consumers, production becomes more democratic, shrinks its carbon footprint, and increases access. Rather than relying on large, distant factories, many products could be made autonomously in local hubs."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Universal basic income"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "For this scenario, UBI is set at a level ensuring that everyone lives above the standardized poverty line. The system still embraces core capitalist ideals, but UBI reduces the weight of pure monetary capital, shifting the focus to other forms of value (to be discussed shortly)."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Zero-marginal-cost goods"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "These are items produced so cheaply that they become essentially free. We already see this with digital information, where copying and distribution cost almost nothing. In the future, everyday products—like basic clothing, staple foods, and household supplies—could reach near-zero marginal cost due to autonomous, hyper-local production."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "A sharing-based economy"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "As items lose much of their monetary value, ownership takes on less importance, and a natural sharing culture may flourish. A shirt still has functional and sentimental value, but once you’re done with it, you can give it away without worrying about replacing it—someone else may have just donated one you’d like. This dynamic fosters a sense of community while still respecting personal attachment to goods."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Work"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Work will change drastically in a post-scarcity future with UBI. I envision the average adult working around 15 hours a week, focusing on creative or critical-thinking fields. Hardware and software automation will handle tasks we’d rather not do, and for many, much of those 15 hours may be done remotely."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "A fifteen-hour week"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Imagine arriving at work tomorrow and being called into your boss’s office, only to learn that you’re now needed in the office just 15 hours a week—yet your salary remains the same. In fact, you’re even getting a raise. How? The company has adopted intelligent software to handle routine and menial tasks. Even with today’s technology, a 2017 study by Redwood Software and Sapio Research shows around 40% of office work could be automated—things like manual data entry, scheduling, and basic administrative duties. With modest advancements in AI and machine learning, that figure could climb to 75%. Because this software completes these tasks far more efficiently than a human can, it saves the company so much money that they can afford to share some of those savings with you—less work, higher pay, and more time for what matters most."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Automation"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Currently, there’s considerable debate and fear over how automation will shape the job market, yet my outlook is less pessimistic. Today, when jobs vanish, it’s taken as a clear sign of economic decline. Conversely, when jobs are created, it’s hailed as an unqualified success. Rarely do we pause to consider the quality of those positions—whether the roles lost or gained are truly improving people’s lives or merely shuffling them into precarious, low-wage work. Since the 1920s, job quality in the United States has made significant gains, especially mid-century when unions were strong and labor protections robust. However, the current trend shows that new jobs often appear in sectors offering less security, and worker rights in many areas seem to be receding toward their pre-2000 state. The good news is that automation is poised to replace many of the jobs with the harshest conditions and fewest protections. This shift will also affect entry-level white-collar roles, allowing workers to begin higher up on the career ladder. Meanwhile, in a post-scarcity economy, those essential roles that aren’t easily automated could be compensated at levels reflecting their true necessity rather than perceived status—ultimately establishing a system that rewards the importance of work rather than social standing."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Creativity"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Many of the jobs that remain human-centric will be those requiring creativity, problem-solving, and critical thinking—roles either not easily automated by software or ones where “human ideas” carry a unique premium. Today, mass production of cashmere clothing has made it more accessible, yet people who can afford it often pay up to 400% more for handmade pieces. The same principle applies to our intellectual output: just as handmade goods command higher prices, there will always be demand for distinctly human creativity and insight."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Remote work"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Today, the question of integrating remote work into the weekly routine looms large—particularly after offices pivoted online during the pandemic. Now, many employers find it difficult to retract that flexibility, and there’s a broad consensus that remote and hybrid setups are here to stay. The technological infrastructure enabling work from anywhere didn’t exist two decades ago, allowing employees to log in from different locations, enjoy flexible hours, and even stay in pajamas during meetings.",
+            "Still, many acknowledge that physical offices can boost team culture, productivity, and overall work quality. That’s why hybrid arrangements have emerged as the norm, and I believe this approach will persist in a post-scarcity future. Even with continued advancements making remote work more convenient, many tasks will require in-person engagement at least occasionally.",
+            "Additionally, in a world where most people work around 15 hours a week and partial WFH policies are common, offices may shrink and be located closer to employees. Long commutes in a post-scarcity world would feel even more burdensome, so just as production will likely become decentralized, so too will workspaces. Smaller co-working facilities—adaptable for different business needs—could host several companies each week, minimizing both travel time and the costs of maintaining large, dedicated offices."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Value"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "As touched on before, a post-scarcity future doesn’t mean value vanishes—it simply shifts. Many things will retain the same value they hold today, but for a post-scarcity world to truly thrive, I see a deeper emphasis on social capital, environmental stewardship, self-actualization, and community well-being guiding how we define what’s important."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Social capital"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "As value shifts away from purely monetary goals, social capital will increasingly take center stage. In simple terms, social capital comprises the networks, trust, and reciprocal relationships we build with others. While it’s already vital today, a future where financial gain isn’t the dominant motivator means people won’t have to tolerate toxic or dead-end jobs just for their paycheck or healthcare benefits. Under universal basic income, you’ll have the freedom to leave unfulfilling positions without sacrificing security—allowing you to focus on forming genuine connections and adding value in ways that matter to you.",
+            "In such a scenario, “advancement” will hinge less on salaries and titles and more on being someone people want to work with: trustworthy, collaborative, and genuinely contributing. As you develop strong relationships, accomplish goals that benefit others, and prove yourself a kind, supportive person, you’ll rise in social standing—reaping many of the same benefits once tied to the corporate ladder but built on a foundation of community and respect."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Environmental stewardship"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "The existential threats posed by climate change and environmental degradation won’t be solved by post-scarcity—they must be addressed in the pursuit of it. A future defined by abundance will fail if it’s built atop depleted ecosystems and a scarcity of the very necessities we aim to eliminate. At its core, a post-scarcity world must first be a healthy one.",
+            "Some estimates suggest Earth could sustain up to seven times its current biomass if we develop responsibly and prioritize ecological balance. This would require transformative shifts—moving agriculture indoors and building vertically to restore natural habitats; embracing green construction methods for both building and operating spaces; and mandating that all products and services function within a circular economy, where reuse, recycling, or reintegration into nature is part of every lifecycle.",
+            "Transportation will become far less burdensome in a post-scarcity world, as remote work, localized production, and decentralized workplaces drastically reduce commuting and freight needs. Virtual reality will enable seamless global collaboration without the need for air travel—reserving aviation, the least efficient mode of transport, for leisure and exploration. By my estimate, this shift alone could cut the largest source of carbon emissions—transportation, currently at 29%—by half, or even two-thirds. This assumes a 60% drop in commuting, a 40% reduction in shopping-related travel through localized retail, and a 30% decline in freight transit, not to mention further improvements yet unaccounted for.",
+            "Perhaps most crucially, we must aim for an almost entirely electric economy powered by renewable energy. This is not only environmentally essential but economically transformative: as renewables become more widespread and decentralized, energy could drop to near-zero marginal cost—making electricity itself an abundant, post-scarcity resource."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Self-actualization"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "As the traditional career ladder shrinks to just a few rungs, workplace growth will become more lateral than vertical. Shifting roles and responsibilities will allow individuals to become more well-rounded, gaining new skills and deeper insights into their fields. This kind of self-actualization at work can provide the same fulfillment as a promotion—if not more—while also enhancing one’s sense of purpose and morale.",
+            "Continuing education will become a core part of that journey. Today, about 55% of unenrolled adults cite program cost as a major reason for not enrolling, and 62% say they must prioritize work to support themselves or their families (Lumina, NORC). But in a post-scarcity world, where essentials are no longer a constant financial stress, lifelong learning will become not only more accessible but more deeply valued. People will be free to engage in education throughout their lives—on and off—without sacrificing income or stability.",
+            "Time away from work will also open doors for self-actualization through others: building social capital, connecting with communities, and pursuing passions without financial pressure. Imagine exploring acting, woodworking, or oil painting—not to earn a living, but simply because it brings joy. In a world driven by AI and machines, this is how we preserve the human tradition of making: by removing its dependence on economics. People will create not to survive, but to express, connect, and grow—and if others value that work, they may choose to share or sell it, but that choice will be theirs to make."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Community well-being"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "By now, I hope it’s clear that living in a post-scarcity world will require less daily travel, naturally fostering deeper ties to local communities. When you frequent nearby shops and interact with familiar faces—both customers and workers—and your children go to local schools, you begin to form bonds that offer a greater sense of your community’s well-being. This connection can foster a deeper sense of loyalty and shared responsibility.",
+            "An example of this shared connection can be seen in public transportation. When you ride the subway in a major city, you come face to face with hundreds of people who are different from you—headed to different destinations, living different lives. Some are just starting their day, others returning from a night shift. As the train moves through neighborhoods, and you see the diversity around you, it becomes a quiet reminder that everyone plays a role in the shared organism that is the city—each person vital in their own way.",
+            "It’s common to hear people reflect on the loss of community after moving from a small town to a big city. That sentiment speaks to something essential: the value of being a stakeholder in your surroundings. As we shift toward a post-scarcity society, nurturing that sense of shared investment becomes vital. A belief that what’s best for the community is, ultimately, what’s best for you. This idea will return later in the narrative, because it’s foundational to how a post-scarcity future must function."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Scarcity"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "The last pillar—scarcity—may seem contradictory in a post-scarcity framework, but it’s essential to recognize that not everything will become abundant. Some things will remain limited, and managing them thoughtfully will be crucial. I believe the four scarcities of greatest consequence will be: time, unique experiences, natural features, and privacy."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Time"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "This one is obvious, which is why it’s a good place to start. No matter how advanced our technology becomes, or how many resources become abundant, time remains the one thing we can never truly manufacture more of. Even if life expectancy increases slightly due to post scarcity alone, the fact remains that each person’s time on Earth is finite—and that makes it one of the most precious and enduring forms of scarcity.",
+            "In a post-scarcity world, while we may not live forever, we will live with more freedom over how we spend our time. With automation, decentralized services, and universal basic income reducing the hours needed for work and survival, the average person could gain up to six additional hours a day to devote to themselves. That time can be spent on passions, relationships, learning, rest—whatever brings fulfillment.",
+            "One issue that may arise with increased unstructured time is that our existing addiction to digital media could worsen, especially as these digital devices become more advanced and digital worlds become more lifelike. This will be explored more deeply later in the narrative, but in short, it will be essential that access to fulfilling, enriching ways to spend time—whether through art, education, nature, or community—is open, widely available, and easy to engage with.",
+            "So while time will still be scarce, what changes is how available it becomes to the individual, no longer consumed by endless labor or survival-based stress. That shift could fundamentally change how we value and spend our days."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Unique experiences"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "This ties directly into time—if it's finite, how you spend it becomes all the more important. While not every hour needs to be exceptional, there will be a growing premium on experiences that break routine: concerts, travel, rotating exhibits, seasonal events, and more. These moments will be essential to keeping life rich, engaging, and worth waking up for. What I’m describing is a high-quality public realm—a vibrant, varied landscape of shared spaces and events that offer people meaningful, joyful ways to spend their time."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Natural features"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Our world is vast, but ultimately finite. As we begin to heal the environment after centuries of industrialization, many natural features will be restored—but access to them will remain limited, either due to their remote nature or out of necessity to preserve fragile ecosystems. In urban areas, this scarcity will take different forms. Apartments with waterfront access or sweeping views will still be highly sought after, and even in a post-scarcity society, we cannot provide limitless housing in these prime locations.",
+            "Land ownership and proximity to natural beauty will likely remain symbols of status, wealth, and standing. However, the basis for who gains access to these spaces may shift—from being purely wealth-driven to being influenced more by social standing, contribution to community, or other non-monetary forms of value. While we can’t compete with nature’s uniqueness, we can elevate the quality of everyday places by investing in the public realm—creating parks, plazas, and pedestrian streets that bring beauty and joy to more people. This, in turn, promotes equity and reduces the extent to which status is tied solely to geography."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Privacy"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Lastly, privacy—another form of scarcity. Today, we've traded much of our privacy for convenience, and that trend will likely continue unless we’re intentional about resisting it. While post-scarcity doesn't demand a specific level of privacy or openness, spaces for solitude, reflection, and self-care will be just as vital as the public amenities mentioned earlier.",
+            "As daily stressors diminish, mental health is expected to improve—but that doesn’t mean every space can or should be communal. Coworking hubs will still need private rooms for sensitive conversations. Our homes should maintain privacy while staying connected to the community. Across the built environment, we should design with a gradient of public to private spaces, ensuring everyone can find the setting they need—whether for rest, focus, connection, or retreat."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Spent time",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "What this all really comes down to is a shift in how we spend our time—moving away from rigid, labor-driven routines toward flexible self-enrichment. Below are two conceptual charts comparing how the average person might spend a typical day today versus in a post-scarcity future. Notice how much less red there is in the post-scarcity graph, representing reduced work hours, and how that time has been reallocated to yellow, representing personal growth, leisure, creativity, and community engagement.",
+            "As touched on earlier, simply having more free time doesn’t guarantee a higher quality of life. Today, the average American spends 2 hours and 18 minutes on social media, 1 hour and 19 minutes on video games, and 2 hours watching television—all within a day that typically offers less than 6 hours of personal time. I believe this retreat into digital pastimes often reflects a failure of the public realm to offer spaces and experiences engaging enough to pull people away from their screens.",
+            "In countries like Denmark and Austria, where public spaces are widely recognized for their quality, access, and design, time spent in digital media tends to be lower, despite having a culture that promotes more free time than in America. While I acknowledge this could be a simple correlation rather than causation, I believe the free, high-quality, and inspiring nature of their public realms plays a role. Until further studies are done, I stand by the idea that when we build better, people will live better—and they’ll spend more time out in the world, not just in front of a screen."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Scarcity and urbanity",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "Now our conversation shifts into the heart of this narrative: the built environment and how it must evolve to better serve a post-scarcity world. You may have noticed that most of my examples so far have been urban—and that’s intentional. While post-scarcity doesn’t require a specific level of urbanization, cities offer a unique advantage: efficiency. City dwellers have carbon footprints that are roughly half the U.S. national average, while suburban residents generate emissions 200% higher than average. Add to this the projection that 68% of the world’s population will live in urban areas by 2050, and it becomes clear that the most productive lens through which to explore a post-scarcity built environment is an urban one.",
+            "Urban environments offer many efficiencies, but they come with significant mental health challenges. City dwellers are 21% more likely to experience anxiety, 39% more likely to develop mood disorders, twice as likely to develop schizophrenia, and face 40% more stress and 35% more social isolation on average. While some of these figures may improve in a post-scarcity world, they will likely remain elevated if we fail to redesign our cities to foster connection, accessibility, and joy.",
+            "A thriving post-scarcity city must be rich in its interconnectedness. Cities should be places where people and ideas collide in vibrant, spontaneous ways. While this does happen in some pockets today, much of our urban history has been spent building silos—physically, socially, and economically. These divisions fragment communities, isolate individuals, and erode the sense of belonging so vital to mental well-being. In a post-scarcity future, that isolation isn’t just unfortunate—it’s kryptonite to the vision.",
+            "Luckily, we already know what works. The world’s happiest places consistently lead in public-facing design and strong social infrastructure. And the changes don’t need to be massive to make a difference—a 2018 study in Philadelphia found that greening vacant lots reduced depression by 68% among low-income residents and 41% among higher-income residents, while simply removing trash had no measurable impact.",
+            "Moving forward, this narrative will keep returning to the importance of interconnectedness, greenery, public amenities, and social cohesion—not just as abstract ideals, but as tangible elements to be embedded in the built environment."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The built environment",
+      "blocks": [
+        {
+          "kind": "list",
+          "title": "Change in floor area against today",
+          "items": [
+            "Office −26%",
+            "Residential +10%",
+            "Entertainment +10%",
+            "Retail −2%",
+            "Institutional +6%",
+            "Civic +2%"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": [
+            "This chart, of course, is an oversimplification. Turning it into a physical reality requires many more layers of consideration. One major focus of my exploration falls under a simple but powerful concept: counterpoint. I believe counterpoint—defined as the relationship between two or more independent melodic lines played simultaneously, creating harmony through their interaction—can serve as a guiding principle for urban planning at nearly every scale.",
+            "Counterpoint shows up across the four pillars of post-scarcity. In the economy, it’s the interplay between decentralized production and the sharing economy—new versus used, both valued equally. For work, it’s the tension between creativity and automation. Under value, it’s the balance between self-actualization and community well-being. And in scarcity, counterpoint reveals itself in how we spend time: public vs. private, natural landscapes vs. constructed experiences.",
+            "Crucially, counterpoint doesn’t imply opposition—it highlights contrast to create interest, choice, and harmony between two or more independent ideas. This principle enriches our built environment. We need counterpoints in our workplaces, our homes, our streets, our parks, our events. We need to celebrate contrast—to make room for quiet and energy, old and new, planned and spontaneous—and let those differences interact visibly. It’s this vibrant interplay, these choices and their interactions with one another, that can help post-scarcity not just function, but thrive."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Counterpoints",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "There are four major counterpoints that I will be focusing on specifically throughout this project—though they are far from the only ones at play. These key contrasts are:"
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "",
+          "items": [
+            "Grid vs Greenspace",
+            "Greenspace vs Built space",
+            "Built space vs Program",
+            "Program vs Program"
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Grid against greenspace"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "As I’ve chosen Philadelphia as the testbed for these ideas, the grid immediately stands out as the defining structure of the built environment. The city takes great pride in its history, and the grid is deeply embedded in its urban DNA. But that’s precisely what makes it so powerful—its consistency offers the perfect canvas to break intentionally, creating striking moments of contrast and spatial interest.",
+            "In Philadelphia, the grid is rarely interrupted, with only a few notable exceptions—and those exceptions are often among the city’s most vibrant, memorable spaces. Two examples stand out: the East Passyunk commercial corridor and the Benjamin Franklin Parkway. East Passyunk was born from a preserved Lenape trail, cutting diagonally through South Philadelphia and clashing beautifully with the rigid grid. These intersections produce a series of unexpected moments—small parks, plazas, or irregular buildings—that simply wouldn’t exist elsewhere in the city.",
+            "The Benjamin Franklin Parkway, on the other hand, was a deliberate counterpoint—a retroactive design meant to break the grid and draw a grand visual and symbolic axis from City Hall to the Philadelphia Museum of Art. It’s a bold, expressive move that successfully creates drama and hierarchy, though it could certainly benefit from being less car-dominated.",
+            "I’m not suggesting new interventions on the scale of the Parkway, but as we increase greenspace in the center of Philadelphia, I believe we should see it as an opportunity to challenge the grid—to introduce soft, flowing lines, winding paths, or irregular forms that harmonize with the rectilinear order around them. We already see this logic in major parks such as Rittenhouse Square, whose walkways cut across the formal city layout, and even more dramatically in Central Park in New York, which intentionally turns its back on Manhattan’s relentless geometry.",
+            "In both cities, these organic intrusions into the grid aren’t just aesthetic choices—they’re acts of relief. They provide spatial and mental contrast, places to slow down, wander, and feel momentarily disconnected from the system. By intentionally breaking the grid, we can reinforce the strengths of both structure and spontaneity—adding richness, variety, and ultimately a stronger sense of place."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Greenspace against built space"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "This is a similar idea to grid vs. green, but here the contrast is between the artificial and the natural. A strong city offers easy access to both—and when placed side by side, each elevates the other. This isn’t a new concept; many utopian city visions feature sleek rectilinear towers rising from vast open green spaces. But my vision for this application of counterpoint is less standardized and more integrated. We don’t need to level entire sections of our cities to make room for nature. Greenspace doesn't have to be massive to be meaningful. Even the smallest insertions of nature can provide contrast and relief. John F. Collins Park in Philadelphia’s central business district is a perfect example—tucked between tall buildings, it offers serenity, shade, and beauty within the footprint of a single rowhome. This kind of fine-grain contrast between built form and green space is subtle, but powerful—and essential to designing vibrant, human-centered cities in a post-scarcity world.",
+            "We can also carry this counterpoint into the buildings themselves, introducing small-scale interruptions to a building’s grid or circulation to highlight moments of contrast—places of rest, reflection, or sensory shift. These subtle breaks draw attention to conflicting values within a space and offer needed respite. That said, large-scale green space remains essential, not just for ecological or aesthetic reasons, but because of the wider range of programming and gathering it can support. That’s why, in my project, I propose establishing a new park at the very heart of Philadelphia—adjacent to City Hall and serving as a green gateway to the Parkway. This would not only create a powerful visual and spatial counterpoint to the surrounding density, but also reassert nature’s presence at the city’s symbolic core after we lost our center square to gain city hall."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Built space against program"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Within buildings themselves, I believe there’s a missing level of complexity—a lack of interplay that leaves many structures feeling drab, static, and uninspiring. In Delirious New York, Rem Koolhaas captures the thrill of architectural contrast, describing the skyscraper as a vertical collage of separate worlds: “the ascent through the upper layer of the structure – with its implied approximation of a theoretical ‘peak’ condition – leads through territories never before tread upon by man.” As dramatic as Koolhaas's prose may be, he’s not wrong—there is something fascinating in imagining a building as a stack of parallel universes, with the elevator serving as your interdimensional vessel.",
+            "But what I find missing in his analysis is the potential for interaction—not just separation. What if those wildly different programs weren’t confined to their silos, but bled into each other, creating dynamic friction and shared experiences? Instead of placing the burden of connection solely on the visitor and their vessel, the building itself could become the storyteller—its spaces weaving together in a choreography of contrasts. In this kind of building, the human becomes both observer and participant—a member of the chorus moving through scenes that shift, overlap, and reveal new meanings. It’s not just about stacking difference; it’s about creating dialogue between differences—turning the building into a living, breathing entity full of counterpoint, tension, and delight."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Program against program"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Program vs. Program builds on the open structural ideals introduced in Building vs. Program, but shifts the focus to the uses within—their placement, interaction, and intentionality. If we begin to dissolve the rigid barriers between floors and allow programs to speak freely to one another, then careful curation becomes essential. If a building like this is filled out randomly—based on leasing schedules or short-term convenience, as is common today—the result won’t be a symphony of overlapping activity, but noise. That kind of chaotic mix risks mental fatigue, discomfort, and disconnection for its users—undermining the very goal of creating vibrant, interconnected communities.",
+            "Yes, the building should remain flexible and responsive over time, but that flexibility must be guided by an informed, intentional framework—one that understands how different programs relate, contrast, and complement each other. The next chapter outlines what such a system might look like, and how we can plan for dynamic, long-term adaptability without sacrificing coherence."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Proximity zoning",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "Some may interpret the system I described at the end of the previous chapter as a form of zoning—and while I don’t disagree, it’s important to clarify that the way zoning is currently practiced across the United States is fundamentally incompatible with a post-scarcity society. At its best, zoning prevents obviously harmful adjacencies, like placing a factory next to a residential neighborhood. But at its worst, it has been used—both intentionally and inadvertently—as a tool to exclude, segregate, and disadvantage marginalized communities. Even with the best intentions, traditional zoning lacks the flexibility required for a post-scarcity city. As relationships between programs, people, and places become more vital, we need a system that operates at multiple scales—region, city, neighborhood, block, street, building, and even floor or individual program level.",
+            "What I’m proposing is a proximity-based zoning system. While this idea exists in loose forms, it has yet to be formalized or widely implemented in planning codes. Put simply, proximity zoning is just what it sounds like: a fluid, responsive system that understands the attributes of different programs and evaluates how well they fit within their surrounding context.",
+            "The system I developed with a colleague is a lightweight software tool. You start by establishing a grid, assigning custom attributes to programs, and placing them within that grid. The system then returns a “fit score”—a surface-level assessment of how well each program suits its position relative to others. This isn’t some black-box AI, nor is it meant to replace the role of designers. It’s a decision-support tool for planners, architects, and designers at every scale. If integrated into an official zoning framework, the fit score could be tied to incentives (like subsidies) or deterrents (like fees) that either encourage or discourage development in a given configuration.",
+            "Importantly, the score isn’t final. Designers can appeal to traditional zoning boards, or adjust their proposals to strengthen beneficial proximities and mitigate poor ones. In this way, proximity zoning becomes a tool not of restriction, but of strategic encouragement, allowing cities to evolve with intelligence, nuance, and counterpoint.",
+            "Briefly, the software runs on 6 attributes that are assigned to each program by the user."
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "The six attributes",
+          "items": [
+            "Daylight (Dark to Light)",
+            "Noise (Quiet to Loud)",
+            "Distribution (Sparse to Dense)",
+            "Vibrancy (Tranquille to Vibrant)",
+            "Biophilia (N/A to Accessible)",
+            "Access (N/A to Accessible)"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": [
+            "This, along with simple user-defined inputs like sunlight access and circulation patterns, is all the software needs to generate a fit score. The best part about the tool is its versatility. It doesn’t lock you into a fixed scale—each grid tile can represent whatever the user defines. That means the example above on the right could represent a single floor of a building with three programs organized around a courtyard; or a university campus with three buildings facing a central green; or even a restaurant with different seating zones arranged around a pocket park. The outcome depends entirely on how you define the programs and assign their attributes. This flexibility makes the tool adaptable to any design scale, and allows for a wide range of analyses—making it a powerful asset for planners, architects, and designers working toward a more relational, post-scarcity approach to the built environment. As an aside, post-scarcity or not, I genuinely believe this is simply a better zoning system for cities overall. Its flexibility, responsiveness, and focus on contextual fit make it far more adaptable to the real complexity of urban life than rigid, use-based zoning ever could."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The building",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "As we move deeper into this narrative, we now shift focus from the city scale to the scale of a single building. The building I’m proposing is a synthesis of all the core ideas presented so far—an architectural expression of post-scarcity principles applied with intention, clarity, and adaptability.",
+            "Let’s reestablish the guiding principles this building must uphold:"
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "",
+          "items": [
+            "It must support all four pillars of post-scarcity: economy, work, value and scarcity.",
+            "It must accommodate how people will actually spend their time in a post-scarcity society, reflecting the shift from survival-based labor to self-enrichment, community building, and creativity.",
+            "It must respond thoughtfully to its urban context, fitting within and enhancing its chosen environment.",
+            "It must promote counterpoint, both in relation to its surroundings and within its internal organization of programs—embracing contrast as a source of richness and engagement.",
+            "It must apply proximity zoning, allowing its programs to self-organize dynamically through a fit-based logic rather than fixed partitions."
+          ]
+        },
+        {
+          "kind": "text",
+          "text": [
+            "This building is not just a container for activity—it’s a living framework for how we might redefine life, work, and value in a future where scarcity no longer dictates the shape of our built environment.",
+            "It was hard to imagine a building like this at first, since nearly all tall buildings today are designed to maximize square footage to justify the high costs of construction. In a post-scarcity society, many of the profit-driven and efficiency-focused constraints of current buildings can be set aside. For instance, the relentless pursuit of maximizing rentable square footage becomes less critical, allowing for more flexible, people-centered designs. Rigid zoning rules and strict functional separations—like those between commercial, residential, and industrial uses—can be relaxed to encourage fluid, dynamic programming. Moreover, the emphasis on cost-cutting and standardization may give way to designs that prioritize community, creativity, and holistic well-being over pure economic efficiency.",
+            "I believe there are countless ways to apply the principles above to a building, but I’ll focus on one key idea: a building as a framework."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "The building as a framework"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Placing this building in Philadelphia, I’ll once again look to the grid for inspiration. I’ll explore whether the benefits of breaking the street grid at the city scale can be translated into a building. To do this, we’ll treat the building’s structural grid as its street grid—using it as a framework that is intentionally broken when applying programs. In this way, a counterpoint between the building’s frame and the programs within it becomes the central organizing force.",
+            "Treating the structure as a street grid also reshapes how we understand the public and private realms within a building. Typically, a building’s public realm is confined to a few defined zones—ground floor retail, a lobby, maybe a rooftop bar or observation deck. Security barriers strictly separate these areas from the private parts of the building. I believe this separation is excessive, so let’s turn that idea on its head. The building’s frame and programs will be considered public by default, with exceptions marked as private. Access can then be controlled through circulation, opening up a world of possibilities.",
+            "There is also an opportunity to create a counterpoint between the building and its surroundings. Referencing my plan for a central square park west of City Hall, I will place the building on this site to take advantage of the strong public transit infrastructure, the proximity to world class destinations and culture, and to establish a contrast between the experiences offered within the building and those found in the new park."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Form"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "When thinking about form, I focused on two main elements: the relationship between the structural frame and the ground, and the distribution of cores for both structural and circulation purposes. The first question is how large the building’s footprint should be. In conventional towers, light and air access often dictate slender forms with central cores. But if we’re not planning to fill the entire structural frame, we can adopt a distributed core instead—spreading out the programs and leaving open space between them for light, ventilation, and moments of pause. A distributed core also allows for multiple ground-level access points, reducing circulation friction and giving the public more ways to enter and engage with the building’s amenities. One challenge with this approach is the potentially large and imposing street presence. However, given the building’s adjacency to a park, there’s a rich opportunity to design creative ground-level transitions that soften the massing and establish a more inviting connection to the public realm.",
+            "The first of these opportunities is to eliminate the traditional lobby and other typical ground-floor amenities, allowing the park to flow naturally beneath and around the structure. To ensure the space doesn’t feel dark or enclosed, the building itself can be lifted—elevated above the ground plane—so that only the structural and circulation cores touch down. In this scenario, the elevator becomes your lobby, and the building’s interaction with the ground is no longer about thresholds and entry sequences, but about continuity with the public realm. This move is more than a gesture—it’s a statement. It sets the tone for what happens throughout the rest of the building. The approach of lifting, separating, carving, and threading public space through the framework becomes a guiding principle, creating a building that breathes with its surroundings and invites the city in at every level."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Frame"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "The next step is defining the dimensions of the frame. If we’re thinking of the building’s structural grid as the street system of a city, we need to first understand the inherent strengths of a grid. Its primary strength is order. When William Penn laid out the plan for Philadelphia, it was a way to bring clarity and structure to an otherwise organic landscape. In the same spirit, our three-dimensional grid will be composed of uniform cubes, offering a clear framework for organizing space. A regular grid also offers practical advantages. While more complex structural forms are certainly possible, this project already embraces complexity through its varied programs. Keeping the structural frame simple allows us to mass-fabricate and quickly assemble it. It becomes a consistent rhythm against which the fluidity of programming can play out.",
+            "A regular grid will also support efficient utility distribution, simplify construction, and reduce variables that could complicate future adaptation. In short, it offers stability—not as a constraint, but as a canvas for creative, evolving use.",
+            "The dimensions of these cubes are to be very intentional. The dimensions I will be using are as follows:",
+            "The reason for these dimensions is their inherent flexibility. At its full, uninterrupted height of 36 feet, the space is well-suited for outdoor areas, industrial programs, or sports facilities. Divided in half to 18 feet, it becomes ideal for schools, commercial services, or workshops. And when split into thirds—12 feet—it accommodates residential units or small-scale retail perfectly. This modularity allows the same structural grid to support a wide range of uses, both now and as the building evolves over time.",
+            "This isn’t to suggest that the form of the programs will conform strictly to the grid, but since horizontal members will interrupt the space at regular intervals, it will be helpful for programs to use the grid as a guide for setting floor and ceiling levels. The grid provides structure, not limitation—offering a rhythm that programs can align with or push against as needed."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Circulation"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Circulation may be the most important element in making this building work. As mentioned in Chapter 9, it’s the experience of moving through different spaces—and the moments in between—that allows people to truly appreciate the counterpoints at play. It's also what will hopefully enable community to thrive, as moving from one program to another should feel more like walking down a city street than speeding past exits on a highway. In this way, circulation acts like the curator of an exhibition, shaping how the building tells its story. At the same time, circulation must be clear and intuitive. Beautiful pathways are meaningless if they’re disorienting or inconvenient. That’s why this building embraces a “choose your own adventure” approach, offering multiple routes, varied pacing, and layered access that support both exploration and ease of use.",
+            "The main cores of the building will house the fastest and most direct mode of transportation: cable-free elevator cars. By freeing the elevator from traditional cables, multiple cars can move independently within a single shaft, with the added potential for lateral movement between shafts. With few exceptions, these elevators will function as a kind of vertical public transit system. They’ll stop every three stories to keep traffic flowing efficiently, and your specific stops will depend on your access level within the building. You’ll be able to hail an elevator via your phone or an on-site screen, and it will drop you off near your destination.",
+            "Here’s the key: that final leg of your journey must be completed on foot—sometimes through the building’s public realm, where others may be lounging, walking, grabbing lunch, or playing. It’s designed to foster interaction and serendipity, not just convenience. After all, while todays transit systems prioritize speed over connection, in a post scarcity world where you have 6 more hours a day of free time, a pleasant commute may be preferred to the fastest one. For those with accessibility needs, this won’t be a barrier. The elevator will still take you to the appropriate level, and each program will include its own localized circulation system to navigate the smaller internal floors of that intervention.",
+            "There will also be less prescribed secondary and tertiary forms of circulation. Secondary circulation includes the smaller-scale systems serving individual programs—like internal stairs or ramps—as well as more functional connectors like escalators, stairways, and walkways that link various levels and programs throughout the building. Tertiary circulation, however, introduces an element of delight and play. Think of slides, climbing structures, or interactive pathways that connect spaces in unexpected, joyful ways. These are not just fun additions—they’re part of the building’s effort to encourage exploration and spontaneity, adding texture and personality to how people move through and experience the space."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "Material"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "While each program will have its own distinct material palette, the building’s structural frame will primarily be composed of steel and concrete. The columns and beams will be formed from 1-inch steel plates, welded at 90-degree angles to create rectangular profiles. To increase compressive strength, the beams will also include stiffeners placed at regular intervals, ensuring durability and structural integrity across the grid.",
+            "The materiality of the programs can rely on lighter-weight, more environmentally conscious materials such as mass timber, brick, and fabric, since permanence and strength is not their primary goal. Using these softer materials on a program-by-program basis will help counterbalance the rigidity of the structural grid, both visually and experientially—reinforcing a clear counterpoint between the flexible programs and the fixed frame."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Programmatic form and function",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "The last piece of the building to define is how programs nest themselves within the frame. While proximity zoning will influence their placement and relationships, there’s still a great deal of room to interpret how these programs look, feel, and function. In a real-world scenario, I envision each program—or cluster of programs—being designed by different architects in collaboration with future users, resulting in a rich, layered tapestry of approaches. Much like the architectural variety seen throughout Philadelphia, this would allow for a diverse and expressive infill within the regularity of the grid. Grids are inherently plain, but that’s their power—they invite intervention and play. It’s exciting to imagine each program’s unique response to sunlight, airflow, and public space, shaping the way people experience the frame as they move through it. Some moments may clash, others may harmonize, but together they create a building that’s alive with contrast and complexity.",
+            "Because I want to complete this exercise—and don’t have the ability to involve many different architects—I’ll define a single methodology I developed to address this challenge. What follows is a step-by-step guide outlining how I approached designing individual programs within the grid, using a consistent yet flexible logic that others could adopt or adapt."
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "The method",
+          "items": [
+            "I began by completely filling the grid to its maximum allowable area, providing a clear starting point.",
+            "Next, I analyzed how light and air moved through and around the building, strategically subtracting portions of mass to allow deeper penetration into the frame. This step was also influenced by the urban context, recognizing the importance of managing shadows and wind tunnels.",
+            "With the mass adjusted, I defined larger green spaces, carefully considering their accessibility from various points within the building and how their foliage could naturally provide shading.",
+            "After evaluating all sides of the building with consideration for views and program use, I was left with a mass that winds through the structure, occupying about 60% of the available space. As a final step, I smoothed and rounded the edges of this mass, intentionally creating a visual and spatial contrast against the rigid 90-degree angles of the grid. This made the distinction between occupied and void spaces much clearer."
+          ]
+        },
+        {
+          "kind": "text",
+          "text": [
+            "Beyond these steps, there are of course countless other considerations—but those are left to the designer. Elements like look and feel, scale, materiality, landscaping, and more are all additional and necessary layers to consider, each contributing to the richness and specificity of the final intervention."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "A vertical neighborhood of clusters",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "For this building to fulfill its programmatic promise and live up to its post-scarcity ideals, the program list must be diverse and comprehensive. Many of the primary programs included are listed below, though smaller, supporting uses are not explicitly mentioned:"
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "The programs",
+          "items": [
+            "Market",
+            "Parks",
+            "Shops",
+            "Essential Services (doctors offices, dry cleaning, daycare, etc)",
+            "Apartments",
+            "Studio",
+            "1 bed",
+            "2 bed",
+            "3 bed",
+            "4bed",
+            "Multi-Generational (5-6bed)",
+            "Libraries",
+            "Studies",
+            "Hydroponic Farm",
+            "Experiential Retail",
+            "Restaurant",
+            "Entertainment",
+            "Theaters",
+            "Concert Venue",
+            "Museum",
+            "K-8 School",
+            "Maker Space",
+            "Artist Studio",
+            "Fitness Centers",
+            "Outdoor Sport Courts",
+            "Co-Working offices"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": [
+            "All of these programs were placed within the buildings mass using proximity zoning, and their individual designs are derived from those proximities. Certain programs naturally begin to form clusters, organized around central common areas.",
+            "The exciting part about setting up a building like this is that, when executed successfully, the interplay among diverse programs, the structural frame, and the surrounding city becomes vividly evident in daily life. Imagine spending a day in this building: as you move from one space to another, you're constantly encountering spontaneous interactions, glimpsing different ways of living, and feeling the vibrant energy of activities happening around you. The building itself becomes a dynamic stage, showcasing countless lives unfolding and intersecting, enriching your own experience of the space.",
+            "This is not to suggest that a person's day will be entirely confined to the interior of the framework. Many will work in the building but live elsewhere, while others may visit the building for school, shopping, dining, concerts, shows, or exhibits. Residents of the building will have easy access to most essential services within, but that doesn't mean they'll remain exclusively inside. Think of this building as a vertical 15-minute neighborhood—where daily needs are close by, yet the desire to experience unique amenities and interactions in other neighborhoods will naturally draw people outward. Even in a dynamic and constantly evolving community like this, residents will want to explore beyond it to prevent boredom or monotony, especially given the increased amount of free time they’ll have.",
+            "Let’s talk about two of the program clusters found here."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "The piazza cluster"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "As seen in the diagram above, four major program elements are centered around this central green space.",
+            "The Market is the liveliest of the four, hosting numerous rotating stalls alongside some more substantial year-round restaurants. It’s not just a food market—think of it more as a year-round farmer’s market. The Market’s roof doubles as the central greenspace and Piazza, featuring a large communal screen for public viewings, a more contemplative garden tucked behind one of the cores, lounge areas offering city views, beach volleyball, and landscaped plantings.",
+            "Adjacent to one side of the Piazza are the studio apartments, with four small ground-floor shops providing everyday essentials such as a small grocery store, pharmacy, or coffee shop. A seating area serving these shops creates a gentle transition between the active Piazza and the quieter residential zone. The proximity between these studios and the bustling Market is ideal, given that the apartments primarily cater to a younger demographic who appreciates lively public amenities. Additionally, the apartments share the same core as the main entertainment district above, allowing residents to move between these spaces within minutes. The studio apartments are constructed from mass timber joined using traditional Japanese joinery techniques. Many walls in the less private areas of the studios are semi-opaque, inspired by shoji screens, which allows subtle movements within the apartments to be visible from outside. This design element helps animate the Piazza, enhancing its sense of life, safety, and community.",
+            "On the diagonal opposite side of the Piazza is the lower portion of a sizable apartment complex. These initial floors feature spacious four-bedroom units, each with a private terrace and vegetable garden, alongside shared public terraces among residents. Moving upward, apartments gradually transition into smaller one-bedroom units, and shared public spaces become proportionally smaller. These apartments maintain a comfortable separation from the busiest parts of the Market and Piazza, reflecting their family-oriented character. Their strategic placement between the Market below and the school above, paired with two significant green spaces at both the top and bottom, make this an ideal family living environment.",
+            "Lastly, the co-working tower is also located here, although it doesn't have a direct physical connection to the Piazza. This deliberate separation creates visual interaction between leisure and work areas without sacrificing their distinctiveness, clearly distinguishing professional activities from personal downtime and thus promoting a healthier work-life balance. The co-working tower itself integrates biophilic design in several meaningful ways: a dramatic 15-story set of green walls flank the core, filtering wastewater from the adjacent hydroponic farms; a planted central stair encourages movement and interaction; and lush, landscaped terraces open directly towards City Hall. Together, these features help create a comfortable and inspiring work environment. The internal organization of the tower responds directly to the diverse needs of modern workspace users. Floorplates at the top and bottom of the tower are open-ended, flexible spaces without fixed partitions (aside from essential facilities like lavatories), while more private, reservable offices and quiet areas occupy the central floors. This arrangement ensures a balanced distribution of collaborative and private spaces throughout the tower."
+          ]
+        },
+        {
+          "kind": "subheading",
+          "title": "The family circle cluster"
+        },
+        {
+          "kind": "text",
+          "text": [
+            "This is the Family Circle, a significant portion of the Frame dedicated to families and their specific needs. Five major program elements are found within this drawing, although many additional services and spaces are available just outside its immediate boundaries.",
+            "The central green space primarily hosts a playground featuring various play structures, alongside natural elements like boulders for imaginative play. Adjacent to the green are half basketball courts and a multi-purpose outdoor fitness area suitable for classes or casual workouts. Public bathrooms and changing rooms are conveniently located just off this green space. On the side of the green not visible above, essential services such as doctors' offices, a larger grocery store, salons, and barbershops are provided. The hydroponic farm located below directly supports the grocery store, offering fresh produce daily.",
+            "Above the sports courts is the multigenerational neighborhood. Here, two-level homes are arranged in clusters of three to four units around smaller, more private outdoor common spaces and circulation areas. Each home includes five to six bedrooms, designed specifically to accommodate large families—whether intergenerational or households combining with siblings or cousins. These clusters are stacked four levels high and connected vertically by stairs and an elevator core, forming a vibrant vertical neighborhood within the building.",
+            "Across the circle from the green space and the multigenerational housing is the school and community center. The circular form is intentionally chosen rather than a more direct layout to ensure clear sightlines upwards through the building. The K-8 school spans four stories, with the fourth floor acting as a transitional space between the more private school facilities and the public community center above. The school and the community amenities share a central outdoor circulation atrium, consisting of planted ramps and terraces designed to encourage the integration of school programming with the library and maker spaces located above. While the school's primary entrance opens directly off the circle, there’s also a dedicated bridge connecting the intergenerational neighborhood directly to the school’s third floor.",
+            "These two clusters represent just 30% of the buildings total programable space, and so there is much more richness to be explored."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Conclusion",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": [
+            "A consistent theme throughout this narrative has been the deliberate use of counterpoint as a planning strategy. Whether it's grid versus green space, frame versus program, or structured work versus flexible leisure, these intentional pairings create necessary balance. This balancing act grounds a concept as expansive as post-scarcity firmly within Philadelphia's urban context, preventing it from becoming abstract or purely theoretical.",
+            "Proximity zoning adopts the clarity and discipline of traditional zoning codes while preserving the flexibility inherent in the designer’s sketch. Similarly, the building's structural frame follows clear, practical constraints, yet it easily accommodates dynamic and expressive programs within. Even the social concepts central to post-scarcity—a reduced workweek and Universal Basic Income—serve not as ends themselves, but as tools to foster richer and more meaningful lives.",
+            "This approach is built upon the understanding that abundance alone does not guarantee quality of life. Instead, it is through thoughtfully designed, vibrant, and interconnected environments that we can fully appreciate the benefits of abundance. Purposeful contrasts embedded within our cities and buildings, combined with high-quality, intentional design, create places that draw us outward, fostering community engagement and ensuring we don’t waste newly found leisure time.",
+            "If this project conveys one overarching message, it is that achieving a better future requires both imagination and practical implementation. By anchoring ambitious ideas within familiar frameworks—but deploying them in fresh and compelling ways—we can inspire real, tangible progress toward the future we seek.",
+            "Ultimately, this thesis was never about designing a fully realistic building. Rather, it continues a larger conversation begun long before me, one which will undoubtedly carry on into the future. This project relies equally on idealistic vision and rigorous design logic and research. If we remain solely focused on solving today's immediate problems, we risk overlooking both our past achievements and the possibilities ahead."
+          ]
+        },
+        {
+          "kind": "quote",
+          "quoteText": "The future cannot be predicted, but futures can be invented.",
+          "attribution": "Dennis Gabor"
+        }
+      ]
+    }
+  ],
+  "references": []
+}

@@ -394,6 +394,7 @@ content:
                 options:
                   values:
                     - { value: text, label: "Paragraphs" }
+                    - { value: subheading, label: "Sub-heading" }
                     - { value: quote, label: "Block quote" }
                     - { value: list, label: "List" }
               - name: text
@@ -413,9 +414,9 @@ content:
                 type: string
                 description: "Optional. Shown under the quotation."
               - name: title
-                label: List heading
+                label: Heading
                 type: string
-                description: "Optional, used by List blocks."
+                description: "The text of a Sub-heading block, or an optional small heading above a List."
               - name: items
                 label: List items
                 type: string
