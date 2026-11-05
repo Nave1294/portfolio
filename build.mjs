@@ -266,7 +266,9 @@ function landingPage() {
 <div class="swipe-root">
   <main class="landing${field ? " is-field" : ""}" style="--highlight-color: ${cssColor(
     l.highlightColor
-  )}; --welcome-color: ${cssColor(l.welcomeColor)}">
+  )}${
+    l.welcomeColor ? `; --welcome-color: ${cssColor(l.welcomeColor)}` : ""
+  }">
     <div class="landing-inner">
       <h1 class="landing-welcome fade-in">${heading}</h1>
       <p class="landing-subtitle fade-in fade-delay-1">${esc(l.subtitle || "")}</p>

@@ -481,7 +481,7 @@ content:
             pattern:
               regex: "^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$"
               message: Must be a hex colour such as #9c4a26.
-            description: "The greeting's own colour. Leave blank for black. Anything other than a hex value falls back to black."
+            description: "The greeting's own colour. Leave blank to use the site's main accent, corten steel. Anything other than a hex value is ignored."
 
           - name: highlightText
             label: Your text

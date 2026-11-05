@@ -1484,9 +1484,10 @@ html.js .gallery-panel[hidden] { display: none; }
   font-size: clamp(2.6rem, 8vw, 5.5rem);
   line-height: 1.02;
   letter-spacing: -0.02em;
-  /* Black unless a greeting colour is set; any highlighted word still sits
-     on top of this in its own colour and a heavier weight. */
-  color: var(--welcome-color, #000000);
+  /* The main accent unless the dashboard overrides it, so the greeting
+     follows --corten rather than carrying its own copy of the hex. Any
+     highlighted word still sits on top in its own colour and heavier weight. */
+  color: var(--welcome-color, var(--corten));
   font-weight: 400;
 }
 
