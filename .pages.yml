@@ -475,6 +475,14 @@ content:
             label: Greeting
             type: string
             description: "The opening word. Always shown in black."
+          - name: welcomeColor
+            label: Colour of the greeting
+            type: string
+            pattern:
+              regex: "^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$"
+              message: Must be a hex colour such as #9c4a26.
+            description: "The greeting's own colour. Leave blank for black. Anything other than a hex value falls back to black."
+
           - name: highlightText
             label: Your text
             type: string

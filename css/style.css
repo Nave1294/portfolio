@@ -1484,8 +1484,9 @@ html.js .gallery-panel[hidden] { display: none; }
   font-size: clamp(2.6rem, 8vw, 5.5rem);
   line-height: 1.02;
   letter-spacing: -0.02em;
-  /* "Welcome" stays black and lighter than the custom text. */
-  color: #000000;
+  /* Black unless a greeting colour is set; any highlighted word still sits
+     on top of this in its own colour and a heavier weight. */
+  color: var(--welcome-color, #000000);
   font-weight: 400;
 }
 
